@@ -1,0 +1,46 @@
+name: GNOSIS checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - name: Install the tested package manager
+        run: npm install --global pnpm@11.25.0
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Test learning, classes, and streaks
+        run: pnpm test
+      - name: Build and check TypeScript
+        run: pnpm build
+      - name: Exercise production API routes
+        shell: bash
+        run: |
+          pnpm start > "$RUNNER_TEMP/gnosis-server.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          ready=false
+          for attempt in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/content > /dev/null; then
+              ready=true
+              break
+            fi
+            sleep 1
+          done
+          if [ "$ready" != true ]; then
+            cat "$RUNNER_TEMP/gnosis-server.log"
+            exit 1
+          fi
+          pnpm test:integration
