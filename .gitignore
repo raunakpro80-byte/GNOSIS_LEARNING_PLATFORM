@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.next-dev/
+.pnpm-store/
+.env*
+!.env.example
+*.tsbuildinfo
+reference/
+tmp/
+gnosis-source.zip
+output/
+GNOSIS/
+GNOSIS-GitHub.zip
+.vercel/
