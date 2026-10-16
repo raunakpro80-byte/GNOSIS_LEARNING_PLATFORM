@@ -779,6 +779,15 @@ function Preferences({
   const [saved, setSaved] = useState(false);
   const [resetConfirm, setResetConfirm] = useState(false);
   useEffect(() => setP(state.profile), [state.profile]);
+  useEffect(() => {
+    if (
+      !saved ||
+      (saveStatus !== "Cloud saved" && saveStatus !== "Saved on this device")
+    )
+      return;
+    const timer = setTimeout(() => setSaved(false), 3000);
+    return () => clearTimeout(timer);
+  }, [saved, saveStatus]);
   return (
     <section className="preferences">
       <div className="eyebrow">
