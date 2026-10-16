@@ -1,5 +1,9 @@
 # GNOSIS
 
+**Live website:** [gnosis-learning-platform.vercel.app](https://gnosis-learning-platform.vercel.app) · **[Code explanation](docs/CODE-EXPLAINED.md)**
+
+Public demo deployed on Vercel. GitHub checks and the production HTTP integration test passed on October 16, 2026. Demo progress is stored in each visitor’s browser. Cloud accounts and live AI require the service settings described below.
+
 **Understand a little deeper.** A calm learning workspace for watching a lesson, asking contextual questions, reading notes, practicing, and resuming later.
 
 ![GNOSIS learning workspace](docs/preview.png)
@@ -122,6 +126,6 @@ Students cannot read draft content or full lesson payloads, including answer key
 - `tests/`: behavioral and local HTTP integration tests.
 - `docs/PLAN.md`, `docs/STATUS.md`, `docs/DEMO.md`: implementation record, acceptance/evidence/limits, and 3–4 minute presentation script.
 
-Design inputs were inspected in the supplied archive; extracted references are ignored by Git. No public deployment or access change was performed.
+Design inputs were inspected in the supplied archive; extracted references are ignored by Git. The public source is hosted in this repository and the demo is deployed at the live website above.
 
 Official integration references: [Next.js installation](https://nextjs.org/docs/app/getting-started/installation), [Supabase getUser](https://supabase.com/docs/reference/javascript/auth-getuser), [Supabase row-level security](https://supabase.com/docs/guides/database/postgres/row-level-security), [YouTube IFrame API](https://developers.google.com/youtube/iframe_api_reference).
