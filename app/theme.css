@@ -15,7 +15,50 @@ html[data-theme="dark"] .streak-pill {
 html[data-theme="dark"] .formula-orbit:after {
   border-color: #433b5c;
 }
+.preferences-feedback {
+  position: fixed;
+  top: 90px;
+  right: 24px;
+  z-index: 100;
+  width: min(380px, calc(100vw - 32px));
+  padding: 18px 20px;
+  border: 1px solid #b9b0d8;
+  border-left: 4px solid #7965b5;
+  border-radius: 14px;
+  background: #fff;
+  color: #302749;
+  box-shadow: 0 12px 40px #231a4026;
+  display: grid;
+  gap: 7px;
+}
+.preferences-feedback span {
+  font-size: 13px;
+}
+.preferences-feedback .text-button {
+  justify-self: start;
+}
+.preferences-feedback.is-saved {
+  border-left-color: #2f8660;
+}
+.preferences-feedback.is-error {
+  border-left-color: #bf4747;
+}
+html[data-theme="dark"] .preferences-feedback {
+  background: #202539;
+  color: #f0ecff;
+  border-color: #71628f;
+}
+html[data-theme="dark"] .preferences-feedback.is-saved {
+  border-left-color: #70c99b;
+}
+html[data-theme="dark"] .preferences-feedback.is-error {
+  border-left-color: #ff9696;
+}
 @media (max-width: 700px) {
+  .preferences-feedback {
+    top: 76px;
+    right: 16px;
+  }
   .topbar .demo-pill,
   .streak-pill > span {
     display: none;
