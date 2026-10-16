@@ -316,6 +316,7 @@ export default function Gnosis() {
               state={state}
               update={update}
               onboarding={view === "onboarding"}
+              saveStatus={status}
               demo={!user}
               onDone={() => go("/dashboard")}
             />
@@ -765,12 +766,14 @@ function Preferences({
   onboarding,
   onDone,
   demo,
+  saveStatus,
 }: {
   state: LearningState;
   update: (f: (s: LearningState) => LearningState) => void;
   onboarding: boolean;
   onDone: () => void;
   demo: boolean;
+  saveStatus: string;
 }) {
   const [p, setP] = useState(state.profile);
   const [saved, setSaved] = useState(false);
@@ -785,6 +788,7 @@ function Preferences({
       <p>A few small details to shape your learning space.</p>
       <form
         className="panel form-grid"
+        onChange={() => setSaved(false)}
         onSubmit={(e) => {
           e.preventDefault();
           update((s) => ({ ...s, profile: p }));
@@ -874,11 +878,46 @@ function Preferences({
           {onboarding ? "Open my workspace" : "Save preferences"}
           <ArrowRight size={17} />
         </button>
-        {saved && (
-          <p role="status" className="success">
-            Preferences updated.
-          </p>
-        )}
+        <div role="status" aria-live="polite" aria-atomic="true">
+          {saved && (
+            <div
+              className={`preferences-feedback ${
+                saveStatus === "Saving…"
+                  ? ""
+                  : saveStatus === "Cloud saved" ||
+                      saveStatus === "Saved on this device"
+                    ? "is-saved"
+                    : "is-error"
+              }`}
+            >
+              <strong>
+                {saveStatus === "Saving…"
+                  ? "Saving preferences…"
+                  : saveStatus === "Cloud saved" ||
+                      saveStatus === "Saved on this device"
+                    ? "Preferences saved successfully."
+                    : "Preferences could not be saved."}
+              </strong>
+              <span>
+                {saveStatus === "Saved on this device"
+                  ? "Your changes are saved on this browser."
+                  : saveStatus === "Cloud saved"
+                    ? "Your changes are saved to your account."
+                    : saveStatus === "Saving…"
+                      ? "Please wait a moment."
+                      : saveStatus}
+              </span>
+              <button
+                type="button"
+                className="text-button"
+                aria-label="Dismiss preferences notification"
+                onClick={() => setSaved(false)}
+              >
+                Dismiss
+              </button>
+            </div>
+          )}
+        </div>
         {demo && !onboarding && (
           <button
             className="text-button"
