@@ -8,7 +8,7 @@ Target exam is derived automatically when selecting subjects and when existing p
 
 ## Content status
 
-Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Four Chemistry notes PDFs are available for Class 11 chapters 1–4 (197 pages). Mathematics chapters 1–6 have supplied videos in both lecture formats, starting at 0:15. Mathematics chapters 1–5 have supplied notes PDFs (76 pages). Biology chapters 1–8 have supplied videos in both lecture formats. Other resources remain empty until supplied.
+Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Four Chemistry notes PDFs are available for Class 11 chapters 1–4 (197 pages). Mathematics chapters 1–6 have supplied videos in both lecture formats, starting at 0:15. Mathematics chapters 1–5 have supplied notes PDFs (76 pages). Biology chapters 1–8 have supplied videos in both lecture formats. Biology chapters 1–5 and 7–9 have supplied notes PDFs (161 pages). Other resources remain empty until supplied.
 
 | Chapter                      | Supplied notes                      | Pages |
 | ---------------------------- | ----------------------------------- | ----- |
@@ -156,6 +156,21 @@ Each owner-supplied video below appears in both **Detailed** and **One-shot** fo
 | 6. Anatomy of Flowering Plants        | https://www.youtube.com/watch?v=J3VM-fXrYf4 |
 | 7. Structural Organisation in Animals | https://www.youtube.com/watch?v=4bDQJZN5MX8 |
 | 8. Cell: The Unit of Life             | https://www.youtube.com/watch?v=rdmJ4mAERe8 |
+
+## Supplied Biology notes
+
+The eight owner-supplied PDFs are copied unchanged to `public/notes/class-11/biology/` with clean chapter filenames, omitting the supplied editing labels. They appear under **Class 11 → Notes → Biology** when Biology is selected. Resources are mapped by topic rather than attachment order; no Anatomy of Flowering Plants notes were supplied.
+
+| Chapter                               | Public filename                              | Pages |
+| ------------------------------------- | -------------------------------------------- | ----- |
+| 1. The Living World                   | the-living-world-notes.pdf                   | 16    |
+| 2. Biological Classification          | biological-classification-notes.pdf          | 21    |
+| 3. Plant Kingdom                      | plant-kingdom-notes.pdf                      | 10    |
+| 4. Animal Kingdom                     | animal-kingdom-notes.pdf                     | 14    |
+| 5. Morphology of Flowering Plants     | morphology-of-flowering-plants-notes.pdf     | 25    |
+| 7. Structural Organisation in Animals | structural-organisation-in-animals-notes.pdf | 29    |
+| 8. Cell: The Unit of Life             | cell-the-unit-of-life-notes.pdf              | 23    |
+| 9. Biomolecules                       | biomolecules-notes.pdf                       | 23    |
 
 ## Chapter references
 

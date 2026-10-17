@@ -149,6 +149,16 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
     "4bDQJZN5MX8",
     "rdmJ4mAERe8",
   ];
+  const biologyNotes: Record<number, string> = {
+    1: "the-living-world",
+    2: "biological-classification",
+    3: "plant-kingdom",
+    4: "animal-kingdom",
+    5: "morphology-of-flowering-plants",
+    7: "structural-organisation-in-animals",
+    8: "cell-the-unit-of-life",
+    9: "biomolecules",
+  };
   for (const className of ["11", "12"] as const) {
     subjectCatalog.forEach((subject, index) => {
       const chapters = chaptersFor(className, subject.id);
@@ -176,7 +186,11 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
                 subject.id === "mathematics" &&
                 chapter.number <= 5
               ? `/notes/class-11/mathematics/${mathematicsBooks[chapter.number - 1]}-notes.pdf`
-              : null;
+              : className === "11" &&
+                  subject.id === "biology" &&
+                  biologyNotes[chapter.number]
+                ? `/notes/class-11/biology/${biologyNotes[chapter.number]}-notes.pdf`
+                : null;
         const bookPdf = hasPhysicsNotes
           ? `/books/class-11/physics/${suppliedNotes[chapter.number - 1]}.pdf`
           : className === "11" &&
