@@ -8,7 +8,7 @@ Target exam is derived automatically when selecting subjects and when existing p
 
 ## Content status
 
-Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed lectures. Other resources remain empty until supplied.
+Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Other resources remain empty until supplied.
 
 | Chapter                      | Supplied notes                      | Pages |
 | ---------------------------- | ----------------------------------- | ----- |
@@ -66,6 +66,17 @@ The owner assigned these videos to **Class 11 → Chemistry → Detailed**, chap
 | 2. Structure of Atom                                        | https://www.youtube.com/watch?v=t0YvTa26TSs |
 | 3. Classification of Elements and Periodicity in Properties | https://www.youtube.com/watch?v=A8UE8We3FiI |
 | 4. Chemical Bonding and Molecular Structure                 | https://www.youtube.com/watch?v=VTFEPlwgqZY |
+
+## Supplied Chemistry one-shot lectures
+
+These owner-supplied videos appear in **Class 11 → Chemistry → One-shot**, chapters 1–4, alongside the separate Detailed assignments. Format cards show availability and each section opens its matching player and YouTube link.
+
+| Chapter                                                     | One-shot video                              |
+| ----------------------------------------------------------- | ------------------------------------------- |
+| 1. Some Basic Concepts of Chemistry                         | https://www.youtube.com/watch?v=_9us2WJRL7E |
+| 2. Structure of Atom                                        | https://www.youtube.com/watch?v=Okl9bDM7xwg |
+| 3. Classification of Elements and Periodicity in Properties | https://www.youtube.com/watch?v=GjqU5RmLsCw |
+| 4. Chemical Bonding and Molecular Structure                 | https://www.youtube.com/watch?v=rhKGEM3w4qM |
 
 ## Chapter references
 

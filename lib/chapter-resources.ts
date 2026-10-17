@@ -8,10 +8,22 @@ export type ChapterResources = {
 };
 // Only owner-supplied media belongs here. Keys: class/subject/chapter number.
 export const chapterResources: Record<string, Partial<ChapterResources>> = {
-  "11/chemistry/1": { detailedVideoId: "ZdzrnPawYf4" },
-  "11/chemistry/2": { detailedVideoId: "t0YvTa26TSs" },
-  "11/chemistry/3": { detailedVideoId: "A8UE8We3FiI" },
-  "11/chemistry/4": { detailedVideoId: "VTFEPlwgqZY" },
+  "11/chemistry/1": {
+    detailedVideoId: "ZdzrnPawYf4",
+    oneShotVideoId: "_9us2WJRL7E",
+  },
+  "11/chemistry/2": {
+    detailedVideoId: "t0YvTa26TSs",
+    oneShotVideoId: "Okl9bDM7xwg",
+  },
+  "11/chemistry/3": {
+    detailedVideoId: "A8UE8We3FiI",
+    oneShotVideoId: "GjqU5RmLsCw",
+  },
+  "11/chemistry/4": {
+    detailedVideoId: "VTFEPlwgqZY",
+    oneShotVideoId: "rhKGEM3w4qM",
+  },
   "11/physics/1": {
     detailedVideoId: "Rcdf1W-0F_Q",
     oneShotVideoId: "v3rx_lBBvCk",
