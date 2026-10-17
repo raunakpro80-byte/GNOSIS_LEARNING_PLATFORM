@@ -9,18 +9,22 @@ export type ChapterResources = {
 // Only owner-supplied media belongs here. Keys: class/subject/chapter number.
 export const chapterResources: Record<string, Partial<ChapterResources>> = {
   "11/physics/1": {
+    detailedVideoId: "Rcdf1W-0F_Q",
     bookPdf: "/books/class-11/physics/units-and-measurements.pdf",
     notesPdf: "/notes/class-11/physics/units-and-measurements.pdf",
   },
   "11/physics/2": {
+    detailedVideoId: "LWeOOFvxrd0",
     bookPdf: "/books/class-11/physics/motion-in-a-straight-line.pdf",
     notesPdf: "/notes/class-11/physics/motion-in-a-straight-line.pdf",
   },
   "11/physics/3": {
+    detailedVideoId: "-N7eYNzRMOM",
     bookPdf: "/books/class-11/physics/motion-in-a-plane.pdf",
     notesPdf: "/notes/class-11/physics/motion-in-a-plane.pdf",
   },
   "11/physics/4": {
+    detailedVideoId: "8hG2gbmf7sU",
     bookPdf: "/books/class-11/physics/laws-of-motion.pdf",
     notesPdf: "/notes/class-11/physics/laws-of-motion.pdf",
   },

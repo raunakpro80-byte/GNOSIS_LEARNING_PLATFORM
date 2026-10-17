@@ -91,6 +91,12 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
     "motion-in-a-plane",
     "laws-of-motion",
   ];
+  const suppliedDetailedVideos = [
+    "Rcdf1W-0F_Q",
+    "LWeOOFvxrd0",
+    "-N7eYNzRMOM",
+    "8hG2gbmf7sU",
+  ];
   for (const className of ["11", "12"] as const) {
     subjectCatalog.forEach((subject, index) => {
       const chapters = chaptersFor(className, subject.id);
@@ -105,10 +111,13 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
             ? `/notes/class-11/physics/${suppliedNotes[chapter.number - 1]}.pdf`
             : null;
         const bookPdf = notesPdf?.replace("/notes/", "/books/") ?? null;
+        const detailedVideoId = notesPdf
+          ? suppliedDetailedVideos[chapter.number - 1]
+          : null;
         assert.deepEqual(resourcesFor(className, subject.id, chapter.number), {
           bookPdf,
           notesPdf,
-          detailedVideoId: null,
+          detailedVideoId,
           oneShotVideoId: null,
         });
         assert.equal(
@@ -118,6 +127,10 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
         assert.equal(
           resourceLabel(className, subject.id, chapter.number, "books"),
           bookPdf ? "PDF available" : "PDF coming soon",
+        );
+        assert.equal(
+          resourceLabel(className, subject.id, chapter.number, "lectures"),
+          detailedVideoId ? "Lectures available" : "Videos coming soon",
         );
         for (const pdf of [notesPdf, bookPdf].filter(Boolean))
           assert.equal(

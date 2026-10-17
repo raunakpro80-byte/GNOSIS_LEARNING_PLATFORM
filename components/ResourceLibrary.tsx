@@ -318,7 +318,15 @@ export default function ResourceLibrary({
                       ? "Take the chapter step by step."
                       : "Revisit the whole chapter in one focused session."}
                   </p>
-                  <span className="resource-pending">Video coming soon</span>
+                  <span className="resource-pending">
+                    {(
+                      f === "detailed"
+                        ? resources?.detailedVideoId
+                        : resources?.oneShotVideoId
+                    )
+                      ? "Video available"
+                      : "Video coming soon"}
+                  </span>
                   <span className="resource-card-footer">
                     Open section <ArrowRight size={17} />
                   </span>
