@@ -18,7 +18,7 @@ import {
   subjectCatalog,
   type ResourceSection,
 } from "@/lib/curriculum";
-import { resourcesFor } from "@/lib/chapter-resources";
+import { resourcesFor, resourceLabel } from "@/lib/chapter-resources";
 import type { Profile } from "@/lib/types";
 import PdfReader from "./PdfReader";
 import Video from "./Video";
@@ -258,11 +258,12 @@ export default function ResourceLibrary({
                       <h2>{c.title}</h2>
                     </button>
                     <span className="resource-pending">
-                      {isLecture
-                        ? "Videos coming soon"
-                        : section === "books"
-                          ? "PDF coming soon"
-                          : "Notes coming soon"}
+                      {resourceLabel(
+                        profile.className,
+                        subject.id,
+                        c.number,
+                        section,
+                      )}
                     </span>
                   </div>
                   {isLecture ? (

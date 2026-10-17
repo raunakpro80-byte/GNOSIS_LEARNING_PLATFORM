@@ -6,9 +6,33 @@ export type ChapterResources = {
   detailedVideoId: string | null;
   oneShotVideoId: string | null;
 };
-// Only owner-supplied, reviewed media belongs here. No sample PDFs or videos
-// are attached to the chapter library. Keys: class/subject/chapter number.
-export const chapterResources: Record<string, Partial<ChapterResources>> = {};
+// Only owner-supplied media belongs here. Keys: class/subject/chapter number.
+export const chapterResources: Record<string, Partial<ChapterResources>> = {
+  "11/physics/1": {
+    notesPdf: "/notes/class-11/physics/units-and-measurements.pdf",
+  },
+  "11/physics/2": {
+    notesPdf: "/notes/class-11/physics/motion-in-a-straight-line.pdf",
+  },
+  "11/physics/3": { notesPdf: "/notes/class-11/physics/motion-in-a-plane.pdf" },
+  "11/physics/4": { notesPdf: "/notes/class-11/physics/laws-of-motion.pdf" },
+};
+
+export function resourceLabel(
+  className: string,
+  subject: SubjectId,
+  chapter: number,
+  section: "books" | "notes" | "lectures",
+) {
+  const resource = resourcesFor(className, subject, chapter);
+  if (section === "notes")
+    return resource.notesPdf ? "Notes available" : "Notes coming soon";
+  if (section === "books")
+    return resource.bookPdf ? "PDF available" : "PDF coming soon";
+  return resource.detailedVideoId || resource.oneShotVideoId
+    ? "Lectures available"
+    : "Videos coming soon";
+}
 
 export function resourcesFor(
   className: string,

@@ -2,7 +2,7 @@
 
 ## Chapter libraries
 
-The workspace now has **Lectures**, **NCERT Books**, and **Notes**, with separate Class 11 and Class 12 chapter lists. Only selected subjects are shown. Mathematics selects JEE automatically, Biology selects NEET, and selecting both sets JEE + NEET. Each lecture chapter has Detailed and One-shot sections. Book PDFs, chapter notes and new videos are intentionally empty until the owner supplies them. See the [chapter resource guide](docs/CHAPTER-RESOURCES.md) for attachment slots and NCERT chapter-index references. The search bar has been removed. Existing saved learning records and the separate, previously approved Ohm’s Law demo are retained; the demo is not a full-chapter resource.
+The workspace now has **Lectures**, **NCERT Books**, and **Notes**, with separate Class 11 and Class 12 chapter lists. Only selected subjects are shown. Mathematics selects JEE automatically, Biology selects NEET, and selecting both sets JEE + NEET. Each lecture chapter has Detailed and One-shot sections. Four owner-supplied notes PDFs are available for Class 11 Physics chapters 1–4 (108 pages total). Other chapter notes, book PDFs and new videos remain empty until supplied. See the [chapter resource guide](docs/CHAPTER-RESOURCES.md) for attachment slots and NCERT chapter-index references. The search bar has been removed. Existing saved learning records and the separate, previously approved Ohm’s Law demo are retained; the demo is not a full-chapter resource.
 
 **Live website:** [gnosis-learning-platform.vercel.app](https://gnosis-learning-platform.vercel.app) · **[Code explanation](docs/CODE-EXPLAINED.md)**
 

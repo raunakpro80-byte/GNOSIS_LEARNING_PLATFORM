@@ -8,7 +8,18 @@ Target exam is derived automatically when selecting subjects and when existing p
 
 ## Content status
 
-All 106 chapter slots are empty. No textbook PDFs, chapter notes or new videos have been downloaded, generated or attached. Each slot clearly says that content is coming soon. The previously approved Ohm’s Law demonstration remains a separate legacy lesson; it is not presented as a complete chapter lecture or textbook.
+Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Other notes, textbooks and lecture videos remain empty until supplied.
+
+| Chapter                      | Supplied notes                      | Pages |
+| ---------------------------- | ----------------------------------- | ----- |
+| 1. Units and Measurements    | Units_and_Dimensions_Notes.pdf      | 40    |
+| 2. Motion in a Straight Line | Motion_in_a_Straight_Line_Notes.pdf | 23    |
+| 3. Motion in a Plane         | Motion_in_a_Plane_Notes.pdf         | 20    |
+| 4. Laws of Motion            | Newton's Laws of Motion _Notes.pdf  | 25    |
+
+Web copies are stored in `public/notes/class-11/physics/`. The three files above the upload limit use readable 180 DPI image-based web copies; all 108 pages and page dimensions are retained. The Laws of Motion PDF retains its original page content. The owner's original files are unchanged.
+
+The previously approved Ohm’s Law demonstration remains a separate legacy lesson; it is not presented as a complete chapter lecture or textbook.
 
 When the owner supplies files, add the approved PDFs to `public/` (or use reviewed HTTPS PDF URLs) and fill `lib/chapter-resources.ts`. The key is `class/subject/chapter`, for example `11/physics/1`. Set `bookPdf` and `notesPdf` to the supplied file paths, and `detailedVideoId` and `oneShotVideoId` to the supplied YouTube video IDs. Leave absent resources null. The library has PDF and video viewers ready for those values; an absent value always renders an honest empty section. Never put secrets in this public manifest. Full-book PDFs would need splitting into chapters or an explicit page mapping before being treated as chapter PDFs.
 

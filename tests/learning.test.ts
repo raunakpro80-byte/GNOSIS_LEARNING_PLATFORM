@@ -1,5 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import {
   activeSegment,
   parseTranscript,
@@ -21,7 +22,7 @@ import {
   selectedSubjects,
   subjectCatalog,
 } from "../lib/curriculum";
-import { resourcesFor } from "../lib/chapter-resources";
+import { resourcesFor, resourceLabel } from "../lib/chapter-resources";
 
 test("PCM, PCB and PCMB selections derive their exams without adding subjects", () => {
   const pcm = ["Physics", "Chemistry", "Mathematics"];
@@ -84,6 +85,12 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
   );
   assert.deepEqual(chaptersFor("Other", "physics"), []);
   const expected = { "11": [14, 9, 14, 19], "12": [14, 10, 13, 13] };
+  const suppliedNotes = [
+    "units-and-measurements",
+    "motion-in-a-straight-line",
+    "motion-in-a-plane",
+    "laws-of-motion",
+  ];
   for (const className of ["11", "12"] as const) {
     subjectCatalog.forEach((subject, index) => {
       const chapters = chaptersFor(className, subject.id);
@@ -93,12 +100,27 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
         Array.from({ length: chapters.length }, (_, i) => i + 1),
       );
       for (const chapter of chapters) {
+        const notesPdf =
+          className === "11" && subject.id === "physics" && chapter.number <= 4
+            ? `/notes/class-11/physics/${suppliedNotes[chapter.number - 1]}.pdf`
+            : null;
         assert.deepEqual(resourcesFor(className, subject.id, chapter.number), {
           bookPdf: null,
-          notesPdf: null,
+          notesPdf,
           detailedVideoId: null,
           oneShotVideoId: null,
         });
+        assert.equal(
+          resourceLabel(className, subject.id, chapter.number, "notes"),
+          notesPdf ? "Notes available" : "Notes coming soon",
+        );
+        if (notesPdf)
+          assert.equal(
+            readFileSync(new URL(`../public${notesPdf}`, import.meta.url))
+              .subarray(0, 5)
+              .toString(),
+            "%PDF-",
+          );
       }
     });
   }
