@@ -13,6 +13,96 @@ import { lessonSchema, stateSchema } from "../lib/schema";
 import { emptyState } from "../lib/types";
 import { validateContent } from "../lib/content-validation";
 import { lessonsForClass } from "../lib/catalog";
+import {
+  chaptersFor,
+  examForSubjects,
+  lessonsForProfile,
+  normalizeProfile,
+  selectedSubjects,
+  subjectCatalog,
+} from "../lib/curriculum";
+import { resourcesFor } from "../lib/chapter-resources";
+
+test("PCM, PCB and PCMB selections derive their exams without adding subjects", () => {
+  const pcm = ["Physics", "Chemistry", "Mathematics"];
+  const pcb = ["Physics", "Chemistry", "Biology"];
+  assert.equal(examForSubjects(pcm), "JEE");
+  assert.equal(examForSubjects(pcb), "NEET");
+  assert.equal(examForSubjects([...pcb, "Mathematics"]), "JEE + NEET");
+  assert.equal(examForSubjects(["Physics", "Chemistry"]), "Boards");
+  assert.equal(examForSubjects([]), "Boards");
+  assert.deepEqual(
+    selectedSubjects(pcb).map((s) => s.name),
+    pcb,
+  );
+  const profile = normalizeProfile({
+    ...emptyState().profile,
+    subjects: pcb,
+    exam: "JEE",
+  });
+  assert.equal(profile.exam, "NEET");
+  assert.deepEqual(profile.subjects, pcb);
+  assert.deepEqual(
+    normalizeProfile({ ...profile, subjects: ["Physics", "Maths", "Biology"] })
+      .subjects,
+    ["Physics", "Mathematics", "Biology"],
+  );
+});
+
+test("lecture history respects both class and chosen subjects", () => {
+  const physics = publicLesson(seed);
+  const biology = { ...physics, id: "biology-demo", subject: "Biology" };
+  const maths = { ...physics, id: "maths-demo", subject: "Mathematics" };
+  const profile = {
+    ...emptyState().profile,
+    subjects: ["Physics", "Chemistry", "Biology"],
+  };
+  assert.deepEqual(
+    lessonsForProfile([physics, biology, maths], profile).map((l) => l.id),
+    [physics.id, biology.id],
+  );
+  assert.deepEqual(
+    lessonsForProfile([physics, biology, maths], {
+      ...profile,
+      className: "11",
+    }),
+    [],
+  );
+  assert.deepEqual(
+    lessonsForProfile([physics, biology, maths], { ...profile, subjects: [] }),
+    [],
+  );
+});
+
+test("chapter libraries have class-specific numbering and no unsupplied media", () => {
+  assert.equal(chaptersFor("11", "physics")[0].title, "Units and Measurements");
+  assert.equal(chaptersFor("12", "physics")[2].title, "Current Electricity");
+  assert.ok(
+    !chaptersFor("11", "physics").some(
+      (c) => c.title === "Current Electricity",
+    ),
+  );
+  assert.deepEqual(chaptersFor("Other", "physics"), []);
+  const expected = { "11": [14, 9, 14, 19], "12": [14, 10, 13, 13] };
+  for (const className of ["11", "12"] as const) {
+    subjectCatalog.forEach((subject, index) => {
+      const chapters = chaptersFor(className, subject.id);
+      assert.equal(chapters.length, expected[className][index]);
+      assert.deepEqual(
+        chapters.map((c) => c.number),
+        Array.from({ length: chapters.length }, (_, i) => i + 1),
+      );
+      for (const chapter of chapters) {
+        assert.deepEqual(resourcesFor(className, subject.id, chapter.number), {
+          bookPdf: null,
+          notesPdf: null,
+          detailedVideoId: null,
+          oneShotVideoId: null,
+        });
+      }
+    });
+  }
+});
 test("YouTube extraction supports watch, short, embed and rejects deceptive hosts", () => {
   for (const u of [
     "https://youtu.be/-Rm7K-rXk7A?si=test",

@@ -4,6 +4,7 @@ import { api, supabase } from "@/lib/client";
 import { emptyState, type LearningState } from "@/lib/types";
 import { stateSchema } from "@/lib/schema";
 import { recordStudyActions } from "@/lib/streak";
+import { normalizeProfile } from "@/lib/curriculum";
 const KEY = "gnosis:demo:v1";
 export function useLearning() {
   const [state, setState] = useState<LearningState>(emptyState);
@@ -28,6 +29,7 @@ export function useLearning() {
           ? await api("/api/state")
           : JSON.parse(localStorage.getItem(KEY) ?? "null");
         const next = raw ? stateSchema.parse(raw) : emptyState();
+        next.profile = normalizeProfile(next.profile);
         if (alive && g === generation.current) {
           current.current = next;
           setState(next);
@@ -68,6 +70,7 @@ export function useLearning() {
     if (!loaded.current) return;
     const next = recordStudyActions(current.current, fn(current.current));
     if (next === current.current) return;
+    next.profile = normalizeProfile(next.profile);
     current.current = next;
     setState(next);
     setStatus("Saving…");

@@ -1,5 +1,7 @@
 # GNOSIS Code Explained
 
+The current navigation uses `components/ResourceLibrary.tsx`: Lectures, NCERT Books and Notes each open selected subjects → numbered chapters. `lib/curriculum.ts` defines class-specific chapter indexes, subject filtering and automatic target exams. `lib/chapter-resources.ts` holds empty attachment slots for the PDFs and videos the owner will supply. See [Chapter resources](CHAPTER-RESOURCES.md). The lesson workflow described below is the retained legacy Ohm’s Law demonstration.
+
 GNOSIS is a Next.js learning platform. Students open Class 12 → Physics → Current Electricity → Ohm’s Law, watch the supplied YouTube lesson, read PDF notes, save personal notes, and check their understanding with a quiz.
 
 ## Folder map

@@ -1,6 +1,348 @@
 :root {
   color-scheme: light;
 }
+.sidebar {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.topbar-course {
+  font-size: 12px;
+  color: #55546b;
+  white-space: nowrap;
+}
+.topbar-course span {
+  color: #858399;
+}
+.resource-subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 20px;
+}
+.resource-subject-card {
+  text-align: left;
+  width: 100%;
+  color: var(--ink);
+  cursor: pointer;
+}
+.resource-subject-card:hover,
+.lecture-format-card:hover {
+  border-color: #a499d0;
+  transform: translateY(-2px);
+}
+.resource-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--indigo);
+  padding-top: 16px;
+  margin-top: auto;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+}
+.resource-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  color: #7d7a92;
+  font-size: 11px;
+  margin-top: 27px;
+}
+.resource-breadcrumbs button {
+  color: var(--indigo);
+  text-align: left;
+}
+.chapter-list {
+  display: grid;
+  gap: 13px;
+}
+.chapter-row {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.chapter-number {
+  flex-shrink: 0;
+  width: 47px;
+  height: 47px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #efecf9;
+  color: #6b58aa;
+  font-size: 20px;
+  font-weight: 500;
+}
+.chapter-copy {
+  flex: 1;
+  min-width: 0;
+}
+.chapter-title {
+  text-align: left;
+  display: grid;
+  gap: 6px;
+}
+.chapter-title h2 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 550;
+}
+.chapter-title .eyebrow {
+  font-size: 8px;
+  margin-bottom: 0;
+}
+.resource-pending {
+  display: inline-flex;
+  font-size: 11px;
+  color: #858197;
+  margin-top: 8px;
+}
+.chapter-actions {
+  display: flex;
+  gap: 9px;
+  flex-shrink: 0;
+}
+.chapter-actions .subtle-button {
+  padding: 10px 12px;
+  font-size: 11px;
+}
+.lecture-format-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.lecture-format-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  text-align: left;
+  color: var(--ink);
+  transition:
+    transform 0.2s,
+    border-color 0.2s;
+}
+.lecture-format-card h2 {
+  font-size: 22px;
+}
+.lecture-format-card p {
+  color: #77738a;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.lecture-format-card .resource-card-footer {
+  width: 100%;
+  margin-top: 10px;
+}
+.resource-format-icon {
+  width: 66px;
+  height: 66px;
+  display: grid;
+  place-items: center;
+  background: #f0ecfb;
+  color: #7860b8;
+  border-radius: 18px;
+}
+.chapter-resource .section-heading h2 {
+  font-size: 21px;
+}
+.resource-placeholder {
+  padding: 65px 25px;
+  min-height: 330px;
+  border: 1px dashed #d5cee6;
+  border-radius: 14px;
+  background: #faf9fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  color: #8b7bb6;
+}
+.resource-placeholder h3 {
+  color: #48405e;
+  font-size: 22px;
+  font-weight: 500;
+}
+.resource-placeholder p {
+  max-width: 390px;
+  color: #7a7589;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.resource-placeholder > span {
+  color: #9993a9;
+  font-size: 11px;
+}
+.resource-empty {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  text-align: center;
+  padding: 50px 24px;
+}
+.resource-empty h1,
+.resource-empty h2 {
+  font-size: 24px;
+}
+.resource-empty p {
+  color: #858097;
+  font-size: 13px;
+}
+.resource-shortcuts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 24px 0 35px;
+}
+.resource-shortcuts > button {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  text-align: left;
+  color: var(--indigo);
+  padding: 22px 18px;
+}
+.resource-shortcuts > button > svg {
+  flex-shrink: 0;
+}
+.resource-shortcuts > button > svg:last-child {
+  margin-left: auto;
+  width: 15px;
+}
+.resource-shortcuts h2 {
+  font-size: 16px;
+  color: #454158;
+  margin-bottom: 8px;
+}
+.resource-shortcuts p {
+  font-size: 11px;
+  color: #878194;
+  line-height: 1.8;
+}
+.resource-intro h2 {
+  font-size: 34px;
+  line-height: 1.3;
+  margin: 15px 0;
+}
+.resource-intro p {
+  max-width: 430px;
+}
+.resource-intro-art {
+  color: #9b89d0;
+  display: grid;
+  gap: 22px;
+  justify-items: center;
+  padding: 30px;
+}
+.resource-intro-art span {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.resource-library .chapter-resource .pdf-canvas {
+  min-height: 300px;
+}
+html[data-theme="dark"] .topbar-course {
+  color: #d8d2ed;
+}
+html[data-theme="dark"] .chapter-row {
+  background: #1c2233;
+  border-color: #33394d;
+}
+html[data-theme="dark"] .chapter-number,
+html[data-theme="dark"] .resource-format-icon {
+  background: #332d4c;
+  color: #bdacf0;
+}
+html[data-theme="dark"] .chapter-title h2,
+html[data-theme="dark"] .lecture-format-card h2,
+html[data-theme="dark"] .resource-shortcuts h2,
+html[data-theme="dark"] .resource-placeholder h3 {
+  color: #ece7f6;
+}
+html[data-theme="dark"] .resource-placeholder {
+  background: #191e2c;
+  border-color: #514663;
+}
+html[data-theme="dark"] .resource-placeholder p,
+html[data-theme="dark"] .resource-placeholder > span,
+html[data-theme="dark"] .resource-pending,
+html[data-theme="dark"] .resource-shortcuts p,
+html[data-theme="dark"] .lecture-format-card p {
+  color: #aaa5bd;
+}
+html[data-theme="dark"] .resource-card-footer,
+html[data-theme="dark"] .resource-breadcrumbs button {
+  color: #c5b4f4;
+}
+@media (max-width: 1000px) {
+  .chapter-row {
+    gap: 14px;
+    padding: 18px;
+    flex-wrap: wrap;
+  }
+  .chapter-actions {
+    margin-left: 61px;
+  }
+  .resource-shortcuts {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .resource-intro-art {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .topbar-course {
+    font-size: 10px;
+    margin-right: auto;
+  }
+  .topbar-course span {
+    display: none;
+  }
+  .resource-subject-grid,
+  .lecture-format-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .chapter-row {
+    padding: 18px 15px;
+    gap: 12px;
+  }
+  .chapter-copy {
+    flex-basis: calc(100% - 63px);
+  }
+  .chapter-row > .subtle-button {
+    margin-left: 59px;
+  }
+  .chapter-title h2 {
+    font-size: 14px;
+  }
+  .chapter-actions {
+    margin-left: 59px;
+    flex-wrap: wrap;
+  }
+  .resource-intro h2 {
+    font-size: 28px;
+  }
+  .resource-placeholder {
+    padding: 40px 16px;
+  }
+  .resource-placeholder h3 {
+    font-size: 20px;
+  }
+  .chapter-resource .section-heading {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
 .streak-pill {
   display: inline-flex;
   align-items: center;

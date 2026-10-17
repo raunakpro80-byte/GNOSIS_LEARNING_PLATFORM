@@ -21,7 +21,6 @@ import {
   NotebookPen,
   Play,
   Plus,
-  Search,
   Settings,
   Shield,
   Sparkles,
@@ -38,7 +37,15 @@ import Video from "./Video";
 import PdfReader from "./PdfReader";
 import Admin from "./Admin";
 import StreakCard from "./StreakCard";
-import { lessonsForClass } from "@/lib/catalog";
+import {
+  examForSubjects,
+  normalizeProfile,
+  lessonsForProfile,
+  selectedSubjects,
+  chaptersFor,
+  type ResourceSection,
+} from "@/lib/curriculum";
+import ResourceLibrary, { ResourceSubjects } from "./ResourceLibrary";
 import { addStudySeconds, studyDay, streakSummary } from "@/lib/streak";
 type Tab = "PDF" | "My Notes" | "Ask AI";
 export default function Gnosis() {
@@ -48,7 +55,7 @@ export default function Gnosis() {
   const requestedId = path.split("/")[2] || "ohms-law";
   const { state, update, ready, user, status, save } = useLearning();
   const [catalog, setLessons] = useState<PublicLesson[]>([]);
-  const lessons = lessonsForClass(catalog, state.profile.className);
+  const lessons = lessonsForProfile(catalog, state.profile);
   const lessonIds = new Set(lessons.map((l) => l.id));
   const classState = {
     ...state,
@@ -62,7 +69,6 @@ export default function Gnosis() {
   const [contentError, setContentError] = useState("");
   const [contentLoaded, setContentLoaded] = useState(false);
   const [mobile, setMobile] = useState(false);
-  const [search, setSearch] = useState("");
   const [focus, setFocus] = useState(false);
   useEffect(() => {
     api("/api/content")
@@ -85,13 +91,14 @@ export default function Gnosis() {
     setMobile(false);
     router.push(url);
   };
-  const open = (id = lesson?.id) => go(`/learn/${id ?? "ohms-law"}`);
+  const open = (id = lesson?.id) => (id ? go(`/learn/${id}`) : go("/lectures"));
   if (view === "landing") return <Landing go={go} />;
   if (view === "signin") return <SignIn go={go} />;
   const nav = [
     { id: "dashboard", name: "My workspace", Icon: Home },
-    { id: "subjects", name: "Subjects", Icon: BookOpen },
-    { id: "notes", name: "My notes", Icon: NotebookPen },
+    { id: "lectures", name: "Lectures", Icon: Play },
+    { id: "books", name: "NCERT Books", Icon: BookOpen },
+    { id: "notes", name: "Notes", Icon: NotebookPen },
     { id: "progress", name: "Learning progress", Icon: TrendingUp },
   ];
   return (
@@ -122,13 +129,19 @@ export default function Gnosis() {
         <nav>
           {nav.map(({ id, name, Icon }) => (
             <button
-              className={view === id ? "nav-link active" : "nav-link"}
+              className={
+                view === id || (view === "subjects" && id === "lectures")
+                  ? "nav-link active"
+                  : "nav-link"
+              }
               key={id}
               onClick={() => go(`/${id}`)}
             >
               <Icon size={19} />
               {name}
-              {view === id && <span className="active-dot" />}
+              {(view === id || (view === "subjects" && id === "lectures")) && (
+                <span className="active-dot" />
+              )}
             </button>
           ))}
         </nav>
@@ -140,7 +153,7 @@ export default function Gnosis() {
           <p>
             Understanding grows with curiosity. Make room for one good question.
           </p>
-          <button onClick={() => open()}>
+          <button onClick={() => go("/lectures")}>
             Find your focus <ArrowRight size={14} />
           </button>
         </div>
@@ -192,48 +205,10 @@ export default function Gnosis() {
           >
             <Menu size={21} />
           </button>
-          <div className="search-box">
-            <Search size={17} />
-            <input
-              aria-label="Search available lessons"
-              placeholder="Search for a concept, a little clarity…"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
-            {search && (
-              <div className="search-results">
-                {lessons
-                  .filter((l) =>
-                    `${l.title} ${l.chapter} ${l.subject}`
-                      .toLowerCase()
-                      .includes(search.toLowerCase()),
-                  )
-                  .map((l) => (
-                    <button
-                      key={l.id}
-                      onClick={() => {
-                        setSearch("");
-                        open(l.id);
-                      }}
-                    >
-                      <Atom size={18} />
-                      <span>
-                        {l.title}
-                        <small>
-                          {l.subject} / {l.chapter}
-                        </small>
-                      </span>
-                      <ArrowRight size={15} />
-                    </button>
-                  ))}
-                {!lessons.some((l) =>
-                  `${l.title} ${l.chapter} ${l.subject}`
-                    .toLowerCase()
-                    .includes(search.toLowerCase()),
-                ) && <p>No available lesson matches. Try “Ohm”.</p>}
-              </div>
-            )}
-          </div>
+          <span className="topbar-course">
+            Class {state.profile.className}
+            <span> · {state.profile.exam}</span>
+          </span>
           <div className="top-actions">
             <button
               className="streak-pill"
@@ -287,30 +262,6 @@ export default function Gnosis() {
           )}
           {!ready ? (
             <p role="status">Loading your learning workspace…</p>
-          ) : ready &&
-            contentLoaded &&
-            !lessons.length &&
-            ["dashboard", "subjects", "learn"].includes(view) ? (
-            <>
-              <div className="empty panel">
-                <BookOpen size={32} />
-                <h2>
-                  No lessons available for Class {state.profile.className} yet.
-                </h2>
-                <p>
-                  {contentError
-                    ? "Resolve the content connection error above, then retry."
-                    : `We’re preparing lessons for Class ${state.profile.className}. You can change your class in Preferences.`}
-                </p>
-                <button
-                  className="subtle-button"
-                  onClick={() => go("/settings")}
-                >
-                  Change class in Preferences
-                </button>
-              </div>
-              <StreakCard state={state} />
-            </>
           ) : view === "onboarding" || view === "settings" ? (
             <Preferences
               state={state}
@@ -338,28 +289,24 @@ export default function Gnosis() {
             ) : (
               <p>
                 {contentLoaded
-                  ? "This lesson is unavailable or unpublished. Choose an available lesson from Subjects."
+                  ? "This lesson is unavailable for your selected course. Choose a chapter from Lectures."
                   : "Loading lesson…"}
               </p>
             )
-          ) : view === "subjects" ? (
-            <Subjects lessons={lessons} open={open} />
-          ) : view === "notes" ? (
-            <NotesLibrary
-              state={classState}
-              lessons={lessons}
+          ) : ["lectures", "subjects", "books", "notes"].includes(view) ? (
+            <ResourceLibrary
+              key={`${view}/${state.profile.className}`}
+              profile={state.profile}
+              section={
+                (view === "subjects" ? "lectures" : view) as ResourceSection
+              }
+              segments={path.split("/").filter(Boolean).slice(1)}
               go={go}
-              update={update}
             />
           ) : view === "progress" ? (
             <Progress state={classState} lessons={lessons} open={open} />
           ) : view === "dashboard" ? (
-            <Dashboard
-              state={classState}
-              lessons={lessons}
-              open={open}
-              go={go}
-            />
+            <Dashboard state={classState} go={go} />
           ) : (
             <div className="panel">
               <h1>Page not found</h1>
@@ -421,7 +368,8 @@ function Landing({ go }: { go: (url: string) => void }) {
               </button>
             </div>
             <span className="hero-note">
-              <Check size={14} /> No signup needed. Start with Ohm’s Law.
+              <Check size={14} /> No signup needed. Explore your course, chapter
+              by chapter.
             </span>
           </div>
           <div className="hero-art">
@@ -520,28 +468,23 @@ function Landing({ go }: { go: (url: string) => void }) {
       </main>
       <footer>
         <span>GNOSIS · Made for curious minds</span>
-        <span>One supported chapter. An honest place to start.</span>
+        <span>Your subjects. Your chapters. Room to grow.</span>
       </footer>
     </div>
   );
 }
 function Dashboard({
   state,
-  lessons,
-  open,
   go,
 }: {
   state: LearningState;
-  lessons: PublicLesson[];
-  open: (id?: string) => void;
-  go: (u: string) => void;
+  go: (url: string) => void;
 }) {
-  const l = lessons[0];
-  const p = l ? state.progress[l.id] : null;
-  const completed = Object.values(state.progress).filter(
-    (p) => p.completed,
-  ).length;
-  const last = state.attempts.at(-1);
+  const subjects = selectedSubjects(state.profile.subjects);
+  const chapterCount = subjects.reduce(
+    (sum, s) => sum + chaptersFor(state.profile.className, s.id).length,
+    0,
+  );
   return (
     <>
       <div className="page-heading">
@@ -554,210 +497,78 @@ function Dashboard({
               ? `Welcome back, ${state.profile.name.split(" ")[0]}.`
               : "A good day to understand."}
           </h1>
-          <p>A little focus. A little curiosity. A step forward.</p>
+          <p>Your course. Your chapters. One calm place to learn.</p>
         </div>
         <button className="subtle-button" onClick={() => go("/settings")}>
           Class {state.profile.className} <span>·</span> {state.profile.exam}
           <Settings size={14} />
         </button>
       </div>
-      <section className="focus-card">
+      <section className="focus-card resource-intro">
         <div>
-          <div className="eyebrow">
-            {p?.position
-              ? "PICK UP WHERE YOU LEFT OFF"
-              : "YOUR FIRST MOMENT OF CLARITY"}{" "}
-            <span className="pill">PHYSICS</span>
-          </div>
-          <h2>{l?.title ?? "Loading your first lesson…"}</h2>
+          <div className="eyebrow">MAKE ROOM FOR UNDERSTANDING</div>
+          <h2>
+            Pick a chapter.
+            <br />
+            Follow your curiosity.
+          </h2>
           <p>
-            {l?.chapter} <span>·</span> Understand the relationship between V,
-            I, and R.
+            Lectures, NCERT books and notes, organised around your selected
+            subjects.
           </p>
           <div className="focus-meta">
             <span>
-              <BookOpen size={14} /> 3 pages of original notes
+              <BookOpen size={15} />
+              {chapterCount} chapters
             </span>
             <span>
-              <Target size={14} /> 5 checked questions
+              <GraduationCap size={15} />
+              {subjects.length} selected subjects
             </span>
-            {p?.position ? (
-              <span>
-                <Clock size={14} /> Resume at {clock(p.position)}
-              </span>
-            ) : null}
           </div>
-          <button className="primary" onClick={() => open(l?.id)}>
-            {p?.position ? "Continue learning" : "Start learning"}{" "}
-            <ArrowRight size={17} />
+          <button className="primary" onClick={() => go("/lectures")}>
+            Explore lectures <ArrowRight size={17} />
           </button>
         </div>
-        <div className="focus-illustration">
-          <div className="formula-orbit" />
-          <div className="formula-box">
-            V <span>=</span> I<span>×</span>R
-          </div>
-          <small>THE CONNECTION IS THE CONCEPT.</small>
+        <div className="resource-intro-art" aria-hidden="true">
+          <BookOpen size={76} />
+          <span>ONE CHAPTER AT A TIME</span>
         </div>
       </section>
-      <div className="stats-grid">
-        {[
-          {
-            Icon: BookOpen,
-            label: "LESSONS COMPLETED",
-            value: `${completed}`,
-            detail: `of ${lessons.length} available`,
-          },
-          {
-            Icon: Target,
-            label: "LATEST QUIZ",
-            value: last ? `${last.score}/${last.total}` : "—",
-            detail: last
-              ? "Your most recent attempt"
-              : "Your first attempt starts here",
-          },
-          {
-            Icon: NotebookPen,
-            label: "THOUGHTS SAVED",
-            value: String(state.notes.length),
-            detail: state.notes.length
-              ? "Small ideas, made your own"
-              : "A clean page for your ideas",
-          },
-        ].map(({ Icon, label, value, detail }) => (
-          <div className="stat-card" key={label}>
-            <div>
-              <span>{label}</span>
-              <Icon size={17} />
-            </div>
-            <strong>{value}</strong>
-            <p>{detail}</p>
+      <div className="resource-shortcuts">
+        <button className="panel" onClick={() => go("/lectures")}>
+          <Play size={23} />
+          <div>
+            <h2>Lectures</h2>
+            <p>Detailed and one-shot sections for every chapter.</p>
           </div>
-        ))}
+          <ArrowRight size={19} />
+        </button>
+        <button className="panel" onClick={() => go("/books")}>
+          <BookOpen size={23} />
+          <div>
+            <h2>NCERT Books</h2>
+            <p>Your chapter-wise textbook library.</p>
+          </div>
+          <ArrowRight size={19} />
+        </button>
+        <button className="panel" onClick={() => go("/notes")}>
+          <NotebookPen size={23} />
+          <div>
+            <h2>Notes</h2>
+            <p>A dedicated notes section for every chapter.</p>
+          </div>
+          <ArrowRight size={19} />
+        </button>
       </div>
-      <Subjects lessons={lessons} open={open} compact />
+      <ResourceSubjects
+        profile={state.profile}
+        section="lectures"
+        go={go}
+        compact
+      />
       <StreakCard state={state} />
-      <div className="two-grid">
-        <section className="panel revision">
-          <div className="section-title">
-            <span className="tip-icon">
-              <Lightbulb size={19} />
-            </span>
-            <h3>A useful next step</h3>
-          </div>
-          <p>
-            {last
-              ? last.results.some((r) => r.chosen !== r.correct)
-                ? `Revisit ${[...new Set(last.results.filter((r) => r.chosen !== r.correct).map((r) => r.concept))].join(", ")}. These came from your latest quiz mistakes.`
-                : "You answered every question correctly. Revisit the notes to explain the idea in your own words."
-              : "Start with the notes, try the five-question check, and your revision suggestions will appear here."}
-          </p>
-          <button
-            className="text-button"
-            onClick={() => (last ? go("/progress") : open(l?.id))}
-          >
-            {last ? "Review your learning" : "Explore the lesson"}
-            <ArrowRight size={15} />
-          </button>
-        </section>
-        <section className="quote-card">
-          <span className="eyebrow">A THOUGHT TO TAKE WITH YOU</span>
-          <blockquote>
-            “The important thing is
-            <br />
-            to keep questioning.”
-          </blockquote>
-          <span className="muted small">
-            Make curiosity part of your practice.
-          </span>
-        </section>
-      </div>
     </>
-  );
-}
-function Subjects({
-  lessons,
-  open,
-  compact = false,
-}: {
-  lessons: PublicLesson[];
-  open: (id?: string) => void;
-  compact?: boolean;
-}) {
-  return (
-    <section className="subjects-section">
-      {!compact && <div className="eyebrow">BUILD YOUR UNDERSTANDING</div>}
-      <div className="section-heading">
-        <div>
-          {compact ? <h2>Your subjects</h2> : <h1>Your subjects</h1>}
-          <p>Choose a subject. Follow your curiosity.</p>
-        </div>
-        <span className="small muted">
-          {new Set(lessons.map((l) => l.subject)).size} available subject
-          {new Set(lessons.map((l) => l.subject)).size !== 1 ? "s" : ""}
-        </span>
-      </div>
-      <div className="three-grid">
-        {[
-          "Physics",
-          "Chemistry",
-          "Mathematics",
-          ...new Set(
-            lessons
-              .map((l) => l.subject)
-              .filter(
-                (s) => !["Physics", "Chemistry", "Mathematics"].includes(s),
-              ),
-          ),
-        ].map((s, i) => {
-          const ls = lessons.filter((l) => l.subject === s);
-          const Icon = i === 0 ? Atom : i === 1 ? FlaskConical : TrendingUp;
-          return (
-            <article
-              className={`subject-card ${!ls.length ? "coming" : ""}`}
-              key={s}
-            >
-              <div className="subject-top">
-                <span className={`subject-icon subject-${i}`}>
-                  <Icon size={25} />
-                </span>
-                <span className={ls.length ? "pill available" : "pill"}>
-                  {ls.length ? "AVAILABLE NOW" : "COMING SOON"}
-                </span>
-              </div>
-              <h3>{s}</h3>
-              <p>
-                {ls.length
-                  ? [...new Set(ls.map((l) => l.chapter))].join(" · ")
-                  : "A little more to look forward to."}
-              </p>
-              {ls.length ? (
-                ls.map((l) => (
-                  <button
-                    className="lesson-link"
-                    key={l.id}
-                    onClick={() => open(l.id)}
-                  >
-                    <span>
-                      {l.title}
-                      <small>
-                        {l.transcriptVerified
-                          ? "Reviewed transcript"
-                          : "Topic-based concepts"}{" "}
-                        · Notes + quiz
-                      </small>
-                    </span>
-                    <ArrowRight size={18} />
-                  </button>
-                ))
-              ) : (
-                <div className="coming-label">We’re making room for more.</div>
-              )}
-            </article>
-          );
-        })}
-      </div>
-    </section>
   );
 }
 function Preferences({
@@ -775,10 +586,10 @@ function Preferences({
   demo: boolean;
   saveStatus: string;
 }) {
-  const [p, setP] = useState(state.profile);
+  const [p, setP] = useState(() => normalizeProfile(state.profile));
   const [saved, setSaved] = useState(false);
   const [resetConfirm, setResetConfirm] = useState(false);
-  useEffect(() => setP(state.profile), [state.profile]);
+  useEffect(() => setP(normalizeProfile(state.profile)), [state.profile]);
   useEffect(() => {
     if (
       !saved ||
@@ -800,7 +611,7 @@ function Preferences({
         onChange={() => setSaved(false)}
         onSubmit={(e) => {
           e.preventDefault();
-          update((s) => ({ ...s, profile: p }));
+          update((s) => ({ ...s, profile: normalizeProfile(p) }));
           setSaved(true);
           if (onboarding) onDone();
         }}
@@ -829,15 +640,15 @@ function Preferences({
           </label>
           <label>
             Target exam
-            <select
-              value={p.exam}
-              onChange={(e) => setP({ ...p, exam: e.target.value })}
-            >
-              <option>JEE</option>
-              <option>NEET</option>
-              <option>Boards</option>
-              <option>Independent learning</option>
-            </select>
+            <input
+              value={examForSubjects(p.subjects)}
+              readOnly
+              aria-describedby="exam-help"
+            />
+            <small id="exam-help">
+              Set automatically: Maths → JEE, Biology → NEET, both → JEE + NEET.
+              Without either, Boards.
+            </small>
           </label>
         </div>
         <fieldset>
@@ -862,9 +673,9 @@ function Preferences({
             ))}
           </div>
           <small>
-            {p.className === "12"
-              ? "Class 12 Physics is available. Other subjects are coming soon."
-              : "Lessons for this class are coming soon."}
+            {p.className === "12" || p.className === "11"
+              ? "Your selected subjects appear in Lectures, NCERT Books and Notes. PDFs and videos will be added later."
+              : "Choose Class 11 or 12 to browse chapter libraries."}
           </small>
         </fieldset>
         <label>
@@ -1120,7 +931,7 @@ function Workspace({
   return (
     <>
       <div className="breadcrumbs">
-        <button onClick={() => go("/subjects")}>Subjects</button>
+        <button onClick={() => go("/lectures")}>Lectures</button>
         <ChevronRight size={12} />
         <span>{lesson.subject}</span>
         <ChevronRight size={12} />

@@ -101,7 +101,7 @@ export const emptyState = (): LearningState => ({
   profile: {
     name: "",
     className: "12",
-    exam: "JEE",
+    exam: "Boards",
     subjects: ["Physics"],
     language: "English",
   },
