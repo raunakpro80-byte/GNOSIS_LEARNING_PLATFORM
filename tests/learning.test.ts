@@ -140,12 +140,17 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
         Array.from({ length: chapters.length }, (_, i) => i + 1),
       );
       for (const chapter of chapters) {
-        const notesPdf =
-          className === "11" && subject.id === "physics" && chapter.number <= 4
-            ? `/notes/class-11/physics/${suppliedNotes[chapter.number - 1]}.pdf`
+        const hasPhysicsNotes =
+          className === "11" && subject.id === "physics" && chapter.number <= 4;
+        const notesPdf = hasPhysicsNotes
+          ? `/notes/class-11/physics/${suppliedNotes[chapter.number - 1]}.pdf`
+          : className === "11" &&
+              subject.id === "chemistry" &&
+              chapter.number <= 4
+            ? `/notes/class-11/chemistry/${chemistryBooks[chapter.number - 1]}-notes.pdf`
             : null;
-        const bookPdf = notesPdf
-          ? notesPdf.replace("/notes/", "/books/")
+        const bookPdf = hasPhysicsNotes
+          ? `/books/class-11/physics/${suppliedNotes[chapter.number - 1]}.pdf`
           : className === "11" &&
               subject.id === "chemistry" &&
               chapter.number <= 6
@@ -155,7 +160,7 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
                 chapter.number <= 6
               ? `/books/class-11/mathematics/${mathematicsBooks[chapter.number - 1]}.pdf`
               : null;
-        const detailedVideoId = notesPdf
+        const detailedVideoId = hasPhysicsNotes
           ? suppliedDetailedVideos[chapter.number - 1]
           : className === "11" &&
               subject.id === "chemistry" &&
@@ -166,7 +171,7 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
           bookPdf,
           notesPdf,
           detailedVideoId,
-          oneShotVideoId: notesPdf
+          oneShotVideoId: hasPhysicsNotes
             ? suppliedOneShotVideos[chapter.number - 1]
             : className === "11" &&
                 subject.id === "chemistry" &&

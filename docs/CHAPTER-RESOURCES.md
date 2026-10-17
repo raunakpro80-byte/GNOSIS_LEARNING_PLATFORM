@@ -8,7 +8,7 @@ Target exam is derived automatically when selecting subjects and when existing p
 
 ## Content status
 
-Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Other resources remain empty until supplied.
+Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Four Chemistry notes PDFs are available for Class 11 chapters 1–4 (197 pages). Other resources remain empty until supplied.
 
 | Chapter                      | Supplied notes                      | Pages |
 | ---------------------------- | ----------------------------------- | ----- |
@@ -103,6 +103,19 @@ The six owner-supplied PDFs are copied unchanged to `public/books/class-11/mathe
 | 4. Complex Numbers and Quadratic Equations | mch4.pdf      | 13    |
 | 5. Linear Inequalities                     | mch 5.pdf     | 11    |
 | 6. Permutations and Combinations           | mch 6.pdf     | 26    |
+
+## Supplied Chemistry notes
+
+These owner-supplied notes appear under **Class 11 → Notes → Chemistry**, chapters 1–4. Public filenames use clean chapter names without the supplied editing labels or duplicate suffixes. The original Downloads files remain unchanged.
+
+| Chapter                                                     | Public filename                                                    | Pages |
+| ----------------------------------------------------------- | ------------------------------------------------------------------ | ----- |
+| 1. Some Basic Concepts of Chemistry                         | some-basic-concepts-of-chemistry-notes.pdf                         | 22    |
+| 2. Structure of Atom                                        | structure-of-atom-notes.pdf                                        | 25    |
+| 3. Classification of Elements and Periodicity in Properties | classification-of-elements-and-periodicity-in-properties-notes.pdf | 63    |
+| 4. Chemical Bonding and Molecular Structure                 | chemical-bonding-and-molecular-structure-notes.pdf                 | 87    |
+
+Files are stored in `public/notes/class-11/chemistry/`. Chapters 1, 2 and 4 retain the supplied PDF bytes. Chapter 3 uses a readable 180 DPI image-based web copy to fit the upload limit; all 63 pages and page sizes are retained. No marks inside the documents were edited.
 
 ## Chapter references
 

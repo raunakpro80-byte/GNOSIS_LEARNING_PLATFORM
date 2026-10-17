@@ -26,22 +26,29 @@ export const chapterResources: Record<string, Partial<ChapterResources>> = {
     bookPdf: "/books/class-11/mathematics/permutations-and-combinations.pdf",
   },
   "11/chemistry/1": {
+    notesPdf:
+      "/notes/class-11/chemistry/some-basic-concepts-of-chemistry-notes.pdf",
     bookPdf: "/books/class-11/chemistry/some-basic-concepts-of-chemistry.pdf",
     detailedVideoId: "ZdzrnPawYf4",
     oneShotVideoId: "_9us2WJRL7E",
   },
   "11/chemistry/2": {
+    notesPdf: "/notes/class-11/chemistry/structure-of-atom-notes.pdf",
     bookPdf: "/books/class-11/chemistry/structure-of-atom.pdf",
     detailedVideoId: "t0YvTa26TSs",
     oneShotVideoId: "Okl9bDM7xwg",
   },
   "11/chemistry/3": {
+    notesPdf:
+      "/notes/class-11/chemistry/classification-of-elements-and-periodicity-in-properties-notes.pdf",
     bookPdf:
       "/books/class-11/chemistry/classification-of-elements-and-periodicity-in-properties.pdf",
     detailedVideoId: "A8UE8We3FiI",
     oneShotVideoId: "GjqU5RmLsCw",
   },
   "11/chemistry/4": {
+    notesPdf:
+      "/notes/class-11/chemistry/chemical-bonding-and-molecular-structure-notes.pdf",
     bookPdf:
       "/books/class-11/chemistry/chemical-bonding-and-molecular-structure.pdf",
     detailedVideoId: "VTFEPlwgqZY",
