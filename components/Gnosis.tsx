@@ -70,6 +70,25 @@ export default function Gnosis() {
   const [contentLoaded, setContentLoaded] = useState(false);
   const [mobile, setMobile] = useState(false);
   const [focus, setFocus] = useState(false);
+  const [preferencesNotice, setPreferencesNotice] = useState(0);
+  useEffect(() => {
+    if (view !== "dashboard") return;
+    try {
+      const savedAt = Number(
+        sessionStorage.getItem("gnosis:preferences-saved-at"),
+      );
+      sessionStorage.removeItem("gnosis:preferences-saved-at");
+      if (savedAt > 0 && Date.now() - savedAt < 10000)
+        setPreferencesNotice((n) => n + 1);
+    } catch {
+      // The redirect still works when temporary browser storage is unavailable.
+    }
+  }, [view]);
+  useEffect(() => {
+    if (!preferencesNotice) return;
+    const timer = setTimeout(() => setPreferencesNotice(0), 3000);
+    return () => clearTimeout(timer);
+  }, [preferencesNotice]);
   useEffect(() => {
     api("/api/content")
       .then(setLessons)
@@ -258,6 +277,16 @@ export default function Gnosis() {
               </button>
             </div>
           )}
+          {preferencesNotice > 0 && (
+            <div role="status" className="preferences-feedback is-saved">
+              <strong>Preferences saved successfully.</strong>
+              <span>
+                {user
+                  ? "Your changes are saved to your account."
+                  : "Your changes are saved on this browser."}
+              </span>
+            </div>
+          )}
           {!ready && (
             <div className="notice">
               {status}
@@ -273,7 +302,18 @@ export default function Gnosis() {
               onboarding={view === "onboarding"}
               saveStatus={status}
               demo={!user}
-              onDone={() => go("/dashboard")}
+              onDone={() => {
+                try {
+                  sessionStorage.setItem(
+                    "gnosis:preferences-saved-at",
+                    String(Date.now()),
+                  );
+                } catch {
+                  // Keep the in-memory confirmation if storage is unavailable.
+                }
+                setPreferencesNotice((n) => n + 1);
+                go("/dashboard");
+              }}
             />
           ) : view === "admin" ? (
             <Admin onPublished={() => api("/api/content").then(setLessons)} />
@@ -600,9 +640,9 @@ function Preferences({
       (saveStatus !== "Cloud saved" && saveStatus !== "Saved on this device")
     )
       return;
-    const timer = setTimeout(() => setSaved(false), 3000);
-    return () => clearTimeout(timer);
-  }, [saved, saveStatus]);
+    setSaved(false);
+    onDone();
+  }, [saved, saveStatus, onDone]);
   return (
     <section className="preferences">
       <div className="eyebrow">
@@ -620,7 +660,6 @@ function Preferences({
             profile: normalizeProfile({ ...p, courseSelected: true }),
           }));
           setSaved(true);
-          if (onboarding) onDone();
         }}
       >
         <label>
