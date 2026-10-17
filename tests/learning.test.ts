@@ -97,6 +97,12 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
     "-N7eYNzRMOM",
     "8hG2gbmf7sU",
   ];
+  const suppliedOneShotVideos = [
+    "v3rx_lBBvCk",
+    "joMDsZgx2a0",
+    "qN8pSP8o_uY",
+    "yjb5MgEkzic",
+  ];
   for (const className of ["11", "12"] as const) {
     subjectCatalog.forEach((subject, index) => {
       const chapters = chaptersFor(className, subject.id);
@@ -118,7 +124,9 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
           bookPdf,
           notesPdf,
           detailedVideoId,
-          oneShotVideoId: null,
+          oneShotVideoId: notesPdf
+            ? suppliedOneShotVideos[chapter.number - 1]
+            : null,
         });
         assert.equal(
           resourceLabel(className, subject.id, chapter.number, "notes"),

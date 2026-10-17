@@ -8,7 +8,7 @@ Target exam is derived automatically when selecting subjects and when existing p
 
 ## Content status
 
-Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Four supplied YouTube lectures are available in the Detailed sections for the same chapters. Other resources remain empty until supplied.
+Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Other resources remain empty until supplied.
 
 | Chapter                      | Supplied notes                      | Pages |
 | ---------------------------- | ----------------------------------- | ----- |
@@ -36,7 +36,7 @@ The four owner-supplied PDFs are copied unchanged to `public/books/class-11/phys
 
 ## Supplied detailed lectures
 
-The owner assigned these YouTube videos to **Class 11 → Physics → Detailed**, chapters 1–4. The chapter and format cards show availability from the resource manifest. One-shot slots remain empty. The videos are embedded on interaction using the existing player and include an Open on YouTube link. No transcript has been supplied, and no timestamp synchronization is claimed.
+The owner assigned these YouTube videos to **Class 11 → Physics → Detailed**, chapters 1–4. The chapter and format cards show availability from the resource manifest. The corresponding One-shot lectures are listed below. The videos are embedded on interaction using the existing player and include an Open on YouTube link. No transcript has been supplied, and no timestamp synchronization is claimed.
 
 | Chapter                      | Detailed video                              |
 | ---------------------------- | ------------------------------------------- |
@@ -44,6 +44,17 @@ The owner assigned these YouTube videos to **Class 11 → Physics → Detailed**
 | 2. Motion in a Straight Line | https://www.youtube.com/watch?v=LWeOOFvxrd0 |
 | 3. Motion in a Plane         | https://www.youtube.com/watch?v=-N7eYNzRMOM |
 | 4. Laws of Motion            | https://www.youtube.com/watch?v=8hG2gbmf7sU |
+
+## Supplied one-shot lectures
+
+The owner assigned these videos to **Class 11 → Physics → One-shot**, chapters 1–4. Each format card shows Video available and opens the matching player. Detailed lectures retain their separate video assignments.
+
+| Chapter                      | One-shot video                              |
+| ---------------------------- | ------------------------------------------- |
+| 1. Units and Measurements    | https://www.youtube.com/watch?v=v3rx_lBBvCk |
+| 2. Motion in a Straight Line | https://www.youtube.com/watch?v=joMDsZgx2a0 |
+| 3. Motion in a Plane         | https://www.youtube.com/watch?v=qN8pSP8o_uY |
+| 4. Laws of Motion            | https://www.youtube.com/watch?v=yjb5MgEkzic |
 
 ## Chapter references
 
