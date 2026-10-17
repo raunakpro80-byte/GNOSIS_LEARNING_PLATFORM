@@ -8,7 +8,7 @@ Target exam is derived automatically when selecting subjects and when existing p
 
 ## Content status
 
-Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Other resources remain empty until supplied.
+Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Other resources remain empty until supplied.
 
 | Chapter                      | Supplied notes                      | Pages |
 | ---------------------------- | ----------------------------------- | ----- |
@@ -78,9 +78,22 @@ These owner-supplied videos appear in **Class 11 → Chemistry → One-shot**, c
 | 3. Classification of Elements and Periodicity in Properties | https://www.youtube.com/watch?v=GjqU5RmLsCw |
 | 4. Chemical Bonding and Molecular Structure                 | https://www.youtube.com/watch?v=rhKGEM3w4qM |
 
+## Supplied Chemistry textbooks
+
+The six owner-supplied PDFs are copied unchanged to `public/books/class-11/chemistry/`. They appear under **Class 11 → NCERT Books → Chemistry**, chapters 1–6. Each chapter is marked PDF available and opens in the existing reader with page navigation, zoom and Open PDF.
+
+| Chapter                                                     | Supplied file | Pages |
+| ----------------------------------------------------------- | ------------- | ----- |
+| 1. Some Basic Concepts of Chemistry                         | ch 1.pdf      | 28    |
+| 2. Structure of Atom                                        | ch 2.pdf      | 45    |
+| 3. Classification of Elements and Periodicity in Properties | ch 3.pdf      | 26    |
+| 4. Chemical Bonding and Molecular Structure                 | ch 4.pdf      | 36    |
+| 5. Thermodynamics                                           | ch 5.pdf      | 32    |
+| 6. Equilibrium                                              | ch 6.pdf      | 53    |
+
 ## Chapter references
 
-Names and numbering follow the rationalised NCERT 2026–27 contents pages, checked October 17, 2026. These links are references for the chapter index; only the four owner-supplied chapters listed above are attached textbook files in the application. The index is not a claim of complete JEE/NEET examination syllabus coverage. A supplied book with different numbering should be reviewed before replacing the catalog.
+Names and numbering follow the rationalised NCERT 2026–27 contents pages, checked October 17, 2026. These links are references for the chapter index; the four Physics and six Chemistry owner-supplied chapters listed above are attached textbook files in the application. The index is not a claim of complete JEE/NEET examination syllabus coverage. A supplied book with different numbering should be reviewed before replacing the catalog.
 
 - Class 11 Physics: [Part I](https://ncert.nic.in/textbook/pdf/keph1ps.pdf), [Part II](https://ncert.nic.in/textbook/pdf/keph2ps.pdf).
 - Class 12 Physics: [Part I](https://ncert.nic.in/textbook/pdf/leph1ps.pdf), [Part II](https://ncert.nic.in/textbook/pdf/leph2ps.pdf).

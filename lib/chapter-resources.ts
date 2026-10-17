@@ -9,21 +9,29 @@ export type ChapterResources = {
 // Only owner-supplied media belongs here. Keys: class/subject/chapter number.
 export const chapterResources: Record<string, Partial<ChapterResources>> = {
   "11/chemistry/1": {
+    bookPdf: "/books/class-11/chemistry/some-basic-concepts-of-chemistry.pdf",
     detailedVideoId: "ZdzrnPawYf4",
     oneShotVideoId: "_9us2WJRL7E",
   },
   "11/chemistry/2": {
+    bookPdf: "/books/class-11/chemistry/structure-of-atom.pdf",
     detailedVideoId: "t0YvTa26TSs",
     oneShotVideoId: "Okl9bDM7xwg",
   },
   "11/chemistry/3": {
+    bookPdf:
+      "/books/class-11/chemistry/classification-of-elements-and-periodicity-in-properties.pdf",
     detailedVideoId: "A8UE8We3FiI",
     oneShotVideoId: "GjqU5RmLsCw",
   },
   "11/chemistry/4": {
+    bookPdf:
+      "/books/class-11/chemistry/chemical-bonding-and-molecular-structure.pdf",
     detailedVideoId: "VTFEPlwgqZY",
     oneShotVideoId: "rhKGEM3w4qM",
   },
+  "11/chemistry/5": { bookPdf: "/books/class-11/chemistry/thermodynamics.pdf" },
+  "11/chemistry/6": { bookPdf: "/books/class-11/chemistry/equilibrium.pdf" },
   "11/physics/1": {
     detailedVideoId: "Rcdf1W-0F_Q",
     oneShotVideoId: "v3rx_lBBvCk",

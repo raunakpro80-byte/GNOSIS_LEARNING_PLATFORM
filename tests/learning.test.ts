@@ -115,6 +115,14 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
     "GjqU5RmLsCw",
     "rhKGEM3w4qM",
   ];
+  const chemistryBooks = [
+    "some-basic-concepts-of-chemistry",
+    "structure-of-atom",
+    "classification-of-elements-and-periodicity-in-properties",
+    "chemical-bonding-and-molecular-structure",
+    "thermodynamics",
+    "equilibrium",
+  ];
   for (const className of ["11", "12"] as const) {
     subjectCatalog.forEach((subject, index) => {
       const chapters = chaptersFor(className, subject.id);
@@ -128,7 +136,13 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
           className === "11" && subject.id === "physics" && chapter.number <= 4
             ? `/notes/class-11/physics/${suppliedNotes[chapter.number - 1]}.pdf`
             : null;
-        const bookPdf = notesPdf?.replace("/notes/", "/books/") ?? null;
+        const bookPdf = notesPdf
+          ? notesPdf.replace("/notes/", "/books/")
+          : className === "11" &&
+              subject.id === "chemistry" &&
+              chapter.number <= 6
+            ? `/books/class-11/chemistry/${chemistryBooks[chapter.number - 1]}.pdf`
+            : null;
         const detailedVideoId = notesPdf
           ? suppliedDetailedVideos[chapter.number - 1]
           : className === "11" &&
