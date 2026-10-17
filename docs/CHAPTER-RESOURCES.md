@@ -8,7 +8,7 @@ Target exam is derived automatically when selecting subjects and when existing p
 
 ## Content status
 
-Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Four Chemistry notes PDFs are available for Class 11 chapters 1–4 (197 pages). Other resources remain empty until supplied.
+Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Four Chemistry notes PDFs are available for Class 11 chapters 1–4 (197 pages). Mathematics chapters 1–6 have supplied videos in both lecture formats, starting at 0:15. Other resources remain empty until supplied.
 
 | Chapter                      | Supplied notes                      | Pages |
 | ---------------------------- | ----------------------------------- | ----- |
@@ -116,6 +116,19 @@ These owner-supplied notes appear under **Class 11 → Notes → Chemistry**, ch
 | 4. Chemical Bonding and Molecular Structure                 | chemical-bonding-and-molecular-structure-notes.pdf                 | 87    |
 
 Files are stored in `public/notes/class-11/chemistry/`. Chapters 1, 2 and 4 retain the supplied PDF bytes. Chapter 3 uses a readable 180 DPI image-based web copy to fit the upload limit; all 63 pages and page sizes are retained. No marks inside the documents were edited.
+
+## Supplied Mathematics lectures
+
+The owner assigned the same video to both **Detailed** and **One-shot** for each Class 11 Mathematics chapter below. Every video starts at **0:15**, using `videoStartSeconds: 15` in the chapter manifest, the YouTube player start parameter and its initial seek. Open on YouTube includes `t=15s`. Students can still seek within the original video; no video is downloaded or edited. Other resources default to a zero-second start.
+
+| Chapter                                    | Detailed and One-shot video                       |
+| ------------------------------------------ | ------------------------------------------------- |
+| 1. Sets                                    | https://www.youtube.com/watch?v=S2o6x32xFys&t=15s |
+| 2. Relations and Functions                 | https://www.youtube.com/watch?v=834b8w2EKiA&t=15s |
+| 3. Trigonometric Functions                 | https://www.youtube.com/watch?v=_pNT2pCEEug&t=15s |
+| 4. Complex Numbers and Quadratic Equations | https://www.youtube.com/watch?v=XoPTYrhGdew&t=15s |
+| 5. Linear Inequalities                     | https://www.youtube.com/watch?v=otz_2spIgq8&t=15s |
+| 6. Permutations and Combinations           | https://www.youtube.com/watch?v=VXbKZURwYfU&t=15s |
 
 ## Chapter references
 

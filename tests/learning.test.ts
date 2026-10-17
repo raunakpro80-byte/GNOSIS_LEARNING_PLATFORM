@@ -131,6 +131,14 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
     "linear-inequalities",
     "permutations-and-combinations",
   ];
+  const mathematicsVideos = [
+    "S2o6x32xFys",
+    "834b8w2EKiA",
+    "_pNT2pCEEug",
+    "XoPTYrhGdew",
+    "otz_2spIgq8",
+    "VXbKZURwYfU",
+  ];
   for (const className of ["11", "12"] as const) {
     subjectCatalog.forEach((subject, index) => {
       const chapters = chaptersFor(className, subject.id);
@@ -140,6 +148,10 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
         Array.from({ length: chapters.length }, (_, i) => i + 1),
       );
       for (const chapter of chapters) {
+        const hasMathematicsVideo =
+          className === "11" &&
+          subject.id === "mathematics" &&
+          chapter.number <= 6;
         const hasPhysicsNotes =
           className === "11" && subject.id === "physics" && chapter.number <= 4;
         const notesPdf = hasPhysicsNotes
@@ -166,7 +178,9 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
               subject.id === "chemistry" &&
               chapter.number <= 4
             ? chemistryDetailedVideos[chapter.number - 1]
-            : null;
+            : hasMathematicsVideo
+              ? mathematicsVideos[chapter.number - 1]
+              : null;
         assert.deepEqual(resourcesFor(className, subject.id, chapter.number), {
           bookPdf,
           notesPdf,
@@ -177,7 +191,10 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
                 subject.id === "chemistry" &&
                 chapter.number <= 4
               ? chemistryOneShotVideos[chapter.number - 1]
-              : null,
+              : hasMathematicsVideo
+                ? mathematicsVideos[chapter.number - 1]
+                : null,
+          videoStartSeconds: hasMathematicsVideo ? 15 : 0,
         });
         assert.equal(
           resourceLabel(className, subject.id, chapter.number, "notes"),

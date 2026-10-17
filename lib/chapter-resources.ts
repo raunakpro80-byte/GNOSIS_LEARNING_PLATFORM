@@ -5,24 +5,45 @@ export type ChapterResources = {
   notesPdf: string | null;
   detailedVideoId: string | null;
   oneShotVideoId: string | null;
+  videoStartSeconds: number;
 };
 // Only owner-supplied media belongs here. Keys: class/subject/chapter number.
 export const chapterResources: Record<string, Partial<ChapterResources>> = {
-  "11/mathematics/1": { bookPdf: "/books/class-11/mathematics/sets.pdf" },
+  "11/mathematics/1": {
+    bookPdf: "/books/class-11/mathematics/sets.pdf",
+    detailedVideoId: "S2o6x32xFys",
+    oneShotVideoId: "S2o6x32xFys",
+    videoStartSeconds: 15,
+  },
   "11/mathematics/2": {
+    detailedVideoId: "834b8w2EKiA",
+    oneShotVideoId: "834b8w2EKiA",
+    videoStartSeconds: 15,
     bookPdf: "/books/class-11/mathematics/relations-and-functions.pdf",
   },
   "11/mathematics/3": {
+    detailedVideoId: "_pNT2pCEEug",
+    oneShotVideoId: "_pNT2pCEEug",
+    videoStartSeconds: 15,
     bookPdf: "/books/class-11/mathematics/trigonometric-functions.pdf",
   },
   "11/mathematics/4": {
+    detailedVideoId: "XoPTYrhGdew",
+    oneShotVideoId: "XoPTYrhGdew",
+    videoStartSeconds: 15,
     bookPdf:
       "/books/class-11/mathematics/complex-numbers-and-quadratic-equations.pdf",
   },
   "11/mathematics/5": {
+    detailedVideoId: "otz_2spIgq8",
+    oneShotVideoId: "otz_2spIgq8",
+    videoStartSeconds: 15,
     bookPdf: "/books/class-11/mathematics/linear-inequalities.pdf",
   },
   "11/mathematics/6": {
+    detailedVideoId: "VXbKZURwYfU",
+    oneShotVideoId: "VXbKZURwYfU",
+    videoStartSeconds: 15,
     bookPdf: "/books/class-11/mathematics/permutations-and-combinations.pdf",
   },
   "11/chemistry/1": {
@@ -108,6 +129,7 @@ export function resourcesFor(
     notesPdf: null,
     detailedVideoId: null,
     oneShotVideoId: null,
+    videoStartSeconds: 0,
   };
   if (!chaptersFor(className, subject).some((c) => c.number === chapter))
     return empty;

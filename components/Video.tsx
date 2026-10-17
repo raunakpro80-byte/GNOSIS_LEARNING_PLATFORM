@@ -76,7 +76,12 @@ export default function Video({
         player.current = new window.YT.Player(target, {
           videoId,
           host: "https://www.youtube-nocookie.com",
-          playerVars: { origin: location.origin, playsinline: 1, rel: 0 },
+          playerVars: {
+            origin: location.origin,
+            playsinline: 1,
+            rel: 0,
+            start: Math.max(0, Math.floor(start.current)),
+          },
           events: {
             onReady: () => {
               player.current?.seekTo(start.current, true);
@@ -177,7 +182,7 @@ export default function Video({
       )}
       <a
         className="small external"
-        href={`https://www.youtube.com/watch?v=${videoId}`}
+        href={`https://www.youtube.com/watch?v=${videoId}${initial > 0 ? `&t=${Math.floor(initial)}s` : ""}`}
         target="_blank"
         rel="noreferrer"
       >

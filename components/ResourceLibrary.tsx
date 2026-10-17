@@ -365,7 +365,7 @@ export default function ResourceLibrary({
                 <Video
                   key={`${profile.className}/${subject.id}/${chapter.number}/${format}`}
                   videoId={videoId}
-                  initial={0}
+                  initial={resources?.videoStartSeconds ?? 0}
                   seek={null}
                   onTime={() => {}}
                 />
