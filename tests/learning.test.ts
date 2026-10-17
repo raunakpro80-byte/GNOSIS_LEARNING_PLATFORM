@@ -104,8 +104,9 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
           className === "11" && subject.id === "physics" && chapter.number <= 4
             ? `/notes/class-11/physics/${suppliedNotes[chapter.number - 1]}.pdf`
             : null;
+        const bookPdf = notesPdf?.replace("/notes/", "/books/") ?? null;
         assert.deepEqual(resourcesFor(className, subject.id, chapter.number), {
-          bookPdf: null,
+          bookPdf,
           notesPdf,
           detailedVideoId: null,
           oneShotVideoId: null,
@@ -114,9 +115,13 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
           resourceLabel(className, subject.id, chapter.number, "notes"),
           notesPdf ? "Notes available" : "Notes coming soon",
         );
-        if (notesPdf)
+        assert.equal(
+          resourceLabel(className, subject.id, chapter.number, "books"),
+          bookPdf ? "PDF available" : "PDF coming soon",
+        );
+        for (const pdf of [notesPdf, bookPdf].filter(Boolean))
           assert.equal(
-            readFileSync(new URL(`../public${notesPdf}`, import.meta.url))
+            readFileSync(new URL(`../public${pdf}`, import.meta.url))
               .subarray(0, 5)
               .toString(),
             "%PDF-",

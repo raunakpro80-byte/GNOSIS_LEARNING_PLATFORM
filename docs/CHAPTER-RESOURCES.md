@@ -8,7 +8,7 @@ Target exam is derived automatically when selecting subjects and when existing p
 
 ## Content status
 
-Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Other notes, textbooks and lecture videos remain empty until supplied.
+Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Other notes, textbooks and lecture videos remain empty until supplied.
 
 | Chapter                      | Supplied notes                      | Pages |
 | ---------------------------- | ----------------------------------- | ----- |
@@ -23,9 +23,20 @@ The previously approved Ohm’s Law demonstration remains a separate legacy less
 
 When the owner supplies files, add the approved PDFs to `public/` (or use reviewed HTTPS PDF URLs) and fill `lib/chapter-resources.ts`. The key is `class/subject/chapter`, for example `11/physics/1`. Set `bookPdf` and `notesPdf` to the supplied file paths, and `detailedVideoId` and `oneShotVideoId` to the supplied YouTube video IDs. Leave absent resources null. The library has PDF and video viewers ready for those values; an absent value always renders an honest empty section. Never put secrets in this public manifest. Full-book PDFs would need splitting into chapters or an explicit page mapping before being treated as chapter PDFs.
 
+## Supplied textbook chapters
+
+The four owner-supplied PDFs are copied unchanged to `public/books/class-11/physics/`. They are separate from the handwritten notes and retain their original searchable text, diagrams and pages. The chapter list shows **PDF available**; each chapter opens in the existing PDF reader.
+
+| Chapter                      | Supplied file     | Pages |
+| ---------------------------- | ----------------- | ----- |
+| 1. Units and Measurements    | class 11 ch 1.pdf | 12    |
+| 2. Motion in a Straight Line | ch 2.pdf          | 14    |
+| 3. Motion in a Plane         | ch 3.pdf          | 22    |
+| 4. Laws of Motion            | ch 4.pdf          | 22    |
+
 ## Chapter references
 
-Names and numbering follow the rationalised NCERT 2026–27 contents pages, checked October 17, 2026. These links are references for the chapter index; they are not attached textbook files in the application. The index is not a claim of complete JEE/NEET examination syllabus coverage. A supplied book with different numbering should be reviewed before replacing the catalog.
+Names and numbering follow the rationalised NCERT 2026–27 contents pages, checked October 17, 2026. These links are references for the chapter index; only the four owner-supplied chapters listed above are attached textbook files in the application. The index is not a claim of complete JEE/NEET examination syllabus coverage. A supplied book with different numbering should be reviewed before replacing the catalog.
 
 - Class 11 Physics: [Part I](https://ncert.nic.in/textbook/pdf/keph1ps.pdf), [Part II](https://ncert.nic.in/textbook/pdf/keph2ps.pdf).
 - Class 12 Physics: [Part I](https://ncert.nic.in/textbook/pdf/leph1ps.pdf), [Part II](https://ncert.nic.in/textbook/pdf/leph2ps.pdf).
