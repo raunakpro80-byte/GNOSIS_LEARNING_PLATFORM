@@ -8,7 +8,7 @@ Target exam is derived automatically when selecting subjects and when existing p
 
 ## Content status
 
-Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Other resources remain empty until supplied.
+Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Other resources remain empty until supplied.
 
 | Chapter                      | Supplied notes                      | Pages |
 | ---------------------------- | ----------------------------------- | ----- |
@@ -91,9 +91,22 @@ The six owner-supplied PDFs are copied unchanged to `public/books/class-11/chemi
 | 5. Thermodynamics                                           | ch 5.pdf      | 32    |
 | 6. Equilibrium                                              | ch 6.pdf      | 53    |
 
+## Supplied Mathematics textbooks
+
+The six owner-supplied PDFs are copied unchanged to `public/books/class-11/mathematics/`. They appear under **Class 11 → NCERT Books → Mathematics**, chapters 1–6, when Mathematics is selected in Preferences. Each chapter is marked PDF available and opens in the reader with page navigation, zoom and Open PDF.
+
+| Chapter                                    | Supplied file | Pages |
+| ------------------------------------------ | ------------- | ----- |
+| 1. Sets                                    | mch 1.pdf     | 23    |
+| 2. Relations and Functions                 | mch 2.pdf     | 19    |
+| 3. Trigonometric Functions                 | mch 3.pdf     | 33    |
+| 4. Complex Numbers and Quadratic Equations | mch4.pdf      | 13    |
+| 5. Linear Inequalities                     | mch 5.pdf     | 11    |
+| 6. Permutations and Combinations           | mch 6.pdf     | 26    |
+
 ## Chapter references
 
-Names and numbering follow the rationalised NCERT 2026–27 contents pages, checked October 17, 2026. These links are references for the chapter index; the four Physics and six Chemistry owner-supplied chapters listed above are attached textbook files in the application. The index is not a claim of complete JEE/NEET examination syllabus coverage. A supplied book with different numbering should be reviewed before replacing the catalog.
+Names and numbering follow the rationalised NCERT 2026–27 contents pages, checked October 17, 2026. These links are references for the chapter index; the four Physics, six Chemistry and six Mathematics owner-supplied chapters listed above are attached textbook files in the application. The index is not a claim of complete JEE/NEET examination syllabus coverage. A supplied book with different numbering should be reviewed before replacing the catalog.
 
 - Class 11 Physics: [Part I](https://ncert.nic.in/textbook/pdf/keph1ps.pdf), [Part II](https://ncert.nic.in/textbook/pdf/keph2ps.pdf).
 - Class 12 Physics: [Part I](https://ncert.nic.in/textbook/pdf/leph1ps.pdf), [Part II](https://ncert.nic.in/textbook/pdf/leph2ps.pdf).

@@ -8,6 +8,23 @@ export type ChapterResources = {
 };
 // Only owner-supplied media belongs here. Keys: class/subject/chapter number.
 export const chapterResources: Record<string, Partial<ChapterResources>> = {
+  "11/mathematics/1": { bookPdf: "/books/class-11/mathematics/sets.pdf" },
+  "11/mathematics/2": {
+    bookPdf: "/books/class-11/mathematics/relations-and-functions.pdf",
+  },
+  "11/mathematics/3": {
+    bookPdf: "/books/class-11/mathematics/trigonometric-functions.pdf",
+  },
+  "11/mathematics/4": {
+    bookPdf:
+      "/books/class-11/mathematics/complex-numbers-and-quadratic-equations.pdf",
+  },
+  "11/mathematics/5": {
+    bookPdf: "/books/class-11/mathematics/linear-inequalities.pdf",
+  },
+  "11/mathematics/6": {
+    bookPdf: "/books/class-11/mathematics/permutations-and-combinations.pdf",
+  },
   "11/chemistry/1": {
     bookPdf: "/books/class-11/chemistry/some-basic-concepts-of-chemistry.pdf",
     detailedVideoId: "ZdzrnPawYf4",
