@@ -8,7 +8,7 @@ Target exam is derived automatically when selecting subjects and when existing p
 
 ## Content status
 
-Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Four Chemistry notes PDFs are available for Class 11 chapters 1–4 (197 pages). Mathematics chapters 1–6 have supplied videos in both lecture formats, starting at 0:15. Mathematics chapters 1–5 have supplied notes PDFs (76 pages). Biology chapters 1–8 have supplied videos in both lecture formats. Biology chapters 1–5 and 7–9 have supplied notes PDFs (161 pages). Other resources remain empty until supplied.
+Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Four Chemistry notes PDFs are available for Class 11 chapters 1–4 (197 pages). Mathematics chapters 1–6 have supplied videos in both lecture formats, starting at 0:15. Mathematics chapters 1–5 have supplied notes PDFs (76 pages). Biology chapters 1–8 have supplied videos in both lecture formats. Biology chapters 1–5 and 7–9 have supplied notes PDFs (161 pages). Biology chapters 1–8 have supplied textbook PDFs (103 pages). Other resources remain empty until supplied.
 
 | Chapter                      | Supplied notes                      | Pages |
 | ---------------------------- | ----------------------------------- | ----- |
@@ -172,9 +172,24 @@ The eight owner-supplied PDFs are copied unchanged to `public/notes/class-11/bio
 | 8. Cell: The Unit of Life             | cell-the-unit-of-life-notes.pdf              | 23    |
 | 9. Biomolecules                       | biomolecules-notes.pdf                       | 23    |
 
+## Supplied Biology textbooks
+
+The eight owner-supplied PDFs are copied unchanged to `public/books/class-11/biology/` using chapter filenames. They appear under **Class 11 → NCERT Books → Biology**, chapters 1–8, when Biology is selected. Each chapter is marked PDF available and opens in the reader. Supplied unit-opening pages are retained in chapters 1, 5 and 8.
+
+| Chapter                               | Supplied file | Pages |
+| ------------------------------------- | ------------- | ----- |
+| 1. The Living World                   | bch 1.pdf     | 9     |
+| 2. Biological Classification          | bch 2.pdf     | 13    |
+| 3. Plant Kingdom                      | bch 3.pdf     | 14    |
+| 4. Animal Kingdom                     | bch 4.pdf     | 18    |
+| 5. Morphology of Flowering Plants     | bch 5.pdf     | 16    |
+| 6. Anatomy of Flowering Plants        | bch 6.pdf     | 8     |
+| 7. Structural Organisation in Animals | bch 7.pdf     | 6     |
+| 8. Cell: The Unit of Life             | bch 8.pdf     | 19    |
+
 ## Chapter references
 
-Names and numbering follow the rationalised NCERT 2026–27 contents pages, checked October 17, 2026. These links are references for the chapter index; the four Physics, six Chemistry and six Mathematics owner-supplied chapters listed above are attached textbook files in the application. The index is not a claim of complete JEE/NEET examination syllabus coverage. A supplied book with different numbering should be reviewed before replacing the catalog.
+Names and numbering follow the rationalised NCERT 2026–27 contents pages, checked October 17, 2026. These links are references for the chapter index; the four Physics, six Chemistry, six Mathematics and eight Biology owner-supplied chapters listed above are attached textbook files in the application. The index is not a claim of complete JEE/NEET examination syllabus coverage. A supplied book with different numbering should be reviewed before replacing the catalog.
 
 - Class 11 Physics: [Part I](https://ncert.nic.in/textbook/pdf/keph1ps.pdf), [Part II](https://ncert.nic.in/textbook/pdf/keph2ps.pdf).
 - Class 12 Physics: [Part I](https://ncert.nic.in/textbook/pdf/leph1ps.pdf), [Part II](https://ncert.nic.in/textbook/pdf/leph2ps.pdf).

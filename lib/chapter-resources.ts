@@ -10,42 +10,50 @@ export type ChapterResources = {
 // Only owner-supplied media belongs here. Keys: class/subject/chapter number.
 export const chapterResources: Record<string, Partial<ChapterResources>> = {
   "11/biology/1": {
+    bookPdf: "/books/class-11/biology/the-living-world.pdf",
     notesPdf: "/notes/class-11/biology/the-living-world-notes.pdf",
     detailedVideoId: "Lsrc3RsmRR4",
     oneShotVideoId: "Lsrc3RsmRR4",
   },
   "11/biology/2": {
+    bookPdf: "/books/class-11/biology/biological-classification.pdf",
     notesPdf: "/notes/class-11/biology/biological-classification-notes.pdf",
     detailedVideoId: "mJe-aqB17rI",
     oneShotVideoId: "mJe-aqB17rI",
   },
   "11/biology/3": {
+    bookPdf: "/books/class-11/biology/plant-kingdom.pdf",
     notesPdf: "/notes/class-11/biology/plant-kingdom-notes.pdf",
     detailedVideoId: "sQEAsqgOME8",
     oneShotVideoId: "sQEAsqgOME8",
   },
   "11/biology/4": {
+    bookPdf: "/books/class-11/biology/animal-kingdom.pdf",
     notesPdf: "/notes/class-11/biology/animal-kingdom-notes.pdf",
     detailedVideoId: "P0eGiGPSwgc",
     oneShotVideoId: "P0eGiGPSwgc",
   },
   "11/biology/5": {
+    bookPdf: "/books/class-11/biology/morphology-of-flowering-plants.pdf",
     notesPdf:
       "/notes/class-11/biology/morphology-of-flowering-plants-notes.pdf",
     detailedVideoId: "oH5of1D4PlU",
     oneShotVideoId: "oH5of1D4PlU",
   },
   "11/biology/6": {
+    bookPdf: "/books/class-11/biology/anatomy-of-flowering-plants.pdf",
     detailedVideoId: "J3VM-fXrYf4",
     oneShotVideoId: "J3VM-fXrYf4",
   },
   "11/biology/7": {
+    bookPdf: "/books/class-11/biology/structural-organisation-in-animals.pdf",
     notesPdf:
       "/notes/class-11/biology/structural-organisation-in-animals-notes.pdf",
     detailedVideoId: "4bDQJZN5MX8",
     oneShotVideoId: "4bDQJZN5MX8",
   },
   "11/biology/8": {
+    bookPdf: "/books/class-11/biology/cell-the-unit-of-life.pdf",
     notesPdf: "/notes/class-11/biology/cell-the-unit-of-life-notes.pdf",
     detailedVideoId: "rdmJ4mAERe8",
     oneShotVideoId: "rdmJ4mAERe8",

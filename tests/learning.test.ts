@@ -159,6 +159,16 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
     8: "cell-the-unit-of-life",
     9: "biomolecules",
   };
+  const biologyBooks = [
+    "the-living-world",
+    "biological-classification",
+    "plant-kingdom",
+    "animal-kingdom",
+    "morphology-of-flowering-plants",
+    "anatomy-of-flowering-plants",
+    "structural-organisation-in-animals",
+    "cell-the-unit-of-life",
+  ];
   for (const className of ["11", "12"] as const) {
     subjectCatalog.forEach((subject, index) => {
       const chapters = chaptersFor(className, subject.id);
@@ -201,7 +211,11 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
                 subject.id === "mathematics" &&
                 chapter.number <= 6
               ? `/books/class-11/mathematics/${mathematicsBooks[chapter.number - 1]}.pdf`
-              : null;
+              : className === "11" &&
+                  subject.id === "biology" &&
+                  chapter.number <= 8
+                ? `/books/class-11/biology/${biologyBooks[chapter.number - 1]}.pdf`
+                : null;
         const detailedVideoId = hasPhysicsNotes
           ? suppliedDetailedVideos[chapter.number - 1]
           : className === "11" &&
