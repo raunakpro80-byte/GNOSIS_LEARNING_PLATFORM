@@ -139,6 +139,16 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
     "otz_2spIgq8",
     "VXbKZURwYfU",
   ];
+  const biologyVideos = [
+    "Lsrc3RsmRR4",
+    "mJe-aqB17rI",
+    "sQEAsqgOME8",
+    "P0eGiGPSwgc",
+    "oH5of1D4PlU",
+    "J3VM-fXrYf4",
+    "4bDQJZN5MX8",
+    "rdmJ4mAERe8",
+  ];
   for (const className of ["11", "12"] as const) {
     subjectCatalog.forEach((subject, index) => {
       const chapters = chaptersFor(className, subject.id);
@@ -148,6 +158,8 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
         Array.from({ length: chapters.length }, (_, i) => i + 1),
       );
       for (const chapter of chapters) {
+        const hasBiologyVideo =
+          className === "11" && subject.id === "biology" && chapter.number <= 8;
         const hasMathematicsVideo =
           className === "11" &&
           subject.id === "mathematics" &&
@@ -184,7 +196,9 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
             ? chemistryDetailedVideos[chapter.number - 1]
             : hasMathematicsVideo
               ? mathematicsVideos[chapter.number - 1]
-              : null;
+              : hasBiologyVideo
+                ? biologyVideos[chapter.number - 1]
+                : null;
         assert.deepEqual(resourcesFor(className, subject.id, chapter.number), {
           bookPdf,
           notesPdf,
@@ -197,7 +211,9 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
               ? chemistryOneShotVideos[chapter.number - 1]
               : hasMathematicsVideo
                 ? mathematicsVideos[chapter.number - 1]
-                : null,
+                : hasBiologyVideo
+                  ? biologyVideos[chapter.number - 1]
+                  : null,
           videoStartSeconds: hasMathematicsVideo ? 15 : 0,
         });
         assert.equal(

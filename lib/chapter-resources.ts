@@ -9,6 +9,38 @@ export type ChapterResources = {
 };
 // Only owner-supplied media belongs here. Keys: class/subject/chapter number.
 export const chapterResources: Record<string, Partial<ChapterResources>> = {
+  "11/biology/1": {
+    detailedVideoId: "Lsrc3RsmRR4",
+    oneShotVideoId: "Lsrc3RsmRR4",
+  },
+  "11/biology/2": {
+    detailedVideoId: "mJe-aqB17rI",
+    oneShotVideoId: "mJe-aqB17rI",
+  },
+  "11/biology/3": {
+    detailedVideoId: "sQEAsqgOME8",
+    oneShotVideoId: "sQEAsqgOME8",
+  },
+  "11/biology/4": {
+    detailedVideoId: "P0eGiGPSwgc",
+    oneShotVideoId: "P0eGiGPSwgc",
+  },
+  "11/biology/5": {
+    detailedVideoId: "oH5of1D4PlU",
+    oneShotVideoId: "oH5of1D4PlU",
+  },
+  "11/biology/6": {
+    detailedVideoId: "J3VM-fXrYf4",
+    oneShotVideoId: "J3VM-fXrYf4",
+  },
+  "11/biology/7": {
+    detailedVideoId: "4bDQJZN5MX8",
+    oneShotVideoId: "4bDQJZN5MX8",
+  },
+  "11/biology/8": {
+    detailedVideoId: "rdmJ4mAERe8",
+    oneShotVideoId: "rdmJ4mAERe8",
+  },
   "11/mathematics/1": {
     notesPdf: "/notes/class-11/mathematics/sets-notes.pdf",
     bookPdf: "/books/class-11/mathematics/sets.pdf",

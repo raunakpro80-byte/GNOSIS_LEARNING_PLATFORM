@@ -8,7 +8,7 @@ Target exam is derived automatically when selecting subjects and when existing p
 
 ## Content status
 
-Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Four Chemistry notes PDFs are available for Class 11 chapters 1–4 (197 pages). Mathematics chapters 1–6 have supplied videos in both lecture formats, starting at 0:15. Mathematics chapters 1–5 have supplied notes PDFs (76 pages). Other resources remain empty until supplied.
+Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Four Chemistry notes PDFs are available for Class 11 chapters 1–4 (197 pages). Mathematics chapters 1–6 have supplied videos in both lecture formats, starting at 0:15. Mathematics chapters 1–5 have supplied notes PDFs (76 pages). Biology chapters 1–8 have supplied videos in both lecture formats. Other resources remain empty until supplied.
 
 | Chapter                      | Supplied notes                      | Pages |
 | ---------------------------- | ----------------------------------- | ----- |
@@ -141,6 +141,21 @@ The five owner-supplied PDFs are copied unchanged to `public/notes/class-11/math
 | 3. Trigonometric Functions                 | trigonometric-functions-notes.pdf                 | 13    |
 | 4. Complex Numbers and Quadratic Equations | complex-numbers-and-quadratic-equations-notes.pdf | 36    |
 | 5. Linear Inequalities                     | linear-inequalities-notes.pdf                     | 6     |
+
+## Supplied Biology lectures
+
+Each owner-supplied video below appears in both **Detailed** and **One-shot** for the corresponding Class 11 Biology chapter. These resources follow saved subject selection and are available when Biology is chosen. They start at the beginning. The supplied links are used as provided; no additional parts or transcript synchronization are implied.
+
+| Chapter                               | Detailed and One-shot video                 |
+| ------------------------------------- | ------------------------------------------- |
+| 1. The Living World                   | https://www.youtube.com/watch?v=Lsrc3RsmRR4 |
+| 2. Biological Classification          | https://www.youtube.com/watch?v=mJe-aqB17rI |
+| 3. Plant Kingdom                      | https://www.youtube.com/watch?v=sQEAsqgOME8 |
+| 4. Animal Kingdom                     | https://www.youtube.com/watch?v=P0eGiGPSwgc |
+| 5. Morphology of Flowering Plants     | https://www.youtube.com/watch?v=oH5of1D4PlU |
+| 6. Anatomy of Flowering Plants        | https://www.youtube.com/watch?v=J3VM-fXrYf4 |
+| 7. Structural Organisation in Animals | https://www.youtube.com/watch?v=4bDQJZN5MX8 |
+| 8. Cell: The Unit of Life             | https://www.youtube.com/watch?v=rdmJ4mAERe8 |
 
 ## Chapter references
 
