@@ -206,8 +206,12 @@ export default function Gnosis() {
             <Menu size={21} />
           </button>
           <span className="topbar-course">
-            Class {state.profile.className}
-            <span> · {state.profile.exam}</span>
+            {ready && state.profile.courseSelected && (
+              <>
+                Class {state.profile.className}
+                <span> · {state.profile.exam}</span>
+              </>
+            )}
           </span>
           <div className="top-actions">
             <button
@@ -611,7 +615,10 @@ function Preferences({
         onChange={() => setSaved(false)}
         onSubmit={(e) => {
           e.preventDefault();
-          update((s) => ({ ...s, profile: normalizeProfile(p) }));
+          update((s) => ({
+            ...s,
+            profile: normalizeProfile({ ...p, courseSelected: true }),
+          }));
           setSaved(true);
           if (onboarding) onDone();
         }}

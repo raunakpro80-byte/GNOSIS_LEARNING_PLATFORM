@@ -71,6 +71,7 @@ export const stateSchema = z.object({
   activityDays: z.array(z.iso.date()).max(3660).default([]),
   studySeconds: z.record(z.iso.date(), z.number().min(0).max(60)).default({}),
   profile: z.object({
+    courseSelected: z.boolean().default(false),
     name: z.string().max(100),
     className: z.string().max(20),
     exam: z.string().max(50),

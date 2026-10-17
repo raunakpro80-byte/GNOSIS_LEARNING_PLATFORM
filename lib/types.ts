@@ -46,6 +46,7 @@ export type PublicLesson = Omit<Lesson, "questions"> & {
   questions: Omit<Question, "correct" | "explanation">[];
 };
 export type Profile = {
+  courseSelected?: boolean;
   name: string;
   className: string;
   exam: string;
@@ -99,6 +100,7 @@ export const emptyState = (): LearningState => ({
   activityDays: [],
   studySeconds: {},
   profile: {
+    courseSelected: false,
     name: "",
     className: "12",
     exam: "Boards",
