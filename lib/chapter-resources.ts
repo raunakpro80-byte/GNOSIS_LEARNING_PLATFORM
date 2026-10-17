@@ -10,24 +10,29 @@ export type ChapterResources = {
 // Only owner-supplied media belongs here. Keys: class/subject/chapter number.
 export const chapterResources: Record<string, Partial<ChapterResources>> = {
   "11/mathematics/1": {
+    notesPdf: "/notes/class-11/mathematics/sets-notes.pdf",
     bookPdf: "/books/class-11/mathematics/sets.pdf",
     detailedVideoId: "S2o6x32xFys",
     oneShotVideoId: "S2o6x32xFys",
     videoStartSeconds: 15,
   },
   "11/mathematics/2": {
+    notesPdf: "/notes/class-11/mathematics/relations-and-functions-notes.pdf",
     detailedVideoId: "834b8w2EKiA",
     oneShotVideoId: "834b8w2EKiA",
     videoStartSeconds: 15,
     bookPdf: "/books/class-11/mathematics/relations-and-functions.pdf",
   },
   "11/mathematics/3": {
+    notesPdf: "/notes/class-11/mathematics/trigonometric-functions-notes.pdf",
     detailedVideoId: "_pNT2pCEEug",
     oneShotVideoId: "_pNT2pCEEug",
     videoStartSeconds: 15,
     bookPdf: "/books/class-11/mathematics/trigonometric-functions.pdf",
   },
   "11/mathematics/4": {
+    notesPdf:
+      "/notes/class-11/mathematics/complex-numbers-and-quadratic-equations-notes.pdf",
     detailedVideoId: "XoPTYrhGdew",
     oneShotVideoId: "XoPTYrhGdew",
     videoStartSeconds: 15,
@@ -35,6 +40,7 @@ export const chapterResources: Record<string, Partial<ChapterResources>> = {
       "/books/class-11/mathematics/complex-numbers-and-quadratic-equations.pdf",
   },
   "11/mathematics/5": {
+    notesPdf: "/notes/class-11/mathematics/linear-inequalities-notes.pdf",
     detailedVideoId: "otz_2spIgq8",
     oneShotVideoId: "otz_2spIgq8",
     videoStartSeconds: 15,

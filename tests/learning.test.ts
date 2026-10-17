@@ -160,7 +160,11 @@ test("chapter libraries have class-specific numbering and no unsupplied media", 
               subject.id === "chemistry" &&
               chapter.number <= 4
             ? `/notes/class-11/chemistry/${chemistryBooks[chapter.number - 1]}-notes.pdf`
-            : null;
+            : className === "11" &&
+                subject.id === "mathematics" &&
+                chapter.number <= 5
+              ? `/notes/class-11/mathematics/${mathematicsBooks[chapter.number - 1]}-notes.pdf`
+              : null;
         const bookPdf = hasPhysicsNotes
           ? `/books/class-11/physics/${suppliedNotes[chapter.number - 1]}.pdf`
           : className === "11" &&

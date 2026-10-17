@@ -8,7 +8,7 @@ Target exam is derived automatically when selecting subjects and when existing p
 
 ## Content status
 
-Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Four Chemistry notes PDFs are available for Class 11 chapters 1–4 (197 pages). Mathematics chapters 1–6 have supplied videos in both lecture formats, starting at 0:15. Other resources remain empty until supplied.
+Four owner-supplied notes PDFs are available in **Class 11 → Physics → Notes**. The chapter list marks these notes as available. Four textbook chapter PDFs are also available under **Class 11 → NCERT Books → Physics**. Eight supplied YouTube lectures are available in the Detailed and One-shot sections for the same chapters. Class 11 Chemistry chapters 1–4 also have supplied Detailed and One-shot lectures. Six Chemistry textbook PDFs are available for Class 11 chapters 1–6 (220 pages). Six Mathematics textbook PDFs are available for Class 11 chapters 1–6 (125 pages). Four Chemistry notes PDFs are available for Class 11 chapters 1–4 (197 pages). Mathematics chapters 1–6 have supplied videos in both lecture formats, starting at 0:15. Mathematics chapters 1–5 have supplied notes PDFs (76 pages). Other resources remain empty until supplied.
 
 | Chapter                      | Supplied notes                      | Pages |
 | ---------------------------- | ----------------------------------- | ----- |
@@ -129,6 +129,18 @@ The owner assigned the same video to both **Detailed** and **One-shot** for each
 | 4. Complex Numbers and Quadratic Equations | https://www.youtube.com/watch?v=XoPTYrhGdew&t=15s |
 | 5. Linear Inequalities                     | https://www.youtube.com/watch?v=otz_2spIgq8&t=15s |
 | 6. Permutations and Combinations           | https://www.youtube.com/watch?v=VXbKZURwYfU&t=15s |
+
+## Supplied Mathematics notes
+
+The five owner-supplied PDFs are copied unchanged to `public/notes/class-11/mathematics/` using clean chapter filenames. They appear under **Class 11 → Notes → Mathematics**, chapters 1–5, when Mathematics is selected. The supplied order is matched by topic: Linear Inequalities belongs to chapter 5, and Trigonometric Functions belongs to chapter 3.
+
+| Chapter                                    | Public filename                                   | Pages |
+| ------------------------------------------ | ------------------------------------------------- | ----- |
+| 1. Sets                                    | sets-notes.pdf                                    | 7     |
+| 2. Relations and Functions                 | relations-and-functions-notes.pdf                 | 14    |
+| 3. Trigonometric Functions                 | trigonometric-functions-notes.pdf                 | 13    |
+| 4. Complex Numbers and Quadratic Equations | complex-numbers-and-quadratic-equations-notes.pdf | 36    |
+| 5. Linear Inequalities                     | linear-inequalities-notes.pdf                     | 6     |
 
 ## Chapter references
 
