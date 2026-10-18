@@ -18,6 +18,7 @@ import type {
   PublicMockQuestion,
 } from "@/lib/mock-types";
 import { mockChapterKey } from "@/lib/mock-types";
+import { requestPracticePreview } from "@/lib/mock-practice-client";
 import {
   mockCountsByDifficulty,
   mockDuration,
@@ -42,7 +43,7 @@ class MockRequestError extends Error {
     super(message);
   }
 }
-async function requestMock<T>(
+async function requestApprovedMock<T>(
   url: string,
   token?: string,
   method = "GET",
@@ -135,9 +136,20 @@ function readRecovery(key: string): Recovery | null {
   return data;
 }
 
-export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
+export default function ChapterMockTest({
+  chapter,
+  practicePreview = false,
+}: {
+  chapter: MockChapter;
+  practicePreview?: boolean;
+}) {
+  const requestMock = practicePreview
+    ? requestPracticePreview
+    : requestApprovedMock;
   const key = mockChapterKey(chapter),
-    storageKey = `gnosis:mock:v1:${key}`;
+    storageKey = practicePreview
+      ? `gnosis:practice-preview:v1:${key}`
+      : `gnosis:mock:v1:${key}`;
   const [catalog, setCatalog] = useState<MockCatalog | null>(null);
   const [attempt, setAttempt] = useState<PublicMockAttempt | null>(null);
   const [answers, setAnswers] = useState<MockAnswers>({});
@@ -256,7 +268,9 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
           );
           setStatus(
             restored.result
-              ? "Result saved on the local practice server"
+              ? practicePreview
+                ? "Practice result restored from this browser"
+                : "Result saved on the local practice server"
               : "Test restored. The timer continued while you were away.",
           );
         }
@@ -270,7 +284,14 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
     return () => {
       alive = false;
     };
-  }, [chapter.className, chapter.subject, chapter.chapter, storageKey, accept]);
+  }, [
+    chapter.className,
+    chapter.subject,
+    chapter.chapter,
+    storageKey,
+    accept,
+    practicePreview,
+  ]);
   useEffect(() => {
     if (!attempt || !tokenRef.current) return;
     try {
@@ -287,7 +308,9 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
       );
     } catch {
       setStorageWarning(
-        "Browser recovery storage is unavailable. Keep this tab open; your responses can still save to the local practice server.",
+        practicePreview
+          ? "Browser storage is unavailable. Keep this tab open; this preview cannot recover after closing or refreshing."
+          : "Browser recovery storage is unavailable. Keep this tab open; your responses can still save to the local practice server.",
       );
     }
   }, [attempt, answers, marked, index, storageKey]);
@@ -301,7 +324,9 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
           return current;
         if (conflictRef.current && operation !== "read")
           throw new Error(
-            "Reload the server-saved test to resolve the other-tab change.",
+            practicePreview
+              ? "Reload browser-saved responses to resolve the other-tab change."
+              : "Reload the server-saved test to resolve the other-tab change.",
           );
         try {
           const next = await requestMock<PublicMockAttempt>(
@@ -327,26 +352,34 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
           )
             throw new MockRequestError(
               409,
-              "This test changed in another tab. Reload the server-saved responses.",
+              practicePreview
+                ? "This preview changed in another tab. Reload browser-saved responses."
+                : "This test changed in another tab. Reload the server-saved responses.",
             );
           accept(next);
           if (operation === "read" && !next.result) autoFired.current = false;
           if (mounted.current) {
             setStatus(
               next.result
-                ? "Result saved on the local practice server"
-                : "Responses saved to the local practice server",
+                ? practicePreview
+                  ? "Practice result saved in this browser"
+                  : "Result saved on the local practice server"
+                : practicePreview
+                  ? "Responses saved in this browser"
+                  : "Responses saved to the local practice server",
             );
             setError("");
           }
           return next;
         } catch (e) {
-          if (e instanceof MockRequestError && e.status === 409)
+          if ((e as { status?: number }).status === 409)
             conflictRef.current = true;
           if (mounted.current) {
             setError((e as Error).message);
             setStatus(
-              "Not saved to the server. Browser recovery data is kept where available.",
+              practicePreview
+                ? "Grading could not be completed. Browser responses are kept where storage is available; reconnect and retry."
+                : "Not saved to the server. Browser recovery data is kept where available.",
             );
           }
           throw e;
@@ -356,10 +389,18 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
       queue.current = pending;
       return pending;
     },
-    [accept],
+    [accept, practicePreview],
   );
   const sendRef = useRef(send);
   sendRef.current = send;
+  useEffect(() => {
+    if (!practicePreview) return;
+    const online = () => {
+      void sendRef.current("read").catch(() => {});
+    };
+    window.addEventListener("online", online);
+    return () => window.removeEventListener("online", online);
+  }, [practicePreview]);
   useEffect(() => {
     if (!attempt || attempt.result) return;
     const timeout = setTimeout(() => {
@@ -460,7 +501,11 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
       setAnswers(restored.answers);
       accept(restored);
       setError("");
-      setStatus("Loaded server-saved responses.");
+      setStatus(
+        practicePreview
+          ? "Loaded browser-saved responses."
+          : "Loaded server-saved responses.",
+      );
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -536,13 +581,16 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
       <div className="section-heading">
         <div>
           <div className="eyebrow">Chapter practice</div>
-          <h2 id="mock-heading">Chapter mock test</h2>
+          <h2 id="mock-heading">
+            {practicePreview ? "Practice Preview" : "Chapter mock test"}
+          </h2>
         </div>
         <span className="small muted">Guest practice · No sign-in</span>
       </div>
       <p className="mock-storage-note">
-        Browser recovery + local practice server. No cloud account storage. Keep
-        your browser data to resume this attempt.
+        {practicePreview
+          ? "Practice Preview — Questions Pending Academic Review. Attempts are stored only in this browser. Clearing browser data removes attempts. Server-side grading is used, but this temporary preview is not cheating-resistant or exam-grade storage."
+          : "Browser recovery + local practice server. No cloud account storage. Keep your browser data to resume this attempt."}
       </p>
       {attempt?.developmentSample && (
         <p className="notice">
@@ -586,7 +634,8 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
                   </button>
                   {conflictRef.current && (
                     <button onClick={reloadSaved} disabled={busy}>
-                      Reload server-saved responses
+                      Reload {practicePreview ? "browser" : "server"}-saved
+                      responses
                     </button>
                   )}
                 </>
@@ -601,6 +650,7 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
           )}
           {attempt?.result ? (
             <MockResults
+              practicePreview={practicePreview}
               result={attempt.result}
               difficulty={attempt.config.difficulty}
               onRetry={() => retry()}
@@ -854,9 +904,9 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
                 </div>
               )}
               <p className="mock-deadline-note">
-                The server enforces the deadline. At expiry, the last
-                server-saved responses are graded. Refreshing or leaving this
-                page does not pause the test.
+                {practicePreview
+                  ? "The practice timer continues after refresh. At expiry, browser-saved responses are submitted for grading when connected. This local timer is for practice, not a secure examination deadline."
+                  : "The server enforces the deadline. At expiry, the last server-saved responses are graded. Refreshing or leaving this page does not pause the test."}
               </p>
             </>
           ) : catalog ? (
@@ -874,11 +924,31 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
               </p>
               <p
                 className="mock-intro"
-                aria-label="Approved questions available"
+                aria-label={
+                  practicePreview
+                    ? "Draft practice questions available"
+                    : "Approved questions available"
+                }
               >
-                Approved questions: Easy {catalog.approvedCounts.easy} · Medium{" "}
-                {catalog.approvedCounts.medium} · Hard{" "}
-                {catalog.approvedCounts.hard}.
+                {practicePreview
+                  ? "Draft practice questions"
+                  : "Approved questions"}
+                : Easy{" "}
+                {
+                  (practicePreview ? catalog.counts : catalog.approvedCounts)
+                    .easy
+                }{" "}
+                · Medium{" "}
+                {
+                  (practicePreview ? catalog.counts : catalog.approvedCounts)
+                    .medium
+                }{" "}
+                · Hard{" "}
+                {
+                  (practicePreview ? catalog.counts : catalog.approvedCounts)
+                    .hard
+                }
+                .
                 {catalog.developmentSample &&
                   " Development samples are listed separately and do not count as approved."}
               </p>
@@ -900,8 +970,13 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
                           : level === "medium"
                             ? "Medium"
                             : "Hard"}{" "}
-                        ({catalog.approvedCounts[level]} approved
-                        {catalog.counts[level] > catalog.approvedCounts[level]
+                        (
+                        {practicePreview
+                          ? catalog.counts[level]
+                          : catalog.approvedCounts[level]}{" "}
+                        {practicePreview ? "drafts" : "approved"}
+                        {!practicePreview &&
+                        catalog.counts[level] > catalog.approvedCounts[level]
                           ? ` + ${catalog.counts[level] - catalog.approvedCounts[level]} development samples`
                           : ""}
                         )
@@ -933,7 +1008,11 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
                   disabled={busy || !sizes.includes(count)}
                   onClick={start}
                 >
-                  {busy ? "Starting…" : "Start test"}
+                  {busy
+                    ? "Starting…"
+                    : practicePreview
+                      ? "Start Practice Preview"
+                      : "Start test"}
                   <ArrowRight size={16} />
                 </button>
               </div>
@@ -948,7 +1027,10 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
                       : "Coming soon — no mock test available yet"}
                   </h3>
                   <p>
-                    {catalog.approvedCounts[difficulty]} approved {difficulty}{" "}
+                    {practicePreview
+                      ? catalog.counts[difficulty]
+                      : catalog.approvedCounts[difficulty]}{" "}
+                    {practicePreview ? "draft" : "approved"} {difficulty}{" "}
                     questions. At least {count} in the same difficulty are
                     required. This combination is unavailable; other chapter
                     resources remain accessible.
@@ -966,16 +1048,18 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
                   GNOSIS practice timings, not official examination timings.
                 </li>
                 <li>
-                  The timer starts when you press Start test. Refreshing does
-                  not pause or reset it.
+                  The timer starts when you press{" "}
+                  {practicePreview ? "Start Practice Preview" : "Start test"}.
+                  Refreshing does not pause or reset it.
                 </li>
                 <li>
                   Use the palette, Previous/Next, Clear response and Mark for
                   review. Marked answers are still graded.
                 </li>
                 <li>
-                  Submission is final. At expiry, the last server-saved
-                  responses are submitted automatically.
+                  {practicePreview
+                    ? "At expiry, the last browser-saved responses are submitted when connected. Clearing browser data removes recovery and results."
+                    : "Submission is final. At expiry, the last server-saved responses are submitted automatically."}
                 </li>
               </ul>
               <p className="mock-deadline-note">
@@ -990,11 +1074,13 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
   );
 }
 function MockResults({
+  practicePreview = false,
   result,
   onRetry,
   difficulty,
   onNextDifficulty,
 }: {
+  practicePreview?: boolean;
   result: MockResult;
   difficulty: Difficulty;
   onRetry: () => void;
@@ -1022,9 +1108,13 @@ function MockResults({
           </h3>
           <p>
             {result.reason === "expired"
-              ? "Time expired. Last server-saved responses were submitted automatically."
+              ? practicePreview
+                ? "Time expired. Browser-saved responses were submitted for grading."
+                : "Time expired. Last server-saved responses were submitted automatically."
               : "Your test was submitted."}{" "}
-            Results are saved on this local practice server.
+            {practicePreview
+              ? "Practice Preview — Questions Pending Academic Review. Results are stored only in this browser; clearing browser data removes them."
+              : "Results are saved on this local practice server."}
           </p>
         </div>
         <button className="subtle-button" onClick={onRetry}>
