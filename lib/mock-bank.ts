@@ -10,6 +10,8 @@ import {
 import { chapterTitle } from "./mock-schema";
 import { mockCountsByDifficulty } from "./mock-policy";
 import { chaptersFor, subjectCatalog } from "./curriculum";
+import { applyMockReviews } from "./mock-review";
+import { mockDatabaseConfigured, readMockReviews } from "./mock-database";
 export const mockBankDirectory = () =>
   path.resolve(
     process.env.GNOSIS_MOCK_BANK_DIR ||
@@ -18,7 +20,7 @@ export const mockBankDirectory = () =>
 export class MockBankUnavailableError extends Error {
   constructor(cause: unknown) {
     super(
-      "Chapter tests are temporarily unavailable because the question bank could not be validated. Please try again after the content is corrected. Your other learning resources remain available.",
+      "Chapter tests are temporarily unavailable because question content or its review storage could not be validated. The owner should check the bank, Supabase settings and mock database migration. Your other learning resources remain available.",
       { cause },
     );
     this.name = "MockBankUnavailableError";
@@ -60,7 +62,7 @@ function countsFor(questions: MockQuestion[]): MockCatalog["counts"] {
   };
 }
 export async function verifiedChapterQuestions(chapter: MockChapter) {
-  return chapterQuestions(chapter, await readMockBank()).filter(
+  return chapterQuestions(chapter, await reviewedMockBank()).filter(
     eligibleQuestion,
   );
 }
@@ -96,11 +98,11 @@ export function mockCatalogFromBank(
       ]),
     ) as MockCatalog["sizes"],
     developmentSample: questions.some((q) => q.developmentSample),
-    storage: "local-server",
+    storage: mockDatabaseConfigured() ? "supabase" : "local-server",
   };
 }
 export async function curriculumMockCatalog(): Promise<MockCatalog[]> {
-  const bank = await readMockBank();
+  const bank = await reviewedMockBank();
   return (["11", "12"] as const).flatMap((className) =>
     subjectCatalog.flatMap((subject) =>
       chaptersFor(className, subject.id).map((chapter) =>
@@ -113,5 +115,14 @@ export async function curriculumMockCatalog(): Promise<MockCatalog[]> {
   );
 }
 export async function mockCatalog(chapter: MockChapter): Promise<MockCatalog> {
-  return mockCatalogFromBank(chapter, await readMockBank());
+  return mockCatalogFromBank(chapter, await reviewedMockBank());
+}
+async function reviewedMockBank() {
+  const bank = await readMockBank();
+  if (!mockDatabaseConfigured()) return bank;
+  try {
+    return applyMockReviews(bank, await readMockReviews());
+  } catch (cause) {
+    throw new MockBankUnavailableError(cause);
+  }
 }

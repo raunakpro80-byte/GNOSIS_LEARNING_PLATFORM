@@ -17,7 +17,25 @@ import {
 import { HttpError } from "./server";
 import type { MockAttempt } from "./mock-types";
 import { mockAttemptStorageIssue } from "./mock-hosting";
-const store = new FileMockAttemptStore();
+import {
+  mockDatabaseConfigured,
+  SupabaseMockAttemptStore,
+} from "./mock-database";
+function attemptStore() {
+  const issue = mockAttemptStorageIssue();
+  if (issue) throw new HttpError(503, issue);
+  return mockDatabaseConfigured()
+    ? new SupabaseMockAttemptStore()
+    : new FileMockAttemptStore();
+}
+function storageLabel<T extends { storage: "local-server" | "supabase" }>(
+  value: T,
+): T {
+  return {
+    ...value,
+    storage: mockDatabaseConfigured() ? "supabase" : "local-server",
+  };
+}
 const hash = (secret: string) =>
   createHash("sha256").update(secret).digest("hex");
 export async function startMock(data: unknown) {
@@ -52,8 +70,17 @@ export async function startMock(data: unknown) {
     answers: {},
     result: null,
   };
-  await store.create(attempt);
-  return { token: `${id}.${secret}`, attempt: publicMockAttempt(attempt, now) };
+  try {
+    await attemptStore().create(attempt);
+  } catch (error) {
+    if (error instanceof MockTransitionError)
+      throw new HttpError(error.status, error.message);
+    throw error;
+  }
+  return {
+    token: `${id}.${secret}`,
+    attempt: storageLabel(publicMockAttempt(attempt, now)),
+  };
 }
 export async function accessMock(
   id: string,
@@ -70,7 +97,7 @@ export async function accessMock(
       "This guest test cannot be opened without its recovery token. Start a new test if browser data was cleared.",
     );
   try {
-    return await store.transaction(id, (attempt) => {
+    const result = await attemptStore().transaction(id, (attempt) => {
       const candidate = Buffer.from(hash(token[2]), "hex"),
         expected = Buffer.from(attempt.tokenHash, "hex");
       if (
@@ -80,6 +107,7 @@ export async function accessMock(
         throw new HttpError(401, "Guest test token is invalid.");
       return transitionMockAttempt(attempt, Date.now(), operation, body);
     });
+    return storageLabel(result);
   } catch (error) {
     if (error instanceof MockTransitionError)
       throw new HttpError(error.status, error.message);

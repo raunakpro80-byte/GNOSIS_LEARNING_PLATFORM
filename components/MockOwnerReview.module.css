@@ -1,0 +1,62 @@
+.review {
+  max-width: 920px;
+  margin: auto;
+  padding: 32px 20px;
+  line-height: 1.65;
+}
+.review h1,
+.review h2,
+.review h3 {
+  line-height: 1.4;
+}
+.review h2 {
+  font-size: 1.25rem;
+  white-space: pre-wrap;
+}
+.review button,
+.review select,
+.review textarea {
+  font: inherit;
+  padding: 8px 12px;
+  border: 1px solid #8886a7;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+}
+.review button {
+  cursor: pointer;
+}
+.review button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.review label {
+  display: block;
+  margin: 12px 0;
+}
+.review input {
+  margin-right: 10px;
+}
+.review textarea {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+}
+.review fieldset {
+  margin: 24px 0;
+}
+.review pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 0.85rem;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+.solution {
+  white-space: pre-wrap;
+}

@@ -256,7 +256,7 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
           );
           setStatus(
             restored.result
-              ? "Result saved on the local practice server"
+              ? "Result saved on the practice server"
               : "Test restored. The timer continued while you were away.",
           );
         }
@@ -287,7 +287,7 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
       );
     } catch {
       setStorageWarning(
-        "Browser recovery storage is unavailable. Keep this tab open; your responses can still save to the local practice server.",
+        "Browser recovery storage is unavailable. Keep this tab open; your responses can still save to the practice server.",
       );
     }
   }, [attempt, answers, marked, index, storageKey]);
@@ -334,8 +334,8 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
           if (mounted.current) {
             setStatus(
               next.result
-                ? "Result saved on the local practice server"
-                : "Responses saved to the local practice server",
+                ? "Result saved on the practice server"
+                : "Responses saved to the practice server",
             );
             setError("");
           }
@@ -541,8 +541,9 @@ export default function ChapterMockTest({ chapter }: { chapter: MockChapter }) {
         <span className="small muted">Guest practice · No sign-in</span>
       </div>
       <p className="mock-storage-note">
-        Browser recovery + local practice server. No cloud account storage. Keep
-        your browser data to resume this attempt.
+        {(attempt?.storage ?? catalog?.storage) === "supabase"
+          ? "Guest responses are stored in Supabase on the server. Keep this browser's recovery data to reopen your private attempt; there is no account sync."
+          : "Browser recovery + local practice server. Keep your browser data to resume. Local server data does not persist across Vercel instances."}
       </p>
       {attempt?.developmentSample && (
         <p className="notice">
@@ -1024,7 +1025,8 @@ function MockResults({
             {result.reason === "expired"
               ? "Time expired. Last server-saved responses were submitted automatically."
               : "Your test was submitted."}{" "}
-            Results are saved on this local practice server.
+            Results are saved on the practice server. Keep your private browser
+            recovery data to reopen this guest attempt.
           </p>
         </div>
         <button className="subtle-button" onClick={onRetry}>

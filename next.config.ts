@@ -8,6 +8,11 @@ const config: NextConfig = {
     "/mock-tests/class-11/physics/*": ["./content/mock-questions/**/*.json"],
     "/api/mock-tests": ["./content/mock-questions/**/*.json"],
     "/api/mock-tests/*": ["./content/mock-questions/**/*.json"],
+    "/api/mock-tests/review": [
+      "./content/mock-questions/**/*.json",
+      "./docs/question-banks/*review.json",
+      "./docs/question-banks/11-physics-1-curation.json",
+    ],
   },
   outputFileTracingExcludes: {
     "*": ["./.gnosis-mock-data/**/*", "./tmp/**/*"],

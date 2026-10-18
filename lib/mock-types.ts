@@ -38,7 +38,7 @@ export type MockCatalog = {
   draftCounts: Record<Difficulty | "all", number>;
   sizes: Record<Difficulty, number[]>;
   developmentSample: boolean;
-  storage: "local-server";
+  storage: "local-server" | "supabase";
 };
 export type MockResultItem = {
   question: PublicMockQuestion;
@@ -99,7 +99,7 @@ export type PublicMockAttempt = {
   questions: PublicMockQuestion[];
   answers: MockAnswers;
   result: MockResult | null;
-  storage: "local-server";
+  storage: "local-server" | "supabase";
   developmentSample: boolean;
 };
 export function mockChapterKey(c: MockChapter) {
