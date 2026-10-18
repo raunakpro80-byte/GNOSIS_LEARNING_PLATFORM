@@ -22,21 +22,21 @@ export default function StreakCard({ state }: { state: LearningState }) {
           <Flame size={27} />
         </span>
         <div>
-          <span className="eyebrow">A LITTLE EVERY DAY</span>
+          <span className="eyebrow">Study activity</span>
           <h2>
             {streak.current} day{streak.current === 1 ? "" : "s"}{" "}
             <span>study streak</span>
           </h2>
           <p>
             {streak.studiedToday
-              ? "Today counts. Keep your curiosity going."
+              ? "You’ve earned today’s study day."
               : streak.current
-                ? "Your streak is still alive. Make time for a little study today."
-                : "Your next small step starts a new streak."}
+                ? "Study today to keep your streak going."
+                : "Complete a study activity to start your streak."}
           </p>
         </div>
         <span className="pill">
-          BEST · {streak.best} DAY{streak.best === 1 ? "" : "S"}
+          Best: {streak.best} day{streak.best === 1 ? "" : "s"}
         </span>
       </div>
       <div

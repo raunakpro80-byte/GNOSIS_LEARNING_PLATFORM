@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-001",
+      "topic": "SI base units",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A sample contains a specified amount of substance. Which SI base unit is used for this quantity?",
+      "options": ["kilogram", "kelvin", "mole", "candela"],
+      "correct": 2,
+      "explanation": "Amount of substance is an SI base quantity with unit mole (mol). Kilogram measures mass, kelvin temperature and candela luminous intensity.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-002",
+      "topic": "Dimensions of density",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A uniform sample has mass m and volume V. Using density ρ = m/V, select the dimensional formula of ρ.",
+      "options": ["[M L^-3]", "[M L^3]", "[M L^-2]", "[M^-1 L^3]"],
+      "correct": 0,
+      "explanation": "Mass has dimension M and volume has dimension L^3. Dividing gives [ρ] = M/L^3 = M L^-3. Its SI unit is kg m^-3.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-003",
+      "topic": "Dimensions of momentum",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Linear momentum is defined by p = mv, where m is mass and v is velocity. What are the dimensions of p?",
+      "options": ["[M L T^-2]", "[L T^-1]", "[M L^2 T^-2]", "[M L T^-1]"],
+      "correct": 3,
+      "explanation": "Velocity has dimensions L T^-1. Thus [p] = [m][v] = M L T^-1, corresponding to the SI unit kg m s^-1.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-004",
+      "topic": "Dimensions of acceleration",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Acceleration measures the change in velocity per unit time. Which dimensional formula follows from this definition?",
+      "options": ["[L T^-1]", "[L T^-2]", "[L^2 T^-2]", "[T^-2]"],
+      "correct": 1,
+      "explanation": "Velocity has dimensions L T^-1. Dividing a velocity change by a time interval gives L T^-1/T = L T^-2. The SI unit is m s^-2.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-005",
+      "topic": "Dimensions of a force constant",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A spring obeys F = kx, where F is force and x is extension. If [F] = M L T^-2, what are the dimensions of k?",
+      "options": ["[M L T^-2]", "[M L^2 T^-2]", "[M T^-2]", "[M T^-1]"],
+      "correct": 2,
+      "explanation": "Rearrange the defining relation to k = F/x. Therefore [k] = (M L T^-2)/L = M T^-2. The SI unit N m^-1 equals kg s^-2.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-006",
+      "topic": "Dimensions of specific energy",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Specific energy means energy divided by mass. Given [energy] = M L^2 T^-2, which formula represents specific energy?",
+      "options": ["[M^2 L^2 T^-2]", "[M L T^-2]", "[L T^-1]", "[L^2 T^-2]"],
+      "correct": 3,
+      "explanation": "Divide the energy dimensions by M: (M L^2 T^-2)/M = L^2 T^-2. Hence J kg^-1 is equivalent to m^2 s^-2.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-007",
+      "topic": "Dimensionless quantities",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A plane angle in radians is the arc length divided by the radius of the circle. What follows about its dimensions?",
+      "options": [
+        "It is dimensionless, with the special SI unit name radian.",
+        "It has the dimension of length.",
+        "It has the dimension of area.",
+        "It has the dimension of inverse length."
+      ],
+      "correct": 0,
+      "explanation": "Both arc length and radius have dimension L, so their ratio has dimension L/L = 1. A plane angle is dimensionless; radian (rad) is its special SI unit name.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-008",
+      "topic": "Dimensional homogeneity",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Let x be a length, v a velocity and t a time. Which addition is dimensionally meaningful?",
+      "options": ["x + v", "x + vt", "v + t", "x + t"],
+      "correct": 1,
+      "explanation": "Quantities can be added only when their dimensions agree. The product vt has dimensions (L T^-1)T = L, matching x. Every other listed sum combines different dimensions.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-009",
+      "topic": "Limits of dimensional analysis",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Even after dimensional analysis fixes every power of the variables in a proposed relation, which item cannot be obtained by that method alone?",
+      "options": [
+        "The fixed power of mass",
+        "The fixed power of length",
+        "The fixed power of time",
+        "A pure numerical multiplier"
+      ],
+      "correct": 3,
+      "explanation": "A pure number has no dimensions. Multiplying a dimensionally consistent expression by any dimensionless numerical factor leaves its dimensions unchanged, so dimensional analysis alone cannot fix that factor.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-010",
+      "topic": "SI prefixes",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "An electronic timer records a delay of 3.2 μs. What is this delay in seconds?",
+      "options": [
+        "3.2 × 10^-3 s",
+        "3.2 × 10^6 s",
+        "3.2 × 10^-6 s",
+        "3.2 × 10^-9 s"
+      ],
+      "correct": 2,
+      "explanation": "The prefix micro (μ) denotes 10^-6. Therefore 3.2 μs = 3.2 × 10^-6 s. The time dimension is unchanged by the unit conversion.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-011",
+      "topic": "Conversion of volume units",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A small liquid sample occupies 2.5 cm^3. Express this volume in m^3.",
+      "options": [
+        "2.5 × 10^-2 m^3",
+        "2.5 × 10^-6 m^3",
+        "2.5 × 10^-4 m^3",
+        "2.5 × 10^6 m^3"
+      ],
+      "correct": 1,
+      "explanation": "Since 1 cm = 10^-2 m, cubing gives 1 cm^3 = (10^-2)^3 m^3 = 10^-6 m^3. Thus the volume is 2.5 × 10^-6 m^3.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-012",
+      "topic": "Counting significant figures",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A measured length is written as 0.005060 m. How many significant figures are stated?",
+      "options": ["4", "2", "3", "1"],
+      "correct": 0,
+      "explanation": "The zeros before 5 locate the decimal point and are not significant. The four significant digits are 5, the zero between 5 and 6, 6, and the final zero after the decimal point.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-013",
+      "topic": "Significant figures in addition",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Two measured lengths, 12.34 cm and 1.2 cm, are added. Using the usual decimal-place rule for addition, how should the sum be reported?",
+      "options": ["13.54 cm", "13.540 cm", "13.5 cm", "14 cm"],
+      "correct": 2,
+      "explanation": "The unrounded sum is 13.54 cm. The least precise input is stated to one decimal place, so the sum must be rounded to one decimal place: 13.5 cm.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-014",
+      "topic": "Vernier least count",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "For a direct vernier, one main-scale division is 1.0 mm and one vernier-scale division is 0.9 mm. What is its least count?",
+      "options": ["1.9 mm", "0.9 mm", "1.0 mm", "0.1 mm"],
+      "correct": 3,
+      "explanation": "For this direct vernier, least count = one main-scale division minus one vernier-scale division = 1.0 − 0.9 = 0.1 mm.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-015",
+      "topic": "Percentage uncertainty",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A length is reported as (50.0 ± 0.5) cm. What is the percentage uncertainty, using the quoted absolute uncertainty?",
+      "options": ["1%", "0.5%", "0.1%", "10%"],
+      "correct": 0,
+      "explanation": "Percentage uncertainty = (absolute uncertainty/measured value) × 100% = (0.5/50.0) × 100% = 1%. The centimetre units cancel in the ratio.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-016",
+      "topic": "Interpreting a quoted uncertainty",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A reported length is (2.40 ± 0.02) m. Which interval is represented by this quoted uncertainty?",
+      "options": [
+        "2.20 m to 2.60 m",
+        "2.38 m to 2.42 m",
+        "2.39 m to 2.41 m",
+        "2.40 m to 2.42 m"
+      ],
+      "correct": 1,
+      "explanation": "Subtract and add the quoted uncertainty: 2.40 − 0.02 = 2.38 m and 2.40 + 0.02 = 2.42 m. This states the reported interval; it does not assert a confidence level or guarantee the true value lies inside it.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-017",
+      "topic": "Zero-error correction",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A length instrument reads +0.03 cm when it should read zero. It later indicates 1.28 cm for an object. What is the zero-corrected length?",
+      "options": ["1.25 cm", "1.28 cm", "0.03 cm", "1.31 cm"],
+      "correct": 0,
+      "explanation": "A positive zero error makes the indicated length too large. Corrected reading = indicated reading − zero error = 1.28 − 0.03 = 1.25 cm.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-018",
+      "topic": "Units versus dimensions",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A fixed rod is described first in metres and then in centimetres. Which statement is correct?",
+      "options": [
+        "Its physical length becomes 100 times larger.",
+        "Its dimensions change from L to L^2.",
+        "Its numerical value becomes 100 times larger, while its dimensions remain L.",
+        "Its numerical value and unit both remain unchanged."
+      ],
+      "correct": 2,
+      "explanation": "The rod itself does not change. Because 1 m = 100 cm, its numerical value is multiplied by 100 when expressed in centimetres. Both units describe the same length dimension L.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-019",
+      "topic": "Accuracy and precision",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Repeated readings from an instrument are tightly clustered but noticeably displaced from a certified reference value. Which description best fits these readings?",
+      "options": [
+        "High accuracy and high precision",
+        "Low accuracy and high precision",
+        "High accuracy and low precision",
+        "Low accuracy and low precision"
+      ],
+      "correct": 1,
+      "explanation": "Tight clustering indicates high precision, or repeatability. A noticeable offset from the certified reference indicates low accuracy relative to that reference. Precision alone does not establish accuracy.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-easy-020",
+      "topic": "Base quantities in mechanics",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "In the standard M–L–T description of mechanics, which base quantity completes mass and length?",
+      "options": ["Force", "Velocity", "Acceleration", "Time"],
+      "correct": 3,
+      "explanation": "The mechanical base quantities in the M–L–T system are mass, length and time. Force, velocity and acceleration are derived from these base quantities.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author arithmetic, dimensional and option-uniqueness checks completed. Independent academic review and publication approval pending."
+      }
+    }
+  ]
+}

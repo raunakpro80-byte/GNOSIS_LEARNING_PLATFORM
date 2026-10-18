@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "id": "example-units-001",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "topic": "SI units",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Which option is the SI base unit of length?",
+      "options": ["metre", "centimetre", "kilometre", "millimetre"],
+      "correct": 0,
+      "explanation": "The metre is the SI base unit of length. The other choices are decimal multiples or submultiples.",
+      "source": { "kind": "original", "label": "GNOSIS import format example" },
+      "verification": {
+        "status": "draft",
+        "method": "Awaiting subject review. This example is not published."
+      }
+    }
+  ]
+}

@@ -3,6 +3,15 @@ const config: NextConfig = {
   distDir: process.env.NODE_ENV === "development" ? ".next-dev" : ".next",
   poweredByHeader: false,
   serverExternalPackages: ["pdfjs-dist"],
+  outputFileTracingIncludes: {
+    "/mock-tests/class-11/physics": ["./content/mock-questions/**/*.json"],
+    "/mock-tests/class-11/physics/*": ["./content/mock-questions/**/*.json"],
+    "/api/mock-tests": ["./content/mock-questions/**/*.json"],
+    "/api/mock-tests/*": ["./content/mock-questions/**/*.json"],
+  },
+  outputFileTracingExcludes: {
+    "*": ["./.gnosis-mock-data/**/*", "./tmp/**/*"],
+  },
   async headers() {
     return [
       {

@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "notImported": true,
+  "academicApproval": "pending",
+  "proposals": [
+    {
+      "targetId": "GNO-PHY11-C04-M-004",
+      "notImported": true,
+      "proposedQuestion": {
+        "className": "11",
+        "subject": "physics",
+        "chapter": 4,
+        "id": "GNO-PHY11-C04-M-004",
+        "topic": "Kinetic friction",
+        "type": "single",
+        "difficulty": "medium",
+        "prompt": "A 4 kg block is already sliding RIGHT on a horizontal floor. A horizontal26 N force pulls RIGHT. With kinetic friction coefficient0.25 and g=10 m/s², find its instantaneous signed acceleration (right positive).",
+        "options": ["4 m/s²", "6.5 m/s²", "9 m/s²", "2.5 m/s²"],
+        "correct": 0,
+        "explanation": "Normal force N = mg = 40 N. Kinetic friction = 0.25 × 40 = 10 N. Net force = 26 − 10 = 16 N, so a = 16/4 = 4 m/s².",
+        "source": {
+          "kind": "original",
+          "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+          "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+        },
+        "verification": {
+          "status": "draft",
+          "method": "Proposed editorial revision only; independently recalculated by assistant, not academically approved and NOT imported."
+        }
+      }
+    },
+    {
+      "targetId": "GNO-PHY11-C04-M-012",
+      "notImported": true,
+      "proposedQuestion": {
+        "className": "11",
+        "subject": "physics",
+        "chapter": 4,
+        "id": "GNO-PHY11-C04-M-012",
+        "topic": "Pull with friction and changed normal",
+        "type": "single",
+        "difficulty": "medium",
+        "prompt": "A 5 kg box is already sliding RIGHT on a floor and is pulled right by25 N at37° above horizontal. With sin37°=0.6,cos37°=0.8,mu_k=0.2 and g=10 m/s², find its horizontal acceleration. The box remains in contact with the floor.",
+        "options": ["2.6 m/s²", "3.6 m/s²", "4.0 m/s²", "5.0 m/s²"],
+        "correct": 0,
+        "explanation": "Upward component = 15 N, so N = 50 − 15 = 35 N. Friction = 0.2 × 35 = 7 N. Horizontal component = 20 N; net = 13 N, so a = 13/5 = 2.6 m/s².",
+        "source": {
+          "kind": "original",
+          "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+          "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+        },
+        "verification": {
+          "status": "draft",
+          "method": "Proposed editorial revision only; independently recalculated by assistant, not academically approved and NOT imported."
+        }
+      }
+    },
+    {
+      "targetId": "GNO-PHY11-C04-H-001",
+      "notImported": true,
+      "proposedQuestion": {
+        "className": "11",
+        "subject": "physics",
+        "chapter": 4,
+        "id": "GNO-PHY11-C04-H-001",
+        "topic": "Unequal friction and contact force",
+        "type": "single",
+        "difficulty": "hard",
+        "prompt": "Blocks A (4 kg) and B (6 kg) are already sliding RIGHT together in contact on a horizontal floor, with A to the left of B. A horizontal50 N force pushes A RIGHT. Kinetic friction coefficients are0.1 for A and0.3 for B; g=10 m/s². Find the compressive contact force on B.",
+        "options": ["28.0 N", "16.8 N", "34.8 N", "50.0 N"],
+        "correct": 2,
+        "explanation": "Friction forces are 0.1(4)(10)=4 N and 0.3(6)(10)=18 N. System acceleration = (50−4−18)/(4+6)=2.8 m/s². On B, contact −18 =6(2.8), so contact = 34.8 N.",
+        "source": {
+          "kind": "original",
+          "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+          "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+        },
+        "verification": {
+          "status": "draft",
+          "method": "Proposed editorial revision only; independently recalculated by assistant, not academically approved and NOT imported."
+        }
+      }
+    },
+    {
+      "targetId": "GNO-PHY11-C04-H-022",
+      "notImported": true,
+      "proposedQuestion": {
+        "className": "11",
+        "subject": "physics",
+        "chapter": 4,
+        "id": "GNO-PHY11-C04-H-022",
+        "topic": "Powered motion followed by friction-only stopping",
+        "type": "single",
+        "difficulty": "hard",
+        "prompt": "A 4 kg block initially rests on a horizontal surface with mu_s=0.5,mu_k=0.25. A horizontal30 N force acts RIGHT for4 s and is then removed. With g=10 m/s², find the total distance travelled before it stops. Assume enough surface length.",
+        "options": ["80 m", "40 m", "160 m", "120 m"],
+        "correct": 3,
+        "explanation": "N=40 N; maximum static friction20 N<30 N, so rightward breakaway is guaranteed. Sliding friction10 N gives a=5 m/s² for4 s, v=20 m/s and path40 m. After removal, a=-2.5 m/s² until stop, adding400/5=80 m. Total120 m; it then remains at rest.",
+        "source": {
+          "kind": "original",
+          "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+          "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+        },
+        "verification": {
+          "status": "draft",
+          "method": "Proposed editorial revision only; independently recalculated by assistant, not academically approved and NOT imported."
+        }
+      }
+    },
+    {
+      "targetId": "GNO-PHY11-C04-H-026",
+      "notImported": true,
+      "proposedQuestion": {
+        "className": "11",
+        "subject": "physics",
+        "chapter": 4,
+        "id": "GNO-PHY11-C04-H-026",
+        "topic": "Optimal pulling angle with kinetic friction",
+        "type": "single",
+        "difficulty": "hard",
+        "prompt": "At a given instant a 5 kg crate is sliding RIGHT across a horizontal floor. A20 N force is directed to the right at adjustable angle theta in[0°,90°] above horizontal. With mu_k=0.5 and g=10 m/s², which angle maximizes its SIGNED horizontal acceleration (right positive) at that instant? The crate remains in contact.",
+        "options": ["0°", "45°", "arctan(2)", "arctan(0.5)"],
+        "correct": 3,
+        "explanation": "N=50-20sin(theta)>0 throughout the allowed domain. While sliding right, friction is left and a=4[cos(theta)+0.5sin(theta)]-5. Cauchy-Schwarz gives cos(theta)+0.5sin(theta)<=sqrt(1.25), with equality at tan(theta)=0.5. Thus the maximum signed acceleration occurs at arctan(0.5); it is sqrt(20)-5≈-0.528 m/s², still a deceleration. The question does not claim the crate accelerates rightward.",
+        "source": {
+          "kind": "original",
+          "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+          "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+        },
+        "verification": {
+          "status": "draft",
+          "method": "Proposed editorial revision only; independently recalculated by assistant, not academically approved and NOT imported."
+        }
+      }
+    },
+    {
+      "targetId": "GNO-PHY11-C04-H-014",
+      "notImported": true,
+      "proposedQuestion": {
+        "className": "11",
+        "subject": "physics",
+        "chapter": 4,
+        "id": "GNO-PHY11-C04-H-014",
+        "topic": "Pendulum, accelerating lift, kinetic floor friction and system balance",
+        "type": "single",
+        "difficulty": "hard",
+        "prompt": "An 8 kg cart slides RIGHT on the horizontal floor of a lift accelerating upward at2 m/s². A2 kg bob hangs from the cart and remains at rest relative to it, with its string37° from vertical. A horizontal motor force F drives the cart; kinetic friction between cart and lift floor has coefficient0.1. Take g=10 m/s²,sin37°=0.6,cos37°=0.8; neglect all other horizontal forces. Find the pair (F,string tension).",
+        "options": [
+          "(102 N,30 N)",
+          "(90 N,30 N)",
+          "(100 N,25 N)",
+          "(102 N,25 N)"
+        ],
+        "correct": 0,
+        "explanation": "Effective vertical gravity is12 m/s² in the lift. Bob vertical balance gives Tcos37=2(12), so T=30 N. Horizontal bob balance gives ax=Tsin37/2=9 m/s². Floor normal on the cart is its own effective weight8(12) plus the bob downward string component Tcos37=24, so N=120 N and kinetic friction12 N left. The cart+bob system has total horizontal mass10 kg: F-12=10(9), hence F=102 N. Separate cart FBD F-12-18=8(9) confirms the result.",
+        "source": {
+          "kind": "original",
+          "label": "GNOSIS original proposed replacement; assistant-authored draft; not official PYQs",
+          "reference": "Replacement proposal for GNO-PHY11-C04-H-014; not quoted from the supplied ZIP"
+        },
+        "verification": {
+          "status": "draft",
+          "method": "Proposed editorial revision only; independently recalculated by assistant, not academically approved and NOT imported."
+        }
+      }
+    },
+    {
+      "targetId": "GNO-PHY11-C04-H-027",
+      "notImported": true,
+      "proposedQuestion": {
+        "className": "11",
+        "subject": "physics",
+        "chapter": 4,
+        "id": "GNO-PHY11-C04-H-027",
+        "topic": "Sequential recoil with different relative reference frames",
+        "type": "single",
+        "difficulty": "hard",
+        "prompt": "A 12 kg system is initially at rest on a frictionless horizontal track. It ejects a2 kg piece LEFT at10 m/s relative to the recoiling10 kg remnant immediately after that ejection. Later this10 kg remnant ejects a1 kg piece RIGHT at8 m/s relative to the final9 kg remnant immediately after the second ejection. Ejected pieces do not interact again. What is the final9 kg remnant ground-frame velocity?",
+        "options": [
+          "13/15 m/s RIGHT",
+          "28/9 m/s RIGHT",
+          "5/3 m/s RIGHT",
+          "13/15 m/s LEFT"
+        ],
+        "correct": 0,
+        "explanation": "Right positive. First ejection: u1=V1-10 and2u1+10V1=0, so12V1=20 and V1=5/3 m/s; u1=-25/3. Before second ejection the10 kg remnant momentum is50/3 kg m/s. Second ejection: u2=V2+8, and9V2+u2=50/3, so10V2=26/3 and V2=13/15 m/s RIGHT. Ejected second-piece ground velocity is133/15 m/s. Global final momentum:2(-25/3)+(133/15)+9(13/15)=0.",
+        "source": {
+          "kind": "original",
+          "label": "GNOSIS original proposed replacement; assistant-authored draft; not official PYQs",
+          "reference": "Replacement proposal for GNO-PHY11-C04-H-027; not quoted from the supplied ZIP"
+        },
+        "verification": {
+          "status": "draft",
+          "method": "Proposed editorial revision only; independently recalculated by assistant, not academically approved and NOT imported."
+        }
+      }
+    }
+  ]
+}

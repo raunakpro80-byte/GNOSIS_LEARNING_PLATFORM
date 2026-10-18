@@ -1,16 +1,14 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import {
   ArrowRight,
   ArrowUpRight,
-  Atom,
   BookOpen,
   Bookmark,
   Check,
   ChevronRight,
   Clock,
-  FlaskConical,
   Flame,
   GraduationCap,
   Home,
@@ -41,14 +39,15 @@ import {
   examForSubjects,
   normalizeProfile,
   lessonsForProfile,
-  selectedSubjects,
-  chaptersFor,
   type ResourceSection,
 } from "@/lib/curriculum";
-import ResourceLibrary, { ResourceSubjects } from "./ResourceLibrary";
+import ResourceLibrary from "./ResourceLibrary";
+import Dashboard from "./Dashboard";
 import { addStudySeconds, studyDay, streakSummary } from "@/lib/streak";
 type Tab = "PDF" | "My Notes" | "Ask AI";
-export default function Gnosis() {
+export default function Gnosis({
+  publicMockContent,
+}: { publicMockContent?: ReactNode } = {}) {
   const router = useRouter();
   const path = usePathname();
   const view = path.split("/")[1] || "landing";
@@ -68,8 +67,44 @@ export default function Gnosis() {
   };
   const [contentError, setContentError] = useState("");
   const [contentLoaded, setContentLoaded] = useState(false);
+  const loadingWorkspace =
+    !ready ||
+    (!contentLoaded && ["dashboard", "progress", "learn"].includes(view));
   const [mobile, setMobile] = useState(false);
   const [focus, setFocus] = useState(false);
+  const navigationRef = useRef<HTMLElement>(null);
+  const navigationTrigger = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    if (!mobile) return;
+    const drawer = navigationRef.current;
+    const controls = drawer?.querySelectorAll<HTMLElement>(
+      "button:not([disabled]), a[href]",
+    );
+    const first = controls?.[0];
+    const last = controls?.[controls.length - 1];
+    first?.focus();
+    const containFocus = (event: KeyboardEvent) => {
+      if (event.key !== "Tab") return;
+      if (!drawer?.contains(document.activeElement)) {
+        event.preventDefault();
+        (event.shiftKey ? last : first)?.focus();
+      } else if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last?.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first?.focus();
+      }
+    };
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    document.addEventListener("keydown", containFocus);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", containFocus);
+      navigationTrigger.current?.focus();
+    };
+  }, [mobile]);
   const [preferencesNotice, setPreferencesNotice] = useState(0);
   useEffect(() => {
     if (view !== "dashboard") return;
@@ -125,14 +160,18 @@ export default function Gnosis() {
       <a className="skip" href="#main">
         Skip to content
       </a>
-      <aside className={`sidebar ${mobile ? "is-open" : ""}`}>
+      <aside
+        id="workspace-navigation"
+        ref={navigationRef}
+        className={`sidebar ${mobile ? "is-open" : ""}`}
+      >
         <button className="brand" onClick={() => go("/")}>
           <span className="brand-icon">
             <GraduationCap size={23} />
           </span>
           GNOSIS<span className="brand-dot">.</span>
         </button>
-        <div className="workspace-label">YOUR LEARNING SPACE</div>
+        <div className="workspace-label">Workspace</div>
         <button className="profile-context" onClick={() => go("/settings")}>
           <div className="context-icon">
             <GraduationCap size={18} />
@@ -145,7 +184,7 @@ export default function Gnosis() {
           </div>
           <ChevronRight size={14} />
         </button>
-        <nav>
+        <nav aria-label="Main navigation">
           {nav.map(({ id, name, Icon }) => (
             <button
               className={
@@ -154,6 +193,11 @@ export default function Gnosis() {
                   : "nav-link"
               }
               key={id}
+              aria-current={
+                view === id || (view === "subjects" && id === "lectures")
+                  ? "page"
+                  : undefined
+              }
               onClick={() => go(`/${id}`)}
             >
               <Icon size={19} />
@@ -164,18 +208,6 @@ export default function Gnosis() {
             </button>
           ))}
         </nav>
-        <div className="side-tip">
-          <div className="tip-icon">
-            <Lightbulb size={19} />
-          </div>
-          <strong>A little deeper, every day.</strong>
-          <p>
-            Understanding grows with curiosity. Make room for one good question.
-          </p>
-          <button onClick={() => go("/lectures")}>
-            Find your focus <ArrowRight size={14} />
-          </button>
-        </div>
         <div className="side-bottom">
           <button className="nav-link" onClick={() => go("/settings")}>
             <Settings size={18} />
@@ -204,7 +236,7 @@ export default function Gnosis() {
             </button>
           )}
           <div className="quiet">
-            <span /> A quieter way to learn
+            <span /> GNOSIS learning platform
           </div>
         </div>
       </aside>
@@ -219,8 +251,14 @@ export default function Gnosis() {
         <header className="topbar">
           <button
             className="icon-button mobile-menu"
-            aria-label="Open navigation"
-            onClick={() => setMobile(true)}
+            aria-label={mobile ? "Close navigation" : "Open navigation"}
+            aria-expanded={mobile}
+            aria-controls="workspace-navigation"
+            ref={navigationTrigger}
+            onClick={() => {
+              setFocus(false);
+              setMobile(true);
+            }}
           >
             <Menu size={21} />
           </button>
@@ -248,6 +286,7 @@ export default function Gnosis() {
             </span>
             <button
               className="focus-button"
+              aria-pressed={focus}
               onClick={() => setFocus((v) => !v)}
             >
               <Target size={16} />
@@ -266,7 +305,7 @@ export default function Gnosis() {
           <div className="demo-banner">
             {user
               ? "Your private learning space"
-              : "You’re exploring the demo. Progress is saved on this browser."}
+              : "Demo workspace · Your progress stays in this browser."}
             <span role="status">{status}</span>
           </div>
           {contentError && (
@@ -287,84 +326,99 @@ export default function Gnosis() {
               </span>
             </div>
           )}
-          {!ready && (
-            <div className="notice">
-              {status}
-              <button onClick={() => location.reload()}>Reload</button>
-            </div>
-          )}
-          {!ready ? (
-            <p role="status">Loading your learning workspace…</p>
-          ) : view === "onboarding" || view === "settings" ? (
-            <Preferences
-              state={state}
-              update={update}
-              onboarding={view === "onboarding"}
-              saveStatus={status}
-              demo={!user}
-              onDone={() => {
-                try {
-                  sessionStorage.setItem(
-                    "gnosis:preferences-saved-at",
-                    String(Date.now()),
-                  );
-                } catch {
-                  // Keep the in-memory confirmation if storage is unavailable.
-                }
-                setPreferencesNotice((n) => n + 1);
-                go("/dashboard");
-              }}
-            />
-          ) : view === "admin" ? (
-            <Admin onPublished={() => api("/api/content").then(setLessons)} />
-          ) : view === "learn" ? (
-            !ready ? (
-              <p>Loading your learning data…</p>
-            ) : lesson ? (
-              <Workspace
-                key={lesson.id}
-                lesson={lesson}
+          {publicMockContent ??
+            (loadingWorkspace ? (
+              <div className="workspace-loading" role="status">
+                <p>
+                  {ready || status === "Loading…"
+                    ? "Loading your workspace…"
+                    : status}
+                </p>
+                {ready || status === "Loading…" ? (
+                  <div aria-hidden="true">
+                    <span />
+                    <span />
+                    <span />
+                  </div>
+                ) : (
+                  <button
+                    className="text-button"
+                    onClick={() => location.reload()}
+                  >
+                    Reload workspace
+                  </button>
+                )}
+              </div>
+            ) : view === "onboarding" || view === "settings" ? (
+              <Preferences
                 state={state}
                 update={update}
-                ready={ready}
+                onboarding={view === "onboarding"}
                 saveStatus={status}
+                demo={!user}
+                onDone={() => {
+                  try {
+                    sessionStorage.setItem(
+                      "gnosis:preferences-saved-at",
+                      String(Date.now()),
+                    );
+                  } catch {
+                    // Keep the in-memory confirmation if storage is unavailable.
+                  }
+                  setPreferencesNotice((n) => n + 1);
+                  go("/dashboard");
+                }}
+              />
+            ) : view === "admin" ? (
+              <Admin onPublished={() => api("/api/content").then(setLessons)} />
+            ) : view === "learn" ? (
+              !ready ? (
+                <p>Loading your learning data…</p>
+              ) : lesson ? (
+                <Workspace
+                  key={lesson.id}
+                  lesson={lesson}
+                  state={state}
+                  update={update}
+                  ready={ready}
+                  saveStatus={status}
+                  go={go}
+                />
+              ) : (
+                <p>
+                  {contentLoaded
+                    ? "This lesson is unavailable for your selected course. Choose a chapter from Lectures."
+                    : "Loading lesson…"}
+                </p>
+              )
+            ) : ["lectures", "subjects", "books", "notes"].includes(view) ? (
+              <ResourceLibrary
+                key={`${view}/${state.profile.className}`}
+                profile={state.profile}
+                section={
+                  (view === "subjects" ? "lectures" : view) as ResourceSection
+                }
+                segments={path.split("/").filter(Boolean).slice(1)}
                 go={go}
               />
+            ) : view === "progress" ? (
+              <Progress state={classState} lessons={lessons} open={open} />
+            ) : view === "dashboard" ? (
+              <Dashboard state={classState} lessons={lessons} go={go} />
             ) : (
-              <p>
-                {contentLoaded
-                  ? "This lesson is unavailable for your selected course. Choose a chapter from Lectures."
-                  : "Loading lesson…"}
-              </p>
-            )
-          ) : ["lectures", "subjects", "books", "notes"].includes(view) ? (
-            <ResourceLibrary
-              key={`${view}/${state.profile.className}`}
-              profile={state.profile}
-              section={
-                (view === "subjects" ? "lectures" : view) as ResourceSection
-              }
-              segments={path.split("/").filter(Boolean).slice(1)}
-              go={go}
-            />
-          ) : view === "progress" ? (
-            <Progress state={classState} lessons={lessons} open={open} />
-          ) : view === "dashboard" ? (
-            <Dashboard state={classState} go={go} />
-          ) : (
-            <div className="panel">
-              <h1>Page not found</h1>
-              <button className="primary" onClick={() => go("/dashboard")}>
-                Back to your workspace
-              </button>
-            </div>
-          )}
+              <div className="panel">
+                <h1>Page not found</h1>
+                <button className="primary" onClick={() => go("/dashboard")}>
+                  Back to your workspace
+                </button>
+              </div>
+            ))}
           <footer>
             <span>
-              <span className="tiny-dot" /> Quiet progress. Lasting
-              understanding.
+              <span className="tiny-dot" /> Saved learning, ready when you
+              return.
             </span>
-            <span>GNOSIS · Made for curious minds</span>
+            <span>GNOSIS · Learning workspace</span>
           </footer>
         </main>
       </div>
@@ -381,238 +435,131 @@ function Landing({ go }: { go: (url: string) => void }) {
           </span>
           GNOSIS<span className="brand-dot">.</span>
         </button>
-        <nav>
-          <a href="#how">The learning experience</a>
+        <nav aria-label="Website navigation">
+          <a href="#how">How it works</a>
           <button onClick={() => go("/signin")}>
             Sign in <ArrowUpRight size={15} />
           </button>
         </nav>
       </header>
       <main>
-        <div className="hero">
+        <section className="hero">
           <div className="hero-copy">
-            <div className="eyebrow">
-              <span className="tiny-dot" /> A LITTLE CURIOSITY GOES A LONG WAY
-            </div>
+            <div className="eyebrow">For Class 11 & 12</div>
             <h1>
-              Don’t just study.
+              One chapter.
               <br />
-              <em>Understand.</em>
+              <em>Everything in place.</em>
             </h1>
             <p>
-              Your space to slow down, connect the dots, and turn a lesson into
-              something that stays with you.
+              Lectures, NCERT textbooks and chapter notes, organised around the
+              subjects you study.
             </p>
             <div className="hero-actions">
               <button className="primary" onClick={() => go("/dashboard")}>
-                Try the free demo <ArrowRight size={18} />
+                Explore the demo <ArrowRight size={17} />
               </button>
               <button className="text-button" onClick={() => go("/onboarding")}>
-                Make it yours <ArrowUpRight size={17} />
+                Choose your course <ArrowRight size={15} />
               </button>
             </div>
             <span className="hero-note">
-              <Check size={14} /> No signup needed. Explore your course, chapter
-              by chapter.
+              No account needed. Demo progress is saved in your browser.
             </span>
           </div>
-          <div className="hero-art">
-            <div className="orbit orbit-one" />
-            <div className="orbit orbit-two" />
-            <div className="art-heading">
-              <span className="tiny-dot" /> ONE CONCEPT. A WORLD OF CLARITY.
+          <div
+            className="course-preview"
+            aria-label="Explore the learning libraries"
+          >
+            <div className="preview-header">
+              <span className="eyebrow">Inside your workspace</span>
+              <GraduationCap size={20} />
             </div>
-            <div className="equation">
-              <span>V</span>
-              <span>=</span>
-              <span>I</span>
-              <span className="times">×</span>
-              <span>R</span>
-            </div>
-            <div className="equation-labels">
-              <span>potential</span>
-              <span>current</span>
-              <span>resistance</span>
-            </div>
-            <svg
-              viewBox="0 0 440 160"
-              className="hero-circuit"
-              aria-label="Simple resistor circuit"
-            >
-              <path d="M60 85V30h125l10-12 12 24 12-24 12 24 12-12h130v100H60V95" />
-              <path d="M46 85h28M52 95h16" />
-              <circle cx="320" cy="30" r="5" />
-              <text x="290" y="110">
-                a moment of understanding.
-              </text>
-            </svg>
-            <div className="floating-note">
-              <span className="tip-icon">
-                <Sparkles size={19} />
-              </span>
-              <div>
-                <strong>“Why does current double?”</strong>
-                <small>Ask questions. Find the connection.</small>
-              </div>
+            <h2>
+              From the first explanation
+              <br />
+              to the final revision.
+            </h2>
+            {[
+              {
+                number: "01",
+                title: "Watch the lecture",
+                detail: "Detailed lessons and one-shot revision",
+                path: "/lectures",
+                Icon: Play,
+              },
+              {
+                number: "02",
+                title: "Read the chapter",
+                detail: "NCERT textbooks, chapter by chapter",
+                path: "/books",
+                Icon: BookOpen,
+              },
+              {
+                number: "03",
+                title: "Review your notes",
+                detail: "Keep the important ideas within reach",
+                path: "/notes",
+                Icon: NotebookPen,
+              },
+            ].map(({ number, title, detail, path, Icon }) => (
+              <button
+                key={path}
+                className="preview-row"
+                onClick={() => go(path)}
+              >
+                <span>{number}</span>
+                <div>
+                  <strong>{title}</strong>
+                  <p>{detail}</p>
+                </div>
+                <Icon size={18} />
+              </button>
+            ))}
+            <div className="preview-caption">
+              Physics · Chemistry · Mathematics · Biology
             </div>
           </div>
-        </div>
-        <section className="landing-strip">
-          <span>Built around the way you learn</span>
-          <span>
-            <Play size={16} /> Watch with purpose
-          </span>
-          <span>
-            <MessageCircle size={16} /> Ask in context
-          </span>
-          <span>
-            <NotebookPen size={16} /> Make it your own
-          </span>
-          <span>
-            <Target size={16} /> Practice, then reflect
-          </span>
         </section>
         <section id="how" className="how">
-          <div className="eyebrow">LESS SCATTER. MORE UNDERSTANDING.</div>
-          <h2>
-            Everything you need.
-            <br />
-            Room to think.
-          </h2>
+          <div className="section-heading">
+            <div>
+              <div className="eyebrow">A straightforward study routine</div>
+              <h2>Less searching. More studying.</h2>
+            </div>
+            <button className="text-button" onClick={() => go("/onboarding")}>
+              Set up your workspace <ArrowRight size={16} />
+            </button>
+          </div>
           <div className="three-grid">
             {[
               {
-                Icon: Play,
-                title: "A lesson, in context.",
-                body: "Watch a YouTube lesson with relevant concepts and your notes beside it.",
+                title: "Choose your course",
+                body: "Select your class and subjects. GNOSIS shows the chapters that belong to your course.",
               },
               {
-                Icon: MessageCircle,
-                title: "No question too small.",
-                body: "Ask about the moment you’re stuck on. Live AI connects when a provider is configured.",
+                title: "Study at your pace",
+                body: "Switch between a lecture, the textbook and chapter notes without searching through unrelated material.",
               },
               {
-                Icon: Target,
-                title: "Know what really stuck.",
-                body: "Practice with checked questions, understand your mistakes, and return with a clear next step.",
+                title: "Return with context",
+                body: "The supported lesson workspace keeps your personal notes, bookmarks, quiz results and video position.",
               },
-            ].map(({ Icon, title, body }, i) => (
-              <article className="panel" key={title}>
+            ].map(({ title, body }, i) => (
+              <article key={title}>
                 <span className="step">0{i + 1}</span>
-                <Icon size={25} />
                 <h3>{title}</h3>
                 <p>{body}</p>
               </article>
             ))}
           </div>
-          <button className="primary" onClick={() => go("/dashboard")}>
-            Find your first “aha” <ArrowRight size={17} />
-          </button>
         </section>
       </main>
       <footer>
-        <span>GNOSIS · Made for curious minds</span>
-        <span>Your subjects. Your chapters. Room to grow.</span>
+        <span>GNOSIS · Understand a little deeper.</span>
+        <span>Lectures, textbooks and notes in one workspace.</span>
       </footer>
     </div>
-  );
-}
-function Dashboard({
-  state,
-  go,
-}: {
-  state: LearningState;
-  go: (url: string) => void;
-}) {
-  const subjects = selectedSubjects(state.profile.subjects);
-  const chapterCount = subjects.reduce(
-    (sum, s) => sum + chaptersFor(state.profile.className, s.id).length,
-    0,
-  );
-  return (
-    <>
-      <div className="page-heading">
-        <div>
-          <div className="eyebrow">
-            <span className="tiny-dot" /> YOUR SPACE TO GROW
-          </div>
-          <h1>
-            {state.profile.name
-              ? `Welcome back, ${state.profile.name.split(" ")[0]}.`
-              : "A good day to understand."}
-          </h1>
-          <p>Your course. Your chapters. One calm place to learn.</p>
-        </div>
-        <button className="subtle-button" onClick={() => go("/settings")}>
-          Class {state.profile.className} <span>·</span> {state.profile.exam}
-          <Settings size={14} />
-        </button>
-      </div>
-      <section className="focus-card resource-intro">
-        <div>
-          <div className="eyebrow">MAKE ROOM FOR UNDERSTANDING</div>
-          <h2>
-            Pick a chapter.
-            <br />
-            Follow your curiosity.
-          </h2>
-          <p>
-            Lectures, NCERT books and notes, organised around your selected
-            subjects.
-          </p>
-          <div className="focus-meta">
-            <span>
-              <BookOpen size={15} />
-              {chapterCount} chapters
-            </span>
-            <span>
-              <GraduationCap size={15} />
-              {subjects.length} selected subjects
-            </span>
-          </div>
-          <button className="primary" onClick={() => go("/lectures")}>
-            Explore lectures <ArrowRight size={17} />
-          </button>
-        </div>
-        <div className="resource-intro-art" aria-hidden="true">
-          <BookOpen size={76} />
-          <span>ONE CHAPTER AT A TIME</span>
-        </div>
-      </section>
-      <div className="resource-shortcuts">
-        <button className="panel" onClick={() => go("/lectures")}>
-          <Play size={23} />
-          <div>
-            <h2>Lectures</h2>
-            <p>Detailed and one-shot sections for every chapter.</p>
-          </div>
-          <ArrowRight size={19} />
-        </button>
-        <button className="panel" onClick={() => go("/books")}>
-          <BookOpen size={23} />
-          <div>
-            <h2>NCERT Books</h2>
-            <p>Your chapter-wise textbook library.</p>
-          </div>
-          <ArrowRight size={19} />
-        </button>
-        <button className="panel" onClick={() => go("/notes")}>
-          <NotebookPen size={23} />
-          <div>
-            <h2>Notes</h2>
-            <p>A dedicated notes section for every chapter.</p>
-          </div>
-          <ArrowRight size={19} />
-        </button>
-      </div>
-      <ResourceSubjects
-        profile={state.profile}
-        section="lectures"
-        go={go}
-        compact
-      />
-      <StreakCard state={state} />
-    </>
   );
 }
 function Preferences({
@@ -646,10 +593,12 @@ function Preferences({
   return (
     <section className="preferences">
       <div className="eyebrow">
-        {onboarding ? "A SPACE THAT FEELS LIKE YOU" : "YOUR PREFERENCES"}
+        {onboarding ? "Course setup" : "Preferences"}
       </div>
-      <h1>{onboarding ? "Let’s make it personal." : "Learn your way."}</h1>
-      <p>A few small details to shape your learning space.</p>
+      <h1>{onboarding ? "Set up your workspace" : "Preferences"}</h1>
+      <p>
+        Choose your class and subjects. Your libraries will match your course.
+      </p>
       <form
         className="panel form-grid"
         onChange={() => setSaved(false)}
@@ -720,7 +669,7 @@ function Preferences({
           </div>
           <small>
             {p.className === "12" || p.className === "11"
-              ? "Your selected subjects appear in Lectures, NCERT Books and Notes. PDFs and videos will be added later."
+              ? "Your libraries show only these subjects. Available resources are listed chapter by chapter."
               : "Choose Class 11 or 12 to browse chapter libraries."}
           </small>
         </fieldset>
@@ -989,7 +938,7 @@ function Workspace({
             CLASS {lesson.className} · {lesson.subject.toUpperCase()}
           </div>
           <h1>{lesson.title}</h1>
-          <p>Watch. Wonder. Make the connection.</p>
+          <p>Watch the lesson, save your notes and check your understanding.</p>
         </div>
         <button
           className="subtle-button"
@@ -1029,7 +978,7 @@ function Workspace({
                 <Sparkles size={19} />
               </span>
               <div>
-                <h3>A little clarity, right here.</h3>
+                <h3>Key concepts</h3>
                 <span className="small muted">
                   {lesson.transcriptVerified
                     ? segment
@@ -1165,7 +1114,7 @@ function Workspace({
         <aside className="learning-panel panel">
           <div className="panel-heading">
             <NotebookPen size={19} />
-            <h3>Your thinking space</h3>
+            <h3>Lesson resources</h3>
             <span className="tiny-dot" />
           </div>
           <div className="tabs" role="tablist" aria-label="Learning tools">
@@ -1183,9 +1132,9 @@ function Workspace({
           {tab === "PDF" ? (
             <>
               <div className="document-title">
-                <span className="eyebrow">ORIGINAL DEMO NOTES</span>
-                <h4>{lesson.title} · A field guide</h4>
-                <p>Read at your own pace. Let the ideas settle.</p>
+                <span className="eyebrow">Original demo notes</span>
+                <h4>{lesson.title} · Lesson notes</h4>
+                <p>Use the page controls or open the original PDF.</p>
               </div>
               {lesson.pdfUrl ? (
                 <PdfReader
@@ -1199,7 +1148,7 @@ function Workspace({
             </>
           ) : tab === "My Notes" ? (
             <div className="notes-panel">
-              <span className="eyebrow">CAPTURE THE CONNECTION</span>
+              <span className="eyebrow">Personal notes</span>
               <p className="small muted">
                 Notes keep the current video position. Click a timestamp to
                 return.
@@ -1210,7 +1159,7 @@ function Workspace({
               <textarea
                 id="new-note"
                 maxLength={10000}
-                placeholder="What just clicked? Write it in your own words…"
+                placeholder="Write a note about this part of the lesson…"
                 value={noteText}
                 onChange={(e) => setNoteText(e.target.value)}
               />
@@ -1232,8 +1181,8 @@ function Workspace({
                 0 && (
                 <div className="empty">
                   <NotebookPen size={30} />
-                  <h4>A clean page.</h4>
-                  <p>Your first thought belongs here.</p>
+                  <h4>No personal notes yet.</h4>
+                  <p>Save a note to return to this point in the video.</p>
                 </div>
               )}
               {state.notes
@@ -1482,11 +1431,9 @@ function Quiz({
     <>
       <div className="section-heading">
         <div>
-          <div className="eyebrow">PAUSE. PRACTICE. REFLECT.</div>
-          <h2>What stayed with you?</h2>
-          <p>
-            {lesson.questions.length} checked questions · No timer, no rush.
-          </p>
+          <div className="eyebrow">Lesson practice</div>
+          <h2>Check your understanding</h2>
+          <p>{lesson.questions.length} reviewed questions · Untimed</p>
         </div>
         {result && (
           <button
@@ -1511,8 +1458,8 @@ function Quiz({
             </strong>
             <p>
               {result.score === result.total
-                ? "Every connection made. Nicely understood."
-                : "Mistakes are useful. See the reasoning below."}
+                ? "All answers correct. Review the explanations below."
+                : "Review the explanations for the questions you missed."}
             </p>
           </div>
           <span className="pill">ATTEMPT SAVED</span>
@@ -1570,7 +1517,7 @@ function Quiz({
                     <strong>
                       {r.chosen === r.correct
                         ? "Understood."
-                        : "Let’s make the connection."}
+                        : "Review the correct answer."}
                     </strong>
                     <p>{r.explanation}</p>
                     <button
@@ -1631,7 +1578,7 @@ function NotesLibrary({
     <>
       <div className="page-heading">
         <div>
-          <div className="eyebrow">IDEAS, MADE YOUR OWN</div>
+          <div className="eyebrow">Saved personal notes</div>
           <h1>Your notebook.</h1>
           <p>A home for the things that clicked.</p>
         </div>
@@ -1742,14 +1689,20 @@ function Progress({
     <>
       <div className="page-heading">
         <div>
-          <div className="eyebrow">SMALL STEPS. REAL UNDERSTANDING.</div>
-          <h1>Your learning, in perspective.</h1>
-          <p>Only your recorded activity. Every new start counts.</p>
+          <div className="eyebrow">Learning progress</div>
+          <h1>Learning progress</h1>
+          <p>Your recorded lesson progress, study activity and quiz results.</p>
         </div>
       </div>
       <StreakCard state={state} />
       <div className="panel">
         <h2>Lesson progress</h2>
+        {!lessons.length && (
+          <p className="inline-empty">
+            No tracked lesson workspaces are available for this course yet. Your
+            chapter videos and PDFs are available in the libraries.
+          </p>
+        )}
         {lessons.map((l) => {
           const p = state.progress[l.id];
           return (
@@ -1781,7 +1734,7 @@ function Progress({
         <div className="empty panel">
           <Target size={32} />
           <h3>No attempts yet.</h3>
-          <p>Try a lesson quiz to see your understanding take shape.</p>
+          <p>Complete a supported lesson quiz to see your results here.</p>
         </div>
       )}
       {[...state.attempts].reverse().map((a) => (
@@ -1827,12 +1780,12 @@ function SignIn({ go }: { go: (u: string) => void }) {
         GNOSIS.
       </button>
       <div className="panel auth-card">
-        <span className="eyebrow">YOUR SPACE, WHEREVER YOU ARE</span>
-        <h1>{signup ? "Start something good." : "Welcome back."}</h1>
+        <span className="eyebrow">Your account</span>
+        <h1>{signup ? "Create an account" : "Sign in"}</h1>
         <p>
           {configured
             ? "Sign in to keep your learning in your private account."
-            : "Supabase isn’t connected yet. Explore the local demo while authentication is set up."}
+            : "Account sign-in isn’t available yet. You can use the demo with progress saved in this browser."}
         </p>
         {configured && (
           <form

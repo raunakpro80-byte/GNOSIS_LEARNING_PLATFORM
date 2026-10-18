@@ -1,0 +1,1090 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-18",
+  "chapter": {
+    "className": "11",
+    "subject": "physics",
+    "chapter": 4,
+    "title": "Laws of Motion"
+  },
+  "archiveSha256": "2cb9b31afced870dc714cd3dd3b95196eb019389e1e12c5ecb8a5426c4e94f06",
+  "masterEqualsSplit": true,
+  "importedFile": "content/mock-questions/11-physics-4-owner-draft.json",
+  "counts": {
+    "easy": 10,
+    "medium": 20,
+    "hard": 30,
+    "all": 60,
+    "approved": 0
+  },
+  "flaggedCount": 34,
+  "difficultyConcerns": {
+    "mediumLikelyEasy": 10,
+    "hardNeedsRevisionOrJustification": 21,
+    "hardProvisionallyPlausible": 9
+  },
+  "answerKeyArithmeticMismatchesFound": 0,
+  "materialMotionAssumptionRecords": ["M004", "M012", "H001", "H022", "H026"],
+  "semanticGroups": [
+    {
+      "id": "D01",
+      "questionIds": ["GNO-PHY11-C04-M-002", "GNO-PHY11-C04-M-015"],
+      "classification": "mirrored numerical-template near-duplicate",
+      "finding": "Same apparent-weight relation N=m(g±a), with only upward/downward sign and parameters changed. Retain at most one unless a reviewer explicitly requires both directional cases."
+    }
+  ],
+  "lexicalCandidates": [
+    {
+      "a": "GNO-PHY11-C04-E-005",
+      "b": "GNO-PHY11-C02-E-003",
+      "score": 0.5,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C04-H-018",
+      "b": "GNO-PHY11-C04-H-004",
+      "score": 0.5,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C04-H-025",
+      "b": "GNO-PHY11-C04-M-013",
+      "score": 0.5,
+      "exact": false
+    }
+  ],
+  "lexicalDisposition": "Three candidates: E005 versus Chapter2 E003 asks a different SI unit (related not duplicate); H018 versus H004 changes the forced body and sticking threshold (retain distinct); H025 versus M013 adds accelerating frame and incline (retain distinct).",
+  "optionDistribution": {
+    "easy": {
+      "A": 3,
+      "B": 3,
+      "C": 2,
+      "D": 2
+    },
+    "medium": {
+      "A": 5,
+      "B": 5,
+      "C": 5,
+      "D": 5
+    },
+    "hard": {
+      "A": 7,
+      "B": 7,
+      "C": 8,
+      "D": 8
+    }
+  },
+  "preexistingFiles": [
+    {
+      "file": "content/mock-questions/11-physics-1-easy-batch-01.json",
+      "sha256": "79b57e328e3b4f596fdc371542074eafbc8ca05abc5f3c79cf64f56babbf0a48"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-plan60-easy-batch-01.json",
+      "sha256": "05d752ca52ebf9d666bb76c4c7854a2ee4baef3d28cf04ead384cc0b97cb927d"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-zip-easy.json",
+      "sha256": "5dc4b339a5d712a291cf441cae3dc3f49d1481e1820a94b2060d0145f8c6641c"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-zip-hard.json",
+      "sha256": "4da027490f17f7678d33c9817132f83efa4c30b1cdaefbe28b170357e74d9be5"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-zip-medium.json",
+      "sha256": "4ed85f71df8d25b957044bf2a77b66e406fa2621b0a6d273461c48320a65a40b"
+    },
+    {
+      "file": "content/mock-questions/11-physics-2-owner-draft.json",
+      "sha256": "fa50f7dc646d29d08ad7a786364d6467d5827caeb86ab02ab58c6a98383443de"
+    },
+    {
+      "file": "content/mock-questions/11-physics-2.json",
+      "sha256": "294a7d63731155d79c52860ba08114de9f582a1e61b249cd8c794fef203aed95"
+    },
+    {
+      "file": "content/mock-questions/11-physics-3-owner-draft.json",
+      "sha256": "b536cba7fa0def848394564711d996909bac4b1e647f6bbb3a8584e09429befa"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "file": "manifest.json",
+      "sha256": "a2cf062e028724cd757b77f78c10c646735289e27729ac31bdaa77f38ba7706b"
+    },
+    {
+      "file": "newtons_laws_of_motion_easy.json",
+      "sha256": "63cadd5f903d375ea215d5cc6c3068e60c33d5f843e466b03be6dc523a6ee818"
+    },
+    {
+      "file": "newtons_laws_of_motion_hard.json",
+      "sha256": "6408ac330f1e66137c7baac3f6792128a56e41751a6767e7d2ad228d9e6e33e6"
+    },
+    {
+      "file": "newtons_laws_of_motion_master_draft.json",
+      "sha256": "208c955a8ae0dc46ca63eda3a5a68bf1935316e129eed022dbbc1019072ede8f"
+    },
+    {
+      "file": "newtons_laws_of_motion_medium.json",
+      "sha256": "5dfcc5fd8aea15d015491989fd6b2a72df92b879f77a05375267ad9db6decdb7"
+    }
+  ],
+  "questions": [
+    {
+      "id": "GNO-PHY11-C04-E-001",
+      "difficulty": "easy",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "0 N",
+      "independentAnswerAndFBDCheck": "In an inertial frame, constant velocity gives ax=0, hence net horizontal force0 N. Vertical weight/normal cancel separately.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-E-002",
+      "difficulty": "easy",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "3 m/s²",
+      "independentAnswerAndFBDCheck": "Along the smooth track, resultant force=ma, so a=18/6=3 m/s² in the force direction.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-E-003",
+      "difficulty": "easy",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "The water pushes the swimmer forwards",
+      "independentAnswerAndFBDCheck": "The backward force exerted by the swimmer on water has a forward reaction exerted by water ON the swimmer. They act on different bodies, so do not cancel on the swimmer's FBD.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-E-004",
+      "difficulty": "easy",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "20 kg·m/s",
+      "independentAnswerAndFBDCheck": "Momentum magnitude=mv=5(4)=20 kg m/s; momentum is not kinetic energy.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-E-005",
+      "difficulty": "easy",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "N·s",
+      "independentAnswerAndFBDCheck": "Impulse is integral F dt and has dimensions M L/T, SI unit N s=kg m/s. No other listed unit is equivalent.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-E-006",
+      "difficulty": "easy",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "30 N",
+      "independentAnswerAndFBDCheck": "Weight=mg=3(10)=30 N downward, not mass in kg.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-E-007",
+      "difficulty": "easy",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "20 N upwards",
+      "independentAnswerAndFBDCheck": "FBD: N up, mg=20 N down. Vertical equilibrium gives N=20 N upward.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-E-008",
+      "difficulty": "easy",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "The net external force is zero",
+      "independentAnswerAndFBDCheck": "In an inertial frame, if net external force remains zero throughout the interval, acceleration remains zero and initial rest persists.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-E-009",
+      "difficulty": "easy",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "Kinetic friction",
+      "independentAnswerAndFBDCheck": "Kinetic friction on the block is tangent to the floor and opposite the block-floor relative slip, not necessarily opposite a chosen lab-frame velocity for every moving surface.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-E-010",
+      "difficulty": "easy",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "9 N to the left",
+      "independentAnswerAndFBDCheck": "Take right positive. Balance requires 9+F=0, so the added force is9 N left.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-001",
+      "difficulty": "medium",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "20 N",
+      "independentAnswerAndFBDCheck": "System FBD: only external horizontal28 N, total mass7 kg =>a=4. On the5 kg block, contact is its only horizontal force, so C=5a=20 N.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-002",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "52 N",
+      "independentAnswerAndFBDCheck": "FBD: N up and40 N weight down, acceleration3 m/s² up. N-40=4(3), hence N=52 N.",
+      "flags": [
+        "Difficulty: likely Easy/direct basic calculation rather than moderate Medium.",
+        "Mirrored numerical-template repetition: D01"
+      ],
+      "duplicateGroups": ["D01"],
+      "replacementBrief": "Infer a lift's unknown acceleration from two successive scale readings and a known change in carried mass, checking continued floor contact.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-003",
+      "difficulty": "medium",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "5 m/s²",
+      "independentAnswerAndFBDCheck": "FBD: weight component mg sin30° down the slope, N perpendicular, no friction. a=g sin30°=5 m/s²; N=mg cos30°.",
+      "flags": [
+        "Difficulty: likely Easy/direct basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Infer an unknown incline angle from two measured acceleration components, then recover the normal reaction with a consistent FBD.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-004",
+      "difficulty": "medium",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "4 m/s²",
+      "independentAnswerAndFBDCheck": "If sliding RIGHT, N=40 N and friction10 N LEFT; a=(26-10)/4=4 m/s². If sliding LEFT, friction points right and a=(26+10)/4=9 m/s², also a listed option. Initial sliding direction is missing.",
+      "flags": [
+        "Missing initial sliding direction/static breakaway. Both4 m/s² (right sliding) and9 m/s² (left sliding) are listed and possible."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": true,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-005",
+      "difficulty": "medium",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "5 kg·m/s",
+      "independentAnswerAndFBDCheck": "Take east positive: delta p=0.25(-6-14)=-5 kg m/s; magnitude5 kg m/s. Reversal requires adding speed magnitudes before multiplying mass.",
+      "flags": [
+        "Difficulty: likely Easy/direct basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Give a measured two-stage signed impulse history and one intermediate velocity; infer a reversal time and the final momentum.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-006",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "40 N·s",
+      "independentAnswerAndFBDCheck": "For a fixed-direction force represented by a signed force-time graph, impulse=triangular area=5(16)/2=40 N s. A force-magnitude graph without direction is insufficient for vector impulse.",
+      "flags": [
+        "Difficulty: likely Easy/direct basic calculation rather than moderate Medium.",
+        "State that the signed force-time graph represents a fixed horizontal direction; magnitude alone does not define vector impulse."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "For a fixed horizontal direction, give a positive triangle followed by a negative pulse and ask the first zero-velocity time, not only total triangle area.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-007",
+      "difficulty": "medium",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "4 m/s²",
+      "independentAnswerAndFBDCheck": "Ideal Atwood FBDs:70-T=7a and T-30=3a. Add to obtain40=10a =>a=4 m/s²; tension42 N remains positive.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-008",
+      "difficulty": "medium",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "36 N",
+      "independentAnswerAndFBDCheck": "FBD: T upward,30 N downward, acceleration2 upward. T-30=3(2) =>T=36 N.",
+      "flags": [
+        "Difficulty: likely Easy/direct basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Specify an accelerating lift carrying a lamp with a light string; infer lamp tension in the ground frame from lift motion and a relative lamp acceleration.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-009",
+      "difficulty": "medium",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "3 m/s²",
+      "independentAnswerAndFBDCheck": "Horizontal component=30cos60°=15 N; smooth-track acceleration=15/5=3 m/s². Vertical contact is assumed by the stem; N=mg-30sin60° must be nonnegative.",
+      "flags": [
+        "Difficulty: likely Easy/direct basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Use an angled pull with known kinetic friction and a specified sliding direction; infer the angle from a measured normal force before finding horizontal acceleration.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-010",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "7 kg·m/s east",
+      "independentAnswerAndFBDCheck": "Signed momentum=3(5)+2(-4)=+7 kg m/s; positive means east, not total scalar momentum magnitude23.",
+      "flags": [
+        "Difficulty: likely Easy/direct basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Use two unknown signed cart velocities with a measured system momentum and a relative-speed constraint; solve both and check directions.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-011",
+      "difficulty": "medium",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "3600 N opposite the motion",
+      "independentAnswerAndFBDCheck": "Take positive along initial motion: a=(10-25)/5=-3 m/s²; net force=1200(-3)=-3600 N, opposite motion. Both endpoint speeds are positive.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-012",
+      "difficulty": "medium",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "2.6 m/s²",
+      "independentAnswerAndFBDCheck": "If sliding right, vertical balance N=50-25(0.6)=35 N. Friction7 N left; horizontal applied20 N; a=(20-7)/5=2.6 m/s². Sliding left instead gives5.4 m/s²; at rest a static coefficient is needed.",
+      "flags": [
+        "Specify existing RIGHT sliding or provide a static coefficient ensuring breakaway; kinetic friction direction is otherwise undetermined."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": true,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-013",
+      "difficulty": "medium",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "12 N",
+      "independentAnswerAndFBDCheck": "Ideal taut rope gives shared a:20=(3+2)a =>a=4 m/s². Table block has T=3a=12 N; hanging block20-T=2a agrees.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-014",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "10.5 m/s",
+      "independentAnswerAndFBDCheck": "Force is net and fixed along the track: J=integral0..3(4+2t)dt=12+9=21 N s. Initial rest gives v=J/2=10.5 m/s.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-015",
+      "difficulty": "medium",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "480 N",
+      "independentAnswerAndFBDCheck": "FBD upward N and downward600 N, downward a=2: N-600=60(-2) =>N=480 N, positive so contact persists.",
+      "flags": [
+        "Difficulty: likely Easy/direct basic calculation rather than moderate Medium.",
+        "Mirrored numerical-template repetition: D01"
+      ],
+      "duplicateGroups": ["D01"],
+      "replacementBrief": "Replace the mirrored elevator calculation with a lift carrying an accelerating hanging load: infer both floor reaction and string tension using separate FBDs.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-016",
+      "difficulty": "medium",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "(5 − √3) m/s²",
+      "independentAnswerAndFBDCheck": "Block is explicitly sliding down, so friction is UP slope: N=mg cos30°, a=g(sin30°-0.2cos30°)=5-sqrt(3) m/s² downhill, positive.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-017",
+      "difficulty": "medium",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "120 N",
+      "independentAnswerAndFBDCheck": "Average NET force magnitude=delta p/delta t=0.15(24)/0.03=120 N. Net impulse, not just one contact force, is specified.",
+      "flags": [
+        "Difficulty: likely Easy/direct basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Use a pulse with a measured peak and asymmetric rise/fall times; infer pulse duration from a rebound momentum constraint and calculate average net force.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-018",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "10 N",
+      "independentAnswerAndFBDCheck": "Horizontal balance T30 cos30=T60 cos60 gives T60=sqrt(3)T30. Vertical balance gives0.5T30+(sqrt(3)/2)(sqrt(3)T30)=20 =>T30=10 N. Both tensions positive.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-019",
+      "difficulty": "medium",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "4 m/s²",
+      "independentAnswerAndFBDCheck": "Perpendicular force resultant=hypot(12,16)=20 N; a=20/5=4 m/s². Direction is atan(16/12) north of east though only magnitude asked.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-M-020",
+      "difficulty": "medium",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "0.4",
+      "independentAnswerAndFBDCheck": "At impending slip N=20 N and fs,max=8 N, so mu_s=8/20=0.4. Static friction below the threshold is not always mu_s N.",
+      "flags": [
+        "Difficulty: likely Easy/direct basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Measure impending-slip forces for horizontal and oblique pulls to infer both block mass and static coefficient, checking normal contact.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-001",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "34.8 N",
+      "independentAnswerAndFBDCheck": "For both blocks sliding RIGHT, friction is4 N left on A and18 N left on B. Whole-system a=(50-4-18)/10=2.8. B FBD: C-18=6a =>C=34.8 N. Contact stays compressive. Sliding direction should be explicit.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard.",
+        "Make both blocks already sliding RIGHT explicit so both kinetic friction forces point left."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Add an unknown angle-dependent push and compare loss-of-contact and slipping thresholds before calculating contact force in the physical regime.",
+      "completeProposedRevisionAvailable": true,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-002",
+      "difficulty": "hard",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "(30 + √3) N",
+      "independentAnswerAndFBDCheck": "Inclined block moves UP: gravity component20 N and friction2sqrt(3) N point down. Whole-system drive=40-20-2sqrt(3); a=(10-sqrt(3))/4. Hanging FBD40-T=4a gives T=30+sqrt(3) N. a and N are positive.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Determine the full hanging-mass interval permitting static equilibrium on a rough incline, then derive acceleration/tension on each side with kinetic friction and consistent signs.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-003",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "57.6 N",
+      "independentAnswerAndFBDCheck": "Lift frame has effective gravity12 m/s² downward. Equations72-T=6arel, T-48=4arel give arel=2.4 m/s² and T=57.6 N. Includes downward pseudo-force, not upward.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-004",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "80/7 m",
+      "independentAnswerAndFBDCheck": "Sticking trial a=70/10=7 requires upper friction21 N>static limit12. Slip follows: kinetic friction9 N right on upper and9 N left on lower. atop=3,abottom=61/7; relative acceleration40/7; from zero relative velocity relative displacement=0.5(40/7)(2²)=80/7 m, lower ahead. Long overlap specified.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-005",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "7.5 m",
+      "independentAnswerAndFBDCheck": "a=2t-1; integrate with v0=1 to v=1+t²-t=(t-0.5)²+0.75>0. Displacement integral0..3v dt=3+9-4.5=7.5 m. Force changes sign but velocity does not reverse.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Infer two parameters of a signed force law from timed velocity/displacement measurements, then calculate total path across all velocity roots.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-006",
+      "difficulty": "hard",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "30 m to the right",
+      "independentAnswerAndFBDCheck": "First phase a=5, v2=10,s1=10. Second phase a=-2.5 for4 s, v6=0 and s2=10(4)-1.25(16)=20. Total displacement30 m right, no negative-velocity segment.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Design two force-pulse durations under a fixed impulse budget and travel constraint; solve all feasible pulse sequences and test stopping/reversal conditions.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-007",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "Left at 10/√3 m/s²",
+      "independentAnswerAndFBDCheck": "Slope rises right. Wedge acceleration left produces pseudo-force right; upslope pseudo-component ma cos30 balances mg sin30. Thus a=g tan30=10/sqrt(3) m/s² LEFT. In inertial frame N cos30=mg and N sin30=ma confirm direction.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Find the interval of wedge accelerations that permits a block to remain at rest with static friction, checking normal positivity and both impending-slip directions.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-008",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "100/(1 + 0.4√3) N",
+      "independentAnswerAndFBDCheck": "At lower equilibrium threshold, f is up. Horizontal balance N=Fcos30, vertical Fsin30+mu_s N=50. Fmin=100/(1+0.4sqrt(3)) N. Check full static range: F also <=100/(1-0.4sqrt(3)) N; the requested minimum satisfies both bounds.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Find the full allowed force interval for static equilibrium against the wall, then optimize the angle for minimum force with a stated normal/contact constraint.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-009",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "(30 − 12.5√3)/8 m/s²",
+      "independentAnswerAndFBDCheck": "Sliding down =>friction UP. Applied upward component50 N; N=50sqrt(3) N; friction12.5sqrt(3) N up; net down=80-50-12.5sqrt(3). Divide by8 for a=(30-12.5sqrt(3))/8 m/s²>0.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Use a time-varying oblique wall force to identify when a downward-sliding block stops and whether it subsequently sticks or slides upward, with both friction coefficients supplied.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-010",
+      "difficulty": "hard",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "(25√3 − 10)/7 m/s²",
+      "independentAnswerAndFBDCheck": "Both slopes smooth. Opposed string-direction gravity components25sqrt(3) and10 N; shared a=(25sqrt(3)-10)/(2+5) m/s². Positive value agrees with5 kg descending. T=10+2a>0.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Allow one rough incline and a variable inclination on the other; determine critical angle regimes and the physically valid acceleration/tension after release.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-011",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "10/7 m/s²",
+      "independentAnswerAndFBDCheck": "Standard topology: one rope end fixed overhead, rope under the load's movable pulley then over a fixed pulley to2 kg. Rope length gives a_free=-2a_load. FBDs:60-2T=6a, T-20=2(2a), hence a=20/(6+8)=10/7 m/s² downward. State topology explicitly or supply a checked diagram.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-012",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "20/3 m/s²",
+      "independentAnswerAndFBDCheck": "Open-system momentum flux gives thrust q urel=20(500)=10000 N up. At t20,m=600 kg, weight6000 N down, so a=(10000-6000)/600=20/3 m/s² up. Do not use constant-mass d(mv)/dt without the exhaust flux. Positive mass domain t<50 s includes t20.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Infer exhaust flow rate from two acceleration measurements at separate times, checking the variable-mass domain and recovering the launch mass without treating it as a closed system.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-013",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "3 m/s to the left",
+      "independentAnswerAndFBDCheck": "With right positive,9V+u=0 and u-V=30. Thus10V=-30 =>V=-3 m/s, launcher left, projectile ground speed27 m/s right. Relative and ground speeds differ.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Use two sequential relative-frame ejections with different directions and a final speed constraint; solve the unknown ejection parameter and check momentum after each separation.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-014",
+      "difficulty": "hard",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "25 N",
+      "independentAnswerAndFBDCheck": "Bob shares horizontal vehicle acceleration but zero vertical acceleration: Tcos37=20 =>T=25 N. Tsin37=15 N =>ax=7.5 m/s². Correct, but vertical balance alone answers it.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "A complete original cart/pendulum/lift/friction replacement is provided in the proposed-corrections JSON and below; it requires effective gravity, bob equilibrium, floor reaction and horizontal system balance.",
+      "completeProposedRevisionAvailable": true,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-015",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "80/(2 + 0.5√3) m",
+      "independentAnswerAndFBDCheck": "During uphill slide gravity and friction both point down: deceleration magnitude10(0.5+0.25sqrt(3)/2)=5+1.25sqrt(3). First stopping distance400/[2(5+1.25sqrt(3))]=80/(2+0.5sqrt(3)) m, about27.91. Subsequent sliding is irrelevant to first stop.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "After uphill stopping, determine whether the block sticks or slides back down using mu_s, then compute its return time and speed using mu_k with reversed friction.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-016",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "39/8 m/s",
+      "independentAnswerAndFBDCheck": "Before motion, fs adjusts to F up to20 N; threshold time(20-10)/4=2.5 s. After threshold, kinetic friction10 N left and a=[10+4t-10]/4=t m/s². Integral2.5..4 t dt=(16-6.25)/2=39/8 m/s. It is wrong to integrate kinetic friction from t0.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-017",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "34/3 N",
+      "independentAnswerAndFBDCheck": "Table frictions4 and12 N oppose table motion. Whole-system drive60-16=44 N over12 kg gives a=11/3. Leftmost2 kg FBD T1-4=2a =>T1=34/3 N. Other string tension=60-6a=38 N; middle FBD38-T1-12=4a checks.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Include a movable-pulley connection so the three masses have unequal acceleration magnitudes; derive the constraint and solve both tensions rather than using a single total-mass shortcut.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-018",
+      "difficulty": "hard",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "3.6 m",
+      "independentAnswerAndFBDCheck": "Sticking trial a=20/7 requires friction on lower5a=100/7>static max10. Kinetic friction4 N points LEFT on upper and RIGHT on lower. atop=(20-4)/2=8,abottom=4/5=0.8; relative displacement0.5(7.2)(1²)=3.6 m, upper ahead. Sufficient overlap specified.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-019",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "√2/5",
+      "independentAnswerAndFBDCheck": "No slip: friction alone supplies both inward r omega²=2 and tangential r alpha=2 m/s². Perpendicular resultant2sqrt(2); N=mg, so mu_min=(2sqrt(2))/10=sqrt(2)/5. Do not add component magnitudes linearly.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Use a specified increasing angular-speed law and a measured static coefficient to find the first slipping time, combining time-dependent radial and tangential demands and checking normal contact.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-020",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "2√106 N",
+      "independentAnswerAndFBDCheck": "Radial acceleration36/10=3.6 and tangential2 m/s² are perpendicular. Net force magnitude5sqrt(3.6²+2²)=sqrt(18²+10²)=2sqrt(106) N, about20.59.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Use a time-dependent tangential drive with a maximum friction bound; integrate speed, combine radial/tangential demand and determine earliest slipping time.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-021",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "37.5 N",
+      "independentAnswerAndFBDCheck": "Push is uphill horizontally. Along slope Pcos37=mg sin37 gives P=22.5 N. Into-plane component Psin37 increases normal: N=30(0.8)+22.5(0.6)=37.5 N. N is not just mg cos37.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Determine the minimum horizontal push for equilibrium on a rough incline, then the upper push limit for impending upward slip while checking contact.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-022",
+      "difficulty": "hard",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "120 m",
+      "independentAnswerAndFBDCheck": "Provided motion starts and remains right during the push, N=40, fk=10, a1=5. After4 s,v=20,s1=40. After removal a2=-2.5, additional stop distance400/5=80; total120 m. Starting from rest needs static-breakaway assurance, missing from the source.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard.",
+        "A coefficient of kinetic friction alone does not guarantee a block initially at rest starts moving; specify a sufficient static-breakaway condition."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Give finite push duration as an unknown and a fixed route length, then determine whether the block stops within the route under a stated static/kinetic model; compare all force-on/force-off cases.",
+      "completeProposedRevisionAvailable": true,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-023",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "5.5 m",
+      "independentAnswerAndFBDCheck": "Descent is stipulated. During taut-rope motion drive50-6=44 N over8 kg =>a=5.5. Over2 m,v²=22. On ground contact rope goes slack as specified; table block then decelerates at2 m/s² and extra distance22/4=5.5 m. No tension should be retained after impact.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-024",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "0.2 m",
+      "independentAnswerAndFBDCheck": "Before break Atwood a=(6-4)10/10=2 m/s². After1 m,v²=4; smaller mass moves upward. After break T=0 and gravity downward; extra rise=v²/(2g)=0.2 m. Not total rise1.2 m.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Specify a height ceiling for the ascending mass and a delayed rope break; derive the allowable break-time interval avoiding impact and compare pre/post-break root domains.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-025",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "23.4 N",
+      "independentAnswerAndFBDCheck": "Lift-frame effective g13. Hanging drive39 minus incline component13 =>system a=26/5=5.2 relative to lift. Inclined FBD T-13=2a gives T=23.4 N. Hanging39-T=3a agrees. Shared acceleration is relative to the lift.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-026",
+      "difficulty": "hard",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "arctan(0.5)",
+      "independentAnswerAndFBDCheck": "For RIGHT sliding and theta in[0,90°], a=[20(cos theta+0.5sin theta)-25]/5. Maximum at tan theta=0.5; N=50-20sin theta>0. Maximum a=4sqrt(1.25)-5=sqrt(20)-5≈-0.528 m/s², so it still slows a right-moving crate. For LEFT sliding, friction reverses and maximum occurs at theta0 instead. Initial rest additionally requires mu_s. Source needs signed-acceleration/sliding-direction wording.",
+      "flags": [
+        "Specify existing RIGHT sliding and a signed horizontal acceleration; all right-sliding accelerations are negative for supplied numbers. Left sliding changes the optimizing angle."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": true,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-027",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "28/9 m/s to the right",
+      "independentAnswerAndFBDCheck": "First ejection ground momentum gives2(-10)+10v1=0 =>v1=2 right. Second:10(2)=1(-8)+9v2 =>v2=28/9 right. Global final momentum also gives9v2-20-8=0. Sequential wording alone does not prevent a one-equation shortcut.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "A complete original two-ejection replacement using speeds relative to the recoiling remnant is provided in the proposed-corrections JSON and below; solve frame transformations separately at each ejection.",
+      "completeProposedRevisionAvailable": true,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-028",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "(5 + 3√3)/(5√3 − 3)",
+      "independentAnswerAndFBDCheck": "Truck frame pseudo-force BACKWARD and gravity both project down the slope: required f/m=6cos30+10sin30=3sqrt(3)+5. Normal N/m=10cos30-6sin30=5sqrt(3)-3>0. Therefore mu_min=(5+3sqrt(3))/(5sqrt(3)-3)≈1.80, up-slope friction. Inertial-frame component equations give the same result.",
+      "flags": [],
+      "duplicateGroups": [],
+      "replacementBrief": null,
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-029",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "2.8125 m",
+      "independentAnswerAndFBDCheck": "Push phase accelerations opposite:1.5 and1 m/s². Separation during0.5 s=0.5(2.5)(0.5²)=0.3125. Then relative coast speed0.75+0.5=1.25 m/s adds2.5 m in2 s. Total2.8125 m; final momenta30 and-30 cancel.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Use unequal push durations with a specified third external impulse on one skater; infer both trajectories and the first reunion or minimum separation after the interaction ends.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    },
+    {
+      "id": "GNO-PHY11-C04-H-030",
+      "difficulty": "hard",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "10 m",
+      "independentAnswerAndFBDCheck": "Initial LEFT slip means kinetic friction5 N RIGHT, adding applied5 N right =>a=5 right. Stop at2 s after10 m path. At rest, maximum static friction8 N exceeds applied5 N, so friction becomes5 N LEFT and motion stays stopped for3 s. Total10 m. Title should say friction switches from right kinetic to left static; no reverse sliding occurs.",
+      "flags": [
+        "Difficulty: likely Medium (H014 especially direct); requires substantive revision or qualified justification for Hard."
+      ],
+      "duplicateGroups": [],
+      "replacementBrief": "Let the rightward applied force increase after the first stop; calculate the sticking interval and subsequent breakaway/reversed sliding, explicitly changing friction regimes.",
+      "completeProposedRevisionAvailable": false,
+      "status": "draft",
+      "academicApproval": "pending"
+    }
+  ],
+  "proposedRevisions": {
+    "file": "docs/question-banks/11-physics-4-proposed-corrections.json",
+    "count": 7,
+    "completeNewOriginalReplacements": 2,
+    "clarifiedSourceVariants": 5,
+    "imported": false,
+    "approved": false
+  },
+  "limitations": [
+    "Assistant computational/editorial review is not qualified academic approval.",
+    "No source diagrams were present; force directions checked analytically in text. No rendered FBD image was academically reviewed.",
+    "21 Hard records are flagged for difficulty;9 are plausible candidates provisionally, not academically approved. Difficulty labels require qualified review.",
+    "Only seven complete revision proposals are supplied. Other flagged records have design briefs and still require complete revised MCQs/solutions.",
+    "Original provenance is declared by the supplied bank, not checked against an external plagiarism database.",
+    "Current UI uses escaped plain text/Unicode, not typeset LaTeX; no visual draft-question browser/mobile review performed."
+  ],
+  "technicalVerification": {
+    "unitAndRegression": {
+      "passed": 78,
+      "failed": 0,
+      "newChapter4Tests": 8
+    },
+    "finalChapter4TargetedRerun": "8 passed after proposal provenance-label correction",
+    "schemaAndImporter": "Native dry run/write60 drafts; duplicate-ID replay rejected;7 separate proposal records validate as drafts outside active bank",
+    "apiIntegration": {
+      "passed": 2,
+      "failed": 0,
+      "scope": "Production preview with actual unapproved Chapters1/2/3/4; existing public/private/quiz/PDF endpoints"
+    },
+    "chapter4SyntheticApiMatrix": {
+      "passed": 10,
+      "failed": 0,
+      "scope": "Six configurations with private Chapter4 fixtures and approved technical Chapter1 isolation controls; saved questions exact class11/Physics/chapter4/difficulty; no real approvals"
+    },
+    "liveChapter4Inventory": "HTTP200; draft E/M/H10/20/30,total60; approved0; no enabled sizes",
+    "typeScript": "passed tsc --noEmit --incremental false",
+    "productionBuild": "passed next build --webpack",
+    "exactDuplicateCheck": "No duplicate normalized stems or IDs involving new60 across310 records; one mirrored semantic-template group flagged",
+    "priorDataProtection": "All8 prior bank SHA256 values unchanged after all tests; QA/preview used separate attempt directories",
+    "lint": "No configured lint script/linter; Prettier formatting checked separately",
+    "publication": "No status promotion, activation, push or deployment"
+  }
+}

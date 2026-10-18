@@ -1,0 +1,725 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-001",
+      "topic": "Dimensional completeness with an amplitude",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "An oscillation period T depends only on mass m, gravity g, length L and a displacement amplitude A. All are positive. Without assuming amplitude independence, which is the most general form justified by dimensions? Φ denotes an arbitrary dimensionless function of a dimensionless argument.",
+      "options": [
+        "T = (L/g) Φ(A/L)",
+        "T = C sqrt(L/g), with C forced to be amplitude-independent",
+        "T = sqrt(L/g) Φ(A)",
+        "T = sqrt(L/g) Φ(A/L)"
+      ],
+      "correct": 3,
+      "explanation": "1. Mass has no other mass-bearing input, so a period cannot acquire a nonzero power of m.\n2. L and g provide a time scale sqrt(L/g). A and L also provide the dimensionless ratio A/L.\n3. The period divided by that time scale can be an arbitrary function of A/L.\n4. Dimensional analysis cannot force this function to be constant or determine it.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-002",
+      "topic": "An underdetermined capillary model",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A length h depends only on positive surface tension S, density ρ, acceleration magnitude g and tube radius r. Use [S]=M T^-2 and [ρ]=M L^-3. Which expression is the most general dimensionally permitted form, with Φ arbitrary and dimensionless?",
+      "options": [
+        "h = r Φ(S/(ρ g r))",
+        "h = (1/r) Φ(S/(ρ g r^2))",
+        "h = r Φ(S/(ρ g r^2))",
+        "h = r Φ(S ρ/(g r^2))"
+      ],
+      "correct": 2,
+      "explanation": "1. The product ρ g r^2 has dimensions M T^-2, the same as S.\n2. Thus S/(ρ g r^2) and h/r are dimensionless.\n3. Dimensional completeness permits h/r to be an unspecified function of that input group.\n4. A specific inverse-radius capillary law requires physical input beyond dimensions alone.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-003",
+      "topic": "Local drag-law exponents",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Over a comparison range, drag is modeled by F=C ρ^a η^b v^c r^d with positive inputs and unchanged dimensionless C. Density is ρ, dynamic viscosity η, speed v and radius r. Experiments give c=7/5. In a second comparison r doubles, v is fixed, ρr^3 stays constant, and η/ρ^(2/3) stays constant. Find (a,b,d) and F2/F1.",
+      "options": [
+        "(2/5, 3/5, 7/5); F2/F1=1/2",
+        "(2/5, 3/5, 7/5); F2/F1=2",
+        "(3/5, 2/5, 7/5); F2/F1=1/2",
+        "(2/5, 3/5, 7/5); F2/F1=2^(7/5)"
+      ],
+      "correct": 0,
+      "explanation": "1. Use [ρ]=M L^-3, [η]=M L^-1 T^-1, [v]=L T^-1 and [r]=L. Mass gives a+b=1 and time gives b+c=2.\n2. With c=7/5, b=3/5 and a=2/5. Length then gives d=7/5.\n3. The comparison constraints give ρ2/ρ1=2^-3 and η2/η1=(2^-3)^(2/3)=2^-2.\n4. Thus F2/F1=(2^-3)^(2/5)(2^-2)^(3/5)2^(7/5)=2^-1=1/2.\n5. The density-viscosity relation and fixed ρr^3 are supplied comparison constraints, not universal fluid laws.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-004",
+      "topic": "A natural time scale and a second-order change",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A time scale is a monomial in G, action h and speed c, where [G]=M^-1 L^3 T^-2 and [h]=M L^2 T^-1. G changes to G(1+ε), h to h(1-ε), and c stays fixed, with |ε| much smaller than 1. Which pair gives the time scale and its leading nonzero fractional change?",
+      "options": [
+        "sqrt(G h/c^5); change = +ε^2/2",
+        "G h/c^5; change = -ε^2",
+        "sqrt(G h/c^5); change = -ε^2/2",
+        "sqrt(G h/c^3); change = -ε^2/2"
+      ],
+      "correct": 2,
+      "explanation": "1. Write τ∝G^a h^b c^d. Mass gives b=a, time gives a=1/2, and length gives d=-5/2.\n2. Thus τ∝sqrt(Gh/c^5).\n3. The exact ratio after the changes is sqrt((1+ε)(1-ε))=sqrt(1-ε^2).\n4. Expanding gives 1-ε^2/2+O(ε^4). First-order cancellation does not imply no change.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-005",
+      "topic": "Units based on derived quantities",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Take force, density and speed as independent unit-defining quantities, with new units 8 N, 2 kg/m^3 and 4 m/s respectively. By expressing energy as a monomial in these quantities, find the numerical value of 12 J in the new energy unit.",
+      "options": ["1.5", "3", "48", "6"],
+      "correct": 1,
+      "explanation": "1. Set [E]=[F]^a[ρ]^b[v]^c. Solving mass, length and time gives a=3/2, b=-1/2 and c=-1.\n2. One new energy unit is (8 N)^(3/2)(2 kg/m^3)^(-1/2)(4 m/s)^(-1).\n3. Its SI value is sqrt(8^3)/(sqrt(2)×4)=4 J.\n4. The numerical value of 12 J is therefore 12/4=3.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-006",
+      "topic": "Rank failure in a proposed unit system",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A proposed system uses positive energy E, nonzero momentum magnitude p and positive mass m as three independent base quantities. Can these define separate length and time units, and which group demonstrates the issue?",
+      "options": [
+        "Yes; E m/p^2 is dimensionless but all three remain dimensionally independent.",
+        "No; E/(m p^2) is dimensionless.",
+        "Yes; E, p and m allow a pure time monomial.",
+        "No; E m/p^2 is dimensionless, and all three quantities depend on L and T only through L/T."
+      ],
+      "correct": 3,
+      "explanation": "1. The vectors are [E]=M L^2 T^-2, [p]=M L T^-1 and [m]=M.\n2. Their L and T rows are negatives, so the dimension matrix has rank 2, not 3.\n3. Indeed E m/p^2 is dimensionless.\n4. A monomial in these quantities cannot contain T without the opposite power of L, so separate length and time units cannot be obtained.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-007",
+      "topic": "A ratio with shared measured inputs",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Let R=(x-y)/(x+y), with x=(10.0±0.1) cm and y=(8.0±0.1) cm. Their errors have independent bounded signs. Find the first-order worst-case absolute uncertainty in R by propagating the primitive x and y readings, not treating numerator and denominator as independent.",
+      "options": ["1/180", "1/9", "1/90", "1/81"],
+      "correct": 2,
+      "explanation": "1. The central value is R=2/18=1/9.\n2. Partial derivatives are ∂R/∂x=2y/(x+y)^2 and ∂R/∂y=-2x/(x+y)^2.\n3. The absolute first-order bound is (16×0.1+20×0.1)/18^2=3.6/324=1/90.\n4. Numerator and denominator contain the same readings; treating them as independent derived measurements double-counts some error possibilities.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-008",
+      "topic": "Uncertainty amplified by hollow geometry",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A hollow sphere has density ρ=3m/[4π(R^3-r^3)], with R=(10.000±0.001) cm and r=(9.900±0.001) cm. Mass has a 1.0% maximum relative uncertainty. Radius and mass errors have independent bounded signs. What is the first-order worst-case percentage uncertainty in ρ, rounded to two decimal places?",
+      "options": ["2.00%", "4.00%", "1.06%", "3.00%"],
+      "correct": 3,
+      "explanation": "1. For V proportional to R^3-r^3, the absolute differential bound is proportional to 3(R^2δR+r^2δr).\n2. The relative volume bound is 3(10^2×0.001+9.9^2×0.001)/(10^3-9.9^3)=0.02000034... .\n3. Add the 0.010 mass bound because density divides by volume.\n4. The total is 3.0000337...%, reported as 3.00%. The thin difference amplifies the radius errors.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-009",
+      "topic": "Inferring acceleration before propagating uncertainty",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A trajectory is x(t)=u t+(a/2)t^2 with unknown u and a. At times t and 2t, displacements are x1=(5.00±0.02) m and x2=(22.00±0.02) m. The common time scale is t=(1.000±0.005) s. Treat x1,x2,t as independently bounded primitive inputs. What is the first-order estimate a±δa?",
+      "options": [
+        "(17.00±0.23) m/s^2",
+        "(12.00±0.30) m/s^2",
+        "(12.00±0.18) m/s^2",
+        "(12.00±0.06) m/s^2"
+      ],
+      "correct": 2,
+      "explanation": "1. Eliminate u: x2-2x1=a t^2, so a=(x2-2x1)/t^2.\n2. The central acceleration is (22-10)/1^2=12 m/s^2.\n3. Sensitivity magnitudes give δa=(δx2+2δx1)/t^2+2|a|δt/t.\n4. This is 0.02+0.04+2×12×0.005=0.18 m/s^2. The two observation times share the same t error.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-010",
+      "topic": "Allocating measurement time",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "For Q=x^2/y, independent bounded errors have percentage bounds 4/sqrt(tx/1 s)% in x and 1/sqrt(ty/1 s)% in y. Total measurement time is tx+ty=100 s with tx,ty>0. Which allocation minimizes the first-order worst-case percentage bound in Q?",
+      "options": [
+        "tx=80 s, ty=20 s; minimum about 1.118%",
+        "tx=50 s, ty=50 s; minimum about 1.273%",
+        "tx=90 s, ty=10 s; minimum about 1.160%",
+        "tx=20 s, ty=80 s; minimum about 1.901%"
+      ],
+      "correct": 0,
+      "explanation": "1. The objective is U=8/sqrt(tx)+1/sqrt(ty), with numerical times expressed in seconds.\n2. Using ty=100-tx, stationarity gives 8/tx^(3/2)=1/ty^(3/2).\n3. Thus tx/ty=8^(2/3)=4, hence tx=80 s and ty=20 s.\n4. The positive second derivative and divergent endpoint errors ensure a minimum. U=8/sqrt(80)+1/sqrt(20)=1.1180339...%.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-011",
+      "topic": "Shared diameter in an elastic-wave inference",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A wire is assigned Y=4FL/(πd^2 ΔL) and ρ=4m/(πd^2 L), using the SAME measured diameter d in both. Wave speed is v=sqrt(Y/ρ). Independent primitive maximum percentage uncertainties are F:1%, L:0.5%, m:1%, ΔL:2%, d:3%. What is the first-order maximum percentage uncertainty in v?",
+      "options": ["5.0%", "8.5%", "3.5%", "2.5%"],
+      "correct": 3,
+      "explanation": "1. Take the ratio before propagating: Y/ρ=F L^2/(m ΔL). The common d cancels exactly.\n2. Hence v=L sqrt(F/(m ΔL)).\n3. The relative bound is δL/L+(1/2)(δF/F+δm/m+δΔL/ΔL).\n4. Substituting gives 0.5%+(1/2)(1%+1%+2%)=2.5%. Counting diameter twice would be incorrect.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-012",
+      "topic": "Exact finite bounds through a square root",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Kinetic speed is inferred from v=sqrt[2(E2-E1)/m]. Independently bounded readings are E2=(10.0±0.1) J and E1=(9.0±0.1) J; m=0.50 kg is exact. Relative to the central speed, which side allows the larger percentage deviation using exact finite bounds rather than linearisation, and what is it to two decimal places?",
+      "options": [
+        "About 10.56%, on the lower-speed side.",
+        "About 9.54%, on the lower-speed side.",
+        "Exactly 10.00%, symmetrically on both sides.",
+        "About 20.00%, on the higher-speed side."
+      ],
+      "correct": 0,
+      "explanation": "1. The energy difference has central value 1 J and exact interval [0.8,1.2] J.\n2. The central speed is 2 m/s, with limiting ratios sqrt(0.8) and sqrt(1.2).\n3. The lower deviation is 1-sqrt(0.8)=0.1055728...; the upper is sqrt(1.2)-1=0.0954451... .\n4. The larger deviation is therefore 10.56% on the lower side. A first-order 10% estimate is not the exact answer.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-013",
+      "topic": "Common zero error in a hollow cylinder",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A hollow cylindrical section has V=πh(R^2-r^2), with h exact. Both radii are measured by one instrument that adds the SAME unknown zero offset δ. Use R=10 mm, r=9 mm and |δ|≤0.02 mm. What is the maximum relative percentage shift in the computed V from this common offset?",
+      "options": ["About 2.00%", "About 0.211%", "Exactly 0%", "About 4.01%"],
+      "correct": 1,
+      "explanation": "1. The measured squared-radius difference is (R+δ)^2-(r+δ)^2.\n2. Its δ^2 terms cancel, leaving (R^2-r^2)+2δ(R-r).\n3. The relative shift is exactly 2δ/(R+r), since h and π cancel.\n4. Its maximum magnitude is 2(0.02)/19=0.00210526..., or about 0.211%. Independent radius-error propagation is inapplicable to this common offset.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-014",
+      "topic": "A logarithm, a fractional power and a change of time unit",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A length obeys x=A ln(1+B t)+C sqrt(t), with A,B,C nonzero, on a domain with t>0 and 1+B t>0. Keep length units fixed but change the numerical time unit from seconds to milliseconds, so t_ms=1000 t_s. Which transformation and invariant are correct?",
+      "options": [
+        "B_ms=1000 B_s; C_ms=sqrt(1000) C_s; C^2/(A^2 B) is invariant.",
+        "B_ms=B_s/1000; C_ms=C_s/sqrt(1000); C^2/(A^2 B) is dimensionless and invariant.",
+        "B_ms=B_s/1000; C_ms=C_s/1000; C/(A B) is dimensionless.",
+        "B_ms=B_s; C_ms=C_s/sqrt(1000); C^2/(A B) is dimensionless."
+      ],
+      "correct": 1,
+      "explanation": "1. The logarithm requires [B]=T^-1; its coefficient has [A]=L.\n2. The square-root term requires [C]=L T^-1/2. Thus C^2/(A^2 B) is dimensionless.\n3. Keeping B t fixed under t_ms=1000t_s gives B_ms=B_s/1000.\n4. Keeping C sqrt(t) fixed gives C_ms=C_s/sqrt(1000). The same factors cancel in the invariant.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-015",
+      "topic": "A time scale involving electric charge",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "In a model, Coulomb force is F=q^2/(4πε r^2), defining ε; q is a positive charge magnitude and all scale parameters are positive. A characteristic time is a monomial in ε, mass m, length r and charge q, with no further dimensional inputs. In a comparison m is multiplied by 8, r by 1/2 and q by 2; ε is unchanged. What time-scale ratio follows?",
+      "options": ["1", "1/2", "1/4", "2"],
+      "correct": 1,
+      "explanation": "1. From the force law [ε]=[q]^2/([F]L^2), using [q]=I T.\n2. A time scale is proportional to sqrt(ε m r^3/q^2); its square has dimensions T^2.\n3. The ratio is sqrt(8×(1/2)^3/2^2)=sqrt(1/4)=1/2.\n4. The dimensionless proportionality factor is assumed unchanged; no physical oscillation law is asserted.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-016",
+      "topic": "General frequency law with four dimensional inputs",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A frequency f depends only on a positive energy E, G, action h and speed c. Use [G]=M^-1L^3T^-2 and [h]=ML^2T^-1. Which is a dimensionally complete general form? Φ is arbitrary and takes a dimensionless argument.",
+      "options": [
+        "f=(E/h) Φ(G E^2/(h c^5))",
+        "f=(E/h) Φ(G E^2/(h c^3))",
+        "f=(E/h) Φ(G E/(h c^5))",
+        "f=(h/E) Φ(G E^2/(h c^5))"
+      ],
+      "correct": 0,
+      "explanation": "1. E/h supplies a frequency scale.\n2. G E^2 and h c^5 both have dimensions M L^7 T^-6.\n3. Their ratio is dimensionless; with four dimensional inputs of rank 3, one independent input group remains.\n4. Thus f h/E can be an unspecified function of G E^2/(h c^5). Dimensions alone do not determine Φ.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-017",
+      "topic": "Reconstructing dimensions from nonorthogonal unit changes",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A nonzero quantity Q has unknown dimensions M^a L^b T^c. Relative to original units, new base-unit size factors (M,L,T) and numerical-value ratios Q_new/Q_old are: (2,2,1):1/8; (1,2,2):1; (2,1,2):2. What are its dimensions and its numerical-value ratio for factors (3,1/2,2)?",
+      "options": [
+        "[M^2 L T^-1]; ratio 2/9",
+        "[M L^2 T^-2]; ratio 3/16",
+        "[M L^2 T^-2]; ratio 16/3",
+        "[M^-1 L^2 T^-2]; ratio 16/3"
+      ],
+      "correct": 2,
+      "explanation": "1. Numerical values scale inversely with the unit size. The three observations imply a+b=3, b+c=0 and a+c=-1.\n2. Solving gives a=1, b=2 and c=-2.\n3. For the final units the Q-unit size factor is 3×(1/2)^2×2^-2=3/16.\n4. The numerical-value ratio is its reciprocal, 16/3.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-018",
+      "topic": "A zero offset hidden in a pendulum calibration",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A supplied small-angle model is T^2=4π^2(L+δ)/g. Unknown constant length offset δ and acceleration g apply to both trials. Indicated lengths L1=0.90 m and L2=2.10 m are exact; independent bounded period readings are T1=(2.00±0.01) s and T2=(3.00±0.01) s. Find central (g,δ) and the first-order maximum percentage uncertainty in g.",
+      "options": [
+        "(1.20π^2 m/s^2, 0.30 m); δg/g≈2.0%",
+        "(0.96π^2 m/s^2, 0.060 m); δg/g≈1.0%",
+        "(0.96π^2 m/s^2, -0.060 m); δg/g≈2.0%",
+        "(0.96π^2 m/s^2, 0.060 m); δg/g≈2.0%"
+      ],
+      "correct": 3,
+      "explanation": "1. Eliminate δ by subtraction: g=4π^2(L2-L1)/(T2^2-T1^2).\n2. Centrally, g=4π^2×1.20/5=0.96π^2 m/s^2.\n3. Then δ=T1^2g/(4π^2)-L1=0.96-0.90=0.060 m. Both central model equations are satisfied.\n4. Exact indicated lengths leave only the period difference uncertain. First-order propagation gives δg/g≈(2T2δT2+2T1δT1)/(T2^2-T1^2).\n5. This is (2×3×0.01+2×2×0.01)/5=0.020, or 2.0%. The formula is a first-order bound, not an exact finite-interval maximum.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-019",
+      "topic": "Coupled ruler and clock calibration",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A ruler reports length L_read=μL and a clock reports t_read=λt, where μ,λ are constant positive gains. The ruler is then recalibrated by multiplying every reported length by u0/u_read, using an exact speed standard u0 measured with the SAME ruler and clock. An acceleration is inferred as 2L_cal/t_read^2 for motion from rest. If λ=1.02, what is a_inferred/a_true, independent of μ?",
+      "options": ["50/51", "1.02", "1", "1/(1.02)^2"],
+      "correct": 0,
+      "explanation": "1. The measured speed standard is u_read=(μ/λ)u0.\n2. Recalibrated lengths become L_cal=μL×(λ/μ)=λL.\n3. The inferred acceleration is 2λL/(λt)^2=a_true/λ.\n4. For λ=1.02, the ratio is 1/1.02=50/51; speed calibration has not removed clock gain from an acceleration.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-020",
+      "topic": "Stable algebra for a thin annular layer",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A positive thin annular layer has area A=π[(R+t)^2-R^2], with known positive R. Directly computing t=sqrt(R^2+A/π)-R can lose numerical precision for A/(πR^2) much smaller than 1. Which pair gives an algebraically equivalent stable expression and its leading thin-layer approximation?",
+      "options": [
+        "t=A/[π(sqrt(R^2+A/π)+R)]; t≈A/(2πR)",
+        "t=A/[π(sqrt(R^2+A/π)-R)]; t≈A/(2πR)",
+        "t=A/[π(sqrt(R^2+A/π)+R)]; t≈sqrt(A/π)",
+        "t=A/[2π(sqrt(R^2+A/π)+R)]; t≈A/(2πR)"
+      ],
+      "correct": 0,
+      "explanation": "1. Multiply the original difference by its conjugate over itself.\n2. The numerator becomes (R^2+A/π)-R^2=A/π, leaving a sum of positive lengths in the denominator.\n3. Thus t=A/[π(sqrt(R^2+A/π)+R)], which avoids subtracting nearly equal values.\n4. In the stated thin limit the denominator approaches 2πR, giving t≈A/(2πR); both expressions have length dimensions.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-021",
+      "topic": "Random averaging with a calibration floor",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Independent length readings have standard deviation 0.20 cm and share a separate calibration standard uncertainty of 0.040 cm, independent of the random reading noise. The mean length is 10.0 cm. For Q=1/(mean length)^2, what is the smallest number N of readings giving first-order relative STANDARD uncertainty in Q no greater than 1.0%?",
+      "options": ["100", "16", "40", "45"],
+      "correct": 3,
+      "explanation": "1. The mean has standard variance u_x^2=(0.20)^2/N+(0.040)^2; the shared calibration term does not average away.\n2. For Q=x^-2, relative standard uncertainty is 2u_x/x. The requirement gives u_x≤0.050 cm.\n3. Therefore 0.040/N+0.0016≤0.0025, or N≥44.444... .\n4. The smallest integer is 45. A bounded-error sum would be a different uncertainty model.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-022",
+      "topic": "A fitted power and common calibration cancellation",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Exact preliminary trials establish Y∝X^n and show Y multiplying by 8 when X doubles; treat the inferred n as exact. A later prediction with positive input values is Y=Y0(X/X0)^n. Independent residual relative STANDARD uncertainties in Y0,X,X0 are 2%,1%,2%. X and X0 also share the same unknown 5% multiplicative calibration error. What is the first-order relative standard uncertainty of the prediction?",
+      "options": ["sqrt(99)%", "5%", "7%", "sqrt(274)%"],
+      "correct": 2,
+      "explanation": "1. The exact preliminary ratio gives 2^n=8, so n=3.\n2. A common multiplicative scale cancels exactly in X/X0 and contributes no separate 5% term.\n3. For independent residual errors, squared relative standard uncertainties add with squared sensitivities: 2^2+3^2(1^2+2^2)=49 in percent-squared units.\n4. The relative standard uncertainty is sqrt(49)%=7%. The exponent was stipulated exact.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-023",
+      "topic": "Dimensional coefficients and an extremum",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "For v>0 a model energy is E(v)=A v^2+B/v^2, with positive constants A and B. A=2.0 kg and B=162 kg m^4 s^-4. Find the speed at minimum energy and the minimum energy.",
+      "options": [
+        "v=6 m/s; E_min=72 J",
+        "v=3 m/s; E_min=18 J",
+        "v=9 m/s; E_min=36 J",
+        "v=3 m/s; E_min=36 J"
+      ],
+      "correct": 3,
+      "explanation": "1. Homogeneity requires [A]=M and [B]=M L^4 T^-4, consistent with the supplied units.\n2. For positive terms, A v^2+B/v^2≥2sqrt(AB), with equality when A v^2=B/v^2.\n3. Hence v^4=B/A=81 m^4 s^-4 and v=3 m/s.\n4. The minimum is 2sqrt(2×162)=36 J; direct substitution gives 18+18 J.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-024",
+      "topic": "Angular uncertainty in ill-conditioned triangulation",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A supplied triangulation model is x=b/(cot α-cot β). Take b=10 m exactly, α=30.00° and β=31.00°, each with an independently bounded error of ±0.01°. Using first-order worst-case propagation, what is the approximate maximum percentage uncertainty in x? Derivatives of trigonometric functions use radians.",
+      "options": ["0.0200%", "2.00%", "0.200%", "0.0349%"],
+      "correct": 1,
+      "explanation": "1. Let D=cot α-cot β, so δx/x≈δD/|D| because b is exact.\n2. The bound is δD≤(csc^2 α+csc^2 β)δθ, with δθ=0.01π/180 rad.\n3. At the given angles D≈0.0677713 and the resulting ratio is about 0.0200098.\n4. Thus the percentage bound is about 2.00%. Small angular errors are amplified by the small difference D.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-025",
+      "topic": "Uncertainty in a fitted force-law crossover",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A force model is F=a v+b v^2 with positive a,b. At exact speeds u=1 m/s and 2u, measurements are F1=(3.00±0.03) N and F2=(8.00±0.08) N with independent bounded errors. Define v* by equality of the two force contributions. What is v* and its first-order maximum absolute uncertainty?",
+      "options": [
+        "v*=(4.00±0.24) m/s",
+        "v*=(2.00±0.24) m/s",
+        "v*=(2.00±0.12) m/s",
+        "v*=(2.00±0.08) m/s"
+      ],
+      "correct": 1,
+      "explanation": "1. Solving the two force equations gives a=(2F1-F2/2)/u and b=(F2/2-F1)/u^2.\n2. Equal contributions require v*=a/b=u(4F1-F2)/(F2-2F1)=2 m/s.\n3. At the central readings and u=1 m/s, sensitivities to F1 and F2 are +4 and -1.5 (m/s)/N.\n4. The bound is 4(0.03)+1.5(0.08)=0.24 m/s. Fitted a and b must not be propagated as independent inputs.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-026",
+      "topic": "Inferring correlation from two uncertainty combinations",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Positive x and y each have relative STANDARD uncertainty 2%. Their product xy has first-order relative standard uncertainty 2%. Using linear covariance propagation, what correlation coefficient ρ_xy and relative standard uncertainty of x/y follow?",
+      "options": [
+        "ρ_xy=+1/2; u_rel(x/y)=2%",
+        "ρ_xy=-1/2; u_rel(x/y)=sqrt(12)%",
+        "ρ_xy=-1; u_rel(x/y)=4%",
+        "ρ_xy=0; u_rel(x/y)=sqrt(8)%"
+      ],
+      "correct": 1,
+      "explanation": "1. For the product, percent-squared relative variance is 4+4+2ρ_xy(2)(2).\n2. Setting this equal to 2^2 gives 4=8+8ρ_xy and ρ_xy=-1/2.\n3. For the quotient the covariance term changes sign, giving 4+4-8(-1/2)=12.\n4. Thus the relative standard uncertainty is sqrt(12)%, not a worst-case sum.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-027",
+      "topic": "Contact-time scaling from two physical models",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "An idealised elastic contact obeys F∝Y sqrt(R) δ^(3/2), where Y has pressure dimensions, R is a curvature length and δ compression. Assume initial kinetic energy m v^2 sets the work scale and contact time τ scales as δ_max/v. If m and R both multiply by 32 while Y and v stay fixed, what is τ_new/τ_old?",
+      "options": ["2", "4", "8", "1"],
+      "correct": 0,
+      "explanation": "1. Work is the integral of force over compression, so its scale is Y sqrt(R) δ_max^(5/2).\n2. Equate this with m v^2 to get δ_max∝m^(2/5)v^(4/5)Y^(-2/5)R^(-1/5).\n3. Then τ∝δ_max/v∝m^(2/5)v^(-1/5)Y^(-2/5)R^(-1/5).\n4. The ratio is 32^(2/5)32^(-1/5)=32^(1/5)=2. The final expression has time dimensions.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-028",
+      "topic": "Coupled diffusion and temperature scaling",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "For a model particle, D=k_B Θ/(6πηr), ℓ=αr and a characteristic time τ=ℓ^2/D. All parameters are positive. Here Θ is absolute temperature, k_B and α are constants, and η and r vary with Θ as η∝Θ^-2 and r∝Θ^(1/2). What happens to τ when Θ doubles?",
+      "options": [
+        "It is multiplied by 2 sqrt(2).",
+        "It is multiplied by 1/(2 sqrt(2)).",
+        "It is multiplied by 1/sqrt(2).",
+        "It is multiplied by sqrt(2)."
+      ],
+      "correct": 1,
+      "explanation": "1. Combine the supplied relations: τ∝r^2×ηr/Θ=ηr^3/Θ.\n2. Substitute the two temperature dependences: τ∝Θ^-2×Θ^(3/2)×Θ^-1=Θ^(-3/2).\n3. Doubling temperature therefore multiplies τ by 2^(-3/2)=1/(2sqrt(2)).\n4. Dimensional checking uses [k_BΘ]=energy and [ηr]=M T^-1, giving [D]=L^2 T^-1 and [τ]=T.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-029",
+      "topic": "A reflectivity calibration that cancels a measured input",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "For the SAME steady photon beam, supplied models give absorbed force F_a=P/c, partially reflecting force F_m=(1+r)P/c and power P=N h c/λ. Reflectivity is inferred as r=F_m/F_a-1, then h is computed as F_m λ/[N(1+r)]. Independent primitive maximum percentage uncertainties are F_a:1%, F_m:5%, λ:0.5%, N:2%. What is the first-order maximum percentage uncertainty in h? Here N is the photon arrival rate and λ is the wavelength.",
+      "options": ["8.5%", "2.5%", "3.5%", "13.5%"],
+      "correct": 2,
+      "explanation": "1. Insert the fitted reflectivity before propagating: 1+r=F_m/F_a.\n2. Then h=F_m λ/[N(F_m/F_a)]=F_a λ/N; F_m cancels exactly.\n3. The surviving bounded relative contributions add: 1%+0.5%+2%=3.5%.\n4. The unit is force×length/(count rate)=J s, consistent with action; count rate has units s^-1.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-hard-030",
+      "topic": "An exponent fitted from two noisy ratios",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A model Y=C X^n is fitted from central ratios X2/X1=4 and Y2/Y1=8. Each of X1,X2,Y1,Y2 has independent residual relative STANDARD uncertainty 1%. The X readings share an additional common multiplicative calibration uncertainty of 5%, and the Y readings share a separate one of 5%. What are n and its first-order absolute standard uncertainty?",
+      "options": [
+        "n=1.500; u(n)≈0.0184",
+        "n=2.000; u(n)≈0.0184",
+        "n=1.500; u(n)≈0.00721",
+        "n=1.500; u(n)≈0.0559"
+      ],
+      "correct": 0,
+      "explanation": "1. The exponent is n=ln(Y2/Y1)/ln(X2/X1)=ln8/ln4=1.5.\n2. Both common multiplicative calibrations cancel exactly inside their respective ratios.\n3. Residual logarithmic variances are 2(0.01)^2 for each ratio. Linear propagation gives u(n)^2=[2(0.01)^2+n^2×2(0.01)^2]/(ln4)^2.\n4. This gives u(n)=sqrt(0.00065)/ln4≈0.0183908, an absolute uncertainty in the dimensionless exponent.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    }
+  ]
+}

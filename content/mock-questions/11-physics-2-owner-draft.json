@@ -1,0 +1,1365 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-E-001",
+      "topic": "Distance and displacement",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A walker moves 9 m to the right and then 4 m to the left along a line. What is the net displacement?",
+      "options": ["5 m right", "13 m right", "5 m left", "13 m left"],
+      "correct": 0,
+      "explanation": "Taking right as positive, displacement = 9 - 4 = +5 m, i.e., 5 m right.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-E-002",
+      "topic": "Distance and displacement",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A cyclist goes 6 m east and then 8 m west on a straight road. What is the total distance travelled?",
+      "options": ["2 m", "14 m", "8 m", "6 m"],
+      "correct": 1,
+      "explanation": "Distance adds actual path lengths regardless of direction: 6 + 8 = 14 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-E-003",
+      "topic": "SI units",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Which is the SI unit of acceleration?",
+      "options": ["m/s", "m/s²", "m²/s", "s/m"],
+      "correct": 1,
+      "explanation": "Acceleration is change of velocity per time, so its SI unit is (m/s)/s = m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-E-004",
+      "topic": "Uniform acceleration",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A body has initial velocity 2 m/s and accelerates uniformly at 3 m/s² for 4 s. Its final velocity is:",
+      "options": ["10 m/s", "12 m/s", "14 m/s", "16 m/s"],
+      "correct": 2,
+      "explanation": "v = u + at = 2 + 3 × 4 = 14 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-E-005",
+      "topic": "Position-time graph",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A horizontal straight line on a position-time graph indicates:",
+      "options": [
+        "constant nonzero acceleration",
+        "increasing velocity",
+        "object at rest",
+        "constant negative velocity"
+      ],
+      "correct": 2,
+      "explanation": "A horizontal x–t graph has zero slope, so velocity dx/dt = 0.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-E-006",
+      "topic": "Velocity sign",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "If the velocity of a particle on the x-axis is −7 m/s, it moves:",
+      "options": [
+        "towards negative x",
+        "towards positive x",
+        "with negative speed",
+        "with zero acceleration necessarily"
+      ],
+      "correct": 0,
+      "explanation": "The minus sign specifies motion in the negative x-direction. Speed remains positive (7 m/s).",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-E-007",
+      "topic": "Free fall",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "An object is released from rest. Taking g = 10 m/s², how far does it fall in 2 s?",
+      "options": ["10 m", "15 m", "20 m", "40 m"],
+      "correct": 2,
+      "explanation": "s = ut + ½gt² = 0 + ½ × 10 × 2² = 20 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-E-008",
+      "topic": "Velocity-time graph",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "The signed area under a velocity–time graph gives:",
+      "options": [
+        "acceleration",
+        "displacement",
+        "instantaneous speed",
+        "jerk"
+      ],
+      "correct": 1,
+      "explanation": "Displacement is the integral of velocity over time, represented by signed area under the v–t curve.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-E-009",
+      "topic": "Uniform acceleration",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A vehicle slows from 24 m/s to 8 m/s in 4 s at constant acceleration. Find its acceleration.",
+      "options": ["−4 m/s²", "+4 m/s²", "−8 m/s²", "+8 m/s²"],
+      "correct": 0,
+      "explanation": "a = (v - u)/t = (8 - 24)/4 = −4 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-E-010",
+      "topic": "Vertical motion",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "At the highest point of a ball thrown vertically upward (ignoring air resistance), which statement is true?",
+      "options": [
+        "velocity and acceleration are both zero",
+        "velocity is zero, acceleration is downward",
+        "velocity is upward, acceleration zero",
+        "velocity is downward, acceleration upward"
+      ],
+      "correct": 1,
+      "explanation": "Instantaneous velocity is zero at the top, but gravitational acceleration g still points downward.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-001",
+      "topic": "Average speed",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A vehicle covers two equal-distance sections at 12 m/s and 18 m/s. Find its average speed.",
+      "options": ["15 m/s", "14.4 m/s", "16 m/s", "13.5 m/s"],
+      "correct": 1,
+      "explanation": "For equal distances, average speed = 2v₁v₂/(v₁+v₂) = 2×12×18/30 = 14.4 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-002",
+      "topic": "Piecewise motion",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A car starts from rest, accelerates at 2 m/s² for 6 s, then travels at the attained constant speed for 4 s. Total distance?",
+      "options": ["72 m", "80 m", "84 m", "96 m"],
+      "correct": 2,
+      "explanation": "First phase: s₁ = ½×2×6² = 36 m and v = 12 m/s. Second: s₂ = 12×4 = 48 m. Total 84 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-003",
+      "topic": "Variable velocity",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A particle moves on a line with v(t) = 5 + 3t (m/s). Its displacement from t = 0 to 4 s is:",
+      "options": ["32 m", "36 m", "40 m", "44 m"],
+      "correct": 3,
+      "explanation": "Δx = ∫₀⁴(5+3t)dt = [5t + 1.5t²]₀⁴ = 20+24 = 44 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-004",
+      "topic": "Stopping distance",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A vehicle moving at 20 m/s brakes with constant acceleration −4 m/s². How far does it travel before stopping?",
+      "options": ["40 m", "50 m", "60 m", "80 m"],
+      "correct": 1,
+      "explanation": "Using v² = u² + 2as with v = 0: 0 = 400 − 8s, so s = 50 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-005",
+      "topic": "Average velocity",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "Position is x(t) = 2t² − 3t + 4 metres. Average velocity from t = 1 s to 3 s equals:",
+      "options": ["3 m/s", "4 m/s", "5 m/s", "6 m/s"],
+      "correct": 2,
+      "explanation": "x(3)=18−9+4=13; x(1)=2−3+4=3. Average velocity=(13−3)/(3−1)=5 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-006",
+      "topic": "Graph area",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A triangular positive velocity–time graph rises from 0 to 12 m/s in 3 s and falls to 0 at t = 6 s. Displacement is:",
+      "options": ["18 m", "24 m", "36 m", "72 m"],
+      "correct": 2,
+      "explanation": "Signed area of the triangle = ½×base×height = ½×6×12 = 36 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-007",
+      "topic": "Vertical motion",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A stone is projected vertically upward at 30 m/s. With g = 10 m/s², what is its displacement after 4 s?",
+      "options": ["20 m upward", "40 m upward", "40 m downward", "80 m upward"],
+      "correct": 1,
+      "explanation": "Taking upward positive: y=ut−½gt²=30×4−5×16=40 m upward.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-008",
+      "topic": "Distance in nth second",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A particle has initial velocity 3 m/s and constant acceleration 2 m/s² in the same direction. Distance travelled during the fifth second is:",
+      "options": ["10 m", "11 m", "12 m", "13 m"],
+      "correct": 2,
+      "explanation": "Distance in nth second is u + (a/2)(2n−1). For n=5: 3+1×9=12 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-009",
+      "topic": "Average speed",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A train travels for equal time intervals at 10 m/s, 20 m/s and 30 m/s, all in the same direction. Average speed is:",
+      "options": ["15 m/s", "18 m/s", "20 m/s", "24 m/s"],
+      "correct": 2,
+      "explanation": "For equal time periods, average speed is the arithmetic mean: (10+20+30)/3 = 20 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-010",
+      "topic": "Distance versus displacement",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A particle has position x(t)=t²−6t+8 metres for 0≤t≤5 s. Total distance travelled equals:",
+      "options": ["4 m", "9 m", "13 m", "17 m"],
+      "correct": 2,
+      "explanation": "v=2t−6 changes sign at t=3. x(0)=8, x(3)=−1, x(5)=3. Distance = |−1−8|+|3−(−1)|=9+4=13 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-011",
+      "topic": "Piecewise acceleration",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A body starts from rest, accelerates at 4 m/s² for 3 s, then accelerates at −2 m/s² for 5 s. Final velocity is:",
+      "options": ["0 m/s", "2 m/s", "4 m/s", "−2 m/s"],
+      "correct": 1,
+      "explanation": "Velocity after first part = 0+4×3=12 m/s. After second part: 12−2×5=2 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-012",
+      "topic": "Signed area",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "Velocity is +4 m/s from t=0 to 4 s and −2 m/s from t=4 to 6 s. Net displacement is:",
+      "options": ["12 m", "16 m", "20 m", "−12 m"],
+      "correct": 0,
+      "explanation": "Displacement = (+4)(4) + (−2)(2) = 16−4 = 12 m. Distance would be 20 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-013",
+      "topic": "Unit conversion",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 180 m-long train moving at 90 km/h completely crosses a 120 m-long platform. What time does the train take to cross the platform?",
+      "options": ["7.2 s", "10 s", "12 s", "15 s"],
+      "correct": 2,
+      "explanation": "Train must move its own length plus platform length: 180+120=300 m. Speed=90×5/18=25 m/s. Time=300/25=12 s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-014",
+      "topic": "Relative motion",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "Two cars travel in the same direction at 30 m/s and 20 m/s. The faster car starts 100 m behind. After how long will it catch the slower car?",
+      "options": ["5 s", "8 s", "10 s", "20 s"],
+      "correct": 2,
+      "explanation": "Relative speed = 30−20=10 m/s. Catch-up time = separation/relative speed =100/10=10 s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-015",
+      "topic": "Uniform acceleration",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A body speeds up uniformly from 8 m/s to 20 m/s while covering 84 m. Its acceleration is:",
+      "options": ["1 m/s²", "2 m/s²", "3 m/s²", "4 m/s²"],
+      "correct": 1,
+      "explanation": "From v²−u²=2as: a=(400−64)/(2×84)=336/168=2 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-016",
+      "topic": "Free fall",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "An object is dropped from rest and falls freely for 3 s. Take g=10 m/s². Distance covered during the third second is:",
+      "options": ["15 m", "20 m", "25 m", "35 m"],
+      "correct": 2,
+      "explanation": "s(3)−s(2)=½g(3²−2²)=5(9−4)=25 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-017",
+      "topic": "Direction reversal",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A particle has v(t)=12−4t m/s. How much total distance does it cover from t=0 to 5 s?",
+      "options": ["10 m", "18 m", "22 m", "26 m"],
+      "correct": 3,
+      "explanation": "v changes sign at t=3. Distance 0–3 s = area ½×3×12=18 m; 3–5 s = ½×2×8=8 m. Total 26 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-018",
+      "topic": "Acceleration-time graph",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "Acceleration is +2 m/s² for the first 4 s and −3 m/s² for the next 2 s. Change in velocity over all 6 s is:",
+      "options": ["−2 m/s", "0 m/s", "+2 m/s", "+14 m/s"],
+      "correct": 2,
+      "explanation": "Δv = ∫a dt = (+2)(4)+(−3)(2)=8−6=+2 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-019",
+      "topic": "Average speed and conversion",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A scooter moves steadily at 60 km/h for 2 minutes. Approximate distance covered is:",
+      "options": ["1 km", "1.5 km", "2 km", "3 km"],
+      "correct": 2,
+      "explanation": "Time is 2/60 h. Distance = 60 km/h × (2/60 h) = 2 km.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-M-020",
+      "topic": "Unequal time average",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A bus travels for 20 s at 6 m/s and then 10 s at 15 m/s along the same direction. Its average velocity is:",
+      "options": ["8 m/s", "9 m/s", "10.5 m/s", "12 m/s"],
+      "correct": 1,
+      "explanation": "Total displacement = 6×20+15×10=270 m. Total time 30 s; average velocity=270/30=9 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-001",
+      "topic": "Polynomial motion",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A particle moves according to x(t)=t³−6t²+9t (metres). Its total distance travelled from 0 to 4 s is:",
+      "options": ["4 m", "8 m", "12 m", "16 m"],
+      "correct": 2,
+      "explanation": "v=3(t−1)(t−3), so reversals at 1 and 3 s. Positions x(0)=0, x(1)=4, x(3)=0, x(4)=4. Distance=4+4+4=12 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-002",
+      "topic": "Velocity reversal integral",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Velocity is v(t)=6t−t² m/s. The total distance travelled during 0≤t≤8 s is:",
+      "options": ["44 m", "52 m", "152/3 m", "64 m"],
+      "correct": 2,
+      "explanation": "v=t(6−t) changes sign at t=6. Displacement 0–6 = [3t²−t³/3]₀⁶=36 m. From 6–8 it is −44/3 m, contributing +44/3 distance. Total 36+44/3=152/3 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-003",
+      "topic": "Polynomial motion",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A particle has x(t)=t³−9t²+24t metres. Total distance between 0 and 6 s equals:",
+      "options": ["36 m", "40 m", "44 m", "52 m"],
+      "correct": 2,
+      "explanation": "v=3(t−2)(t−4), so turning at t=2,4. x(0)=0, x(2)=20, x(4)=16, x(6)=36. Distance =20+4+20=44 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-004",
+      "topic": "Vertical launch from height",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A stone is thrown vertically upward at 30 m/s from a balcony 40 m above ground. Take g=10 m/s². Time until it hits the ground is:",
+      "options": ["3+√17 s", "3+√13 s", "6+√17 s", "√17−3 s"],
+      "correct": 0,
+      "explanation": "Ground height equation: 40+30t−5t²=0 ⇒ t²−6t−8=0. Positive root t=3+√17 s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-005",
+      "topic": "Three-stage motion",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A train starts from rest, accelerates at 2 m/s² for 5 s, cruises for 8 s, then brakes uniformly to rest over 5 s. Total distance is:",
+      "options": ["105 m", "120 m", "130 m", "150 m"],
+      "correct": 2,
+      "explanation": "Peak speed=2×5=10 m/s. Accelerating distance 25 m, cruise 80 m, braking distance ½(10+0)×5=25 m. Sum=130 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-006",
+      "topic": "Braking with reaction time",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A driver travels at 25 m/s, takes 0.8 s to react, then brakes uniformly at 5 m/s². Total stopping distance is:",
+      "options": ["62.5 m", "75 m", "82.5 m", "100 m"],
+      "correct": 2,
+      "explanation": "Reaction distance 25×0.8=20 m. Braking distance u²/(2a)=625/10=62.5 m. Sum=82.5 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-007",
+      "topic": "Variable acceleration",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A body initially moves at +2 m/s and has acceleration a(t)=6t−4 m/s². Displacement from t=0 to 2 s is:",
+      "options": ["0 m", "4 m", "6 m", "8 m"],
+      "correct": 1,
+      "explanation": "Integrate a: v=2+3t²−4t. Integrate v over 0–2: Δx=[2t+t³−2t²]₀²=4+8−8=4 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-008",
+      "topic": "Comparative free fall",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Two stones are dropped from the same point at least 130 m above the ground, at different times. The first has been falling for 3 s when the second is released. What is the separation 2 s after the second release (g=10 m/s²)?",
+      "options": ["65 m", "75 m", "85 m", "105 m"],
+      "correct": 3,
+      "explanation": "By then the first has fallen for 5 s: 5×25=125 m; the second for 2 s:5×4=20 m. Separation=125−20=105 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-009",
+      "topic": "Velocity-time piecewise",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A body has v=4t (m/s) from t=0 to 3 s and v=12−6(t−3) from t=3 to 6 s. Total distance over 6 s is:",
+      "options": ["27 m", "30 m", "33 m", "36 m"],
+      "correct": 2,
+      "explanation": "First segment area=½×3×12=18 m. Second v crosses 0 at t=5, positive area=½×2×12=12 m, negative magnitude=½×1×6=3 m. Total=33 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-010",
+      "topic": "Catch-up with acceleration",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A car starts from rest and accelerates at 2 m/s². At the same instant, a bike 48 m ahead moves at constant 8 m/s. When does the car catch it?",
+      "options": ["12 s", "8+4√7 s", "4+8√2 s", "4+4√7 s"],
+      "correct": 0,
+      "explanation": "Set car displacement t² equal to 48+8t: t²−8t−48=0, so t=(8+√256)/2=12 s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-011",
+      "topic": "Two-stage deceleration",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A train moving at 30 m/s decelerates at 2 m/s² for 5 s, then at 4 m/s² until it stops. What total distance does it cover?",
+      "options": ["125 m", "150 m", "175 m", "200 m"],
+      "correct": 2,
+      "explanation": "Stage 1: speed drops from 30 to20 m/s, distance=(30+20)/2×5=125 m. Stage 2 stopping distance=20²/(2×4)=50 m. Total=175 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-012",
+      "topic": "Last second of free fall",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A ball is dropped from rest and reaches the ground after 5 s. With g=10 m/s², what fraction of the total height is covered in the final 1 s?",
+      "options": ["5/25", "7/25", "9/25", "11/25"],
+      "correct": 2,
+      "explanation": "Distance in final second=½g(5²−4²)=5×9=45 m. Height=½g×5²=125 m. Fraction=45/125=9/25.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-013",
+      "topic": "Nth second comparison",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A particle undergoes constant acceleration. Distances traversed during its fourth and sixth seconds are 15 m and 23 m, with motion always forward. Its initial speed is:",
+      "options": ["−1 m/s", "1 m/s", "3 m/s", "5 m/s"],
+      "correct": 1,
+      "explanation": "s₄=u+3.5a=15 and s₆=u+5.5a=23. Subtraction:2a=8 ⇒ a=4. Then u=15−14=1 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-014",
+      "topic": "Crossing moving vehicles",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Two vehicles move towards each other on a straight road. Initial gap is 300 m; one starts from rest with acceleration 2 m/s² toward the other, which travels at constant 10 m/s toward it. Meeting time is:",
+      "options": ["10 s", "5(√13−1) s", "10(√3−1) s", "15 s"],
+      "correct": 1,
+      "explanation": "Relative closure is t²+10t=300. Positive solution of t²+10t−300=0 is (−10+√1300)/2=5(√13−1) s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-015",
+      "topic": "Position extrema",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A particle has x(t)=t⁴−8t² metres for t≥0. Its minimum position and corresponding time are:",
+      "options": ["−16 m at 2 s", "−8 m at 2 s", "−16 m at 4 s", "0 m at 0 s"],
+      "correct": 0,
+      "explanation": "dx/dt=4t(t²−4), stationary at t=0 and t=2. x(2)=16−32=−16 m and is the minimum for t≥0.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-016",
+      "topic": "Acceleration sign changes",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A particle starts at +10 m/s. Its acceleration is −2 m/s² for 8 s, then +4 m/s² for 3 s. Total distance travelled is:",
+      "options": ["34 m", "38 m", "40 m", "43 m"],
+      "correct": 3,
+      "explanation": "First interval stops at 5 s, going 25 m forward, then moves backward for 3 s:9 m. Second starts v=−6 m/s, stops after 1.5 s, goes 4.5 m backward and then 4.5 m forward. Total=25+9+4.5+4.5=43 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-017",
+      "topic": "Relative velocity with head start",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A bus moving steadily at 15 m/s passes a parked car. The car starts 4 s later with acceleration 3 m/s². How long after the car starts does it catch the bus?",
+      "options": ["5+√65 s", "5+√65/2 s", "10+√65 s", "5+√105 s"],
+      "correct": 0,
+      "explanation": "At car start, bus is 60 m ahead. Let τ seconds after car starts: 1.5τ²=60+15τ ⇒ τ²−10τ−40=0 ⇒ τ=5+√65 s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-018",
+      "topic": "Piecewise position",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A particle starts at x=0. It moves at +6 m/s for 3 s, then −4 m/s for 5 s, then +2 m/s for 4 s. Find total distance and final displacement.",
+      "options": ["46 m, +6 m", "46 m, +14 m", "36 m, +6 m", "42 m, −6 m"],
+      "correct": 0,
+      "explanation": "Distance=6×3+4×5+2×4=18+20+8=46 m; displacement=18−20+8=+6 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-019",
+      "topic": "Average speed round trip",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A truck travels half the total route distance at 24 km/h, one quarter at 36 km/h and the remaining quarter at 72 km/h. Average speed is:",
+      "options": ["32 km/h", "36 km/h", "288/7 km/h", "40 km/h"],
+      "correct": 0,
+      "explanation": "For total distance D, time = D(1/(2×24)+1/(4×36)+1/(4×72)) = D(1/48+1/144+1/288)=D(9/288)=D/32. Average speed =32 km/h.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-020",
+      "topic": "Gravity time symmetry",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A ball is thrown vertically upward. It crosses a level 15 m above launch point at t=1 s and again at t=3 s. Assuming constant g, find launch speed and g.",
+      "options": [
+        "20 m/s, 10 m/s²",
+        "15 m/s, 5 m/s²",
+        "25 m/s, 10 m/s²",
+        "30 m/s, 10 m/s²"
+      ],
+      "correct": 0,
+      "explanation": "At equal height: u−g(1+3)/2=0 ⇒ u=2g. At t=1, 15=u−g/2=1.5g ⇒ g=10 m/s²; u=20 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-021",
+      "topic": "Position-dependent acceleration",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A particle moves along +x with speed 10 m/s at x=0. Its acceleration depends on position as a(x)=2x (m/s² when x is in metres). Find its speed at x=5 m.",
+      "options": ["5√6 m/s", "5√5 m/s", "5√7 m/s", "10√6 m/s"],
+      "correct": 0,
+      "explanation": "Use a=v dv/dx. Thus v dv/dx=2x ⇒ (v²−100)/2=x². At x=5, v²=100+2×25=150, so v=5√6 m/s (positive direction).",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-022",
+      "topic": "Average velocity and speed",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A particle moves as x(t)=t²−4t (metres). For t=0 to4 s, what are average velocity and average speed?",
+      "options": [
+        "0 m/s and 2 m/s",
+        "2 m/s and 2 m/s",
+        "0 m/s and 4 m/s",
+        "−2 m/s and 2 m/s"
+      ],
+      "correct": 0,
+      "explanation": "x(0)=0, x(2)=−4 (turning), x(4)=0. Net displacement 0, total distance=4+4=8 m in 4 s. Average velocity=0 and speed=2 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-023",
+      "topic": "Time-dependent acceleration",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A body starts from rest with acceleration a(t)=4t m/s². Distance travelled in the interval t=1 s to t=3 s is:",
+      "options": ["40/3 m", "52/3 m", "56/3 m", "64/3 m"],
+      "correct": 1,
+      "explanation": "Integrate a to v=2t², then x(t)=2t³/3. Distance x(3)−x(1)= (2/3)(27−1)=52/3 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-024",
+      "topic": "Time-dependent velocity",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "For v(t)=t²−4t+3 (m/s), find total distance between t=0 and t=4 s.",
+      "options": ["4 m", "16/3 m", "20/3 m", "8 m"],
+      "correct": 0,
+      "explanation": "v=(t−1)(t−3). Antiderivative F=t³/3−2t²+3t. F(0)=0,F(1)=4/3,F(3)=0,F(4)=4/3. Total distance=4/3+4/3+4/3=4 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-025",
+      "topic": "Two-phase gravity motion",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "From a platform 45 m high, a stone is dropped. At the same instant, a second stone is projected vertically upward from ground at 20 m/s. With g=10 m/s², when are they at the same height?",
+      "options": ["1.5 s", "2.25 s", "3 s", "4.5 s"],
+      "correct": 1,
+      "explanation": "Heights: upper stone y₁=45−5t²; lower stone y₂=20t−5t². Equate:45=20t ⇒ t=2.25 s (both still above ground at that instant).",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-026",
+      "topic": "Acceleration-time integration",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A particle begins with v₀=−3 m/s and acceleration a(t)=2t+1 (m/s²). Its velocity at t=2 s is:",
+      "options": ["1 m/s", "2 m/s", "3 m/s", "4 m/s"],
+      "correct": 2,
+      "explanation": "Δv=∫₀²(2t+1)dt=[t²+t]₀²=6 m/s; final v=−3+6=+3 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-027",
+      "topic": "Relative motion and braking",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Car A moves at constant 20 m/s. Car B is 60 m ahead, moving at 10 m/s and accelerates forward at 2 m/s². Can A catch B?",
+      "options": [
+        "Yes, first catch after 4 s",
+        "Yes, first catch after 6 s",
+        "Yes, first catch after 10 s",
+        "No, A never catches B"
+      ],
+      "correct": 3,
+      "explanation": "Relative gap g(t)=60−(20−10)t+½(2)t² =60−10t+t². Its minimum occurs at t=5 s and is 35 m>0, so there is no meeting.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-028",
+      "topic": "Non-uniform braking",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A vehicle starts at +30 m/s and decelerates with a(t)=−2t (m/s²). When does it first stop?",
+      "options": ["√15 s", "√30 s", "15 s", "30 s"],
+      "correct": 1,
+      "explanation": "v(t)=30+∫₀ᵗ−2τdτ=30−t². Set v=0: t=√30 s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-029",
+      "topic": "Free fall with delayed start",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "An object is dropped from a tower. During the last 2 s of its 6 s fall, what fraction of total height does it cover?",
+      "options": ["4/9", "5/9", "2/3", "7/9"],
+      "correct": 1,
+      "explanation": "With s∝t², fraction during t=4 to6 is (6²−4²)/6²=20/36=5/9.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "GNO-PHY11-C02-H-030",
+      "topic": "Elevator direction reversal",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "An elevator starts from rest, accelerates upward at 2 m/s² for 3 s, then accelerates downward at 1 m/s² for 6 s, and finally downward at 3 m/s² for 2 s. Find total distance and final velocity (upward positive).",
+      "options": [
+        "21 m; −6 m/s",
+        "33 m; −6 m/s",
+        "33 m; +6 m/s",
+        "27 m; −6 m/s"
+      ],
+      "correct": 1,
+      "explanation": "First phase: v=6 m/s, displacement +9 m. Second: v falls from +6 to 0, displacement +18 m. Third: it starts from rest, moves downward 6 m and ends at −6 m/s. Total distance=9+18+6=33 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; AI-drafted per manifest; not official PYQs",
+        "reference": "gnosis_chapter2_motion_straight_line_draft (1).zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only. Computational/editorial findings in docs/question-banks/11-physics-2-import-review.md. Academic approval pending; known difficulty and repetition flags must be resolved."
+      }
+    }
+  ]
+}

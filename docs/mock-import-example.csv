@@ -1,0 +1,2 @@
+id,className,subject,chapter,topic,type,difficulty,prompt,options,correct,tolerance,explanation,sourceKind,sourceLabel,sourceReference,verificationStatus,verificationMethod
+"example-units-001","11","physics","1","SI units","single","easy","Which option is the SI base unit of length?","[""metre"",""centimetre"",""kilometre"",""millimetre""]","0","","The metre is the SI base unit of length. The other choices are decimal multiples or submultiples.","original","GNOSIS import format example","","draft","Awaiting subject review. This example is not published."

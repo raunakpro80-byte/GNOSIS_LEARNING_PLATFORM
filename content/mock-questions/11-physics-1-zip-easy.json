@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-easy-001",
+      "topic": "Ratio of SI prefixes",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "How many milliwatts equal one megawatt?",
+      "options": ["10^3", "10^9", "10^-9", "10^6"],
+      "correct": 1,
+      "explanation": "1. Mega means 10^6 and milli means 10^-3.\n2. Divide the size of a megawatt by the size of a milliwatt: 10^6/10^-3 = 10^9.\n3. Thus 1 MW = 10^9 mW; the physical power is unchanged.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-easy-002",
+      "topic": "Luminous-intensity unit",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Which SI unit measures luminous intensity?",
+      "options": ["Kelvin", "Lux", "Candela", "Mole"],
+      "correct": 2,
+      "explanation": "1. Luminous intensity is an SI base quantity.\n2. Its unit is the candela, symbol cd.\n3. Lux measures illuminance; mole and kelvin refer to different base quantities.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-easy-003",
+      "topic": "Resolution versus accuracy",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Which description defines the least count of an ideal graduated measuring instrument?",
+      "options": [
+        "The smallest change in the measured quantity that one scale division represents.",
+        "A guarantee that every measurement equals the true value.",
+        "The difference between every reading and the true value.",
+        "The maximum value the instrument can measure."
+      ],
+      "correct": 0,
+      "explanation": "1. Least count describes the scale increment or nominal resolution.\n2. It is different from range, which is the largest measurable value.\n3. Resolution alone does not guarantee accuracy or remove bias.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-easy-004",
+      "topic": "Parallax prevention",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "When reading the position of a pointer above a scale, which viewing position reduces parallax error?",
+      "options": [
+        "View along a line perpendicular to the scale through the pointer.",
+        "View from the left end of the scale.",
+        "Increase the angle between the viewing line and the scale normal.",
+        "View from the right end of the scale."
+      ],
+      "correct": 0,
+      "explanation": "1. A pointer separated from a scale can appear shifted when viewed obliquely.\n2. Viewing normally through the pointer aligns it with its scale mark.\n3. Changing the side of an oblique view changes the apparent reading rather than removing parallax.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-easy-005",
+      "topic": "Independent random errors",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Independent readings have identical finite variance and zero-mean random errors. What happens to the random uncertainty of their arithmetic mean as more readings are taken?",
+      "options": [
+        "It increases in direct proportion to the number of readings.",
+        "It necessarily becomes exactly zero after ten readings.",
+        "It removes every fixed calibration bias.",
+        "It decreases; a fixed calibration bias would not be removed by averaging."
+      ],
+      "correct": 3,
+      "explanation": "1. Independent zero-mean fluctuations partly cancel in a mean.\n2. For identical independent variances, the standard uncertainty of the mean scales as 1/sqrt(N).\n3. A bias shared by all readings remains shared by the mean.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-easy-006",
+      "topic": "Unambiguous significant-figure notation",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Which notation states a length of 1500 m with exactly three significant figures?",
+      "options": [
+        "1.50 × 10^3 m",
+        "1.500 × 10^3 m",
+        "1.5000 × 10^3 m",
+        "1.5 × 10^3 m"
+      ],
+      "correct": 0,
+      "explanation": "1. In scientific notation, count the significant digits in the coefficient.\n2. The coefficient 1.50 has three significant figures.\n3. The power of ten sets magnitude and does not change that count.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-easy-007",
+      "topic": "Cancellation of a constant balance offset",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A balance adds the same unknown constant offset to every reading. It indicates 120.4 g for a container with a sample and 20.4 g for the empty container. Ignoring random error, what sample mass follows from these readings?",
+      "options": ["99.5 g", "100.0 g", "140.8 g", "120.4 g"],
+      "correct": 1,
+      "explanation": "1. Write the two readings as container + sample + offset and container + offset.\n2. Subtract the readings; the container and common offset cancel.\n3. The sample mass is 120.4 - 20.4 = 100.0 g.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-easy-008",
+      "topic": "Units of absolute and relative uncertainty",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A distance is recorded in millimetres. Which statement about its uncertainties is correct?",
+      "options": [
+        "Absolute uncertainty is dimensionless; relative uncertainty has units of mm.",
+        "Absolute uncertainty has units of mm; relative uncertainty is dimensionless.",
+        "Both uncertainties have units of mm^2.",
+        "Both absolute and relative uncertainty must have units of mm."
+      ],
+      "correct": 1,
+      "explanation": "1. Absolute uncertainty is a possible change in the distance, so it has the same unit.\n2. Relative uncertainty is absolute uncertainty divided by the distance.\n3. The equal length units cancel in that ratio.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-easy-009",
+      "topic": "Rounding with a carry",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Round the measured value 0.9996 m to three significant figures.",
+      "options": ["0.999 m", "1.000 m", "1 m", "1.00 m"],
+      "correct": 3,
+      "explanation": "1. The first three significant digits are 9, 9 and 9.\n2. The next digit is 6, so rounding carries into the units place.\n3. Write 1.00 m to retain exactly three significant figures after the carry.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "phy11-units-dimensions-easy-010",
+      "topic": "Dimensions of area",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A rectangle has length l and breadth b. What is the dimensional formula of its area lb?",
+      "options": ["[L^3]", "[M L^2]", "[L^2]", "[L]"],
+      "correct": 2,
+      "explanation": "1. Both l and b have dimensions L.\n2. Multiplying gives L × L = L^2.\n3. No mass or time factor is introduced.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS curated original practice — owner ZIP draft revised; not official PYQs"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author recalculation and dimensional/option checks completed. Independent academic, difficulty and syllabus review plus owner approval pending. See 11-physics-1-curation-review.md."
+      }
+    }
+  ]
+}

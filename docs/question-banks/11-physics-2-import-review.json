@@ -1,0 +1,1293 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-18",
+  "chapter": {
+    "className": "11",
+    "subject": "physics",
+    "chapter": 2,
+    "title": "Motion in a Straight Line"
+  },
+  "archiveSha256": "f8151faa127da139578ac021a3a56e340d70c8beec3c0fa8e719c0779d01f186",
+  "importedFile": "content/mock-questions/11-physics-2-owner-draft.json",
+  "sourceMasterSha256": "3dd1a96d206d964cc39f3b4f03a50834dcb43722645bc65f829dfdc7f8b85fe7",
+  "masterEqualsDifficultyFiles": true,
+  "importedCounts": {
+    "easy": 10,
+    "medium": 20,
+    "hard": 30,
+    "all": 60
+  },
+  "approvedCount": 0,
+  "developmentSamplesPreserved": 40,
+  "flaggedCount": 49,
+  "difficultyFlagCounts": {
+    "medium": 12,
+    "hard": 29
+  },
+  "optionDistribution": {
+    "easy": {
+      "A": 3,
+      "B": 4,
+      "C": 3,
+      "D": 0
+    },
+    "medium": {
+      "A": 1,
+      "B": 6,
+      "C": 11,
+      "D": 2
+    },
+    "hard": {
+      "A": 10,
+      "B": 8,
+      "C": 9,
+      "D": 3
+    }
+  },
+  "optionOrdering": "Source ordering retained; no automatic answer shuffle. Rebalance at editorial revision, preserving correct content and updating keys.",
+  "exactNormalizedStemDuplicates": [],
+  "semanticGroups": [
+    {
+      "id": "D01",
+      "classification": "semantic duplicate",
+      "questionIds": ["GNO-PHY11-C02-E-008", "motion11-07"],
+      "finding": "Signed v-t area asks the same quantity in different wording."
+    },
+    {
+      "id": "D02",
+      "classification": "numerical template near-duplicate",
+      "questionIds": ["GNO-PHY11-C02-E-004", "motion11-12"],
+      "finding": "Single substitution in v=u+at; only parameters differ."
+    },
+    {
+      "id": "D03",
+      "classification": "numerical template near-duplicate",
+      "questionIds": ["GNO-PHY11-C02-E-009", "motion11-38"],
+      "finding": "Endpoint velocities to constant acceleration; only parameters differ."
+    },
+    {
+      "id": "D04",
+      "classification": "numerical template near-duplicate",
+      "questionIds": ["GNO-PHY11-C02-E-007", "motion11-15"],
+      "finding": "Dropped-from-rest displacement; only fall duration differs."
+    },
+    {
+      "id": "D05",
+      "classification": "numerical template near-duplicate",
+      "questionIds": ["GNO-PHY11-C02-E-002", "motion11-36"],
+      "finding": "Two opposite legs and sum of their lengths; numeric substitution."
+    },
+    {
+      "id": "D06",
+      "classification": "numerical template near-duplicate",
+      "questionIds": ["GNO-PHY11-C02-M-001", "motion11-22"],
+      "finding": "Equal-distance two-speed harmonic mean with different speeds."
+    },
+    {
+      "id": "D07",
+      "classification": "special-case near-duplicate",
+      "questionIds": [
+        "GNO-PHY11-C02-M-008",
+        "GNO-PHY11-C02-M-016",
+        "motion11-30"
+      ],
+      "finding": "Distance in nth second under constant acceleration; free fall is a specialization."
+    },
+    {
+      "id": "D08",
+      "classification": "solving-structure near-duplicate",
+      "questionIds": [
+        "GNO-PHY11-C02-M-010",
+        "GNO-PHY11-C02-M-017",
+        "GNO-PHY11-C02-H-022",
+        "motion11-21"
+      ],
+      "finding": "Constant acceleration, one interior velocity zero, split path there; H022 adds averaging."
+    },
+    {
+      "id": "D09",
+      "classification": "scaled/shifted polynomial near-duplicate",
+      "questionIds": [
+        "GNO-PHY11-C02-H-001",
+        "GNO-PHY11-C02-H-003",
+        "GNO-PHY11-C02-H-024"
+      ],
+      "finding": "H001 position is exactly 3 times an antiderivative of H024 velocity. H003 uses the same cubic/two-stationary-point path method with shifted roots."
+    },
+    {
+      "id": "D10",
+      "classification": "numerical template near-duplicate",
+      "questionIds": ["GNO-PHY11-C02-H-012", "GNO-PHY11-C02-H-029"],
+      "finding": "Final interval of free fall as fraction of total height; same squared-time ratio."
+    },
+    {
+      "id": "D11",
+      "classification": "numerical template near-duplicate",
+      "questionIds": ["GNO-PHY11-C02-H-010", "motion11-23"],
+      "finding": "Accelerated pursuer versus constant-speed leader with an initial gap; same quadratic model."
+    }
+  ],
+  "lexicalCandidates": [
+    {
+      "a": "GNO-PHY11-C02-E-004",
+      "b": "motion11-12",
+      "score": 0.7333,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C02-E-006",
+      "b": "motion11-40",
+      "score": 0.5833,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C02-E-007",
+      "b": "motion11-15",
+      "score": 0.55,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C02-M-011",
+      "b": "GNO-PHY11-C02-E-004",
+      "score": 0.6471,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C02-M-011",
+      "b": "motion11-12",
+      "score": 0.6471,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C02-H-016",
+      "b": "motion11-21",
+      "score": 0.5714,
+      "exact": false
+    }
+  ],
+  "lexicalDispositions": {
+    "E004/motion11-12": "template near-duplicate D02",
+    "E006/motion11-40": "related, not duplicate: direction versus magnitude",
+    "E007/motion11-15": "template near-duplicate D04",
+    "M011/E004 and M011/motion11-12": "related, not duplicate: two acceleration stages versus one",
+    "H016/motion11-21": "related, not duplicate: two reversals across stages versus one"
+  },
+  "preexistingFiles": [
+    {
+      "file": "content/mock-questions/11-physics-1-easy-batch-01.json",
+      "sha256": "79b57e328e3b4f596fdc371542074eafbc8ca05abc5f3c79cf64f56babbf0a48"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-plan60-easy-batch-01.json",
+      "sha256": "05d752ca52ebf9d666bb76c4c7854a2ee4baef3d28cf04ead384cc0b97cb927d"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-zip-easy.json",
+      "sha256": "5dc4b339a5d712a291cf441cae3dc3f49d1481e1820a94b2060d0145f8c6641c"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-zip-hard.json",
+      "sha256": "4da027490f17f7678d33c9817132f83efa4c30b1cdaefbe28b170357e74d9be5"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-zip-medium.json",
+      "sha256": "4ed85f71df8d25b957044bf2a77b66e406fa2621b0a6d273461c48320a65a40b"
+    },
+    {
+      "file": "content/mock-questions/11-physics-2.json",
+      "sha256": "294a7d63731155d79c52860ba08114de9f582a1e61b249cd8c794fef203aed95"
+    }
+  ],
+  "questions": [
+    {
+      "id": "GNO-PHY11-C02-E-001",
+      "difficulty": "easy",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "5 m right",
+      "independentCheck": "Net displacement 9-4 = +5 m; distance 13 m is a different quantity.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Suitable NCERT fundamental",
+      "duplicateGroups": [],
+      "flags": [],
+      "proposalBrief": null,
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "8398dec6cab91e690260c2502ce56ad035a51b39f64a512429fba9d79a283725"
+    },
+    {
+      "id": "GNO-PHY11-C02-E-002",
+      "difficulty": "easy",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "14 m",
+      "independentCheck": "Path length 6+8 = 14 m, not signed displacement -2 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Suitable NCERT fundamental",
+      "duplicateGroups": ["D05"],
+      "flags": ["near-duplicate/semantic repetition: D05"],
+      "proposalBrief": "Ask the necessary relation between distance and displacement for any straight-line trip, including equality conditions; use one conceptual distinction rather than another two-leg sum.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "25589a41b4ecc740a06153c8a19e8d912f9332885b26ed52ef7be17c68c34756"
+    },
+    {
+      "id": "GNO-PHY11-C02-E-003",
+      "difficulty": "easy",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "m/s²",
+      "independentCheck": "[a]=[v]/[t]=(m/s)/s=m/s². Other dimensions differ.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Suitable NCERT fundamental",
+      "duplicateGroups": [],
+      "flags": [],
+      "proposalBrief": null,
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "68daefe34b3e522e87c02224b04aa428077a25cb1a7321ef230c24a97757a6fe"
+    },
+    {
+      "id": "GNO-PHY11-C02-E-004",
+      "difficulty": "easy",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "14 m/s",
+      "independentCheck": "v=u+at=2+3(4)=14 m/s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Suitable NCERT fundamental",
+      "duplicateGroups": ["D02"],
+      "flags": ["near-duplicate/semantic repetition: D02"],
+      "proposalBrief": "Ask which quantity the slope of a straight velocity-time graph represents, with dimensional distractors; avoid another u+at substitution.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "90d02eea8d034476ef612902fe970645e4518948934e47414e7f1161dcb7f846"
+    },
+    {
+      "id": "GNO-PHY11-C02-E-005",
+      "difficulty": "easy",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "object at rest",
+      "independentCheck": "A horizontal x-t line has slope dx/dt=0 throughout the interval.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Suitable NCERT fundamental",
+      "duplicateGroups": [],
+      "flags": [],
+      "proposalBrief": null,
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "5c3eefa11abdd2b649132caa3ea0941f014630b22010829d30a907e418cf335a"
+    },
+    {
+      "id": "GNO-PHY11-C02-E-006",
+      "difficulty": "easy",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "towards negative x",
+      "independentCheck": "v=-7 m/s points toward negative x; speed is +7 m/s; acceleration is unspecified.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Suitable NCERT fundamental",
+      "duplicateGroups": [],
+      "flags": [],
+      "proposalBrief": null,
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "c033eb5e806d6ae9de96bdc8c64b43ab403415ec0ac6eb414d040ddbf572a091"
+    },
+    {
+      "id": "GNO-PHY11-C02-E-007",
+      "difficulty": "easy",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "20 m",
+      "independentCheck": "s=gt²/2=10(2²)/2=20 m, in ideal free fall before ground contact.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Suitable NCERT fundamental",
+      "duplicateGroups": ["D04"],
+      "flags": ["near-duplicate/semantic repetition: D04"],
+      "proposalBrief": "Ask whether equal successive time intervals in ideal free fall cover equal distances, and explain increasing speed; avoid another dropped-body displacement calculation.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "7e55171ac4e3ef23639d0213229883ee428a5b1d8c5ebdf6190a854091fef3d9"
+    },
+    {
+      "id": "GNO-PHY11-C02-E-008",
+      "difficulty": "easy",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "displacement",
+      "independentCheck": "Signed velocity-time area is integral v dt = displacement; absolute area gives distance.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Suitable NCERT fundamental",
+      "duplicateGroups": ["D01"],
+      "flags": ["near-duplicate/semantic repetition: D01"],
+      "proposalBrief": "Ask what the intercept of a position-time graph represents, with position/velocity/acceleration/distance choices; this avoids repeating the existing area question.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "728e380c692176461dda9513936963127bacb5eebca9214dd868e30d37045c9e"
+    },
+    {
+      "id": "GNO-PHY11-C02-E-009",
+      "difficulty": "easy",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "−4 m/s²",
+      "independentCheck": "a=(8-24)/4=-4 m/s². Deceleration does not imply negative speed.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Suitable NCERT fundamental",
+      "duplicateGroups": ["D03"],
+      "flags": ["near-duplicate/semantic repetition: D03"],
+      "proposalBrief": "Ask for the sign of acceleration when a left-moving particle is slowing down; specify +x right, and distinguish acceleration from speed.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "b68cd858acf5877fe6c1c30f05910a7543bbc96e55a97f585255f95b74e58fc6"
+    },
+    {
+      "id": "GNO-PHY11-C02-E-010",
+      "difficulty": "easy",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "velocity is zero, acceleration is downward",
+      "independentCheck": "At the apex v=0 instantaneously; a=-g remains nonzero, with upward positive.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Suitable NCERT fundamental",
+      "duplicateGroups": [],
+      "flags": [],
+      "proposalBrief": null,
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "5655508964e4d08a9f0bdba9b7a89839b8240b322eb6db479b89ba4adc450f92"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-001",
+      "difficulty": "medium",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "14.4 m/s",
+      "independentCheck": "For two equal lengths d: time=d/12+d/18=5d/36; speed=2d/(5d/36)=14.4 m/s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Provisional multi-step Medium fit",
+      "duplicateGroups": ["D06"],
+      "flags": ["near-duplicate/semantic repetition: D06"],
+      "proposalBrief": "Use two unequal-distance legs and a fixed stop; ask for the speed required on the second leg to meet a specified overall average. Include the stop in elapsed time.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "842f0467e79432201ab8074beeb5174c600ecfc97fc842a0af325de85c2a8670"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-002",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "84 m",
+      "independentCheck": "Phase 1 gives s=2(6²)/2=36 m and v=12 m/s; phase 2 gives 48 m; total 84 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Provisional multi-step Medium fit",
+      "duplicateGroups": [],
+      "flags": [],
+      "proposalBrief": null,
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "be5d1bb4382ccf08a6ca8a120f30d5b534a6a5aaa1bef5a50d5ed1f56f62186b"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-003",
+      "difficulty": "medium",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "44 m",
+      "independentCheck": "Integral of (5+3t) from 0 to 4 is 5(4)+3(4²)/2=44 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Easy rather than required moderate multi-step Medium"
+      ],
+      "proposalBrief": "Specify a linear v(t) with a zero inside the interval; ask for distance AND average velocity and require identifying the reversal before integrating.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "67e3068b17cf72fe2b303d436cf7aea9ae9bb7ed7c3ccecb967aeec2b712c733"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-004",
+      "difficulty": "medium",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "50 m",
+      "independentCheck": "Stopping time=20/4=5 s; triangular v-t area=20(5)/2=50 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Easy rather than required moderate multi-step Medium"
+      ],
+      "proposalBrief": "Give a total stopping distance that includes a measured reaction interval; infer the constant braking magnitude, subtracting reaction distance first.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "4d0837548151a202e34d62836ddc0dbbc9e855f6aaea408115b45dea4f54a695"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-005",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "5 m/s",
+      "independentCheck": "x(1)=3 m and x(3)=13 m; average velocity=(13-3)/2=5 m/s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Provisional multi-step Medium fit",
+      "duplicateGroups": [],
+      "flags": [],
+      "proposalBrief": null,
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "dbd45cea105bb2aa764eca442be512794255b7f978a619a6a410e4df3e3b7c48"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-006",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "36 m",
+      "independentCheck": "Positive triangular area=6(12)/2=36 m. Peak location does not change this area.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Easy rather than required moderate multi-step Medium"
+      ],
+      "proposalBrief": "Specify a trapezoidal velocity-time graph with a negative final section; ask separately for average speed and average velocity.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "6000ea7acc6e0ffb9b6d3211b7826509087323f452e1d672249a264bd8e64aaa"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-007",
+      "difficulty": "medium",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "40 m upward",
+      "independentCheck": "y=30(4)-10(4²)/2=+40 m; speed has already reversed but displacement is upward.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Easy rather than required moderate multi-step Medium"
+      ],
+      "proposalBrief": "Give two measured times at the same height, a supplied g and a launch level; infer launch speed and height before asking the distance travelled between the measurements.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "1b557ee115829e7a102295a98cffc0a15cb71d157bab424338b16cc8251314f5"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-008",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "12 m",
+      "independentCheck": "x(5)-x(4)=[3t+t²] from 4 to 5=3+25-16=12 m; velocity remains positive.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": ["D07"],
+      "flags": [
+        "near-duplicate/semantic repetition: D07",
+        "difficulty: likely Easy rather than required moderate multi-step Medium"
+      ],
+      "proposalBrief": "Give displacement in two nonadjacent one-second intervals; infer initial velocity and acceleration and ask whether a third interval contains a reversal.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "afbce90e2ce9a35de2b46a1646ae60a0c4b4bd9744230a460eb6936838354397"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-009",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "20 m/s",
+      "independentCheck": "With common time tau, distance=(10+20+30)tau; speed=60tau/(3tau)=20 m/s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Easy rather than required moderate multi-step Medium"
+      ],
+      "proposalBrief": "Use unequal time intervals with one signed negative velocity; ask for both average speed and average velocity. Do not just increase the number of equally weighted speeds.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "0b2af29e7be96184ad5dc866b481be1267642d0fa2a05d01e62275c5a4608833"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-010",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "13 m",
+      "independentCheck": "v=2t-6 vanishes at 3 s; x(0)=8, x(3)=-1, x(5)=3; path=9+4=13 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Provisional multi-step Medium fit",
+      "duplicateGroups": ["D08"],
+      "flags": ["near-duplicate/semantic repetition: D08"],
+      "proposalBrief": "Use a two-stage acceleration with a reversal only in the second stage and ask the time spent moving backward, rather than repeating a quadratic path-length calculation.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "4728bbb6d4d8abdddc3ac2106b5bb36806d2d222363e558a65429cf6988a2bac"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-011",
+      "difficulty": "medium",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "2 m/s",
+      "independentCheck": "v=0+4(3)-2(5)=2 m/s; both intervals have forward motion, including the endpoint.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Provisional multi-step Medium fit",
+      "duplicateGroups": [],
+      "flags": [],
+      "proposalBrief": null,
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "b5ff5adf62cfaa1700eecbe473131cc41bafe5e8bb679885f84a06f995fa0adb"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-012",
+      "difficulty": "medium",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "12 m",
+      "independentCheck": "Integral v dt=4(4)-2(2)=+12 m; total distance would be 20 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Easy rather than required moderate multi-step Medium"
+      ],
+      "proposalBrief": "Specify signed displacements and total path over a two-speed journey; solve the durations and verify their positivity.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "e5e3eeb053979b128522fdb4bda48ea72773e5490bee213b07b874521442f26e"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-013",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "12 s",
+      "independentCheck": "90 km/h=25 m/s; required translation=180+120=300 m; time=12 s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Provisional multi-step Medium fit",
+      "duplicateGroups": [],
+      "flags": [],
+      "proposalBrief": null,
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "35d1e84e099ccd2074fddb2266f98b05cc1cee2bbdad7d50f0cf35942e914391"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-014",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "10 s",
+      "independentCheck": "Relative speed=30-20=10 m/s; 100 m gap closes in 10 s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Easy rather than required moderate multi-step Medium"
+      ],
+      "proposalBrief": "Give two successive gap measurements between uniformly moving vehicles and a later speed change; infer the missing speed and eventual catch time.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "f700630051ffea6983aa0a0171c4182bb3e56447d2cbef221eccbbfa497af4f1"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-015",
+      "difficulty": "medium",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "2 m/s²",
+      "independentCheck": "a=(20²-8²)/(2(84))=336/168=2 m/s².",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Easy rather than required moderate multi-step Medium"
+      ],
+      "proposalBrief": "Give two speed-distance measurements over adjacent intervals; infer uniform acceleration, then calculate the time for the second interval.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "1366e68014740599e7a3293ea6fdc5dfdc7160ca18b08848f764b440c359f21f"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-016",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "25 m",
+      "independentCheck": "Free-fall path in [2,3] s is 5(3²-2²)=25 m, before any impact.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": ["D07"],
+      "flags": [
+        "near-duplicate/semantic repetition: D07",
+        "difficulty: likely Easy rather than required moderate multi-step Medium"
+      ],
+      "proposalBrief": "Infer the fall duration from the fraction of height covered in the final second, then calculate total height using supplied g.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "84d020419cb80e5e45b727c13db0d1efed37c0e11b52dbd1827f33874961d9f5"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-017",
+      "difficulty": "medium",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "26 m",
+      "independentCheck": "v=0 at 3 s; positive triangular area=18 m, negative area magnitude=8 m; total 26 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Provisional multi-step Medium fit",
+      "duplicateGroups": ["D08"],
+      "flags": ["near-duplicate/semantic repetition: D08"],
+      "proposalBrief": "Give minimum position and two endpoint positions under constant acceleration; infer the reversal time and ask the interval average speed.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "9cdac4ef669758dd9ba5566af77937f6954590f24982df7ebfb2febb7056efdc"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-018",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "+2 m/s",
+      "independentCheck": "Change in velocity=2(4)-3(2)=+2 m/s; initial velocity is unnecessary.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Easy rather than required moderate multi-step Medium"
+      ],
+      "proposalBrief": "Give an unknown-duration acceleration pulse followed by a known pulse; determine its duration from final velocity and then the total displacement.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "91bea3abfc8fa59b5b54099cd674bc47b163dac51fbea9a632fcefdad10c4ffe"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-019",
+      "difficulty": "medium",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "2 km",
+      "independentCheck": "60 km/h times (2/60) h=2 km exactly under the stated steady-speed model.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Easy rather than required moderate multi-step Medium"
+      ],
+      "proposalBrief": "Give two different speed units and a timed stop over two legs; calculate overall average speed using total elapsed time.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "c91db49a46899ce9bec50a6654ac3d5a0530eb776630ad96e5fc6c8cd9d9d9cb"
+    },
+    {
+      "id": "GNO-PHY11-C02-M-020",
+      "difficulty": "medium",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "9 m/s",
+      "independentCheck": "Displacement=6(20)+15(10)=270 m; divide by 30 s to obtain 9 m/s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Provisional multi-step Medium fit",
+      "duplicateGroups": [],
+      "flags": [],
+      "proposalBrief": null,
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "cc85c2ae5192ecb27bfda21c1aac9f08b0954d8ed8f5608dc46653e4f60f3e0b"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-001",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "12 m",
+      "independentCheck": "v=3(t-1)(t-3); x at times 0,1,3,4 is 0,4,0,4 m; sum absolute changes=12 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": ["D09"],
+      "flags": [
+        "near-duplicate/semantic repetition: D09",
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Infer an unknown velocity scale in v=k(t-1)(t-3) from measured displacement, then determine distinct times at which cumulative distance reaches a specified threshold. Require interval checks, not only one integral.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "652cb66e1fc5e6d2f65796c19055bbb8c71fe7a4184be7d43a38e72f929c1514"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-002",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "152/3 m",
+      "independentCheck": "v=t(6-t); primitive F=3t²-t³/3. F(0)=0,F(6)=36,F(8)=64/3; distance=36+(36-64/3)=152/3 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Infer a parameter in a quadratic velocity law from a measured average velocity and a stopping event, then calculate total path across both reversals on the physically admissible interval.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "024a05089ce9716001d71add92f3905e7d7017c0233c3778eacc1630980c49aa"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-003",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "44 m",
+      "independentCheck": "v=3(t-2)(t-4); x at 0,2,4,6 s is 0,20,16,36 m; path=20+4+20=44 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": ["D09"],
+      "flags": [
+        "near-duplicate/semantic repetition: D09",
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Use a piecewise jerk-limited motion: match velocity and acceleration at a switch, infer the switch time from a final constraint, and find the minimum total travel distance. Avoid another cubic position with two roots.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "4b58fb9e824a317a2588e4338a530fa4a27645161c9e01dff23655d605b49383"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-004",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "3+√17 s",
+      "independentCheck": "40+30t-5t²=0 gives t=3±sqrt(17); only 3+sqrt(17) s is positive. Ignore drag.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Use a delayed second launch from the ground while the first is launched from a balcony; find the range of delays permitting an airborne meeting and check each ground-contact time.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "0e75e1762a084c608be13458117caaeb96eb23b3b3dc87c1255c22936b254705"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-005",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "130 m",
+      "independentCheck": "Peak speed 10 m/s; areas 25+80+25=130 m. Motion remains forward until stop.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Set acceleration and braking limits with a mandatory cruise distance; derive the minimum feasible travel time for a fixed route, distinguishing whether a cruise phase is possible.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "f04dcbf8e0c9eb8ccbca8505fe11bd7b85858a446a1949bc762a9c809c4c68e2"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-006",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "82.5 m",
+      "independentCheck": "Reaction path 25(0.8)=20 m; brake path 25²/(2(5))=62.5 m; total 82.5 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Given a reaction-time interval and distance-dependent braking a=-k(1+x/L), derive the largest safe initial speed for a fixed obstacle distance; integrate v dv/dx and enforce a nonnegative braking distance.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "871029044928e53d010ac4afd27e14d5e7eb075d159c4a51f653f0da75439124"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-007",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "4 m",
+      "independentCheck": "v=2+3t²-4t; integral from 0 to 2 is 4+8-8=4 m. In fact v has negative discriminant and remains positive.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Use a(t)=alpha t-beta with unknown parameters constrained by two signed displacements; solve them, locate all velocity zeros and calculate total distance on a third interval.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "4b08d06e8ff27474090b53841939174d91b6b86155bf1470e95bee25d91f1e85"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-008",
+      "difficulty": "hard",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "105 m",
+      "independentCheck": "First stone falls for 5 s and second for 2 s: separation=5(25-4)=105 m. First falls 125 m, less than the stated minimum height 130 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Give delayed drops from two different heights and a rising observation platform; derive the time window during which both stones are above the platform before either impact, using all endpoint restrictions.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "abca383928230c5a025602bdd24b8725e683f875faf04659dd29c39e1bf0f115"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-009",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "33 m",
+      "independentCheck": "First segment path=18 m; next segment crosses v=0 at t=5 s, giving 12+3 m; total 33 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Use two vehicles with different continuous piecewise-linear velocity laws; count all meetings and determine minimum separation before the last switch, checking every interval and boundary.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "53483c8d6943c6b4806787ad496f8076c5972900decdb6b5cdb7dadeb8fa1bd1"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-010",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "12 s",
+      "independentCheck": "t²=48+8t gives roots 12,-4 s; first physical meeting is at 12 s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": ["D11"],
+      "flags": [
+        "near-duplicate/semantic repetition: D11",
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Use a leader that begins braking after a delay and a pursuer that accelerates only up to a speed cap; determine the first catch and reject roots belonging to the wrong motion phase.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "97f0b1e802a2eb7489f58ca47de0a1adaf01aa3e9f8707c0739dbec67ff029e4"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-011",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "175 m",
+      "independentCheck": "First interval ends at 20 m/s and covers (30+20)5/2=125 m; remaining brake path=20²/8=50 m; total 175 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Given total stopping time and distance for two unknown braking stages with a fixed acceleration ratio, solve for the switch speed and both stage durations and check feasibility.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "2cc2b3a7eaaeb2e56f66520626375d1b7ac59db352c567574ac04a46c56b7cb4"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-012",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "9/25",
+      "independentCheck": "Final-second fall / total fall=(5²-4²)/5²=9/25; g cancels.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": ["D10"],
+      "flags": [
+        "near-duplicate/semantic repetition: D10",
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Infer unknown release speed AND total fall time from distances in two final intervals; use independent equations, select physical roots, then recover height.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "0e24ac9dd8ddb6cbc43a989e0705f41213cf6ab15411b65ef8b9085a13a45c7a"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-013",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "1 m/s",
+      "independentCheck": "s4=u+3.5a=15, s6=u+5.5a=23; a=4 m/s²,u=1 m/s. Positive velocity at all t>=0 is consistent.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Allow signed displacement in two nonadjacent seconds and supply total distance in an intervening interval; infer all admissible initial velocities and accelerations and rule out inconsistent sign cases.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "8f8c93c6c0e70562da4d43e0e98c2bc926a35af1ab426c47fb3113f0bf2e6da5"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-014",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "5(√13−1) s",
+      "independentCheck": "Closure=t²+10t; setting it to 300 m gives t=5(sqrt(13)-1) s. Other quadratic root is negative.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Have the approaching vehicle brake to rest before a possible meeting; find the threshold initial gap separating collision during braking, after braking, and no meeting within a specified time window.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "3addd16fbd336d6600643f15f3bf8e2bca8a226b382881958c8a66a5a94b1bcb"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-015",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "−16 m at 2 s",
+      "independentCheck": "x=t⁴-8t²=(t²-4)²-16 >= -16 m; equality at t=2 s on t>=0 proves a global minimum, without relying only on stationarity.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Give a parameterized quartic position whose stationary points merge as the parameter varies; determine when an interior minimum occurs and compare it to a finite observation boundary.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "7721d6ecdbe23927f94588a6c2ecd6e9445a671a69947b139d5866166ddd9175"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-016",
+      "difficulty": "hard",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "43 m",
+      "independentCheck": "First phase changes sign at 5 s: distance 25+9=34 m, v=-6 m/s at 8 s. Next phase reverses at 1.5 s: distance 4.5+4.5=9 m. Total 43 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Plausible Hard: two velocity reversals across acceleration phases",
+      "duplicateGroups": [],
+      "flags": [],
+      "proposalBrief": null,
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "704fdef8ef91048a8c2ea12abd2ba6ab5d6ecd0bd9097ee294851b2ffee33bee"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-017",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "5+√65 s",
+      "independentCheck": "At delayed car start bus lead=60 m. Relative equation 1.5tau²=60+15tau gives tau=5+sqrt(65) s; negative root is inadmissible.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Combine delayed pursuit with a pursuer speed cap and a later bus speed change; solve for the earliest meeting and show that earlier candidate roots fall outside their phases.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "d6a9695fdd9982cf8a9730da8e28bb1d38549a67d152b35764b5895172582115"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-018",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "46 m, +6 m",
+      "independentCheck": "Distance=18+20+8=46 m; displacement=18-20+8=+6 m. Correct option requires both components.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Infer three unknown stage durations from total time, signed displacement and a direction-specific distance constraint, then find the possible elapsed times at which a specified position is visited.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "cf9a6a3f7b7fd42d1b364d3d9c3f8f0369a22cf3d64d86350b7cbb17f3ed0dce"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-019",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "32 km/h",
+      "independentCheck": "Total time per route length=1/48+1/144+1/288=1/32 h/km; average speed=32 km/h.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Derive the allocation of a fixed total time between outbound and return legs with a mandatory rest and a bound on one leg speed, then determine whether a target trip average is feasible.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "84bac38c3802b0c24e0a0b2882a5d83f9909faa4e419e34308cb740480bf41c5"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-020",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "20 m/s, 10 m/s²",
+      "independentCheck": "At equal height u(3-1)-g(9-1)/2=0 implies u=2g s; 15=u(1)-g/2 yields g=10 m/s²,u=20 m/s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Use two crossings of a moving observation platform plus a third timestamp to infer launch speed, gravity and platform speed; ensure independent constraints and identify any degeneracy before constructing options.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "dc360bbec7fecd26476a01b1ce4619dcf60fa48cc06a813c886623c1141824fe"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-021",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "5√6 m/s",
+      "independentCheck": "v dv/dx=2x; integral gives (v²-100)/2=x²; v(5)=sqrt(150)=5sqrt(6) m/s; positive root follows stated direction.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "For a(x)=alpha-beta x with positive launch speed, derive the accessible position interval and determine whether a proposed checkpoint is reachable before reversal, using the integrated v² constraint.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "f83aa403bf1f3f0a504bedebd3729224dfd117bb61d690e2477a0b53538a8ac1"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-022",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "0 m/s and 2 m/s",
+      "independentCheck": "v=2t-4 reverses at 2 s; x(0)=0,x(2)=-4,x(4)=0; displacement=0, distance=8 m; averages 0 and 2 m/s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": ["D08"],
+      "flags": [
+        "near-duplicate/semantic repetition: D08",
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Use two unknown coefficients in a quadratic position law with a measured average velocity and total path; determine all admissible reversal times and distinguish solutions using a third measurement.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "297e56c8cf112c4b3679a233228c851b4b19481e8a0ea52b5c77c7b39dc0f737"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-023",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "52/3 m",
+      "independentCheck": "Starting from rest at t=0 gives v=2t² >=0; integral from 1 to 3 is (2/3)(27-1)=52/3 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Use a time-dependent acceleration that switches sign with an unknown switch time fixed by terminal rest; find displacement and maximum separation from the origin, testing all velocity roots.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "e828664234aed654e4a54b84970407da38b41d180e3adf66f1280e1b4a5639d9"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-024",
+      "difficulty": "hard",
+      "correctAnswerIndex": 0,
+      "correctAnswerLetter": "A",
+      "correctAnswer": "4 m",
+      "independentCheck": "Primitive F=t³/3-2t²+3t; roots of v are 1,3 s. F at 0,1,3,4 is 0,4/3,0,4/3; absolute changes sum to 4 m.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": ["D09"],
+      "flags": [
+        "near-duplicate/semantic repetition: D09",
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Use a rational positive/negative velocity law with a supplied antiderivative and an unknown parameter fixed by equal forward/backward distances; select the physical parameter and then the first return time. Avoid the existing scaled cubic.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "421a7bdef22400dcd882ffdfb089fe3486fdd92a85ef85460e1cd5d01d0c0ea4"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-025",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "2.25 s",
+      "independentCheck": "Same constant gravity cancels in relative height: 45=20t gives 2.25 s. Height is 45-5(2.25²)=19.6875 m>0; neither stone has hit ground.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Use delayed launch under equal gravity and require a meeting at a fixed fraction of the first stone's remaining fall; solve for delay and speed and reject trajectories that already hit ground.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "e9a9c8652af26ab072923e77c4ed7bea9b90d38023166d6090c77f7ad5666c8b"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-026",
+      "difficulty": "hard",
+      "correctAnswerIndex": 2,
+      "correctAnswerLetter": "C",
+      "correctAnswer": "3 m/s",
+      "independentCheck": "Integral of 2t+1 from 0 to 2 is 6 m/s; final velocity=-3+6=+3 m/s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Infer the two coefficients of a linear acceleration from final velocity and displacement; then find every zero-velocity instant and total distance on the full interval.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "1637d7c9e5ff3e1dd16ed8d50dbb6dc292c5f0dc298ea6482c2787cfd1028fb4"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-027",
+      "difficulty": "hard",
+      "correctAnswerIndex": 3,
+      "correctAnswerLetter": "D",
+      "correctAnswer": "No, A never catches B",
+      "independentCheck": "Forward gap=60-10t+t²=(t-5)²+35 m. Its positive global minimum excludes a catch at any t>=0.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written",
+        "topic label says braking although the leading car accelerates forward"
+      ],
+      "proposalBrief": "Find the critical acceleration of a leading car that just avoids a delayed accelerating pursuer within a specified finite time interval; examine both interior minimum and boundary contact cases.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "4bd8afdb005b5f0cb1649e7c035113d147a3719d35393477cb4d22133eccba53"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-028",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "√30 s",
+      "independentCheck": "v=30-t²; first nonnegative root of v=0 is sqrt(30) s. Acceleration coefficient implicitly carries m/s³.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Given braking a=-kt and a nonzero reaction time, infer k from a measured total stopping distance and derive sensitivity to reaction-time error, distinguishing braking time from total time.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "8f9226b1a5f9ab53782106ebf74157ec763f0abe5d13399e29d5609fdcc4a3ed"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-029",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "5/9",
+      "independentCheck": "Fraction of total free-fall height in [4,6] s=(36-16)/36=5/9; requires same ideal g and no impact until 6 s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": ["D10"],
+      "flags": [
+        "near-duplicate/semantic repetition: D10",
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Use two successive equal-duration fall intervals with a specified path ratio to infer a nonzero release speed and total time; add a height constraint to eliminate otherwise underdetermined cases.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "ca9dfaba462761ddd76d91d2d2ea888db36e241589b1ac3bb9d4d66d6ba4c924"
+    },
+    {
+      "id": "GNO-PHY11-C02-H-030",
+      "difficulty": "hard",
+      "correctAnswerIndex": 1,
+      "correctAnswerLetter": "B",
+      "correctAnswer": "33 m; −6 m/s",
+      "independentCheck": "Velocities at 3,9,11 s are +6,0,-6 m/s. Signed paths +9,+18,-6 m; total distance=33 m and final velocity=-6 m/s.",
+      "arithmeticFinding": "No answer-key or solution-calculation error found on the stated ideal model; unique correct option on inspection.",
+      "difficultyFinding": "Needs classification revision or replacement",
+      "duplicateGroups": [],
+      "flags": [
+        "difficulty: likely Medium or below; insufficient evidence for challenging Hard as written"
+      ],
+      "proposalBrief": "Specify two unknown switch times in an elevator acceleration profile with terminal-velocity and floor-height constraints; solve feasible schedules and compare total path after all interior reversals.",
+      "status": "draft",
+      "humanReview": "pending",
+      "recordSha256": "ccbc4da8abf9a430d53f2fdd67761b50940a5e956f3fe0419adea12346eda124"
+    }
+  ],
+  "limitations": [
+    "Computational/editorial review by coding assistant is not independent qualified academic approval.",
+    "Replacement briefs are original editorial directions, NOT solved replacement MCQs, not imported, and require complete statements, four distinct distractors, independent solutions and academic review.",
+    "Difficulty judgments are provisional; approved JEE/NEET alignment requires a qualified reviewer.",
+    "Original-practice provenance is declared by the archive; no external plagiarism database or rights verification was performed.",
+    "No source PDF was needed to verify these standard kinematics calculations; no copyrighted PDF content was reproduced.",
+    "Existing private local attempt storage remains non-durable across server replacement; no cloud persistence added."
+  ],
+  "technicalVerification": {
+    "unitAndRegressionTests": {
+      "passed": 63,
+      "failed": 0,
+      "command": "pnpm test",
+      "initialRestrictedRun": "62 passed, 1 Windows EPERM in existing atomic rename test; permitted rerun passed all63"
+    },
+    "chapter2Tests": 7,
+    "httpIntegrationTests": {
+      "passed": 2,
+      "failed": 0
+    },
+    "syntheticHttpMatrixTests": {
+      "passed": 10,
+      "failed": 0,
+      "scope": "Isolated private fixture server; no real question approvals"
+    },
+    "typeScript": "passed: tsc --noEmit --incremental false",
+    "productionBuild": "passed: next build --webpack",
+    "lint": "No lint script/configured linter available; formatting checked separately",
+    "schema": "Existing importer dry-run and write passed 60 records; duplicate-ID replay rejected with no extra import",
+    "existingBanks": "All 6 pre-existing bank SHA-256 values unchanged after all tests",
+    "publication": "No verification-status promotion, push, or deployment"
+  },
+  "duplicateSummary": {
+    "groups": 11,
+    "incomingOnlyGroups": 4,
+    "groupsTouchingExistingSamples": 9,
+    "distinctIncomingRecords": 17
+  }
+}

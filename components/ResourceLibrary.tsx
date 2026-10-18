@@ -22,6 +22,7 @@ import { resourcesFor, resourceLabel } from "@/lib/chapter-resources";
 import type { Profile } from "@/lib/types";
 import PdfReader from "./PdfReader";
 import Video from "./Video";
+import ChapterMockTest from "./ChapterMockTest";
 
 const sectionNames = {
   books: "NCERT Books",
@@ -36,10 +37,8 @@ const subjectIcons = {
 };
 const sectionDescriptions = {
   books: "Your textbooks, organised by subject and chapter.",
-  notes:
-    "A space for every chapter’s notes. Read, revisit and connect the ideas.",
-  lectures:
-    "Choose a subject, then a chapter. Make room for a deeper understanding.",
+  notes: "Chapter notes for the subjects you study.",
+  lectures: "Detailed lectures and one-shot revision, organised by chapter.",
 };
 
 export function ResourceSubjects({
@@ -160,6 +159,9 @@ export default function ResourceLibrary({
     format === "one-shot"
       ? resources?.oneShotVideoId
       : resources?.detailedVideoId;
+  const previous =
+    chapter && chapters.find((c) => c.number === chapter.number - 1);
+  const next = chapter && chapters.find((c) => c.number === chapter.number + 1);
   return (
     <div className="resource-library">
       <nav className="resource-breadcrumbs" aria-label="Resource breadcrumbs">
@@ -206,8 +208,7 @@ export default function ResourceLibrary({
           <div className="page-heading">
             <div>
               <div className="eyebrow">
-                CLASS {profile.className} ·{" "}
-                {sectionNames[section].toUpperCase()}
+                Class {profile.className} · {sectionNames[section]}
               </div>
               <h1>
                 {chapter
@@ -240,6 +241,58 @@ export default function ResourceLibrary({
               </button>
             )}
           </div>
+          {subject && chapter && (
+            <nav className="chapter-tools" aria-label="Chapter resources">
+              {(["lectures", "books", "notes"] as const).map((target) => (
+                <button
+                  className="subtle-button"
+                  key={target}
+                  aria-current={section === target ? "page" : undefined}
+                  onClick={() =>
+                    go(`/${target}/${subject.id}/${chapter.number}`)
+                  }
+                >
+                  {target === "lectures" ? (
+                    <Play size={15} />
+                  ) : target === "books" ? (
+                    <BookOpen size={15} />
+                  ) : (
+                    <FileText size={15} />
+                  )}
+                  {sectionNames[target]}
+                </button>
+              ))}
+              {isLecture && format && (
+                <button
+                  className="subtle-button"
+                  onClick={() =>
+                    go(
+                      `${chapterPath}/${format === "detailed" ? "one-shot" : "detailed"}`,
+                    )
+                  }
+                >
+                  {format === "detailed"
+                    ? "Switch to one-shot"
+                    : "Switch to detailed"}
+                </button>
+              )}
+              {isLecture && (
+                <a className="subtle-button" href="#chapter-mock-test">
+                  Chapter mock test
+                </a>
+              )}
+              {profile.className === "12" &&
+                subject.id === "physics" &&
+                chapter.number === 3 && (
+                  <button
+                    className="subtle-button"
+                    onClick={() => go("/learn/ohms-law")}
+                  >
+                    Ohm’s Law workspace <ArrowRight size={15} />
+                  </button>
+                )}
+            </nav>
+          )}
           {!subject ? (
             <ResourceSubjects profile={profile} section={section} go={go} />
           ) : !chapter ? (
@@ -290,10 +343,15 @@ export default function ResourceLibrary({
                   ) : (
                     <button
                       className="subtle-button"
-                      aria-label={`Open chapter ${c.number}: ${c.title}`}
+                      aria-label={
+                        section === "notes"
+                          ? `View notes for chapter ${c.number}: ${c.title}`
+                          : `Open chapter ${c.number}: ${c.title}`
+                      }
                       onClick={() => go(`${subjectPath}/${c.number}`)}
                     >
-                      View chapter <ArrowRight size={15} />
+                      {section === "notes" ? "View notes" : "View chapter"}{" "}
+                      <ArrowRight size={15} />
                     </button>
                   )}
                 </article>
@@ -349,16 +407,16 @@ export default function ResourceLibrary({
                   <div className="eyebrow">
                     {isLecture
                       ? format === "one-shot"
-                        ? "ONE-SHOT LECTURE"
-                        : "DETAILED LECTURE"
+                        ? "One-shot lecture"
+                        : "Detailed lecture"
                       : section === "books"
-                        ? "NCERT TEXTBOOK"
-                        : "CHAPTER NOTES"}
+                        ? "NCERT textbook"
+                        : "Chapter notes"}
                   </div>
                   <h2>{chapter.title}</h2>
                 </div>
                 <span className="pill">
-                  {(isLecture ? videoId : pdf) ? "AVAILABLE" : "COMING SOON"}
+                  {(isLecture ? videoId : pdf) ? "Available" : "Coming soon"}
                 </span>
               </div>
               {isLecture && videoId ? (
@@ -376,10 +434,10 @@ export default function ResourceLibrary({
                   {isLecture ? <VideoOff size={40} /> : <FileText size={40} />}
                   <h3>
                     {isLecture
-                      ? "Your lecture will be here."
+                      ? "Lecture not added yet"
                       : section === "books"
-                        ? "Your chapter PDF will be here."
-                        : "Your chapter notes will be here."}
+                        ? "Textbook not added yet"
+                        : "Chapter notes not added yet"}
                   </h3>
                   <p>
                     {isLecture
@@ -393,6 +451,79 @@ export default function ResourceLibrary({
                 </div>
               )}
             </section>
+          )}
+          {subject && chapter && isLecture && (
+            <ChapterMockTest
+              key={`${profile.className}/${subject.id}/${chapter.number}`}
+              chapter={{
+                className: profile.className as "11" | "12",
+                subject: subject.id,
+                chapter: chapter.number,
+              }}
+            />
+          )}
+          {subject && chapter && isLecture && format && (
+            <section
+              className="chapter-practice"
+              aria-labelledby="chapter-practice-heading"
+            >
+              <h2 id="chapter-practice-heading">Practice & study tools</h2>
+              <p>Check what is available for this chapter.</p>
+              <div className="practice-tools">
+                <details>
+                  <summary>
+                    Previous year questions<small>Not available yet</small>
+                  </summary>
+                  <p>
+                    No previous year questions have been added for this chapter.
+                  </p>
+                </details>
+                <details>
+                  <summary>
+                    AI tutor & personal notes
+                    <small>Supported lessons only</small>
+                  </summary>
+                  <p>
+                    These tools are available in the original Ohm’s Law lesson
+                    workspace for Class 12 Physics. Live AI needs a configured
+                    provider. This chapter library currently contains supplied
+                    videos and PDFs.
+                  </p>
+                </details>
+              </div>
+            </section>
+          )}
+          {subject && chapter && (
+            <nav className="chapter-pagination" aria-label="Chapter navigation">
+              {previous && (
+                <button
+                  onClick={() =>
+                    go(
+                      `${subjectPath}/${previous.number}${format ? `/${format}` : ""}`,
+                    )
+                  }
+                >
+                  <small>← Previous chapter</small>
+                  <span>
+                    {previous.number}. {previous.title}
+                  </span>
+                </button>
+              )}
+              {next && (
+                <button
+                  onClick={() =>
+                    go(
+                      `${subjectPath}/${next.number}${format ? `/${format}` : ""}`,
+                    )
+                  }
+                >
+                  <small>Next chapter →</small>
+                  <span>
+                    {next.number}. {next.title}
+                  </span>
+                </button>
+              )}
+            </nav>
           )}
         </>
       )}

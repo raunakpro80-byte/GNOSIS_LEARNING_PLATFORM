@@ -7,9 +7,14 @@
     "build": "next build --webpack",
     "start": "next start -H 127.0.0.1",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test tests/learning.test.ts tests/streak.test.ts",
-    "test:integration": "tsx --test tests/http.test.ts",
-    "postinstall": "node scripts/copy-pdf-worker.mjs"
+    "test": "tsx --test tests/learning.test.ts tests/streak.test.ts tests/mock.test.ts tests/units-batch-01.test.ts tests/mock-curriculum.test.ts tests/mock-bank-errors.test.ts tests/units-plan60-batch-01.test.ts tests/units-zip-import.test.ts tests/units-curated.test.ts tests/motion-chapter2-import.test.ts tests/motion-chapter3-import.test.ts tests/newton-chapter4-import.test.ts tests/public-mock.test.ts",
+    "import:mock": "tsx scripts/import-mock-questions.ts",
+    "test:integration": "tsx --test tests/http.test.ts tests/mock-http.test.ts tests/public-mock-http.test.ts",
+    "postinstall": "node scripts/copy-pdf-worker.mjs",
+    "report:mock": "tsx scripts/report-mock-availability.ts",
+    "prepare:mock:qa": "tsx scripts/prepare-mock-qa.ts",
+    "test:mock:matrix": "tsx --test tests/mock-matrix-http.test.ts",
+    "report": "tsx scripts/report-mock-availability.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.76.0",

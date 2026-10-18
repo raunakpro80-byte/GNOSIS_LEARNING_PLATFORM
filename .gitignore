@@ -12,3 +12,5 @@ output/
 GNOSIS/
 GNOSIS-GitHub.zip
 .vercel/
+.gnosis-mock-data/
+github-verification/

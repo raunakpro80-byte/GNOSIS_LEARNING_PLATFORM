@@ -94,9 +94,9 @@ export default function Admin({ onPublished }: { onPublished: () => void }) {
     <>
       <div className="page-heading">
         <div>
-          <div className="eyebrow">PROTECTED CONTENT STUDIO</div>
-          <h1>Good teaching starts here.</h1>
-          <p>Prepare thoughtfully. Review carefully. Publish deliberately.</p>
+          <div className="eyebrow">Administrator workspace</div>
+          <h1>Content studio</h1>
+          <p>Prepare lessons, review sources and manage publication.</p>
         </div>
         <span className="pill">
           <Shield size={12} />

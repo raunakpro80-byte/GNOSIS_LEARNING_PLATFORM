@@ -1,0 +1,1111 @@
+{
+  "date": "2026-10-18",
+  "status": "draft",
+  "seed": "GNOSIS-curation-2026-10-18-v1",
+  "questions": [
+    {
+      "id": "phy11-units-dimensions-easy-001",
+      "difficulty": "easy",
+      "topic": "Ratio of SI prefixes",
+      "correctAnswerText": "10^9",
+      "validation": "Prefix exponents checked by subtracting -3 from 6.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "572aa07ca3d504a8697037d41378e1a57d2814af25d4dde5d451603448f05b00",
+      "currentRecordSha256": "60c17f0a4abc6d826d9df0c73f501443f3ec5a492a0c284acd1fa352fba35581"
+    },
+    {
+      "id": "phy11-units-dimensions-easy-002",
+      "difficulty": "easy",
+      "topic": "Luminous-intensity unit",
+      "correctAnswerText": "Candela",
+      "validation": "SI quantity/unit classification; only candela fits.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Retained correct luminous-intensity stem; expanded reasoning and balanced options without changing the answer.",
+      "beforeSha256": "c9e2567297a08775de1ecb477a3e10174da1d028ffc1c7c4b4a338db6b409763",
+      "currentRecordSha256": "77126fcca776744dab96024a449b67ecce01d5aa44b799456ab164c1f54e3a24"
+    },
+    {
+      "id": "phy11-units-dimensions-easy-003",
+      "difficulty": "easy",
+      "topic": "Resolution versus accuracy",
+      "correctAnswerText": "The smallest change in the measured quantity that one scale division represents.",
+      "validation": "Definition contrasted with range, error and accuracy.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "8a59e9c47a272d36e2223d0807ae3e9449474da786a5683e627578a487e93890",
+      "currentRecordSha256": "b2bcc5be86aae854083725780131c7ae7bf2ed09573c3a74f31d69b21a1e379c"
+    },
+    {
+      "id": "phy11-units-dimensions-easy-004",
+      "difficulty": "easy",
+      "topic": "Parallax prevention",
+      "correctAnswerText": "View along a line perpendicular to the scale through the pointer.",
+      "validation": "Geometrical line-of-sight check; no numerical substitution clone.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "5b4e02609e21d3fcadaf01a94a70444e28296249c00c89e127ae5a570b726c09",
+      "currentRecordSha256": "3b52c00c412c723b1d42f185f94692111ce395b3d5b405e0e553585881ebde34"
+    },
+    {
+      "id": "phy11-units-dimensions-easy-005",
+      "difficulty": "easy",
+      "topic": "Independent random errors",
+      "correctAnswerText": "It decreases; a fixed calibration bias would not be removed by averaging.",
+      "validation": "Variance of a mean is sigma^2/N under the stated independence assumptions.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "e2b4a234bf894ec86c6469402b6feab54c42ba15333d7c17d7d2fd43d0028fc2",
+      "currentRecordSha256": "5093a86969fcd1797a11e7a96103c1c5b344d3df3824a0796de3608c6ef7eb72"
+    },
+    {
+      "id": "phy11-units-dimensions-easy-006",
+      "difficulty": "easy",
+      "topic": "Unambiguous significant-figure notation",
+      "correctAnswerText": "1.50 × 10^3 m",
+      "validation": "Coefficient digits counted independently; no ambiguous bare integer.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "c9c65ee79713ccb901c1dd2a76c549a82989fa65fdf1262f7e124a78b464b696",
+      "currentRecordSha256": "ef08d39fbfcf9bdaf1761d2d2320dc16293216cb0540964c1a940e346be3591d"
+    },
+    {
+      "id": "phy11-units-dimensions-easy-007",
+      "difficulty": "easy",
+      "topic": "Cancellation of a constant balance offset",
+      "correctAnswerText": "100.0 g",
+      "validation": "Subtraction of two equations eliminates the shared additive nuisance parameter.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "2d8f1bed32aa49e783f236069782e44047f5b293a59a157d3a4bd7a93bf010c3",
+      "currentRecordSha256": "c37587fc98319e1a760983be0cb37a14bf9f7a8c0893c6d1183fd9524085d65b"
+    },
+    {
+      "id": "phy11-units-dimensions-easy-008",
+      "difficulty": "easy",
+      "topic": "Units of absolute and relative uncertainty",
+      "correctAnswerText": "Absolute uncertainty has units of mm; relative uncertainty is dimensionless.",
+      "validation": "Dimensional check on a difference and a ratio.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "feea80f88176c635779a1b39c7d00eae59fec92afc55a7ba3b97d54397b8134c",
+      "currentRecordSha256": "8d548618a6ed2110f97087e81bca7c9a8cb8b17484e2846e5930495ec02823d9"
+    },
+    {
+      "id": "phy11-units-dimensions-easy-009",
+      "difficulty": "easy",
+      "topic": "Rounding with a carry",
+      "correctAnswerText": "1.00 m",
+      "validation": "Decimal rounding and retained trailing zeros checked.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "15a27b319724559ac8233e8f60ae16997f8ddb36ff884c552c56c892eb8ac2e3",
+      "currentRecordSha256": "15973d737654df9883562f13016f30d170e6bde0863d26e54b29171c2ab8e5d9"
+    },
+    {
+      "id": "phy11-units-dimensions-easy-010",
+      "difficulty": "easy",
+      "topic": "Dimensions of area",
+      "correctAnswerText": "[L^2]",
+      "validation": "Product of two independent length dimensions.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Retained area-dimension concept, clarified rectangular-area wording, expanded explanation and balanced options.",
+      "beforeSha256": "c292a4d6c27e5e948e18eb5329ced2f12ca5fc080da72567cb7465b9bb9f105a",
+      "currentRecordSha256": "61004b57e12b56965fc011efce1615d7af310aa4e50330b8c72a0d0647d28efe"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-001",
+      "difficulty": "medium",
+      "topic": "Coefficients in a time-dependent force",
+      "correctAnswerText": "[T^-2]",
+      "validation": "Two coefficient equations solved before taking their quotient.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "4b163544c5dbfc0e88f4056e6dc89c8c06fa59ef3412bd60a092b433ca4472e9",
+      "currentRecordSha256": "efff5e2bc915b9988c0b639d1b578569cf6885a7468663b1e9596b08758b0b95"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-002",
+      "difficulty": "medium",
+      "topic": "Power-law exponent matching",
+      "correctAnswerText": "4",
+      "validation": "Three independent exponent equations solved; dimensionless coefficient assumed.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "feb32678d56aea7872c085fea810adb53e92b62081b3bf19204da231bf6cecd6",
+      "currentRecordSha256": "4778afee62cd32ba2eb32c93931b1e39dde30362f6d933caf5ae2f610aa2159b"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-003",
+      "difficulty": "medium",
+      "topic": "Pendulum scaling from dimensions",
+      "correctAnswerText": "3 sqrt(2)",
+      "validation": "Exponent solution plus parameter-ratio substitution; unchanged dimensionless conditions stated.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "8aceb8f677458d5946f964ce57d4caedee564d5ab37f29555b48240c1322a227",
+      "currentRecordSha256": "fb81228a66f1ae45c52c95e1af3d3c6a0f5e2dab4f7c8dd6ab9d3f45a84b9b8a"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-004",
+      "difficulty": "medium",
+      "topic": "Vernier reading with zero correction",
+      "correctAnswerText": "12.25 mm",
+      "validation": "Vernier geometry, scale reading and correction checked separately.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "d8210c46fba2f65bc9bbd216880bdbb0b0d9599338c1c34c40fb3e7f21c40eed",
+      "currentRecordSha256": "f853729a9e13951ae29b76884a654968ae16f79c5bba7f19362c1c272b48ee8f"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-005",
+      "difficulty": "medium",
+      "topic": "Density from measured geometry",
+      "correctAnswerText": "3000 kg/m^3",
+      "validation": "Cubic geometry, division and cubic unit conversion independently recalculated.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "fc1e147669f7f77026b050c812b2940119e83dbe1d9a50b399f16efc721dca72",
+      "currentRecordSha256": "c7764460ecd77fb3efa8ba52284a929dd756155b7e273deeacd7a950cf98c7fb"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-006",
+      "difficulty": "medium",
+      "topic": "Mixed-operation significant figures",
+      "correctAnswerText": "10.8",
+      "validation": "Mixed decimal-place and significant-figure rules; guard-digit convention explicit.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "3cac1185b8e200f4f5abf7b4c58be5cc4940077b02abbbd3189f0ecbb3f2cde3",
+      "currentRecordSha256": "c0d631a9d9ce2f99ac4ea0106f1417cbfe6f2f2c1e9a3a7b826f4f6412cacc1d"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-007",
+      "difficulty": "medium",
+      "topic": "Difference followed by a quotient",
+      "correctAnswerText": "0.15 m/s",
+      "validation": "Primitive bounded errors propagated through difference then ratio, without statistical quadrature.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "302455ec4076e816af4ee48379ff690d1c5e0a8bdec820c330aba08b3d4db488",
+      "currentRecordSha256": "fe6c22fecc712aa4c1c8e76423667637f241ba282bc3f4a3db4bd9f1c1c26cd6"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-008",
+      "difficulty": "medium",
+      "topic": "Speed conversion with new base units",
+      "correctAnswerText": "2",
+      "validation": "Physical speed conversion followed by numerical-value/unit-size inversion.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "b07b4a66aa93d3db03ade830d820f9365b8339f7814e8f135faf67bd184d56b8",
+      "currentRecordSha256": "f6c1ba09701e47b573fde00c562e9a060a620eae092b33d1ee661181e9f1d542"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-009",
+      "difficulty": "medium",
+      "topic": "Surface tension with two interfaces",
+      "correctAnswerText": "0.20 N/m",
+      "validation": "Interface count, unit conversion and rearrangement; [γ]=M T^-2.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "581a3b0f539cd8365428c990c7288e7c25d0adec316e33856973345e769e6f98",
+      "currentRecordSha256": "74768f8f3dbc3c240a5b171155fcbc03c81d4c765ed7874f591b6c981f938621"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-010",
+      "difficulty": "medium",
+      "topic": "Viscosity inferred from a shear experiment",
+      "correctAnswerText": "0.020 Pa s",
+      "validation": "SI conversion, substitution and viscosity-unit reduction checked; ideal linear shear model stipulated.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "3660f2fa7b99340d210fa0a5cc22b3309f344c5a05f8c8739712dc857207c091",
+      "currentRecordSha256": "eb19d07b8913ae036db55d1fa3916e9e4d753cb42aafa3a2df3206b641fb2bff"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-011",
+      "difficulty": "medium",
+      "topic": "Density uncertainty from a radius measurement",
+      "correctAnswerText": "6%",
+      "validation": "Raw absolute uncertainties converted to fractional values before weighted propagation.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "0840ea38b9d042f9a71dd83ef7581347cb8ed6c703a11be0ba5148e0d6002d3e",
+      "currentRecordSha256": "a70c7a8273e639f37e56e2921ac034781ea82aa4497a90b80ef106c13f7b81da"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-012",
+      "difficulty": "medium",
+      "topic": "Gravitational-constant unit conversion",
+      "correctAnswerText": "1/54",
+      "validation": "Dimensions derived from the force law, then all three base-unit scale factors inverted.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "b05f0c3450b0fa7f46b7d56f22c6a2433d69503250c800c4926e13123c9dbcc8",
+      "currentRecordSha256": "e2f0d52e6cdc9c54bd8f3ffb5ccf38e346f4dc8ba33ec4a733f0e1b85294686a"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-013",
+      "difficulty": "medium",
+      "topic": "Absolute temperature and relative uncertainty",
+      "correctAnswerText": "0.168%",
+      "validation": "Exact affine temperature conversion; absolute uncertainty unchanged; percentage based on Kelvin absolute temperature.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "639c8e70629646c8734185a3cf42cacb35256b9d3a74b865421fdd0751d971be",
+      "currentRecordSha256": "5c99aa8d7289a04216cb188fb2ce30759e10783a99af6b0f33a3fade70efe6c6"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-014",
+      "difficulty": "medium",
+      "topic": "SI time and current in a charge count",
+      "correctAnswerText": "1.125×10^19",
+      "validation": "Two prefix/time conversions, charge relation and count conversion; governing relations supplied.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "29363c2fc015358afadb4d43b1fe56344dfd425e639f20be3483e39715106669",
+      "currentRecordSha256": "be7da64cb67d9dbdd8b23f8a3cd6b80152e1ebbfd094eef3240f0b2944effbba"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-015",
+      "difficulty": "medium",
+      "topic": "Dimensionless phase with two terms",
+      "correctAnswerText": "[L T^-2]",
+      "validation": "Two independent phase constraints and their quotient, rather than angular-frequency recall.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "3682fe3bdb100f959d29d28a7c68be346e318a9472ec2bc36a0725f928aa7586",
+      "currentRecordSha256": "5cb021af6d24f0ae4b88612b0e40403bd65a792a4347ad8ae7a83e1e61bf07ae"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-016",
+      "difficulty": "medium",
+      "topic": "Uncertainty of a sum in a denominator",
+      "correctAnswerText": "3.2%",
+      "validation": "Addition performed before relative uncertainty; squared length sensitivity checked.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "5ebd798a97e56d47046309252b002eb86fb32fae82b1dd294bf279ba7e1fd2fc",
+      "currentRecordSha256": "efc54ad6b13d04e3f71ca648cf1041aafdd3e9701a1b042467ee4e7c9fde5014"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-017",
+      "difficulty": "medium",
+      "topic": "Stiffness in CGS units",
+      "correctAnswerText": "2.5×10^5 dyn/cm",
+      "validation": "Force conversion and denominator conversion treated separately; no dimension-only clone retained.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "1b44bef35c7bc5850000adf30cccddbbf89a32ffe333c2d35e6f0c3cd0fd958c",
+      "currentRecordSha256": "3e657bf01fcb3ec9e76254680c9baf7c864f63f14b54a3046ddbba5b43d2dc4a"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-018",
+      "difficulty": "medium",
+      "topic": "Two-point linear instrument calibration",
+      "correctAnswerText": "15.0 cm",
+      "validation": "Gain and offset determined before inversion; calibration is within the stated range.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "293729336ab0ddc72ec235363a9dc22e01208d0983fbf6662035b1ab42f31f65",
+      "currentRecordSha256": "f93b0d304cfd947832d9d1115e9d5bfbd9aeea0c5c6b5ad46e23e6e6e70c4223"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-019",
+      "difficulty": "medium",
+      "topic": "Numerical value of a dimensionless energy ratio",
+      "correctAnswerText": "3",
+      "validation": "Dimensionless identification, denominator unit conversion and numerical ratio.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "35512b97136cfeb43d56ae2dc01809edf871cd474046b2486aab81e5d598e5a4",
+      "currentRecordSha256": "3ed9688e6a0e8e24b4c93d4ffea8d59ac8aaa048778ce8920484aa2c0e86e98c"
+    },
+    {
+      "id": "phy11-units-dimensions-medium-020",
+      "difficulty": "medium",
+      "topic": "Angle estimate and a first-order bound",
+      "correctAnswerText": "0.00733 rad",
+      "validation": "Mixed units handled before ratio; both absolute errors propagated into an angular bound.",
+      "remainingConcerns": "Confirm syllabus fit, difficulty, distractors and wording independently.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "661f2a23f46d525b801832c62ceee9e7cf56edeeb0fb4a6c671ee57f1525086a",
+      "currentRecordSha256": "45a916b5b5294f434abb3ee73c02309b21216d54071f59cd20705528035875c6"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-001",
+      "difficulty": "hard",
+      "topic": "Dimensional completeness with an amplitude",
+      "correctAnswerText": "T = sqrt(L/g) Φ(A/L)",
+      "validation": "Independent exponent balance plus identification of the remaining dimensionless degree of freedom.",
+      "remainingConcerns": "Amplitude functions and limits of dimensional inference are enrichment material; confirm intended Hard scope.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "96b89fa874cf343225b4a6de27358eb0e477adbdef4e951eec34dd31fde347bc",
+      "currentRecordSha256": "21241cc0ae210734f190e89eee4b9633c9a9b19f2d98713e754c693c8057c46a"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-002",
+      "difficulty": "hard",
+      "topic": "An underdetermined capillary model",
+      "correctAnswerText": "h = r Φ(S/(ρ g r^2))",
+      "validation": "Dimensional rank and both dimensionless groups checked; distractors fail either output scale or argument units.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "46a3f27fd54d7d1d76c0d95f3682e23d04071365a2051b68467f6c6dc1307ccb",
+      "currentRecordSha256": "879f1e5b121523e946c3bf68070cc1c8bc02131925b1486251ca2195435ae3fd"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-003",
+      "difficulty": "hard",
+      "topic": "Local drag-law exponents",
+      "correctAnswerText": "(2/5, 3/5, 7/5); F2/F1=1/2",
+      "validation": "Three exponent equations solved, then two coupled comparison constraints substituted into the full force monomial; all candidate pairs checked.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "0602baddcb1b1a804d887078a3d816d332eee0148b2696e79922074e867a0f32",
+      "currentRecordSha256": "8e70142d00f8465b54a8a6c2111be121fc9d4c57f6d0d0cb705bbbdfdef1b5ba"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-004",
+      "difficulty": "hard",
+      "topic": "A natural time scale and a second-order change",
+      "correctAnswerText": "sqrt(G h/c^5); change = -ε^2/2",
+      "validation": "Monomial dimensions independently solved; binomial-series leading term checked numerically and algebraically.",
+      "remainingConcerns": "Second-order perturbation expansion is enrichment; ε denotes a shared signed change, not independent uncertainty bounds.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "f7bd26c0042a79c4777b81e5f413e99d79c398cbf15a615114cdb4da6afd8025",
+      "currentRecordSha256": "013bcf3b7d114ac88a45a34e0824dcacc3ed6b2105f0849424bf5e260c321c9e"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-005",
+      "difficulty": "hard",
+      "topic": "Units based on derived quantities",
+      "correctAnswerText": "3",
+      "validation": "Nonstandard dimensional basis inverted and resulting unit dimensions checked before conversion.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "7d49c8ad2f07e0e5f64d527ddeaab315a4fdbbc9d751a97b9cb25eefd4b69d3e",
+      "currentRecordSha256": "2d5eb845018a127b53d2a77fc214949a74db194da0275837a3a690872ab491f9"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-006",
+      "difficulty": "hard",
+      "topic": "Rank failure in a proposed unit system",
+      "correctAnswerText": "No; E m/p^2 is dimensionless, and all three quantities depend on L and T only through L/T.",
+      "validation": "Rank computed independently and impossibility of a pure time monomial proved.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "bd5f63de8b0627fb2f52fbc7f2bbbbfe700f35917796a4c2046d31a83644810f",
+      "currentRecordSha256": "11a949f4c16f5f20c633caec33e9d6dc95a3314bcc01091de23794dfd24e3555"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-007",
+      "difficulty": "hard",
+      "topic": "A ratio with shared measured inputs",
+      "correctAnswerText": "1/90",
+      "validation": "Primitive-input derivatives checked by finite differences and corner evaluation.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "d40af60673da6d4802381eecd7699c262766f9a3f44089a6f6e8917ab82ace32",
+      "currentRecordSha256": "dfb7237be8cc8da521028f9e2e9219a7018001c15b6f25d7f2140a4794fcd833"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-008",
+      "difficulty": "hard",
+      "topic": "Uncertainty amplified by hollow geometry",
+      "correctAnswerText": "3.00%",
+      "validation": "Analytical partial derivatives and numerical first-order propagation checked; not an exact finite-bound claim.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "38bc2266d7490d4c4d2eb72f35b90553c723df37f9d453d5d56c9b6dfe0b21be",
+      "currentRecordSha256": "9507c928ac5d99e2ca67423a4a35acad442b16e4b86c6b6f98c71c629dfe7dda"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-009",
+      "difficulty": "hard",
+      "topic": "Inferring acceleration before propagating uncertainty",
+      "correctAnswerText": "(12.00±0.18) m/s^2",
+      "validation": "Elimination, dimensions and primitive-input derivatives independently checked.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "89895cd8a243b3fd688766d5afac68ad40d135cd20a5387e7c70a4053b9f18ae",
+      "currentRecordSha256": "cdd824fb471e4657d29219485be56ada862f50b10f353617146ecad3ad5c3865"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-010",
+      "difficulty": "hard",
+      "topic": "Allocating measurement time",
+      "correctAnswerText": "tx=80 s, ty=20 s; minimum about 1.118%",
+      "validation": "Constrained optimization, curvature and endpoint limits checked; bound/time model explicitly supplied.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "1603057dc0b346f836492b1c4f9236fad2bacab7bfe13163fd5175a5a234482f",
+      "currentRecordSha256": "69b51888d9839864f7352c8bdd1b2e24340c49b2800c74dc96a969aa31091e0e"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-011",
+      "difficulty": "hard",
+      "topic": "Shared diameter in an elastic-wave inference",
+      "correctAnswerText": "2.5%",
+      "validation": "Algebraic common-input cancellation and sensitivity exponents independently checked.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "dde88ac14cae050db31df17d895e6e85a9677238255b43f1b24d1587ca13730f",
+      "currentRecordSha256": "e127609dd6904e18f335f48701c25d669c72519d92932b496b7e5e65a7ea0b98"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-012",
+      "difficulty": "hard",
+      "topic": "Exact finite bounds through a square root",
+      "correctAnswerText": "About 10.56%, on the lower-speed side.",
+      "validation": "Monotone interval propagation checked at all energy endpoints; exact versus first-order distinction explicit.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "8744ca34ca33bcb46ce6f375dc85077b1bfc0952d91109bbfdde6794f54373b9",
+      "currentRecordSha256": "12aac041ec70f82c0cc3ce06452f2327110f64ce9e656ec235cc623af06a1dcf"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-013",
+      "difficulty": "hard",
+      "topic": "Common zero error in a hollow cylinder",
+      "correctAnswerText": "About 0.211%",
+      "validation": "Common-offset expression expanded exactly; worst endpoints agree with the formula.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "72946e31e35f186347a4562a6253571f5a074d1d0c44fad8ea26ec956fe50152",
+      "currentRecordSha256": "4277b339bf6a98dc1e985ff05b95498fa4d7044c76834252599306467c778297"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-014",
+      "difficulty": "hard",
+      "topic": "A logarithm, a fractional power and a change of time unit",
+      "correctAnswerText": "B_ms=B_s/1000; C_ms=C_s/sqrt(1000); C^2/(A^2 B) is dimensionless and invariant.",
+      "validation": "Coefficient dimensions, numerical-unit substitution and invariant checked separately.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "ea70796b3c17e274c20cce815d1ae4cf7b1686ec7f084e62221fc962aa1aa104",
+      "currentRecordSha256": "8965089f42ae70d496960f0971bef2245c650372b8440596b207fea684728444"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-015",
+      "difficulty": "hard",
+      "topic": "A time scale involving electric charge",
+      "correctAnswerText": "1/2",
+      "validation": "Four-variable dimensional solution and combined parameter ratio checked.",
+      "remainingConcerns": "All electrical relations are supplied; qualified reviewer must approve prerequisite and chapter fit.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "1e288c08b8b05cd9ac4c09dbed36f9df830e83c820e4b7ddc0f71c22385e9f65",
+      "currentRecordSha256": "a0f5e3d376a27cee326bbb88f80455b9c0e0a75f127f582f48950dd5bf49479a"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-016",
+      "difficulty": "hard",
+      "topic": "General frequency law with four dimensional inputs",
+      "correctAnswerText": "f=(E/h) Φ(G E^2/(h c^5))",
+      "validation": "Input rank, output scale and every candidate function argument checked.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "873b05e2cf0135d32e63de511a0f2e14b2b43f43d16315751325f28af709e458",
+      "currentRecordSha256": "8a860a838643e4f1acc8545f4305637e1e45845da1f3469d45d7bdbbab302b44"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-017",
+      "difficulty": "hard",
+      "topic": "Reconstructing dimensions from nonorthogonal unit changes",
+      "correctAnswerText": "[M L^2 T^-2]; ratio 16/3",
+      "validation": "Independent linear system solution and a fourth unit-system prediction checked.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "3bab96831c86b348400f33dbaf1914ef7953c458190672651c32943a7a233a5e",
+      "currentRecordSha256": "d673a91034c9f86867da62b6d5f84563d9f6c4cc82ccebe174f5873c93d90667"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-018",
+      "difficulty": "hard",
+      "topic": "A zero offset hidden in a pendulum calibration",
+      "correctAnswerText": "(0.96π^2 m/s^2, 0.060 m); δg/g≈2.0%",
+      "validation": "Two-parameter inverse calibration, back-substitution and primitive-period first-order sensitivity independently checked.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "ba2ca189cfd7561847ec612880285a7877b0dc3520b7b1a641558612b780fc65",
+      "currentRecordSha256": "710e84392e8de96e7d1a5741d14920083026f0f2897bf10c92c07d41e2ab2641"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-019",
+      "difficulty": "hard",
+      "topic": "Coupled ruler and clock calibration",
+      "correctAnswerText": "50/51",
+      "validation": "Successive calibration maps composed before deriving acceleration; units and μ cancellation checked.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "a4252bcf68e7cb8acaf0c5783b4fe7a1ecaae86f8084c09591240701b0a60e70",
+      "currentRecordSha256": "90da9f404f38fed85a2378ca028b012936893fd3e001b711402af6d518d3d1af"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-020",
+      "difficulty": "hard",
+      "topic": "Stable algebra for a thin annular layer",
+      "correctAnswerText": "t=A/[π(sqrt(R^2+A/π)+R)]; t≈A/(2πR)",
+      "validation": "Exact rationalization checked algebraically and with small-parameter numeric evaluations; asymptotic limit checked.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "7530088df390b715d9c4fa5b916b7a2dfa9c21c99277227246b8a156bcd647cc",
+      "currentRecordSha256": "590ad63ae064f679c51a969833634e0ed6ca61b5607b9916d4861929e3522908"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-021",
+      "difficulty": "hard",
+      "topic": "Random averaging with a calibration floor",
+      "correctAnswerText": "45",
+      "validation": "Variance model and logarithmic sensitivity independently derived; adjacent integers 44 and 45 checked.",
+      "remainingConcerns": "Standard-uncertainty/covariance concepts go beyond elementary maximum-error rules; prerequisites need human approval.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "00818d848b12bf10071bb3a81af66958f2ed81c3de636e8dd45511131ec3f9cc",
+      "currentRecordSha256": "d3f66fc8ea6e2947c4d162a18b49c57e210cfee5b2f074f0a1f9bf439b00eea7"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-022",
+      "difficulty": "hard",
+      "topic": "A fitted power and common calibration cancellation",
+      "correctAnswerText": "7%",
+      "validation": "Exponent inference, common-mode cancellation and independent residual covariance propagation checked.",
+      "remainingConcerns": "Reviewer must distinguish preliminary exact model identification from later noisy inputs.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "fcd8586ea411a46abbbd549db179b6063360db8038df9e490503eb60193d3a92",
+      "currentRecordSha256": "ce840922cb2fa13394e2f767afd6f49b8585758f732f7feff65d80d099cd8e59"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-023",
+      "difficulty": "hard",
+      "topic": "Dimensional coefficients and an extremum",
+      "correctAnswerText": "v=3 m/s; E_min=36 J",
+      "validation": "Coefficient dimensions, AM-GM minimum, equality condition and direct substitution checked.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "a0e9aa954c7d55afee44f3436d69d3be652bc85914ece808c6eb4a88f6323d05",
+      "currentRecordSha256": "1e3feae0374f7761d1c961d9c564ebe61c27e048adc41d99412e03052d4a8490"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-024",
+      "difficulty": "hard",
+      "topic": "Angular uncertainty in ill-conditioned triangulation",
+      "correctAnswerText": "2.00%",
+      "validation": "Radian derivatives and cancellation conditioning checked against finite differences and interval corners.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "10092212fd8c8f7cc313571b3092d4980f29f963cee36501c08f4a022dd6a622",
+      "currentRecordSha256": "28fdcb8a806f44f1497932f65086ef66907f705bcc099e539796d62ebb869a2b"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-025",
+      "difficulty": "hard",
+      "topic": "Uncertainty in a fitted force-law crossover",
+      "correctAnswerText": "v*=(2.00±0.24) m/s",
+      "validation": "Two-parameter fit eliminated; quotient derivatives checked using primitive measured forces.",
+      "remainingConcerns": "Qualified review of difficulty, syllabus/prerequisites, all options and derivation remains required.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "5c2c58fe6f661671468f20b7935ed22fa961f5d5ce6927cd2bb9ee8dd74c7956",
+      "currentRecordSha256": "1a6e053a2e8221c16ca5a2abba66fa942d76bb4f41e507e8b6b1cbff6393bd9d"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-026",
+      "difficulty": "hard",
+      "topic": "Inferring correlation from two uncertainty combinations",
+      "correctAnswerText": "ρ_xy=-1/2; u_rel(x/y)=sqrt(12)%",
+      "validation": "Covariance sign change, positive-semidefinite admissibility and numerical result checked.",
+      "remainingConcerns": "Correlation and standard uncertainty must be approved as intended Hard enrichment topics.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "7142ef13148f30b34c8d8199398fe2e9b0446d0fc176d47581652c354b4f197c",
+      "currentRecordSha256": "09119133eec8387f8fe5664c376e542dc684569524dd673d14fc329e75d95972"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-027",
+      "difficulty": "hard",
+      "topic": "Contact-time scaling from two physical models",
+      "correctAnswerText": "2",
+      "validation": "Force-to-work integration exponent, energy matching, time scaling and dimensional closure checked.",
+      "remainingConcerns": "This explicitly supplied idealised contact model is enrichment, not a memorisation requirement or universal law.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "79a77737e61d0dd19acc83bb4d33e26a43c6791dfb367094437c8e05088de276",
+      "currentRecordSha256": "7bb6d0bd67a4adabc3db915571de229da0210d618d72d54006f1347222626ab1"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-028",
+      "difficulty": "hard",
+      "topic": "Coupled diffusion and temperature scaling",
+      "correctAnswerText": "It is multiplied by 1/(2 sqrt(2)).",
+      "validation": "Three model relations and coupled exponents combined; diffusion and time dimensions checked.",
+      "remainingConcerns": "The temperature laws are model assumptions only; do not infer them for arbitrary real fluids.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "004202198b1963ddd00a7ba1fed66b5daa56e262ad0f1fba9eb2f7a45692ba65",
+      "currentRecordSha256": "07887ef41a6d4da177d66e8828e2034314e88b65b42fcf9d04bd19dfe31b13bd"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-029",
+      "difficulty": "hard",
+      "topic": "A reflectivity calibration that cancels a measured input",
+      "correctAnswerText": "3.5%",
+      "validation": "Shared calibration substitution, exact cancellation and primitive-error propagation checked.",
+      "remainingConcerns": "All photon relations are supplied; advanced context and prerequisite fairness need qualified review.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "d703a76d11eeb218e18372729330e601cec8a5c35a8b0eb9a9505add96c3766d",
+      "currentRecordSha256": "972478b0c9214f27bc2cc45390b21d1c6fcba5cf25d56608413d0ffdfe9f520c"
+    },
+    {
+      "id": "phy11-units-dimensions-hard-030",
+      "difficulty": "hard",
+      "topic": "An exponent fitted from two noisy ratios",
+      "correctAnswerText": "n=1.500; u(n)≈0.0184",
+      "validation": "Logarithmic-ratio Jacobian and covariance cancellation independently checked.",
+      "remainingConcerns": "Standard uncertainty, logarithms and inverse parameter fitting are advanced enrichment; no bounded confidence interval is asserted.",
+      "changes": "Rewritten to replace repetitive recall or under-level solving; supplied ID and difficulty preserved. Balanced option order with answer identity retained.",
+      "beforeSha256": "6931a4d265cf3fef859ecf1a653275f2749e4df67bb866afeead3694f28ffdee",
+      "currentRecordSha256": "324e939319381e132fff2c7f179569288beffd6dcb1d32e3c7caffc9670f695d"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-001",
+      "difficulty": "easy",
+      "topic": "SI base units",
+      "correctAnswerText": "mole",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "fe8ae83a9438e491349f742536ec391dcaff969b36c38fbea3a18248abb7b3c8",
+      "currentRecordSha256": "06332a14e1076d33c81c0b33ca1bba0ae578715c57b4a01ecb2bc4b14ab9d5d0"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-002",
+      "difficulty": "easy",
+      "topic": "Dimensions of density",
+      "correctAnswerText": "[M L^-3]",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "6dce72f26082080f099402918de4e0778f6cf85809f5ce28180dffe0426edd22",
+      "currentRecordSha256": "cbcc5a0d890272a81eed0379c276601870b87e4f1bac3bd547df3d3669ab8e4c"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-003",
+      "difficulty": "easy",
+      "topic": "Dimensions of momentum",
+      "correctAnswerText": "[M L T^-1]",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "9b489bc1d88a1fb4d6c7ae7088f1df1878b210cdcd4f1e0a4051771783bbec5e",
+      "currentRecordSha256": "0dd95e8c6f8c62ad886ace7c2e847898dfa37edfe7fdacfb27f8ca72d5c1ac75"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-004",
+      "difficulty": "easy",
+      "topic": "Dimensions of acceleration",
+      "correctAnswerText": "[L T^-2]",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "f21be602bb09eb2705117f49fcb0b4483235f836d1e3d0a47c4481c56c1842ff",
+      "currentRecordSha256": "cf3a07f8b82a5fd46274b50cd02ace1239d1a5bf1d59664b457da94db9de21f9"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-005",
+      "difficulty": "easy",
+      "topic": "Dimensions of a force constant",
+      "correctAnswerText": "[M T^-2]",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "6c7811950f4089e085780ddd5872c9eecc9e47246faa9d4d7c9722ad6a14a866",
+      "currentRecordSha256": "0c2b4112a341a242fbf0505b723ac5f9c6c024338e241a10ea9fa8e22bab5c8c"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-006",
+      "difficulty": "easy",
+      "topic": "Dimensions of specific energy",
+      "correctAnswerText": "[L^2 T^-2]",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "414e04078d545e05cb8defd1fd0cef44bf0e7f67260e0b2fbdcb353ee5582852",
+      "currentRecordSha256": "0b4481fe9bd49b37f8b84c0e29cb2065d2879b64097f3866c85c94ccdb10d1d1"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-007",
+      "difficulty": "easy",
+      "topic": "Dimensionless quantities",
+      "correctAnswerText": "It is dimensionless, with the special SI unit name radian.",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "c1736d9b3334db9c6098a6772f2e5e84d49c1d558538c87d067778a2b192331c",
+      "currentRecordSha256": "66f8a1b9e7044f82d3fc0705bed655e35c50f866aa4edd988f94d76bc64d9d2d"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-008",
+      "difficulty": "easy",
+      "topic": "Dimensional homogeneity",
+      "correctAnswerText": "x + vt",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "33b9be66e9d907aacde2d03e77fecad32dea919dd6372606a3d91cd1b18a3b43",
+      "currentRecordSha256": "a074fd59968b7164759acf8496a3ee1f027576d958b92ac33218294e5d30e3d2"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-009",
+      "difficulty": "easy",
+      "topic": "Limits of dimensional analysis",
+      "correctAnswerText": "A pure numerical multiplier",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "e59cddd3aec3996e7d5a2359cc5e71987ea6c0cb1c42003f311266b953ee8ae0",
+      "currentRecordSha256": "83782c690c22d978559eb8377cd18843d94ee8c55944314181a68bba75c8f63d"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-010",
+      "difficulty": "easy",
+      "topic": "SI prefixes",
+      "correctAnswerText": "3.2 × 10^-6 s",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "5e3460db6c9ce5b212b019f68e62b20b3c92326dce9057d01a5bec2d6fc7e38a",
+      "currentRecordSha256": "ff0072566b28ef6309b1de82090dc50a087ab03b8226d7e454097672de3f0f6d"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-011",
+      "difficulty": "easy",
+      "topic": "Conversion of volume units",
+      "correctAnswerText": "2.5 × 10^-6 m^3",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "716befabf016d0dcf0a6ac0d98cb1326b1fd6578e1071a9b6c5b8a2e19bd74a2",
+      "currentRecordSha256": "93f78d5ed544ba74ffd44e07e409630666f71e0d06c318fd97f1babc40017422"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-012",
+      "difficulty": "easy",
+      "topic": "Counting significant figures",
+      "correctAnswerText": "4",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "51f78dd8deea39f260f7625844a03b5fabbe9753df0140e5f1a68060af003ef7",
+      "currentRecordSha256": "eee3b042e378dcb1627f72f4ba33d6c0e1cca055aa7408539082a7560bb4ec45"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-013",
+      "difficulty": "easy",
+      "topic": "Significant figures in addition",
+      "correctAnswerText": "13.5 cm",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "a61c9645f88a9f1765b5b8515979a183c7a9b65c27fefad7a835be6c5ccb867b",
+      "currentRecordSha256": "a9e51d30e9f3b9775c7070d650adc00483c99bd3ccdb7ddcdc6f2eaf6ecf75e0"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-014",
+      "difficulty": "easy",
+      "topic": "Vernier least count",
+      "correctAnswerText": "0.1 mm",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "8a854ce011062be900959099deb6cb2858eefd1f982eb064a3f49d3e3ee88fe2",
+      "currentRecordSha256": "4679c585a2c9485abb4707eaa3689c8818f042f4c1c806bbb12c102eb8518e87"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-015",
+      "difficulty": "easy",
+      "topic": "Percentage uncertainty",
+      "correctAnswerText": "1%",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "1a1d90bed23ebfcdefaaf136cd3819d73cc455ac0ba713e5fd97a1f0cbdbc359",
+      "currentRecordSha256": "dfa2228a0edc2c59d0bae830b7ea6ff6292c45aa0f5d3a4a365c52e7962d1291"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-016",
+      "difficulty": "easy",
+      "topic": "Interpreting a quoted uncertainty",
+      "correctAnswerText": "2.38 m to 2.42 m",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "c58076936ee654baf72c7a80c6de0206f7fee429c91326f8fb85d675a0383a0d",
+      "currentRecordSha256": "1b7b121a1b398499b7955d3ff0d0f62ace661142d9a8aeb0fbbb59e1e17ea98b"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-017",
+      "difficulty": "easy",
+      "topic": "Zero-error correction",
+      "correctAnswerText": "1.25 cm",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "a232fa0ded184d06773da5e34b6c54c04fbc829fecb8dca7081acdf2736feb8b",
+      "currentRecordSha256": "2f40475fd3c9252de7bf383f4aa19b3a7e5d8652cf0f086dfe1fb665332f01fc"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-018",
+      "difficulty": "easy",
+      "topic": "Units versus dimensions",
+      "correctAnswerText": "Its numerical value becomes 100 times larger, while its dimensions remain L.",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "2dd5ce31fb6da403c214315627d31751fcc334f76f5b87cdc63de8063fdf998d",
+      "currentRecordSha256": "00cf4a2ee3ef773b319fb344610b4ead489901e39be694ff214ce585aa2c9a44"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-019",
+      "difficulty": "easy",
+      "topic": "Accuracy and precision",
+      "correctAnswerText": "Low accuracy and high precision",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "82f64e9c20cd3e09d0e3dbb8295d323e7b2c6f28ddc88f974a4e1b2bffc95d58",
+      "currentRecordSha256": "c9d016a96192ea269f5662bed4d5027a3af3cdc5e3a667cd74bba66ae188ab63"
+    },
+    {
+      "id": "gnosis-11-physics-01-easy-020",
+      "difficulty": "easy",
+      "topic": "Base quantities in mechanics",
+      "correctAnswerText": "Time",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "733d70536deea9435e4d15a20bc33ae98e407588f5c1d111e9bde420f4e2730e",
+      "currentRecordSha256": "b3c8764cf8f71773e017c676684931664cb6fd6dc0dfb7b2f07af526a26054fb"
+    },
+    {
+      "id": "gnosis-11-physics-01-plan60-easy-001",
+      "difficulty": "easy",
+      "topic": "Mean of repeated measurements",
+      "correctAnswerText": "12.3 mm",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "c9f411c1820ce64846b4276b44cd348a0d53b9518fe092f9ce17b6222904deb8",
+      "currentRecordSha256": "96b312c2ff85334189f7f5f6338d195240398daa3118cbcf5aea643d2d7fc64b"
+    },
+    {
+      "id": "gnosis-11-physics-01-plan60-easy-002",
+      "difficulty": "easy",
+      "topic": "Significant figures in multiplication",
+      "correctAnswerText": "3.2 cm^2",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "0eca806d6e6e6b6d1fdd4f1cbc98463e43879db36ca241c120db7901f435b84e",
+      "currentRecordSha256": "615badfb997751e9f6b358d635f18c3a91096154d20986e830c496b90bf8dc36"
+    },
+    {
+      "id": "gnosis-11-physics-01-plan60-easy-003",
+      "difficulty": "easy",
+      "topic": "Exact counts and significant figures",
+      "correctAnswerText": "No, because an exact count does not limit the significant figures.",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "64451af8b46f0a9a1d57ea1325c9ce8e69e0e63780f2c10c09f633695b89c0f5",
+      "currentRecordSha256": "0fe014acd1f19424f86a4cd9006a7066db44315a65f89b881b65671ad2a56f12"
+    },
+    {
+      "id": "gnosis-11-physics-01-plan60-easy-004",
+      "difficulty": "easy",
+      "topic": "Screw-gauge least count",
+      "correctAnswerText": "0.010 mm",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "8398db99b358b882dacc1861207fbfbdc87d6075efe7f619450f19a10ed0cda6",
+      "currentRecordSha256": "6d49e8ecd4f2465c4caf964ae1e5d812cd30266adcd35f392cb3198a7faee93d"
+    },
+    {
+      "id": "gnosis-11-physics-01-plan60-easy-005",
+      "difficulty": "easy",
+      "topic": "Dimensions of a coefficient",
+      "correctAnswerText": "[L T^-3]",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "eba1a431dc3635a348a6181e9a82db307bf262c969a83fb0a829562c9c9cdbbf",
+      "currentRecordSha256": "ee5bdab222ff1a7a6a350615eca8988a66bbdfbf11d0e3317faa349c1677f21a"
+    },
+    {
+      "id": "gnosis-11-physics-01-plan60-easy-006",
+      "difficulty": "easy",
+      "topic": "SI derived unit of force",
+      "correctAnswerText": "kg m s^-2",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "8a298ffb922d1932ac048e5a435a9c97f416c9c6564f23434232eb010c1608fe",
+      "currentRecordSha256": "96027b79f6f33b4be1ccdd336e832b22276e2a0137ce5463ee6fb0d53827beb2"
+    },
+    {
+      "id": "gnosis-11-physics-01-plan60-easy-007",
+      "difficulty": "easy",
+      "topic": "Dimensionless strain calculation",
+      "correctAnswerText": "2.0 × 10^-3",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "83ab649bd14f6e72e4c85292208fa7346d102813b8dda35fcc2bb54db8dd6fc1",
+      "currentRecordSha256": "5ea78898fb7127c15a70addbf7cec53f06f8c4f0ed7b59f9018ce890584b8be8"
+    },
+    {
+      "id": "gnosis-11-physics-01-plan60-easy-008",
+      "difficulty": "easy",
+      "topic": "Uncertainty in a difference",
+      "correctAnswerText": "(12.0 ± 0.3) cm",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "574c42a2607875b9511ddd135fe6d75722dc3c1df59e3ceab75fc04ffc659fb2",
+      "currentRecordSha256": "8547aeb9541d8c221e451bd994b8ef90705c37fdfc39cfba45e0b0126a08da2f"
+    },
+    {
+      "id": "gnosis-11-physics-01-plan60-easy-009",
+      "difficulty": "easy",
+      "topic": "Change of area unit",
+      "correctAnswerText": "9",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "b590e82ff2a45d5219a5c43feb02d7456f18bb863e66d544d7064f361f8a6204",
+      "currentRecordSha256": "ebb284bdc1aef28a064dc5cc9a48e7abe298c7a4082869aa5b83f8cefec66015"
+    },
+    {
+      "id": "gnosis-11-physics-01-plan60-easy-010",
+      "difficulty": "easy",
+      "topic": "Dimensions of a quotient",
+      "correctAnswerText": "s",
+      "validation": "Retained foundational draft; independent derivation and unique-option checks in existing units-batch-01 or units-plan60-batch-01 tests. Full wording/solution re-read in this curation pass.",
+      "remainingConcerns": "Independent qualified review of stem, distractors, solution, syllabus and Easy label required.",
+      "changes": "Retained unchanged; same broad chapter concepts may occur in applications, but no repeated task found.",
+      "beforeSha256": "1f97a825bb2dce7ad767e805054916ad7e9c724cb0e7838a9a540e097bb38dcd",
+      "currentRecordSha256": "b3a1140a12993ac64e11c4c622b71b3a249da69bebfe52fecd877b4a9e6456eb"
+    }
+  ],
+  "files": [
+    {
+      "file": "11-physics-1-zip-easy.json",
+      "count": 10,
+      "keyDistribution": [3, 3, 2, 2]
+    },
+    {
+      "file": "11-physics-1-zip-medium.json",
+      "count": 20,
+      "keyDistribution": [5, 5, 5, 5]
+    },
+    {
+      "file": "11-physics-1-zip-hard.json",
+      "count": 30,
+      "keyDistribution": [8, 8, 7, 7]
+    }
+  ],
+  "protection": {
+    "allExistingVerifiedRecordsUnchanged": true,
+    "unmodifiedBankFiles": [
+      {
+        "file": "11-physics-1-easy-batch-01.json",
+        "sha256": "79b57e328e3b4f596fdc371542074eafbc8ca05abc5f3c79cf64f56babbf0a48"
+      },
+      {
+        "file": "11-physics-1-plan60-easy-batch-01.json",
+        "sha256": "05d752ca52ebf9d666bb76c4c7854a2ee4baef3d28cf04ead384cc0b97cb927d"
+      },
+      {
+        "file": "11-physics-2.json",
+        "sha256": "294a7d63731155d79c52860ba08114de9f582a1e61b249cd8c794fef203aed95"
+      }
+    ],
+    "allChapterRecordsRemainDraft": true
+  },
+  "duplicateDispositions": [
+    {
+      "id": "phy11-units-dimensions-easy-004",
+      "finding": "Semantic duplicate of the earlier acceleration-dimension recall task.",
+      "resolution": "Parallax prevention; no acceleration-dimension task remains at this ID.",
+      "status": "Replacement remains draft; human semantic/difficulty review pending."
+    },
+    {
+      "id": "phy11-units-dimensions-easy-009",
+      "finding": "Near-duplicate significant-figure counting with changed digits.",
+      "resolution": "Rounding across a carry while preserving significant figures.",
+      "status": "Replacement remains draft; human semantic/difficulty review pending."
+    },
+    {
+      "id": "phy11-units-dimensions-medium-001",
+      "finding": "Semantic duplicate of the earlier F=kx spring-constant dimension task.",
+      "resolution": "Two time-dependent force coefficients, then their dimensional ratio.",
+      "status": "Replacement remains draft; human semantic/difficulty review pending."
+    },
+    {
+      "id": "phy11-units-dimensions-medium-005",
+      "finding": "Numerical clone of the existing km/h-to-m/s task in the motion bank.",
+      "resolution": "Cube geometry plus density and cubic unit conversion.",
+      "status": "Replacement remains draft; human semantic/difficulty review pending."
+    },
+    {
+      "id": "phy11-units-dimensions-medium-006",
+      "finding": "Near-duplicate multiplication/significant-figure task.",
+      "resolution": "Mixed addition/division with guard digits and two reporting rules.",
+      "status": "Replacement remains draft; human semantic/difficulty review pending."
+    },
+    {
+      "id": "phy11-units-dimensions-hard-002",
+      "finding": "Semantic duplicate of the numerical-prefactor limitation question.",
+      "resolution": "Underdetermined capillary dimensional model and general function.",
+      "status": "Replacement remains draft; human semantic/difficulty review pending."
+    },
+    {
+      "id": "phy11-units-dimensions-hard-015",
+      "finding": "Related spring-constant target, not an exact duplicate; under-level as Hard.",
+      "resolution": "Derive permittivity dimensions, construct a charge-based time scale, then compare parameter changes.",
+      "status": "Replacement remains draft; human semantic/difficulty review pending."
+    },
+    {
+      "id": "phy11-units-dimensions-hard-017",
+      "finding": "Related energy-density/pressure concept, not necessarily a duplicate; too direct as Hard.",
+      "resolution": "Infer unknown dimensions from three nonorthogonal unit transformations, then predict a fourth.",
+      "status": "Replacement remains draft; human semantic/difficulty review pending."
+    }
+  ],
+  "finalChecks": {
+    "unitRegressionPassed": 56,
+    "httpMatrixPassed": 10,
+    "httpIntegrationPassed": 2,
+    "typeScript": "passed",
+    "productionBuild": "passed",
+    "approvedCounts": {
+      "easy": 0,
+      "medium": 0,
+      "hard": 0
+    },
+    "draftCounts": {
+      "easy": 40,
+      "medium": 20,
+      "hard": 30
+    },
+    "lexicalThreshold": 0.65,
+    "lexicalMaximum": {
+      "score": 0.38235294117647056,
+      "ids": [
+        "phy11-units-dimensions-medium-007",
+        "phy11-units-dimensions-medium-020"
+      ]
+    },
+    "exactDuplicates": 0,
+    "lexicalFlags": 0,
+    "independentAcademicReview": "pending",
+    "deployment": "not performed"
+  }
+}

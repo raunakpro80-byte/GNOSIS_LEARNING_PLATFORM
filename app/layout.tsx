@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./theme.css";
+import "./refinement.css";
+import "./mock-tests.css";
 import ThemeToggle from "@/components/ThemeToggle";
 export const metadata: Metadata = {
   title: "GNOSIS — Understand a little deeper.",

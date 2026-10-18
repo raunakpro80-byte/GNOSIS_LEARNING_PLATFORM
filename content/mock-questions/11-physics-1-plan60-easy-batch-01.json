@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-plan60-easy-001",
+      "topic": "Mean of repeated measurements",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Three readings of the same length are 12.2 mm, 12.4 mm and 12.3 mm. Taking their arithmetic mean as the best estimate, what length should be recorded?",
+      "options": ["36.9 mm", "12.4 mm", "12.3 mm", "0.1 mm"],
+      "correct": 2,
+      "explanation": "1. Add the readings: 12.2 + 12.4 + 12.3 = 36.9 mm.\n2. Divide by the number of readings: 36.9/3 = 12.3 mm.\n3. The mean remains in millimetres; the sum alone is not the best estimate.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — 60-question plan, Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author checks of arithmetic, units, dimensional consistency and option uniqueness completed. Independent academic review, difficulty review and owner publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-plan60-easy-002",
+      "topic": "Significant figures in multiplication",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A rectangular label has measured sides 2.4 cm and 1.32 cm. Using the significant-figure rule for multiplication, how should its area be reported?",
+      "options": ["3.2 cm^2", "3.17 cm^2", "3.168 cm^2", "3.0 cm^2"],
+      "correct": 0,
+      "explanation": "1. Calculate area: A = 2.4 × 1.32 = 3.168 cm^2.\n2. The factors have two and three significant figures, respectively. A product is reported with the smaller number, two.\n3. Rounding 3.168 to two significant figures gives 3.2 cm^2.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — 60-question plan, Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author checks of arithmetic, units, dimensional consistency and option uniqueness completed. Independent academic review, difficulty review and owner publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-plan60-easy-003",
+      "topic": "Exact counts and significant figures",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A technician counts exactly 12 washers and measures their total mass to five significant figures. When calculating the mean mass per washer, does the divisor 12 limit the result to two significant figures?",
+      "options": [
+        "Yes, because every two-digit number has only two significant figures.",
+        "Yes, because division always reduces precision to two significant figures.",
+        "No, because the measured total mass is also exact.",
+        "No, because an exact count does not limit the significant figures."
+      ],
+      "correct": 3,
+      "explanation": "1. The number 12 here comes from counting, not an uncertain measurement.\n2. Exact counts have no measurement uncertainty and do not impose a finite significant-figure limit.\n3. Dividing by this exact count leaves the measured total mass as the precision-limiting input; it does not make that measured mass exact.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — 60-question plan, Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author checks of arithmetic, units, dimensional consistency and option uniqueness completed. Independent academic review, difficulty review and owner publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-plan60-easy-004",
+      "topic": "Screw-gauge least count",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A screw gauge advances by 0.50 mm in one complete turn, and its circular scale has 50 equal divisions. What displacement corresponds to one circular-scale division?",
+      "options": ["0.10 mm", "0.010 mm", "1.0 mm", "25 mm"],
+      "correct": 1,
+      "explanation": "1. One complete turn advances the screw by its pitch, 0.50 mm.\n2. One division is 1/50 of a turn, so least count = pitch/50.\n3. Thus the displacement is 0.50/50 = 0.010 mm per division.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — 60-question plan, Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author checks of arithmetic, units, dimensional consistency and option uniqueness completed. Independent academic review, difficulty review and owner publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-plan60-easy-005",
+      "topic": "Dimensions of a coefficient",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A length s is related to elapsed time t by s = c t^3. The constant c is independent of time. What is the dimensional formula of c?",
+      "options": ["[L T^3]", "[L^3 T^-1]", "[L T^-3]", "[T^-3]"],
+      "correct": 2,
+      "explanation": "1. Rearrange the relation: c = s/t^3.\n2. Substitute dimensions [s] = L and [t] = T.\n3. Therefore [c] = L/T^3 = L T^-3. Its SI unit is m s^-3.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — 60-question plan, Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author checks of arithmetic, units, dimensional consistency and option uniqueness completed. Independent academic review, difficulty review and owner publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-plan60-easy-006",
+      "topic": "SI derived unit of force",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A laboratory force sensor reports readings in newtons. Which expression in SI base units is equivalent to one newton?",
+      "options": ["kg m s^-2", "kg m^2 s^-2", "kg m s^-1", "kg m^-1 s^-2"],
+      "correct": 0,
+      "explanation": "1. Force equals mass multiplied by acceleration: F = ma.\n2. The SI base units are kg for mass and m s^-2 for acceleration.\n3. Their product is kg m s^-2, so 1 N = 1 kg m s^-2.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — 60-question plan, Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author checks of arithmetic, units, dimensional consistency and option uniqueness completed. Independent academic review, difficulty review and owner publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-plan60-easy-007",
+      "topic": "Dimensionless strain calculation",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "For a wire, longitudinal strain is defined as extension divided by original length. A 100 mm wire extends by 0.20 mm. What is its longitudinal strain?",
+      "options": ["2.0 × 10^-3 mm", "0.20", "500", "2.0 × 10^-3"],
+      "correct": 3,
+      "explanation": "1. Use strain = extension/original length. Both lengths are already in the same unit.\n2. Divide: 0.20/100 = 0.0020 = 2.0 × 10^-3.\n3. The millimetre units cancel. Strain is dimensionless, so appending mm would be incorrect.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — 60-question plan, Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author checks of arithmetic, units, dimensional consistency and option uniqueness completed. Independent academic review, difficulty review and owner publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-plan60-easy-008",
+      "topic": "Uncertainty in a difference",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Two measured lengths are A = (18.0 ± 0.1) cm and B = (6.0 ± 0.2) cm. Using the worst-case rule that absolute uncertainties add in subtraction, what is A - B?",
+      "options": [
+        "(12.0 ± 0.1) cm",
+        "(12.0 ± 0.3) cm",
+        "(24.0 ± 0.3) cm",
+        "(12.0 ± 0.02) cm"
+      ],
+      "correct": 1,
+      "explanation": "1. Subtract the central values: 18.0 - 6.0 = 12.0 cm.\n2. For the specified worst-case rule, add absolute uncertainties: 0.1 + 0.2 = 0.3 cm.\n3. Report A - B = (12.0 ± 0.3) cm. This is the stated worst-case convention, not a statistical confidence interval.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — 60-question plan, Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author checks of arithmetic, units, dimensional consistency and option uniqueness completed. Independent academic review, difficulty review and owner publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-plan60-easy-009",
+      "topic": "Change of area unit",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A fixed area has numerical value 36 when the length unit is u. If the length unit is changed to u′ = 2u, what is the numerical value of the same area in the new square unit?",
+      "options": ["72", "18", "9", "144"],
+      "correct": 2,
+      "explanation": "1. The original area is A = 36u^2.\n2. The new square unit is (u′)^2 = (2u)^2 = 4u^2.\n3. Therefore A = (36/4)(u′)^2 = 9(u′)^2. The physical area is unchanged.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — 60-question plan, Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author checks of arithmetic, units, dimensional consistency and option uniqueness completed. Independent academic review, difficulty review and owner publication approval pending."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 1,
+      "id": "gnosis-11-physics-01-plan60-easy-010",
+      "topic": "Dimensions of a quotient",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A quantity P has dimensions [M L T^-1] and a nonzero quantity F has dimensions [M L T^-2]. What SI base unit is appropriate for the quotient P/F?",
+      "options": ["s", "m", "kg", "s^-1"],
+      "correct": 0,
+      "explanation": "1. Divide the dimensions: [P/F] = (M L T^-1)/(M L T^-2).\n2. Mass and length cancel, and T^-1/T^-2 = T.\n3. The quotient therefore has the dimension of time, whose SI base unit is the second, s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice — Units and Measurements — 60-question plan, Easy Batch 1 (not official PYQs)"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Author checks of arithmetic, units, dimensional consistency and option uniqueness completed. Independent academic review, difficulty review and owner publication approval pending."
+      }
+    }
+  ]
+}

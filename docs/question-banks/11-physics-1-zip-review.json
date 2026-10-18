@@ -1,0 +1,565 @@
+{
+  "archiveSha256": "8106e0cd16bb29559b349fb1b78fd6b60d954f4f28ec94300fac28cfeec7c7ff",
+  "files": [
+    {
+      "name": "units_dimensions_easy.json",
+      "sha256": "7ad21e1eed969ea189916d7b026d8578b66bea43d472bb5c4e506ba3dc04455a",
+      "count": 10
+    },
+    {
+      "name": "units_dimensions_medium.json",
+      "sha256": "d69c85351ab275dff3bbc3bd164f2f1b10e652b9ff4d8caae2446c8de76d4d82",
+      "count": 20
+    },
+    {
+      "name": "units_dimensions_hard.json",
+      "sha256": "36d8fdbe982c20a0bd56ec642d4408bd2c8be20a3396f2d69fe9401dd3406652",
+      "count": 30
+    }
+  ],
+  "questions": [
+    {
+      "id": "phy11-units-dimensions-easy-001",
+      "suppliedDifficulty": "easy",
+      "recommendedDifficulty": "easy",
+      "flags": [],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-easy-002",
+      "suppliedDifficulty": "easy",
+      "recommendedDifficulty": "easy",
+      "flags": [],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-easy-003",
+      "suppliedDifficulty": "easy",
+      "recommendedDifficulty": "easy",
+      "flags": [],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-easy-004",
+      "suppliedDifficulty": "easy",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Possible semantic/near duplicate: gnosis-11-physics-01-easy-004."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-easy-005",
+      "suppliedDifficulty": "easy",
+      "recommendedDifficulty": "easy",
+      "flags": [],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-easy-006",
+      "suppliedDifficulty": "easy",
+      "recommendedDifficulty": "easy",
+      "flags": [],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-easy-007",
+      "suppliedDifficulty": "easy",
+      "recommendedDifficulty": "easy",
+      "flags": [],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-easy-008",
+      "suppliedDifficulty": "easy",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Syllabus fit: scalar/vector classification is adjacent mechanics content, not a core measurement task."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-easy-009",
+      "suppliedDifficulty": "easy",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Possible semantic/near duplicate: gnosis-11-physics-01-easy-012."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-easy-010",
+      "suppliedDifficulty": "easy",
+      "recommendedDifficulty": "easy",
+      "flags": [],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-001",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review.",
+        "Possible semantic/near duplicate: gnosis-11-physics-01-easy-005, phy11-units-dimensions-hard-015."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-002",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-003",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "medium",
+      "flags": [],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-004",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "medium",
+      "flags": [],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-005",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review.",
+        "Possible semantic/near duplicate: motion11-31."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-006",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review.",
+        "Possible semantic/near duplicate: gnosis-11-physics-01-plan60-easy-002."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-007",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-008",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-009",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review.",
+        "Syllabus fit: wavelength scaling uses waves context; assess fit for this chapter."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-010",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-011",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": [
+        "Explicit first-order worst-case approximation added to stem and explanation; key and options unchanged."
+      ]
+    },
+    {
+      "id": "phy11-units-dimensions-medium-012",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "medium",
+      "flags": [],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-013",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-014",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-015",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-016",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "medium",
+      "flags": [],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-017",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-018",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-019",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-medium-020",
+      "suppliedDifficulty": "medium",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied medium; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-001",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review.",
+        "Dimensional consistency is not a full physical derivation; review assumptions and scope."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-002",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied hard; provisional easy. Keep supplied label until human review.",
+        "Possible semantic/near duplicate: gnosis-11-physics-01-easy-009."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-003",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review.",
+        "Dimensional consistency is not a full physical derivation; review assumptions and scope."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-004",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-005",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-006",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-007",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review.",
+        "Dimensional consistency is not a full physical derivation; review assumptions and scope."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-008",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-009",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied hard; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-010",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-011",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-012",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied hard; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-013",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review."
+      ],
+      "changes": [
+        "Explicit first-order worst-case approximation added to stem and explanation; key and options unchanged."
+      ]
+    },
+    {
+      "id": "phy11-units-dimensions-hard-014",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review.",
+        "Dimensional consistency is not a full physical derivation; review assumptions and scope."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-015",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied hard; provisional easy. Keep supplied label until human review.",
+        "Possible semantic/near duplicate: phy11-units-dimensions-medium-001, gnosis-11-physics-01-easy-005."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-016",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-017",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied hard; provisional easy. Keep supplied label until human review.",
+        "Possible semantic/near duplicate: phy11-units-dimensions-medium-002."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-018",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review.",
+        "Dimensional consistency is not a full physical derivation; review assumptions and scope."
+      ],
+      "changes": [
+        "Circular-orbit assumption made explicit; key and options unchanged."
+      ]
+    },
+    {
+      "id": "phy11-units-dimensions-hard-019",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review.",
+        "Dimensional consistency is not a full physical derivation; review assumptions and scope."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-020",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied hard; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-021",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied hard; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-022",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review.",
+        "Current exponent uses A (ampere convention); formulas supplied, but electricity/magnetism context needs syllabus review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-023",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review.",
+        "Current exponent uses A (ampere convention); formulas supplied, but electricity/magnetism context needs syllabus review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-024",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied hard; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-025",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied hard; provisional easy. Keep supplied label until human review.",
+        "Dimensional consistency is not a full physical derivation; review assumptions and scope."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-026",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-027",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied hard; provisional easy. Keep supplied label until human review.",
+        "Current exponent uses A (ampere convention); formulas supplied, but electricity/magnetism context needs syllabus review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-028",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied hard; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-029",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "flags": [
+        "Difficulty review: supplied hard; provisional medium. Keep supplied label until human review."
+      ],
+      "changes": []
+    },
+    {
+      "id": "phy11-units-dimensions-hard-030",
+      "suppliedDifficulty": "hard",
+      "recommendedDifficulty": "easy",
+      "flags": [
+        "Difficulty review: supplied hard; provisional easy. Keep supplied label until human review."
+      ],
+      "changes": [
+        "Explicit first-order worst-case approximation added to stem and explanation; key and options unchanged."
+      ]
+    }
+  ]
+}

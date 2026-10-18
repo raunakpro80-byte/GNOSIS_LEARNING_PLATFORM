@@ -1,0 +1,1350 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-E-001",
+      "topic": "Vector basics",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Which of the following quantities requires both magnitude and direction for its complete description?",
+      "options": ["Displacement", "Distance", "Mass", "Temperature"],
+      "correct": 0,
+      "explanation": "Displacement is a vector quantity, defined by magnitude and direction. The other listed quantities are scalars.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-E-002",
+      "topic": "Unit vectors",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "What is the magnitude of the vector 0.6î + 0.8ĵ?",
+      "options": ["0.2", "1", "1.4", "2"],
+      "correct": 1,
+      "explanation": "Magnitude = sqrt(0.6² + 0.8²) = sqrt(0.36 + 0.64) = 1.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-E-003",
+      "topic": "Vector components",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A displacement vector is 5î − 2ĵ metres. What is its x-component?",
+      "options": ["−2 m", "−5 m", "+5 m", "+2 m"],
+      "correct": 2,
+      "explanation": "The coefficient of î gives the x-component, +5 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-E-004",
+      "topic": "Vector addition",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "Two vectors of magnitudes 4 N and 7 N point in the same direction. What is their resultant magnitude?",
+      "options": ["3 N", "sqrt(65) N", "28 N", "11 N"],
+      "correct": 3,
+      "explanation": "For parallel vectors in the same direction, add magnitudes: 4 + 7 = 11 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-E-005",
+      "topic": "Vector subtraction",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A point shifts from (2 m, −1 m) to (2 m, 6 m). What is the displacement vector?",
+      "options": ["7ĵ m", "7î m", "5ĵ m", "−7ĵ m"],
+      "correct": 0,
+      "explanation": "Final position minus initial: (2−2)î + (6−(−1))ĵ = 7ĵ m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-E-006",
+      "topic": "Projectile motion",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "For an ideal projectile moving only under gravity, in which direction does its acceleration act?",
+      "options": [
+        "Along its velocity",
+        "Vertically downward",
+        "Vertically upward",
+        "Horizontally forward"
+      ],
+      "correct": 1,
+      "explanation": "With air resistance neglected, gravitational acceleration remains vertically downward at all times.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-E-007",
+      "topic": "Projectile at highest point",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "At the highest point of a non-vertical projectile, which velocity component is zero?",
+      "options": [
+        "Horizontal component",
+        "Both components",
+        "Vertical component",
+        "Neither component"
+      ],
+      "correct": 2,
+      "explanation": "Gravity reduces the vertical component to zero at the highest point; horizontal velocity remains constant.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-E-008",
+      "topic": "Horizontal projection",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A ball is launched horizontally at 9 m/s without air resistance. After 1 s, what is its horizontal velocity?",
+      "options": ["0 m/s", "19 m/s", "4.5 m/s", "9 m/s"],
+      "correct": 3,
+      "explanation": "There is no horizontal acceleration when air resistance is neglected, so vₓ stays at 9 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-E-009",
+      "topic": "Uniform circular motion",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "For circular motion at constant speed v and radius r, what is the centripetal acceleration?",
+      "options": ["v²/r", "vr", "r/v²", "v/r²"],
+      "correct": 0,
+      "explanation": "Centripetal acceleration magnitude for uniform circular motion is a_c = v²/r, directed toward the centre.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-E-010",
+      "topic": "Angular speed",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A wheel turns through 8 radians in 2 seconds at constant angular speed. Find its angular speed.",
+      "options": ["16 rad/s", "4 rad/s", "6 rad/s", "0.25 rad/s"],
+      "correct": 1,
+      "explanation": "Angular speed ω = angular displacement/time = 8/2 = 4 rad/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-001",
+      "topic": "Unit vector and magnitude",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A force is 9î + 12ĵ N. What is the unit vector along this force?",
+      "options": ["(9î + 12ĵ)/12", "(3î + 4ĵ)/5", "(4î + 3ĵ)/5", "(3î − 4ĵ)/5"],
+      "correct": 1,
+      "explanation": "Magnitude = sqrt(9²+12²)=15 N; divide each component by 15: (3î+4ĵ)/5.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-002",
+      "topic": "Resultant of perpendicular vectors",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "Two displacements of 8 m east and 15 m north act successively. Find the net displacement magnitude.",
+      "options": ["23 m", "7 m", "17 m", "sqrt(161) m"],
+      "correct": 2,
+      "explanation": "Perpendicular components combine by Pythagoras: sqrt(8²+15²)=sqrt(289)=17 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-003",
+      "topic": "Vector dot product",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "Let A = 3î − 2ĵ, B = 4î + 5ĵ and C=A+B. Find A · C.",
+      "options": ["2", "13", "28", "15"],
+      "correct": 3,
+      "explanation": "First C=A+B=(7î+3ĵ). Thus A·C=3×7+(−2)×3=21−6=15. Equivalently A·C=|A|²+A·B=13+2=15.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-004",
+      "topic": "Orthogonal vectors",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "For what value of k are (kî + 2ĵ) and (3î − 6ĵ) perpendicular?",
+      "options": ["k = 4", "k = −4", "k = 2", "k = −2"],
+      "correct": 0,
+      "explanation": "Perpendicular vectors have zero dot product: 3k−12=0, hence k=4.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-005",
+      "topic": "Cross product magnitude",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "Two vectors of magnitudes 6 and 10 make a 30° angle. Find the magnitude of their cross product.",
+      "options": ["60", "30", "15", "30sqrt(3)"],
+      "correct": 1,
+      "explanation": "|A×B| = AB sinθ = 6×10×sin30° = 30.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-006",
+      "topic": "Projectile time of flight",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A ball is projected at 25 m/s at 30° above the horizontal. With g = 10 m/s², find the time to return to the launch level.",
+      "options": ["1.25 s", "5 s", "2.5 s", "4.33 s"],
+      "correct": 2,
+      "explanation": "Vertical launch speed = 25 sin30°=12.5 m/s. Time of flight T=2u_y/g=25/10=2.5 s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-007",
+      "topic": "Projectile maximum height",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A projectile is launched at 20 m/s at 30° above horizontal. With g = 10 m/s², find its maximum height above the launch point.",
+      "options": ["10 m", "20 m", "2.5 m", "5 m"],
+      "correct": 3,
+      "explanation": "u_y = 20 sin30° = 10 m/s; H = u_y²/(2g)=100/20=5 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-008",
+      "topic": "Projectile range",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A projectile is launched from level ground with speed 20 m/s at 45°. With g = 10 m/s², what is its horizontal range?",
+      "options": ["40 m", "20 m", "20sqrt(2) m", "80 m"],
+      "correct": 0,
+      "explanation": "R = u² sin(2θ)/g=400×sin90°/10=40 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-009",
+      "topic": "Projectile horizontal motion",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A projectile is fired at 20 m/s at 60° from horizontal. How far does it travel horizontally in 3 s (ignore air resistance)?",
+      "options": ["60 m", "30 m", "30sqrt(3) m", "10 m"],
+      "correct": 1,
+      "explanation": "Horizontal velocity is u cos60°=10 m/s. Horizontal displacement x=10×3=30 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-010",
+      "topic": "Projectile height at an instant",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A particle is launched at 30 m/s at 30° above horizontal. With g=10 m/s², find its vertical displacement after 2 s.",
+      "options": ["20 m", "30 m", "10 m", "0 m"],
+      "correct": 2,
+      "explanation": "Initial vertical velocity=30 sin30°=15 m/s. y=u_y t−(g t²)/2=15×2−5×4=10 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-011",
+      "topic": "Horizontal projection time",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A ball leaves a table horizontally and falls 45 m vertically. With g=10 m/s², how long is it in flight?",
+      "options": ["4.5 s", "sqrt(3) s", "9 s", "3 s"],
+      "correct": 3,
+      "explanation": "Vertical motion begins with zero vertical velocity. 45=(1/2)×10×t² so t²=9 and t=3 s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-012",
+      "topic": "Horizontal projectile range",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A stone leaves a 20 m high cliff horizontally at 12 m/s. With g=10 m/s², find its horizontal range.",
+      "options": ["24 m", "12 m", "48 m", "20 m"],
+      "correct": 0,
+      "explanation": "Time to fall = sqrt(2h/g)=sqrt(40/10)=2 s; horizontal range =12×2=24 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-013",
+      "topic": "Horizontal projectile impact speed",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A pebble is launched horizontally at 6 m/s from a height of 5 m. With g=10 m/s², find its speed just before impact.",
+      "options": ["16 m/s", "2sqrt(34) m/s", "4sqrt(6) m/s", "sqrt(34) m/s"],
+      "correct": 1,
+      "explanation": "Vertical impact speed sqrt(2gh)=10 m/s; resultant speed sqrt(6²+10²)=sqrt136=2sqrt34 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-014",
+      "topic": "Vector projection",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "The vector A=5î+12ĵ makes some angle with B=3î+4ĵ. Find the scalar projection of A along B.",
+      "options": ["13", "63/25", "63/5", "12"],
+      "correct": 2,
+      "explanation": "The unit direction along B is (3î+4ĵ)/5. The scalar projection of A onto B is A·B/|B|=(5×3+12×4)/5=63/5.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-015",
+      "topic": "Vector addition in components",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "Three planar displacements are A=4î−3ĵ, B=−2î+7ĵ and C=3î−8ĵ, in metres. Find the magnitude of their resultant.",
+      "options": ["sqrt(29) m", "5 m", "9 m", "sqrt(41) m"],
+      "correct": 3,
+      "explanation": "The total is (4−2+3)î+(−3+7−8)ĵ=5î−4ĵ m. Its magnitude is sqrt(5²+(−4)²)=sqrt41 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-016",
+      "topic": "Angle and resultant",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "Two forces of magnitude 10 N each act with an angle of 120° between them. Find their resultant magnitude.",
+      "options": ["10 N", "20 N", "10sqrt(3) N", "5 N"],
+      "correct": 0,
+      "explanation": "R² = A²+B²+2AB cos120°=100+100−100=100, so R=10 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-017",
+      "topic": "Uniform circular motion acceleration",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A particle makes one revolution every 2 s in a circle of radius 2 m. Find its centripetal acceleration.",
+      "options": ["π² m/s²", "2π² m/s²", "4π² m/s²", "2π m/s²"],
+      "correct": 1,
+      "explanation": "Its angular speed is ω=2π/T=π rad/s. Thus a_c=ω²r=π²×2=2π² m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-018",
+      "topic": "Frequency and radial acceleration",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A point on a rotor is 0.5 m from the axis. The rotor completes 3 revolutions each second. Find the centripetal acceleration of the point.",
+      "options": ["6π² m/s²", "9π² m/s²", "18π² m/s²", "3π m/s²"],
+      "correct": 2,
+      "explanation": "ω=2πf=6π rad/s. Thus a_c=ω²r=(6π)²×0.5=18π² m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-019",
+      "topic": "Angular motion to linear speed",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A disc of radius 0.4 m completes 10 revolutions in 5 s. Find the linear speed of a point on its rim.",
+      "options": ["0.8π m/s", "4π m/s", "2π m/s", "1.6π m/s"],
+      "correct": 3,
+      "explanation": "Frequency is f=10/5=2 Hz. Then ω=2πf=4π rad/s and tangential speed v=rω=0.4×4π=1.6π m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-M-020",
+      "topic": "Centripetal force",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 0.5 kg bead travels in a circle of radius 2 m and completes one full turn in 2 s. Find its centripetal force magnitude.",
+      "options": ["π² N", "2π² N", "0.5π² N", "4π² N"],
+      "correct": 0,
+      "explanation": "Angular speed ω=2π/T=π rad/s; radial force F=mω²r=0.5×π²×2=π² N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-001",
+      "topic": "Vector geometry and constraints",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Nonzero vectors A and B have magnitudes 5 and 7. Their resultant has magnitude sqrt(39). What is the angle between A and B?",
+      "options": ["60°", "90°", "120°", "150°"],
+      "correct": 2,
+      "explanation": "|A+B|²=25+49+70cosθ=39, so cosθ=−35/70=−1/2. Hence θ=120°.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-002",
+      "topic": "Three-vector resultant",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Three forces are 10 N along +x, 6 N at 120° to +x, and 6 N at 240° to +x. What is their resultant?",
+      "options": [
+        "10 N along +x",
+        "4 N along −x",
+        "16 N along +x",
+        "4 N along +x"
+      ],
+      "correct": 3,
+      "explanation": "The y-components of the two 6 N forces cancel. Their combined x-component is 6cos120°+6cos240°=−6 N. Adding +10 N gives +4 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-003",
+      "topic": "Vector magnitude and scalar constraints",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A = 4î + 3ĵ and B = kî − 2ĵ. If |A+B| = 5 and k > −4, find k.",
+      "options": ["sqrt(24) − 4", "−sqrt(24) − 4", "1", "sqrt(26) − 4"],
+      "correct": 0,
+      "explanation": "A+B=(4+k)î+ĵ. Hence (4+k)²+1=25, so 4+k=+sqrt24 because k>−4. Thus k=sqrt24−4.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-004",
+      "topic": "Vector dot product and angle",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Vectors A and B satisfy |A|=4, |B|=6 and |A−B|=sqrt(28). Find A·B.",
+      "options": ["−12", "12", "24", "6"],
+      "correct": 1,
+      "explanation": "|A−B|²=|A|²+|B|²−2A·B. So 28=16+36−2A·B, giving A·B=12.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-005",
+      "topic": "Vector algebra identities",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Nonzero vectors A and B have A·B=12 and |A×B|=16. What is |A||B|?",
+      "options": ["28", "4", "20", "sqrt(112)"],
+      "correct": 2,
+      "explanation": "(A·B)²+|A×B|²=|A|²|B|². Thus |A||B|=sqrt(144+256)=20.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-006",
+      "topic": "Vector relative motion",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A boat points due north at 8 m/s relative to water, while the river flows east at 6 m/s. If the river is 200 m wide, how far downstream does the boat land?",
+      "options": ["200 m", "250 m", "120 m", "150 m"],
+      "correct": 3,
+      "explanation": "Northward component is 8 m/s so crossing time=200/8=25 s. Eastward drift=6×25=150 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-007",
+      "topic": "Relative velocity in two dimensions",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Two aircraft have velocities v₁=30î+10ĵ m/s and v₂=6î−8ĵ m/s. Find the magnitude of aircraft 1 velocity relative to aircraft 2.",
+      "options": ["30 m/s", "42 m/s", "sqrt(468) m/s", "24 m/s"],
+      "correct": 0,
+      "explanation": "Relative velocity v₁−v₂=24î+18ĵ m/s; its magnitude=sqrt(24²+18²)=30 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-008",
+      "topic": "Projectile constraints: time and height",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A projectile passes through the same nonzero height at t=1 s and t=5 s after launch. With g=10 m/s², what was its initial vertical velocity?",
+      "options": ["20 m/s", "30 m/s", "15 m/s", "60 m/s"],
+      "correct": 1,
+      "explanation": "For y(t)=u_y t−5t², the two times at one height sum to 2u_y/g. Hence 1+5=2u_y/10, giving u_y=30 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-009",
+      "topic": "Projectile apex from measured speed",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A projectile leaves the ground at 25 m/s. Its speed at the highest point is 15 m/s. With g=10 m/s², find its maximum height.",
+      "options": ["10 m", "15 m", "20 m", "25 m"],
+      "correct": 2,
+      "explanation": "At the top speed equals u_x=15. Thus u_y²=25²−15²=400, and H=u_y²/(2g)=400/20=20 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-010",
+      "topic": "Projectile inverse launch angle",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A projectile launched from ground at 20 m/s has horizontal range 20sqrt(3) m with g=10 m/s². Which pair of launch angles is possible?",
+      "options": ["15° and 75°", "20° and 70°", "45° and 45°", "30° and 60°"],
+      "correct": 3,
+      "explanation": "R=(u²/g)sin2θ=40sin2θ. Hence sin2θ=sqrt3/2, giving 2θ=60° or 120° and θ=30° or 60°.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-011",
+      "topic": "Projectile coordinate condition",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A projectile launched from ground with speed 20 m/s at 45° passes a point at horizontal distance 20 m. Take g=10 m/s². Find its height there.",
+      "options": ["10 m", "5 m", "15 m", "20 m"],
+      "correct": 0,
+      "explanation": "Trajectory y=x tanθ−g x²/(2u² cos²θ). At θ=45°, y=20−(10×400)/(2×400×1/2)=20−10=10 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-012",
+      "topic": "Projectile moving target",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A ball is fired horizontally at 20 m/s from a height of 80 m. At the same instant, a target on the ground begins moving away horizontally at 5 m/s from the point directly below the launch point. With g=10 m/s², what horizontal gap remains between them when the ball reaches the ground?",
+      "options": ["40 m", "60 m", "80 m", "100 m"],
+      "correct": 1,
+      "explanation": "Fall time sqrt(2h/g)=sqrt(160/10)=4 s. Ball moves 20×4=80 m and target moves 5×4=20 m, so horizontal separation is 60 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-013",
+      "topic": "Relative projectiles with common gravity",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Two projectiles are launched simultaneously from the same point with velocities (10î+20ĵ) m/s and (−5î+10ĵ) m/s. Neglect air drag. What is their separation after 2 s?",
+      "options": ["5sqrt(13) m", "20sqrt(13) m", "10sqrt(13) m", "30 m"],
+      "correct": 2,
+      "explanation": "Both receive identical gravitational acceleration, so relative acceleration is zero. Relative initial velocity=(15î+10ĵ) m/s; after 2 s, relative displacement=(30î+20ĵ) m. Magnitude=sqrt(900+400)=10sqrt13 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-014",
+      "topic": "Projectile speed at a specified height",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A projectile is fired at 30 m/s from ground. Ignoring drag, what is its speed when it has risen 25 m above launch point? Take g=10 m/s²; assume it reaches this height.",
+      "options": ["10 m/s", "25 m/s", "sqrt(650) m/s", "20 m/s"],
+      "correct": 3,
+      "explanation": "Conservation of energy gives v²=u²−2gh=900−500=400. Thus v=20 m/s, independent of the launch angle if the height is reached.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-015",
+      "topic": "Projectile velocity perpendicularity",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A projectile starts with velocity components 12 m/s horizontally and 16 m/s upward. With g=10 m/s², at what time is its velocity perpendicular to its initial velocity?",
+      "options": ["2.5 s", "1.6 s", "2 s", "4 s"],
+      "correct": 0,
+      "explanation": "v₀=(12,16), v(t)=(12,16−10t). Dot product zero gives 144+16(16−10t)=0 =>400−160t=0 => t=2.5 s. (Ideal ballistic trajectory may continue below launch level; this is kinematic continuation.)",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-016",
+      "topic": "Horizontal launch onto an inclined plane",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A ball is projected horizontally from the origin at 10 m/s above an infinite plane sloping downward at 45° to the horizontal. Find the horizontal distance to impact, using g=10 m/s².",
+      "options": ["10 m", "20 m", "10sqrt(2) m", "40 m"],
+      "correct": 1,
+      "explanation": "Projectile path y=−g x²/(2u²)=−x²/20. The inclined plane is y=−x tan45°=−x. At impact x²/20=x, so nonzero x=20 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-017",
+      "topic": "Projectile fired above level ground",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A projectile is launched from the top of a 45 m tower with horizontal speed 12 m/s and upward vertical speed 10 m/s. With g=10 m/s², find its horizontal travel until ground impact.",
+      "options": [
+        "12sqrt(10) m",
+        "24 m",
+        "12(1+sqrt(10)) m",
+        "12(1+sqrt(5)) m"
+      ],
+      "correct": 2,
+      "explanation": "Vertical position relative to ground is 45+10t−5t²=0, so t²−2t−9=0; positive root t=1+sqrt10. Horizontal travel =12t=12(1+sqrt10) m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-018",
+      "topic": "Projectile trajectory symmetry",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A projectile is launched at 30 m/s and 30° above horizontal, with g=10 m/s². At which two times is it 10 m above its launch level?",
+      "options": [
+        "0.5 s and 2.5 s",
+        "1 s and 3 s",
+        "2 s and 3 s",
+        "1 s and 2 s"
+      ],
+      "correct": 3,
+      "explanation": "Vertical motion y=15t−5t². At y=10: 5t²−15t+10=0 => t²−3t+2=(t−1)(t−2)=0. Thus t=1 s and 2 s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-019",
+      "topic": "Range from two angle constraints",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A projectile with fixed launch speed has maximum possible level-ground range 100 m. What is its range at a 15° launch angle?",
+      "options": ["50 m", "25 m", "100 m", "50sqrt(3) m"],
+      "correct": 0,
+      "explanation": "Maximum range R_max=u²/g=100 m. At 15°, R=(u²/g)sin30°=100×1/2=50 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-020",
+      "topic": "Minimum separation of two moving particles",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "At t=0, particle A is at (0,0) and moves with constant velocity (3î+4ĵ) m/s, while B is at (20,0) and moves with velocity (−1î+2ĵ) m/s. What is their minimum separation for t ≥ 0?",
+      "options": ["10 m", "4sqrt(5) m", "2sqrt(5) m", "20 m"],
+      "correct": 1,
+      "explanation": "Relative position B−A=(20−4t)î−2tĵ. Square separation D²=(20−4t)²+4t²=400−160t+20t². Min at t=4 s; D²=80; D=4sqrt5 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-021",
+      "topic": "Angular kinematics and centripetal acceleration",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A wheel starts from rest with constant angular acceleration 2 rad/s². A point on its rim is 0.5 m from the axis. What is its centripetal acceleration after 4 s?",
+      "options": ["8 m/s²", "16 m/s²", "32 m/s²", "64 m/s²"],
+      "correct": 2,
+      "explanation": "At t=4 s, angular speed ω=αt=8 rad/s. Radial acceleration is rω²=0.5×64=32 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-022",
+      "topic": "Nonuniform circular motion total acceleration",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A particle moves around a circle of radius 2 m. At one instant its angular speed is 3 rad/s and angular acceleration is 4 rad/s². Find the magnitude of total acceleration.",
+      "options": ["26 m/s²", "18 m/s²", "8 m/s²", "2sqrt(97) m/s²"],
+      "correct": 3,
+      "explanation": "Radial acceleration rω²=2×9=18; tangential acceleration rα=2×4=8. Perpendicular contributions give |a|=sqrt(18²+8²)=sqrt388=2sqrt97 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-023",
+      "topic": "Circular relative angular motion",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Two runners start together and move around the same circular track in opposite directions at constant angular speeds π/6 and π/3 rad/s. When will they first meet again?",
+      "options": ["4 s", "2 s", "6 s", "12 s"],
+      "correct": 0,
+      "explanation": "Relative angular speed is π/6+π/3=π/2 rad/s. A complete relative turn is 2π, so t=2π/(π/2)=4 s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-024",
+      "topic": "Circular average acceleration",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A body moves uniformly around a circle with speed 10 m/s and period 8 s. What is the magnitude of its average acceleration during one quarter of a revolution?",
+      "options": ["10sqrt(2) m/s²", "5sqrt(2) m/s²", "5 m/s²", "0 m/s²"],
+      "correct": 1,
+      "explanation": "After one-quarter turn, velocity directions differ by 90°, so |Δv|=10sqrt2 m/s. Time=8/4=2 s. Average acceleration magnitude=5sqrt2 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-025",
+      "topic": "Circular speed ratio and force",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Two equal-mass objects move in separate circles with radii r and 4r. If their angular speeds are ω and ω/2, what is the ratio of their centripetal forces F₁/F₂?",
+      "options": ["4 : 1", "1 : 4", "1 : 1", "2 : 1"],
+      "correct": 2,
+      "explanation": "Centripetal force mω²r. F₁=mω²r and F₂=m(ω/2)²(4r)=mω²r, so ratio is 1:1.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-026",
+      "topic": "Period from radial acceleration",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A point moves in a circle of radius 0.8 m with centripetal acceleration 5π² m/s². Find its time period.",
+      "options": ["0.4 s", "1.6 s", "2π s", "0.8 s"],
+      "correct": 3,
+      "explanation": "a_c=4π²r/T², so T²=(4π²×0.8)/(5π²)=0.64, giving T=0.8 s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-027",
+      "topic": "Average velocity versus speed on circle",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A particle completes three quarters of a circle of radius 14 m in 6 s at constant speed. Find the ratio of the magnitude of average velocity to average speed.",
+      "options": ["2sqrt(2)/(3π)", "2/(3π)", "sqrt(2)/π", "1/3"],
+      "correct": 0,
+      "explanation": "Displacement magnitude between endpoints separated by 90° is 14sqrt2 m. Distance=3/4×2π×14=21π m. Ratio=14sqrt2/(21π)=2sqrt2/(3π).",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-028",
+      "topic": "Projectile angle from velocity observations",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A projectile is launched from level ground with initial speed 20 m/s and reaches its highest point 1.2 s later. If g=10 m/s², what is the horizontal component of its initial velocity?",
+      "options": ["12 m/s", "16 m/s", "8 m/s", "sqrt(544) m/s"],
+      "correct": 1,
+      "explanation": "At the top, 0=u_y−gt, so u_y=10×1.2=12 m/s. Then u_x=sqrt(u²−u_y²)=sqrt(400−144)=16 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-029",
+      "topic": "Projectile two-time horizontal separation",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A projectile is launched from ground at 25 m/s and returns to the launch height after 3 s (g=10 m/s²). How far horizontally does it travel during the LAST 1 second of its flight?",
+      "options": ["15 m", "25 m", "20 m", "10 m"],
+      "correct": 2,
+      "explanation": "T=2u_y/g gives u_y=15 m/s. Since u=25, horizontal speed u_x=sqrt(625−225)=20 m/s. Horizontal speed is constant, so travel in the final second is 20 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 3,
+      "id": "GNO-PHY11-C03-H-030",
+      "topic": "Vector resultant with opposite constraints",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Two vectors of unequal magnitudes have resultant 13 when aligned and 5 when opposite. If they are then placed perpendicular, what is the resultant magnitude?",
+      "options": ["sqrt(119)", "12", "sqrt(169)", "sqrt(97)"],
+      "correct": 3,
+      "explanation": "Let magnitudes a>b. From a+b=13 and a−b=5, get a=9,b=4. Perpendicular resultant sqrt(a²+b²)=sqrt(81+16)=sqrt97.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; model-assisted per manifest; not official PYQs",
+        "reference": "gnosis_chapter3_motion_in_a_plane_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted only; academic approval pending. See docs/question-banks/11-physics-3-import-review.md for calculation, difficulty and wording findings."
+      }
+    }
+  ]
+}

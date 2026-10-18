@@ -1,0 +1,1044 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "id": "motion11-01",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Speed and velocity",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A particle moves from x = 2 m to x = 14 m in 4 s. What is its average velocity?",
+      "options": [
+        "2 m/s",
+        "3 m/s",
+        "4 m/s",
+        "6 m/s"
+      ],
+      "correct": 1,
+      "explanation": "Displacement = 14 − 2 = 12 m. Average velocity = 12/4 = 3 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-02",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Speed and velocity",
+      "type": "numerical",
+      "difficulty": "easy",
+      "prompt": "A runner moves at a constant speed of 6 m/s for 5 s. Enter the distance travelled in metres.",
+      "correct": 30,
+      "tolerance": 0.000001,
+      "explanation": "At constant speed, distance = speed × time = 6 × 5 = 30 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-03",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Position and displacement",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A particle's position stays at x = 7 m throughout a time interval. Which statement is correct?",
+      "options": [
+        "Its velocity is 7 m/s.",
+        "Its velocity is zero.",
+        "Its acceleration must be 7 m/s².",
+        "Its position is zero."
+      ],
+      "correct": 1,
+      "explanation": "A constant position has zero change with time, so velocity is zero. A nonzero position does not imply motion.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-04",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Uniform acceleration",
+      "type": "numerical",
+      "difficulty": "easy",
+      "prompt": "Velocity changes uniformly from 3 m/s to 11 m/s in 4 s. Enter the acceleration in m/s².",
+      "correct": 2,
+      "tolerance": 0.000001,
+      "explanation": "Acceleration = (11 − 3)/4 = 2 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-05",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Uniform acceleration",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A particle has zero acceleration over an interval. Its velocity during that interval is:",
+      "options": [
+        "necessarily zero.",
+        "necessarily increasing.",
+        "constant, possibly nonzero.",
+        "necessarily negative."
+      ],
+      "correct": 2,
+      "explanation": "Zero acceleration means velocity does not change. That constant velocity can be zero, positive, or negative.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-06",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Position and displacement",
+      "type": "multiple",
+      "difficulty": "easy",
+      "prompt": "Select every correct statement about displacement in one-dimensional motion.",
+      "options": [
+        "It can be negative.",
+        "It always equals distance travelled.",
+        "It is zero after returning to the starting position.",
+        "It equals final position minus initial position."
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Displacement is the signed change in position. A return trip has zero displacement, although the distance travelled can be positive.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-07",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Graphs",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "What does the signed area under a velocity–time graph over an interval give?",
+      "options": [
+        "Displacement",
+        "Acceleration",
+        "Speed at the final instant",
+        "Position at the initial instant"
+      ],
+      "correct": 0,
+      "explanation": "Integrating velocity over time gives displacement. Areas below the time axis contribute negatively.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-08",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Position and displacement",
+      "type": "numerical",
+      "difficulty": "easy",
+      "prompt": "A particle moves from x = −3 m to x = 5 m. Enter its displacement in metres.",
+      "correct": 8,
+      "tolerance": 0.000001,
+      "explanation": "Displacement = final position − initial position = 5 − (−3) = 8 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-09",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Speed and velocity",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A student walks 10 m out and 10 m back in a total of 10 s. What is the average speed?",
+      "options": [
+        "0 m/s",
+        "2 m/s",
+        "10 m/s",
+        "20 m/s"
+      ],
+      "correct": 1,
+      "explanation": "Total distance is 20 m. Average speed = 20/10 = 2 m/s. Average velocity, a different quantity, is zero.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-10",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Speed and velocity",
+      "type": "multiple",
+      "difficulty": "easy",
+      "prompt": "Select every correct statement about speed.",
+      "options": [
+        "It cannot be negative.",
+        "Its SI unit is m/s.",
+        "It always equals the signed velocity.",
+        "A body can never have zero speed."
+      ],
+      "correct": [
+        0,
+        1
+      ],
+      "explanation": "Speed is the magnitude of velocity, so it is nonnegative and has SI unit m/s. It can be zero.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-11",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Uniform acceleration",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt": "A body starts from rest and accelerates uniformly at 2 m/s² for 6 s. Enter its displacement in metres.",
+      "correct": 36,
+      "tolerance": 0.000001,
+      "explanation": "s = ut + ½at² = 0 + ½ × 2 × 6² = 36 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-12",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Uniform acceleration",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A particle starts with velocity 4 m/s and accelerates uniformly at 3 m/s² for 2 s. Its final velocity is:",
+      "options": [
+        "6 m/s",
+        "7 m/s",
+        "10 m/s",
+        "12 m/s"
+      ],
+      "correct": 2,
+      "explanation": "v = u + at = 4 + 3 × 2 = 10 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-13",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Uniform acceleration",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt": "A car moving at 20 m/s decelerates uniformly at 4 m/s² until it stops. Enter the stopping time in seconds.",
+      "correct": 5,
+      "tolerance": 0.000001,
+      "explanation": "Set v = 0 in v = u + at: 0 = 20 − 4t, giving t = 5 s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-14",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Speed and velocity",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "Velocity changes uniformly from 2 m/s to 10 m/s in 4 s. What is the average velocity?",
+      "options": [
+        "2 m/s",
+        "4 m/s",
+        "6 m/s",
+        "8 m/s"
+      ],
+      "correct": 2,
+      "explanation": "For uniform acceleration, average velocity = (u + v)/2 = (2 + 10)/2 = 6 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-15",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Vertical motion",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "An object is dropped from rest. Neglect air resistance and take g = 10 m/s². How far does it fall in 3 s?",
+      "options": [
+        "15 m",
+        "30 m",
+        "45 m",
+        "90 m"
+      ],
+      "correct": 2,
+      "explanation": "Distance fallen = ½gt² = ½ × 10 × 3² = 45 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-16",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Calculus in kinematics",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt": "Position is x(t) = 2 + 3t + 2t² metres, with t in seconds. Enter displacement from t = 1 s to t = 3 s in metres.",
+      "correct": 22,
+      "tolerance": 0.000001,
+      "explanation": "x(3) = 2 + 9 + 18 = 29 m and x(1) = 2 + 3 + 2 = 7 m. Displacement = 29 − 7 = 22 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-17",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Uniform acceleration",
+      "type": "multiple",
+      "difficulty": "medium",
+      "prompt": "For constant acceleration in one dimension, select all valid equations. Here s is displacement, u initial velocity and v final velocity.",
+      "options": [
+        "v = u + at",
+        "s = ut + ½at²",
+        "v² = u² + 2as",
+        "s = vt for every accelerated motion"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "The first three equations follow from constant acceleration. In general, final velocity times time is not displacement; use average velocity.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-18",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Uniform acceleration",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A car starts at 10 m/s and accelerates uniformly at 2 m/s² for 5 s. What displacement does it cover?",
+      "options": [
+        "50 m",
+        "60 m",
+        "75 m",
+        "100 m"
+      ],
+      "correct": 2,
+      "explanation": "s = ut + ½at² = 10 × 5 + ½ × 2 × 25 = 50 + 25 = 75 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-19",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Graphs",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt": "A straight velocity–time graph increases from 2 m/s at t = 0 to 8 m/s at t = 4 s. Enter the displacement in metres.",
+      "correct": 20,
+      "tolerance": 0.000001,
+      "explanation": "The area is a trapezium: displacement = (2 + 8)/2 × 4 = 20 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-20",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Uniform acceleration",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A particle has initial velocity 12 m/s and constant acceleration −3 m/s². Its displacement in the first 2 s is:",
+      "options": [
+        "6 m",
+        "12 m",
+        "18 m",
+        "24 m"
+      ],
+      "correct": 2,
+      "explanation": "s = 12 × 2 + ½ × (−3) × 2² = 24 − 6 = 18 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-21",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Reversal of motion",
+      "type": "numerical",
+      "difficulty": "hard",
+      "prompt": "A particle starts at 8 m/s with constant acceleration −2 m/s². Enter the total distance travelled in the first 6 s, in metres.",
+      "correct": 20,
+      "tolerance": 0.000001,
+      "explanation": "The particle stops after 4 s, travelling 16 m. In the next 2 s it reverses and travels another ½ × 2 × 2² = 4 m. Total distance = 20 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-22",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Speed and velocity",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A vehicle covers two equal distances at speeds of 10 m/s and 30 m/s. What is its average speed for the entire trip?",
+      "options": [
+        "15 m/s",
+        "20 m/s",
+        "25 m/s",
+        "30 m/s"
+      ],
+      "correct": 0,
+      "explanation": "For equal distances d, average speed = 2d/(d/10 + d/30) = 15 m/s. The arithmetic mean applies to equal times instead.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-23",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Relative motion",
+      "type": "numerical",
+      "difficulty": "hard",
+      "prompt": "At t = 0, car A is 24 m ahead and moves at a constant 2 m/s. Car B starts from rest at x = 0 with constant acceleration 2 m/s² in the same direction. Enter the catch-up time in seconds.",
+      "correct": 6,
+      "tolerance": 0.000001,
+      "explanation": "Positions are x_A = 24 + 2t and x_B = t². Equating them gives t² − 2t − 24 = (t − 6)(t + 4) = 0. The physical positive time is 6 s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-24",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Vertical motion",
+      "type": "multiple",
+      "difficulty": "hard",
+      "prompt": "A ball is thrown vertically upward at 20 m/s. Neglect air resistance, take upward as positive and g = 10 m/s². Select all correct statements at t = 4 s.",
+      "options": [
+        "Its displacement from launch is zero.",
+        "Its velocity is −20 m/s.",
+        "Its total distance travelled is 40 m.",
+        "Its total distance travelled is zero."
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "At 4 s, displacement = 20 × 4 − ½ × 10 × 16 = 0 and velocity = 20 − 10 × 4 = −20 m/s. Maximum height is 20 m, so the up-and-down distance is 40 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-25",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Calculus in kinematics",
+      "type": "numerical",
+      "difficulty": "hard",
+      "prompt": "Position is x(t) = t³ − 6t² + 9t metres. Enter the instantaneous velocity at t = 2 s in m/s.",
+      "correct": -3,
+      "tolerance": 0.000001,
+      "explanation": "Differentiate position: v = 3t² − 12t + 9. At t = 2 s, v = 12 − 24 + 9 = −3 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-26",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Graphs",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A particle has velocity v(t) = 6 − 2t m/s. What is its displacement from t = 0 to t = 5 s?",
+      "options": [
+        "5 m",
+        "9 m",
+        "13 m",
+        "15 m"
+      ],
+      "correct": 0,
+      "explanation": "Displacement = integral from 0 to 5 of (6 − 2t) dt = [6t − t²] from 0 to 5 = 30 − 25 = 5 m. Distance would require accounting for reversal.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-27",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Speed and velocity",
+      "type": "numerical",
+      "difficulty": "hard",
+      "prompt": "A particle moves at +4 m/s for 3 s, then at −1 m/s for 2 s. Enter its average velocity over the full 5 s in m/s.",
+      "correct": 2,
+      "tolerance": 0.000001,
+      "explanation": "Net displacement = 4 × 3 + (−1) × 2 = 10 m. Average velocity = 10/5 = 2 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-28",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Speed and velocity",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A vehicle travels at 10 m/s for 5 s and at 30 m/s for the next 5 s. What is its average speed?",
+      "options": [
+        "15 m/s",
+        "20 m/s",
+        "25 m/s",
+        "40 m/s"
+      ],
+      "correct": 1,
+      "explanation": "Total distance = 10 × 5 + 30 × 5 = 200 m over 10 s. Average speed is 20 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-29",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Reversal of motion",
+      "type": "multiple",
+      "difficulty": "hard",
+      "prompt": "A particle has constant negative acceleration in one dimension. Select all correct statements.",
+      "options": [
+        "Its algebraic velocity decreases with time.",
+        "Its speed must decrease at every instant.",
+        "When its velocity is negative, its speed increases.",
+        "While its velocity remains positive, its speed decreases."
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Negative acceleration decreases algebraic velocity. Speed decreases while velocity is positive, but increases when velocity is negative. Thus negative acceleration does not always mean slowing down.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "id": "motion11-30",
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "topic": "Uniform acceleration",
+      "type": "numerical",
+      "difficulty": "hard",
+      "prompt": "A body starts from rest with constant acceleration and travels 2 m in its first second. Enter the distance travelled during its tenth second, in metres.",
+      "correct": 38,
+      "tolerance": 0.000001,
+      "explanation": "The first second gives ½a = 2, so a = 4 m/s². Distance in the nth second is u + ½a(2n − 1); for n = 10 this is 2 × 19 = 38 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS original practice · Motion in a Straight Line"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Stated-equation and arithmetic checks; independent regression answer key in tests/mock.test.ts."
+      },
+      "developmentSample": true
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "motion11-31",
+      "topic": "Speed and velocity",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A cyclist moves at a constant 36 km/h. What is this speed in m/s?",
+      "options": [
+        "5 m/s",
+        "10 m/s",
+        "36 m/s",
+        "129.6 m/s"
+      ],
+      "correct": 1,
+      "explanation": "Convert km/h to m/s by dividing by 3.6. Thus 36 ÷ 3.6 = 10 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS temporary original development sample"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Direct formula and definition checks; independent regression key in tests/mock.test.ts. Not subject-expert approved."
+      },
+      "developmentSample": true
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "motion11-32",
+      "topic": "Position and displacement",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A particle moves from x = 4 m to x = −2 m. What is its displacement?",
+      "options": [
+        "2 m",
+        "6 m",
+        "−6 m",
+        "−2 m"
+      ],
+      "correct": 2,
+      "explanation": "Displacement = final position − initial position = −2 − 4 = −6 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS temporary original development sample"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Direct formula and definition checks; independent regression key in tests/mock.test.ts. Not subject-expert approved."
+      },
+      "developmentSample": true
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "motion11-33",
+      "topic": "Graphs",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "What physical quantity is represented by the slope of a position–time graph?",
+      "options": [
+        "Acceleration",
+        "Distance",
+        "Time",
+        "Velocity"
+      ],
+      "correct": 3,
+      "explanation": "The slope is change in position divided by change in time, which is velocity.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS temporary original development sample"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Direct formula and definition checks; independent regression key in tests/mock.test.ts. Not subject-expert approved."
+      },
+      "developmentSample": true
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "motion11-34",
+      "topic": "Uniform acceleration",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A particle moves with constant acceleration 3 m/s². By how much does its velocity change in 2 s?",
+      "options": [
+        "6 m/s",
+        "1.5 m/s",
+        "3 m/s",
+        "9 m/s"
+      ],
+      "correct": 0,
+      "explanation": "Change in velocity = acceleration × time = 3 × 2 = 6 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS temporary original development sample"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Direct formula and definition checks; independent regression key in tests/mock.test.ts. Not subject-expert approved."
+      },
+      "developmentSample": true
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "motion11-35",
+      "topic": "Speed and velocity",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A train travels 120 m at a constant speed of 15 m/s. How long does the journey take?",
+      "options": [
+        "6 s",
+        "8 s",
+        "15 s",
+        "1800 s"
+      ],
+      "correct": 1,
+      "explanation": "For constant speed, time = distance ÷ speed = 120 ÷ 15 = 8 s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS temporary original development sample"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Direct formula and definition checks; independent regression key in tests/mock.test.ts. Not subject-expert approved."
+      },
+      "developmentSample": true
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "motion11-36",
+      "topic": "Position and displacement",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A person walks 3 m east and then 1 m west along a straight line. What total distance is travelled?",
+      "options": [
+        "2 m",
+        "−2 m",
+        "4 m",
+        "3 m"
+      ],
+      "correct": 2,
+      "explanation": "Distance adds the lengths of both parts of the path: 3 + 1 = 4 m.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS temporary original development sample"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Direct formula and definition checks; independent regression key in tests/mock.test.ts. Not subject-expert approved."
+      },
+      "developmentSample": true
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "motion11-37",
+      "topic": "Graphs",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "What does a horizontal line on a velocity–time graph indicate?",
+      "options": [
+        "Increasing acceleration",
+        "Zero speed in every case",
+        "Increasing velocity",
+        "Constant velocity"
+      ],
+      "correct": 3,
+      "explanation": "A horizontal line has a constant velocity value. It can be above, below, or on the time axis.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS temporary original development sample"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Direct formula and definition checks; independent regression key in tests/mock.test.ts. Not subject-expert approved."
+      },
+      "developmentSample": true
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "motion11-38",
+      "topic": "Uniform acceleration",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A car increases its speed uniformly from 5 m/s to 17 m/s in 6 s in the same direction. What is its acceleration?",
+      "options": [
+        "2 m/s²",
+        "3 m/s²",
+        "12 m/s²",
+        "22 m/s²"
+      ],
+      "correct": 0,
+      "explanation": "Acceleration = (17 − 5) ÷ 6 = 2 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS temporary original development sample"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Direct formula and definition checks; independent regression key in tests/mock.test.ts. Not subject-expert approved."
+      },
+      "developmentSample": true
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "motion11-39",
+      "topic": "Position and displacement",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "For any one-dimensional journey, which relationship always holds?",
+      "options": [
+        "Distance < magnitude of displacement",
+        "Distance ≥ magnitude of displacement",
+        "Distance = displacement including its sign",
+        "Distance is always zero on returning"
+      ],
+      "correct": 1,
+      "explanation": "Distance is the entire path length and cannot be smaller than the magnitude of the net displacement.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS temporary original development sample"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Direct formula and definition checks; independent regression key in tests/mock.test.ts. Not subject-expert approved."
+      },
+      "developmentSample": true
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 2,
+      "id": "motion11-40",
+      "topic": "Speed and velocity",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A particle has velocity −7 m/s along the x-axis. What is its speed?",
+      "options": [
+        "−7 m/s",
+        "0 m/s",
+        "7 m/s",
+        "49 m/s"
+      ],
+      "correct": 2,
+      "explanation": "Speed is the magnitude of velocity, so |−7| = 7 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "GNOSIS temporary original development sample"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Direct formula and definition checks; independent regression key in tests/mock.test.ts. Not subject-expert approved."
+      },
+      "developmentSample": true
+    }
+  ]
+}

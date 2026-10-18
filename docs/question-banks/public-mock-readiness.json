@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-18",
+  "bankCheckpoint": [
+    {
+      "file": "content/mock-questions/11-physics-1-easy-batch-01.json",
+      "sha256": "79b57e328e3b4f596fdc371542074eafbc8ca05abc5f3c79cf64f56babbf0a48"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-plan60-easy-batch-01.json",
+      "sha256": "05d752ca52ebf9d666bb76c4c7854a2ee4baef3d28cf04ead384cc0b97cb927d"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-zip-easy.json",
+      "sha256": "5dc4b339a5d712a291cf441cae3dc3f49d1481e1820a94b2060d0145f8c6641c"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-zip-hard.json",
+      "sha256": "4da027490f17f7678d33c9817132f83efa4c30b1cdaefbe28b170357e74d9be5"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-zip-medium.json",
+      "sha256": "4ed85f71df8d25b957044bf2a77b66e406fa2621b0a6d273461c48320a65a40b"
+    },
+    {
+      "file": "content/mock-questions/11-physics-2-owner-draft.json",
+      "sha256": "fa50f7dc646d29d08ad7a786364d6467d5827caeb86ab02ab58c6a98383443de"
+    },
+    {
+      "file": "content/mock-questions/11-physics-2.json",
+      "sha256": "294a7d63731155d79c52860ba08114de9f582a1e61b249cd8c794fef203aed95"
+    },
+    {
+      "file": "content/mock-questions/11-physics-3-owner-draft.json",
+      "sha256": "b536cba7fa0def848394564711d996909bac4b1e647f6bbb3a8584e09429befa"
+    },
+    {
+      "file": "content/mock-questions/11-physics-4-owner-draft.json",
+      "sha256": "4fe26de14a44177a1db422991840c031554ebefce972abe93a2ae14a7c374bc4"
+    }
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "drafts": 90,
+      "approved": 0,
+      "activeConfigurations": 0,
+      "unreviewedDifficulties": ["easy", "medium", "hard"],
+      "publicPath": "/mock-tests/class-11/physics/chapter-1"
+    },
+    {
+      "chapter": 2,
+      "drafts": 60,
+      "approved": 0,
+      "activeConfigurations": 0,
+      "unreviewedDifficulties": ["easy", "medium", "hard"],
+      "publicPath": "/mock-tests/class-11/physics/chapter-2"
+    },
+    {
+      "chapter": 3,
+      "drafts": 60,
+      "approved": 0,
+      "activeConfigurations": 0,
+      "unreviewedDifficulties": ["easy", "medium", "hard"],
+      "publicPath": "/mock-tests/class-11/physics/chapter-3"
+    },
+    {
+      "chapter": 4,
+      "drafts": 60,
+      "approved": 0,
+      "activeConfigurations": 0,
+      "unreviewedDifficulties": ["easy", "medium", "hard"],
+      "publicPath": "/mock-tests/class-11/physics/chapter-4"
+    }
+  ],
+  "excludedDevelopmentSamples": 40,
+  "academicApproval": "pending for all270 drafts",
+  "deployment": "not pushed or deployed; Vercel active attempts blocked until durable adapter exists",
+  "technicalVerification": {
+    "unitTestsPassed": 82,
+    "unitTestsFailed": 0,
+    "finalPublicUnitRerun": 4,
+    "finalApiIntegrationPassed": 3,
+    "syntheticMatrixPassed": 10,
+    "typecheck": "passed after correcting new helper/test environment typing",
+    "report": "passed,106 chapters",
+    "build": "passed final pnpm build",
+    "serverTraces": [
+      {
+        "routeTrace": ".next/server/app/mock-tests/class-11/physics/page.js.nft.json",
+        "uniqueBanks": 9,
+        "privateFiles": 0
+      },
+      {
+        "routeTrace": ".next/server/app/mock-tests/class-11/physics/[chapter]/page.js.nft.json",
+        "uniqueBanks": 9,
+        "privateFiles": 0
+      }
+    ],
+    "browser": "Index navigation,chapter1 refresh,Share Test success status and exact selectable full URL observed; desktop screenshot saved",
+    "clipboardLimitation": "Tool clipboard read was empty; canonical URL unit tests and visible URL checked, real browser clipboard acceptance remains pending",
+    "deviceLimitations": "No actual incognito profile,remote device or mobile viewport tested; unauthenticated direct HTTP and mobile-User-Agent refresh tests passed",
+    "questionChanges": "none; all9 hashes unchanged",
+    "deployment": "not pushed/deployed; academic approval and durable Vercel storage remain blockers"
+  }
+}

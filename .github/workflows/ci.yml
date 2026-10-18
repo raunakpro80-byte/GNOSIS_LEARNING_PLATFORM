@@ -28,7 +28,7 @@ jobs:
       - name: Exercise production API routes
         shell: bash
         run: |
-          pnpm start > "$RUNNER_TEMP/gnosis-server.log" 2>&1 &
+          GNOSIS_MOCK_DATA_DIR="$RUNNER_TEMP/gnosis-mock-attempts" pnpm start > "$RUNNER_TEMP/gnosis-server.log" 2>&1 &
           server_pid=$!
           trap 'kill "$server_pid" 2>/dev/null || true' EXIT
           ready=false

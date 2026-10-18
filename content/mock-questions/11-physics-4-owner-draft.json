@@ -1,0 +1,1400 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-E-001",
+      "topic": "Inertia",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A hockey puck moves at constant velocity on a perfectly frictionless horizontal surface. What is the net horizontal force on it?",
+      "options": [
+        "0 N",
+        "Equal to its weight",
+        "Equal to its momentum per second",
+        "A force along its velocity"
+      ],
+      "correct": 0,
+      "explanation": "Constant velocity means zero acceleration. By Newton's second law, net horizontal force = mass × 0 = 0 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-E-002",
+      "topic": "Newton's second law",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A net horizontal force of 18 N acts on a 6 kg trolley on a smooth track. What is its acceleration?",
+      "options": ["108 m/s²", "3 m/s²", "12 m/s²", "0.33 m/s²"],
+      "correct": 1,
+      "explanation": "Using F = ma, acceleration a = 18/6 = 3 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-E-003",
+      "topic": "Newton's third law",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "When a swimmer pushes water backwards, which force helps the swimmer move forwards?",
+      "options": [
+        "The swimmer pushes themselves forwards",
+        "The swimmer's weight decreases",
+        "The water pushes the swimmer forwards",
+        "The water exerts no force"
+      ],
+      "correct": 2,
+      "explanation": "The swimmer pushes water backwards, while the water exerts an equal and opposite forward force on the swimmer. The two forces act on different objects.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-E-004",
+      "topic": "Momentum",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A 5 kg object moves horizontally at 4 m/s. Find the magnitude of its linear momentum.",
+      "options": ["1.25 kg·m/s", "9 kg·m/s", "80 kg·m/s", "20 kg·m/s"],
+      "correct": 3,
+      "explanation": "Linear momentum p = mv. Substituting m = 5 kg and v = 4 m/s gives p = 20 kg·m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-E-005",
+      "topic": "Impulse",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "What is the SI unit of impulse?",
+      "options": ["N·s", "N/s", "kg/s", "J/s"],
+      "correct": 0,
+      "explanation": "Impulse equals force multiplied by the time interval, J = F Δt. Its SI unit is newton-second (N·s), also equivalent to kg·m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-E-006",
+      "topic": "Weight",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "What is the weight of a 3 kg object near Earth's surface if g = 10 m/s²?",
+      "options": ["0.3 N", "30 N", "13 N", "300 N"],
+      "correct": 1,
+      "explanation": "The gravitational force is W = mg = 3 × 10 = 30 N, acting vertically downwards.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-E-007",
+      "topic": "Normal reaction",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A 2 kg book rests on a level desk and no other vertical forces act. If g = 10 m/s², what is the desk's normal force on the book?",
+      "options": ["20 N downwards", "2 N upwards", "20 N upwards", "0 N"],
+      "correct": 2,
+      "explanation": "At vertical equilibrium the upward normal force balances the book's downward weight mg = 20 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-E-008",
+      "topic": "Newton's first law",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "An object initially at rest remains at rest when which condition is satisfied?",
+      "options": [
+        "Its mass is zero",
+        "Its weight is always zero",
+        "Its speed is increasing",
+        "The net external force is zero"
+      ],
+      "correct": 3,
+      "explanation": "Newton's first law states that an object at rest stays at rest if the resultant external force on it is zero.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-E-009",
+      "topic": "Free-body diagrams",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "In a free-body diagram of a block sliding on a rough horizontal floor, which force acts opposite its relative sliding motion?",
+      "options": [
+        "Kinetic friction",
+        "Weight",
+        "Normal reaction",
+        "Gravitational attraction of the Moon"
+      ],
+      "correct": 0,
+      "explanation": "Kinetic friction acts tangentially along the surface, opposing relative sliding. Weight and normal reaction act vertically.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-E-010",
+      "topic": "Balanced forces",
+      "type": "single",
+      "difficulty": "easy",
+      "prompt": "A 9 N force acts to the right on a box. What single horizontal force will keep the net horizontal force zero?",
+      "options": [
+        "9 N to the right",
+        "9 N to the left",
+        "18 N to the right",
+        "0 N"
+      ],
+      "correct": 1,
+      "explanation": "The horizontal forces must cancel: +9 N − 9 N = 0 N, so an equal force to the left is required.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-001",
+      "topic": "Contact force between blocks",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "Two blocks of 2 kg and 5 kg touch on a smooth table. A 28 N force pushes the 2 kg block towards the 5 kg block. What contact force acts on the 5 kg block?",
+      "options": ["8 N", "20 N", "12 N", "28 N"],
+      "correct": 1,
+      "explanation": "The system acceleration is 28/(2 + 5) = 4 m/s². The only horizontal force on the 5 kg block is contact force, so N = 5 × 4 = 20 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-002",
+      "topic": "Elevator apparent weight",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 4 kg suitcase rests on the floor of a lift accelerating upwards at 3 m/s². Take g = 10 m/s². Find the floor's normal reaction.",
+      "options": ["28 N", "40 N", "52 N", "12 N"],
+      "correct": 2,
+      "explanation": "For upward acceleration N − mg = ma. Thus N = 4(10 + 3) = 52 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-003",
+      "topic": "Smooth inclined plane",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 6 kg block slides freely down a smooth incline inclined at 30° to the horizontal. Take g = 10 m/s². Find its acceleration down the slope.",
+      "options": ["10 m/s²", "3 m/s²", "8.66 m/s²", "5 m/s²"],
+      "correct": 3,
+      "explanation": "On a smooth plane the down-slope force is mg sin30°. Hence a = g sin30° = 10 × 1/2 = 5 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-004",
+      "topic": "Kinetic friction",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 4 kg block on a horizontal floor has coefficient of kinetic friction 0.25. It is pulled horizontally by 26 N. Take g = 10 m/s². Find its acceleration.",
+      "options": ["4 m/s²", "6.5 m/s²", "9 m/s²", "2.5 m/s²"],
+      "correct": 0,
+      "explanation": "Normal force N = mg = 40 N. Kinetic friction = 0.25 × 40 = 10 N. Net force = 26 − 10 = 16 N, so a = 16/4 = 4 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-005",
+      "topic": "Momentum reversal",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 0.25 kg ball moving east at 14 m/s rebounds west at 6 m/s. What is the magnitude of its change in momentum?",
+      "options": ["2 kg·m/s", "5 kg·m/s", "3.5 kg·m/s", "20 kg·m/s"],
+      "correct": 1,
+      "explanation": "Take east positive: Δp = m(v − u) = 0.25(−6 − 14) = −5 kg·m/s. The magnitude is 5 kg·m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-006",
+      "topic": "Impulse from a graph",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A force increases uniformly from 0 N to 16 N during the first 3 s and then falls linearly to 0 N at 5 s. What is the total impulse?",
+      "options": ["16 N·s", "24 N·s", "40 N·s", "80 N·s"],
+      "correct": 2,
+      "explanation": "Impulse is area under the force–time graph. The triangle has base 5 s and height 16 N, so J = (1/2) × 5 × 16 = 40 N·s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-007",
+      "topic": "Atwood machine",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "In an ideal Atwood machine, masses 7 kg and 3 kg hang on opposite sides of a light pulley. Take g = 10 m/s². Find the magnitude of acceleration.",
+      "options": ["2 m/s²", "10 m/s²", "7 m/s²", "4 m/s²"],
+      "correct": 3,
+      "explanation": "Net driving force is (7 − 3)g = 40 N, and total mass is 10 kg. Therefore a = 40/10 = 4 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-008",
+      "topic": "Vertical tension",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 3 kg lamp is lifted vertically with an upward acceleration of 2 m/s² by a light string. Take g = 10 m/s². What is the string tension?",
+      "options": ["36 N", "24 N", "30 N", "6 N"],
+      "correct": 0,
+      "explanation": "T − mg = ma, so tension T = m(g + a) = 3(10 + 2) = 36 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-009",
+      "topic": "Inclined pull on a smooth surface",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 5 kg cart is pulled by a 30 N force at 60° above the horizontal along a smooth track. Assuming it stays in contact with the track, find its horizontal acceleration.",
+      "options": ["6 m/s²", "3 m/s²", "5.2 m/s²", "1.5 m/s²"],
+      "correct": 1,
+      "explanation": "Only the horizontal component accelerates the cart: F_x = 30 cos60° = 15 N. Thus a = 15/5 = 3 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-010",
+      "topic": "System momentum",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 3 kg cart moves east at 5 m/s while a 2 kg cart moves west at 4 m/s. What is the total momentum of the two-cart system?",
+      "options": [
+        "23 kg·m/s east",
+        "7 kg·m/s west",
+        "7 kg·m/s east",
+        "0 kg·m/s"
+      ],
+      "correct": 2,
+      "explanation": "Choose east positive. Total momentum = 3 × 5 + 2 × (−4) = 15 − 8 = +7 kg·m/s, i.e. east.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-011",
+      "topic": "Braking force",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 1200 kg car moving at 25 m/s slows uniformly to 10 m/s in 5 s. Find the net braking force along the line of motion.",
+      "options": [
+        "1800 N opposite the motion",
+        "6000 N opposite the motion",
+        "3600 N along the motion",
+        "3600 N opposite the motion"
+      ],
+      "correct": 3,
+      "explanation": "Acceleration is (10 − 25)/5 = −3 m/s². Therefore F_net = ma = 1200 × (−3) = −3600 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-012",
+      "topic": "Pull with friction and changed normal",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 5 kg box on a floor is pulled by 25 N at 37° above horizontal. With sin37° = 0.6, cos37° = 0.8, μ_k = 0.2 and g = 10 m/s², find horizontal acceleration.",
+      "options": ["2.6 m/s²", "3.6 m/s²", "4.0 m/s²", "5.0 m/s²"],
+      "correct": 0,
+      "explanation": "Upward component = 15 N, so N = 50 − 15 = 35 N. Friction = 0.2 × 35 = 7 N. Horizontal component = 20 N; net = 13 N, so a = 13/5 = 2.6 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-013",
+      "topic": "Table and hanging mass",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 3 kg block on a smooth table is attached over a light pulley to a hanging 2 kg mass. Take g = 10 m/s². What is the tension in the string?",
+      "options": ["8 N", "12 N", "20 N", "18 N"],
+      "correct": 1,
+      "explanation": "The acceleration is (2 × 10)/(3 + 2) = 4 m/s². The 3 kg block is pulled by tension alone, so T = 3 × 4 = 12 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-014",
+      "topic": "Time-varying force and impulse",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 2 kg trolley is initially at rest. A net force F(t) = (4 + 2t) N acts along its track from t = 0 to t = 3 s. What is its final speed?",
+      "options": ["7.5 m/s", "9 m/s", "10.5 m/s", "21 m/s"],
+      "correct": 2,
+      "explanation": "Impulse J = ∫₀³ (4 + 2t)dt = [4t + t²]₀³ = 12 + 9 = 21 N·s. Δv = J/m = 21/2 = 10.5 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-015",
+      "topic": "Elevator moving down",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 60 kg person is standing on a scale in a lift accelerating downwards at 2 m/s². Take g = 10 m/s². What reading (normal force) does the scale show?",
+      "options": ["600 N", "720 N", "120 N", "480 N"],
+      "correct": 3,
+      "explanation": "N = m(g − a) for downward lift acceleration. Thus N = 60(10 − 2) = 480 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-016",
+      "topic": "Friction on a rough incline",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A block slides down a 30° rough incline with kinetic friction coefficient 0.2. Take g = 10 m/s² and cos30° = √3/2. Find its downhill acceleration.",
+      "options": ["(5 − √3) m/s²", "(5 + √3) m/s²", "5 m/s²", "(10 − √3) m/s²"],
+      "correct": 0,
+      "explanation": "Along the incline a = g(sin30° − μ_k cos30°) = 10(1/2 − 0.2 × √3/2) = 5 − √3 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-017",
+      "topic": "Average impact force",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 0.15 kg stationary ball is brought to 24 m/s by an impact lasting 0.03 s. What was the magnitude of the average net force?",
+      "options": ["80 N", "120 N", "180 N", "12 N"],
+      "correct": 1,
+      "explanation": "Impulse magnitude Δp = 0.15 × 24 = 3.6 N·s. Average force = 3.6/0.03 = 120 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-018",
+      "topic": "Equilibrium of two angled strings",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A small 20 N weight hangs at rest from two strings. One string makes 30° above the horizontal to the left; the other makes 60° above the horizontal to the right. What is the tension in the 30° string?",
+      "options": ["20 N", "10√3 N", "10 N", "20√3 N"],
+      "correct": 2,
+      "explanation": "Horizontal equilibrium: T30 cos30° = T60 cos60°, so T60 = √3 T30. Vertical equilibrium: (T30/2)+(√3/2)(√3 T30) = 20, giving 2T30 =20 and T30 =10 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-019",
+      "topic": "Perpendicular forces",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "Perpendicular horizontal forces of 12 N east and 16 N north act on a 5 kg object on a smooth surface. What is the magnitude of its acceleration?",
+      "options": ["5.6 m/s²", "2.4 m/s²", "20 m/s²", "4 m/s²"],
+      "correct": 3,
+      "explanation": "The resultant is √(12² + 16²) = 20 N. Therefore acceleration magnitude is F/m = 20/5 = 4 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-M-020",
+      "topic": "Coefficient of static friction",
+      "type": "single",
+      "difficulty": "medium",
+      "prompt": "A 2 kg wooden block on a level floor just begins to slip when a horizontal force of 8 N is applied. Take g = 10 m/s². Find the coefficient of limiting static friction.",
+      "options": ["0.4", "0.8", "0.2", "4.0"],
+      "correct": 0,
+      "explanation": "At impending slip, applied force = μ_s N and N = mg = 20 N. Therefore μ_s = 8/20 = 0.4.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-001",
+      "topic": "Unequal friction and contact force",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 4 kg block A pushes a 6 kg block B to the right on a rough floor. A horizontal 50 N force acts on A. The kinetic friction coefficients are 0.1 for A and 0.3 for B. With g = 10 m/s², find the contact force exerted by A on B.",
+      "options": ["28.0 N", "16.8 N", "34.8 N", "50.0 N"],
+      "correct": 2,
+      "explanation": "Friction forces are 0.1(4)(10)=4 N and 0.3(6)(10)=18 N. System acceleration = (50−4−18)/(4+6)=2.8 m/s². On B, contact −18 =6(2.8), so contact = 34.8 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-002",
+      "topic": "Connected rough incline and hanging mass",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 4 kg block on a 30° incline (coefficient of kinetic friction 0.1) is joined by a light rope over a pulley to a hanging 4 kg block. The hanging block moves downward. Take g = 10 m/s². What is the string tension?",
+      "options": ["(30 − √3) N", "(20 + 2√3) N", "40 N", "(30 + √3) N"],
+      "correct": 3,
+      "explanation": "The inclined block opposes upward motion with mg sin30° =20 N plus friction μmg cos30° =2√3 N. Net driving force =40−20−2√3, hence a=(20−2√3)/8=(10−√3)/4 m/s². On the hanging block, 40−T=4a, giving T=40−(10−√3)=30+√3 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-003",
+      "topic": "Atwood system in an accelerating elevator",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "An ideal Atwood machine with masses 6 kg and 4 kg is fully inside a lift accelerating upward at 2 m/s². Taking g = 10 m/s², what tension does the string carry?",
+      "options": ["57.6 N", "48 N", "60 N", "67.2 N"],
+      "correct": 0,
+      "explanation": "In the lift frame the effective gravity is g+a_lift=12 m/s² downward. Ideal Atwood tension = 2m₁m₂ g_eff/(m₁+m₂) = 2×6×4×12/10 =57.6 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-004",
+      "topic": "Relative motion of stacked blocks",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 3 kg upper block rests on a 7 kg lower block on a smooth floor. A horizontal 70 N force suddenly pulls the lower block. The coefficients between blocks are μ_s = 0.4 and μ_k = 0.3; take g = 10 m/s². Assuming a long lower surface, what relative displacement occurs in the first 2 s?",
+      "options": ["40/7 m", "80/7 m", "20/7 m", "14 m"],
+      "correct": 1,
+      "explanation": "If stuck, acceleration would be 70/10=7 m/s², requiring upper friction 3×7=21 N > μ_s mg=12 N, so slipping occurs. Kinetic friction=0.3×3×10=9 N. Upper acceleration=9/3=3; lower acceleration=(70−9)/7=61/7. Relative acceleration=40/7 m/s². Relative displacement in 2 s = (1/2)(40/7)(2²)=80/7 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-005",
+      "topic": "Time-dependent net force and displacement",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 2 kg particle moves on a straight frictionless track with initial velocity 1 m/s. Its net force is F(t) = (4t − 2) N for 0 ≤ t ≤ 3 s. What is its displacement over these 3 s?",
+      "options": ["6 m", "9 m", "7.5 m", "10.5 m"],
+      "correct": 2,
+      "explanation": "Acceleration = F/m=2t−1. Velocity is v(t)=1+∫₀ᵗ(2τ−1)dτ=1+t²−t, which stays positive. Displacement = ∫₀³(1+t²−t)dt = [t+t³/3−t²/2]₀³ =3+9−4.5=7.5 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-006",
+      "topic": "Multi-stage force pulse",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 2 kg cart starts from rest on a smooth straight track. A 10 N force to the right acts for 2 s, immediately followed by a 5 N force to the left for 4 s. What is the total displacement during the 6 s?",
+      "options": [
+        "0 m",
+        "20 m to the right",
+        "50 m to the right",
+        "30 m to the right"
+      ],
+      "correct": 3,
+      "explanation": "First interval: a₁=5 m/s², v₂=10 m/s, s₁=(1/2)5(2²)=10 m. Second interval: a₂=−2.5 m/s², s₂=10(4)+(1/2)(−2.5)(4²)=40−20=20 m. Total displacement=30 m right, though final velocity is zero.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-007",
+      "topic": "Accelerating wedge equilibrium",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A small block remains at rest relative to a smooth wedge whose incline rises to the right at 30°. In which horizontal direction, and with what magnitude, must the wedge accelerate? Take g = 10 m/s².",
+      "options": [
+        "Left at 10/√3 m/s²",
+        "Right at 10/√3 m/s²",
+        "Left at 5 m/s²",
+        "Right at 5√3 m/s²"
+      ],
+      "correct": 0,
+      "explanation": "For a wedge accelerating left, the pseudo-force on the block acts right, up the incline. For relative equilibrium ma cosθ=mg sinθ, so a=g tanθ=10 tan30°=10/√3 m/s² left. Acceleration to the right would add to down-slope gravity.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-008",
+      "topic": "Limiting friction against a vertical wall",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 5 kg block is held against a rough vertical wall by a force F directed 30° above the horizontal towards the wall. The coefficient of static friction is 0.4 and g = 10 m/s². Find the minimum F that prevents the block from slipping down.",
+      "options": ["100/(1 − 0.4√3) N", "100/(1 + 0.4√3) N", "125 N", "50 N"],
+      "correct": 1,
+      "explanation": "At limiting downward slip the wall friction acts upward. The normal force is F cos30° and upward balance gives F sin30° + μ_s F cos30°=mg=50. Therefore F[1/2+0.4√3/2]=50, so F=100/(1+0.4√3) N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-009",
+      "topic": "Wall friction with oblique force",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "An 8 kg block is sliding down a vertical rough wall while a 100 N force presses it toward the wall at 30° above horizontal. If μ_k = 0.25 and g = 10 m/s², find its downward acceleration.",
+      "options": [
+        "(30 + 12.5√3)/8 m/s²",
+        "(80 − 50√3)/8 m/s²",
+        "(30 − 12.5√3)/8 m/s²",
+        "(50 − 12.5√3)/8 m/s²"
+      ],
+      "correct": 2,
+      "explanation": "The applied force has upward component 100 sin30°=50 N and normal component N=100 cos30°=50√3 N. Since the block slides down, friction μ_k N=12.5√3 N acts up. Net downward force =80−50−12.5√3=30−12.5√3 N, so a=(30−12.5√3)/8 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-010",
+      "topic": "Two inclined planes with a pulley",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 2 kg block on a frictionless 30° incline is connected by a light rope over a pulley to a 5 kg block on a frictionless 60° incline. The 5 kg block slides down its slope. Take g = 10 m/s². Find the acceleration magnitude.",
+      "options": [
+        "(25√3 + 10)/7 m/s²",
+        "(10√3 − 25)/7 m/s²",
+        "(25√3 − 10)/3 m/s²",
+        "(25√3 − 10)/7 m/s²"
+      ],
+      "correct": 3,
+      "explanation": "Gravity components along the string are 5×10 sin60°=25√3 N and 2×10 sin30°=10 N. The driving difference is 25√3−10 N, over total mass 2+5=7 kg, giving a=(25√3−10)/7 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-011",
+      "topic": "Moving pulley constraint",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 6 kg load hangs from an ideal movable pulley supported by two segments of a light rope. The free rope end carries a hanging 2 kg mass through a fixed pulley. Release the system from rest; take g = 10 m/s². What is the downward acceleration of the 6 kg load?",
+      "options": ["10/7 m/s²", "20/7 m/s²", "10/3 m/s²", "0 m/s²"],
+      "correct": 0,
+      "explanation": "If the load moves down with acceleration a, the 2 kg free-end mass moves up with acceleration 2a. For the 2 kg mass, T−20=2(2a), or T=20+4a. For the load, 60−2T=6a. Thus 60−40−8a=6a; 20=14a; a=10/7 m/s² down.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-012",
+      "topic": "Rocket with changing mass",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A vertical rocket has mass m(t) = (1000 − 20t) kg during a burn. It ejects exhaust downward at 500 m/s relative to the rocket, losing 20 kg/s. Neglect air resistance and use g = 10 m/s². Find its instantaneous upward acceleration at t = 20 s.",
+      "options": ["10/3 m/s²", "20/3 m/s²", "50/3 m/s²", "10 m/s²"],
+      "correct": 1,
+      "explanation": "At t=20 s its mass is 1000−400=600 kg. Upward thrust is mass flow × relative exhaust speed =20×500=10,000 N. Weight=600×10=6,000 N. Net upward acceleration=(10,000−6,000)/600=20/3 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-013",
+      "topic": "Recoil with relative launch speed",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 9 kg launcher and a 1 kg projectile are initially at rest on a smooth track. The projectile is fired to the right at 30 m/s RELATIVE TO the recoiling launcher. Find the launcher's ground-frame velocity.",
+      "options": [
+        "30 m/s to the left",
+        "10/3 m/s to the left",
+        "3 m/s to the left",
+        "3 m/s to the right"
+      ],
+      "correct": 2,
+      "explanation": "Let the launcher velocity be V (right positive) and projectile velocity u. Conservation of momentum: 9V+u=0. Relative speed u−V=30, so u=30+V. Therefore 10V+30=0, giving V=−3 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-014",
+      "topic": "Accelerating vehicle pendulum",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 2 kg pendulum bob hangs motionless relative to a vehicle accelerating horizontally. The string makes an angle of 37° with the vertical, with sin37°=0.6 and cos37°=0.8. Take g=10 m/s². What is the string tension?",
+      "options": ["20 N", "16 N", "32 N", "25 N"],
+      "correct": 3,
+      "explanation": "Vertical balance requires T cos37°=mg=20 N. Thus T=20/0.8=25 N. The horizontal force T sin37°=15 N supplies horizontal acceleration 7.5 m/s².",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-015",
+      "topic": "Stopping on an uphill rough incline",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A block enters a rough 30° incline moving UP at 20 m/s. With μ_k=0.25, g=10 m/s², and negligible air resistance, how far uphill does it travel before stopping?",
+      "options": [
+        "80/(2 + 0.5√3) m",
+        "40/(2 − 0.5√3) m",
+        "40/(2 + 0.5√3) m",
+        "80/(2 − 0.5√3) m"
+      ],
+      "correct": 0,
+      "explanation": "Both gravity and kinetic friction decelerate upward motion: a=g(sin30°+μ cos30°)=10(1/2+√3/8)=5+1.25√3 m/s². From 0=u²−2as, s=400/[2(5+1.25√3)]=80/(2+0.5√3) m ≈27.91 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-016",
+      "topic": "Static-to-kinetic friction with time-varying pull",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 4 kg block starts at rest on a rough horizontal floor. The horizontal pull increases as F(t) = (10 + 4t) N. The friction coefficients are μ_s=0.5 and μ_k=0.25, and g=10 m/s². Find its speed at t=4 s, assuming it begins sliding when the threshold is exceeded.",
+      "options": ["4 m/s", "39/8 m/s", "25/8 m/s", "8 m/s"],
+      "correct": 1,
+      "explanation": "Maximum static friction=0.5×4×10=20 N; motion begins at 10+4t=20, so t=2.5 s. Once sliding, kinetic friction=0.25×40=10 N and acceleration=[10+4t−10]/4=t m/s². Therefore v(4)=∫₂.₅⁴ t dt=(16−6.25)/2=39/8 m/s.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-017",
+      "topic": "Three-block pulley with unequal friction",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Two blocks of masses 2 kg and 4 kg lie in a row on a horizontal surface and are connected by one light string. The 4 kg block is connected by a second light string over a pulley to a 6 kg hanging mass. The coefficients of kinetic friction with the floor are 0.2 and 0.3 respectively. Take g=10 m/s²; the hanging mass moves down. Find the tension between the two table blocks.",
+      "options": ["22/3 N", "16 N", "34/3 N", "44/3 N"],
+      "correct": 2,
+      "explanation": "Friction on 2 kg is 0.2×2×10=4 N, and on 4 kg it is 0.3×4×10=12 N. Net driving force on all masses=60−4−12=44 N, total mass=12 kg, giving a=11/3 m/s². For the 2 kg block, T−4=2a, hence T=4+22/3=34/3 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-018",
+      "topic": "Pulling the top block causes slipping",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 2 kg block sits on a 5 kg block on a smooth floor. The blocks have coefficients μ_s=0.5, μ_k=0.2 at their interface. A horizontal 20 N force suddenly pulls the UPPER block. Starting from rest and allowing sufficient overlap, find the relative displacement between the blocks after 1 s. Take g=10 m/s².",
+      "options": ["1.8 m", "7.2 m", "0 m", "3.6 m"],
+      "correct": 3,
+      "explanation": "If locked, a=20/7, requiring friction on lower block 5(20/7)>10 N=max static friction; thus they slip. Kinetic friction is 0.2×2×10=4 N. Upper acceleration=(20−4)/2=8; lower acceleration=4/5=0.8 m/s². Relative displacement=(1/2)(8−0.8)(1²)=3.6 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-019",
+      "topic": "Tangential and radial friction on a turntable",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A coin lies 2 m from the axis of a horizontal rotating platform. At some instant the angular speed is 1 rad/s and the angular acceleration is 1 rad/s². With g=10 m/s², what is the minimum coefficient of static friction needed to prevent slipping at that instant?",
+      "options": ["√2/5", "1/5", "2/5", "√2/10"],
+      "correct": 0,
+      "explanation": "Tangential acceleration =rα=2 m/s²; radial acceleration =rω²=2 m/s². They are perpendicular, giving total required friction acceleration √(2²+2²)=2√2 m/s². The limiting static friction can provide μ_s g, so μ_s≥(2√2)/10=√2/5.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-020",
+      "topic": "Net force in non-uniform circular motion",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 5 kg particle follows a circle of radius 10 m. At one instant its speed is 6 m/s and its tangential acceleration is 2 m/s². Find the magnitude of the net force at that instant.",
+      "options": ["18 N", "2√106 N", "10 N", "26 N"],
+      "correct": 1,
+      "explanation": "Radial acceleration is v²/r=36/10=3.6 m/s²; tangential acceleration is 2 m/s². Their vector resultant has magnitude √(3.6²+2²)=√16.96=(2√106)/5 m/s². Multiply by m=5 kg to obtain net force 2√106 N ≈20.59 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-021",
+      "topic": "Horizontal support of a block on an incline",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 3 kg block is held stationary on a smooth fixed incline angled 37° above horizontal by a horizontal push directed towards the uphill side. With sin37°=0.6, cos37°=0.8 and g=10 m/s², what is the normal reaction of the incline?",
+      "options": ["24 N", "30 N", "37.5 N", "22.5 N"],
+      "correct": 2,
+      "explanation": "Along incline the horizontal push P contributes P cosθ uphill, balancing mg sinθ, so P=mg tanθ=30(0.6/0.8)=22.5 N. Normal force is N=mg cosθ+P sinθ=30(0.8)+22.5(0.6)=24+13.5=37.5 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-022",
+      "topic": "Powered motion followed by friction-only stopping",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 4 kg block starts from rest on a horizontal surface with kinetic friction coefficient 0.25. A horizontal 30 N force acts for 4 s, then is removed. Take g=10 m/s². How far does the block travel in total before coming to rest?",
+      "options": ["80 m", "40 m", "160 m", "120 m"],
+      "correct": 3,
+      "explanation": "Friction=0.25×4×10=10 N. While pushed, net=20 N, a=5 m/s²; in 4 s speed reaches 20 m/s and distance is (1/2)×5×4²=40 m. Afterwards, friction decelerates at 10/4=2.5 m/s² and stopping distance is v²/(2a)=400/5=80 m. Total=120 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-023",
+      "topic": "Hanging mass hits the ground mid-motion",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 3 kg block on a horizontal table (μ_k=0.2) is joined over a pulley to a hanging 5 kg mass. Initially both are at rest; the hanging mass descends exactly 2 m before hitting the floor, after which the rope goes slack. Take g=10 m/s². How much farther does the table block travel AFTER the hanging mass lands?",
+      "options": ["5.5 m", "2.75 m", "11 m", "4 m"],
+      "correct": 0,
+      "explanation": "While connected, driving force=5g−μ_k(3g)=50−6=44 N, total mass=8 kg, a=5.5 m/s². After moving 2 m, v²=2as=22 m²/s². Once the hanging mass stops, the table block is slowed only by friction with deceleration μ_k g=2 m/s²; further stopping distance=v²/(2×2)=22/4=5.5 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-024",
+      "topic": "Two-stage Atwood motion after a rope breaks",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "An ideal Atwood machine has masses 4 kg and 6 kg. Starting from rest, the 6 kg mass falls 1 m; exactly then the connecting string breaks. Neglect air drag and take g=10 m/s². How much additional HEIGHT does the 4 kg mass gain after the break?",
+      "options": ["0.4 m", "0.2 m", "1 m", "2 m"],
+      "correct": 1,
+      "explanation": "Before the break a=[(6−4)/(6+4)]g=2 m/s². After the 6 kg mass descends 1 m, speed squared is v²=2as=4 m²/s², and the 4 kg mass is moving upward. After the string breaks it decelerates at g, so extra rise=v²/(2g)=4/20=0.2 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-025",
+      "topic": "Inclined system in upward accelerating lift",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Inside a lift accelerating upward at 3 m/s², a 2 kg block lies on a smooth 30° incline and is connected over a pulley to a freely hanging 3 kg mass. Take g=10 m/s². The hanging mass moves down relative to the lift. Find string tension.",
+      "options": ["13 N", "18.2 N", "23.4 N", "39 N"],
+      "correct": 2,
+      "explanation": "In the lift frame effective gravity is g_eff=13 m/s². Net driving force=3×13−2×13 sin30°=39−13=26 N, total mass 5 kg, so a=5.2 m/s². For the inclined block, T−2×13×1/2=2a, giving T=13+10.4=23.4 N.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-026",
+      "topic": "Optimal pulling angle with kinetic friction",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 5 kg crate is pulled by a force of fixed magnitude 20 N at an adjustable angle θ above a rough horizontal floor. The kinetic friction coefficient is 0.5, g=10 m/s², and the crate stays in contact with the floor. Which θ gives the GREATEST horizontal acceleration?",
+      "options": ["0°", "45°", "arctan(2)", "arctan(0.5)"],
+      "correct": 3,
+      "explanation": "The horizontal net force is F cosθ−μ_k(mg−F sinθ)=F(cosθ+μ_k sinθ)−μ_kmg. The factor cosθ+μ_k sinθ is maximum when tanθ=μ_k=0.5. The normal force remains positive for this angle, so θ=arctan(0.5).",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-027",
+      "topic": "Sequential recoil from two ejections",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 12 kg system is initially at rest on a frictionless track. It first ejects a 2 kg piece LEFT at 10 m/s in the ground frame. Later the remaining 10 kg system ejects a 1 kg piece LEFT at 8 m/s in the ground frame. What is the final ground-frame speed of the remaining 9 kg system?",
+      "options": [
+        "28/9 m/s to the right",
+        "2 m/s to the right",
+        "20/9 m/s to the right",
+        "28/9 m/s to the left"
+      ],
+      "correct": 0,
+      "explanation": "First ejection: 2(−10)+10v₁=0, so v₁=2 m/s right. Just before second ejection momentum of the 10 kg body is 20 kg·m/s. After second ejection, 1(−8)+9v₂=20, so 9v₂=28 and v₂=28/9 m/s right.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-028",
+      "topic": "Friction requirement on an accelerating inclined truck bed",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A block must remain stationary relative to a truck bed tilted 30° ABOVE the horizontal in the forward direction. The truck accelerates FORWARD at 6 m/s². Take g=10 m/s². What minimum static friction coefficient is required?",
+      "options": [
+        "(5 − 3√3)/(5√3 + 3)",
+        "(5 + 3√3)/(5√3 − 3)",
+        "(5 + 3√3)/(5√3 + 3)",
+        "(5√3 − 3)/(5 + 3√3)"
+      ],
+      "correct": 1,
+      "explanation": "In the accelerating truck frame pseudo-force acts backward. It has down-slope component ma cos30°; gravity has down-slope component mg sin30°. Thus required friction/m=5+3√3. The normal force/m=g cos30°−a sin30°=5√3−3>0. At the static limit μ_min=(5+3√3)/(5√3−3)≈1.80.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-029",
+      "topic": "Two objects push apart on frictionless ice",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "Two skaters of masses 40 kg and 60 kg start at rest next to each other on frictionless ice. They push one another with an equal and opposite constant horizontal force of 60 N for 0.5 s, then coast without further force for 2.0 s. How far apart are they at the end?",
+      "options": ["2.5 m", "0.3125 m", "2.8125 m", "3.125 m"],
+      "correct": 2,
+      "explanation": "During the push each skater accelerates in opposite directions: a₁=60/40=1.5, a₂=60/60=1 m/s². Separation gained during 0.5 s is (1/2)(1.5+1)(0.5²)=0.3125 m. Their speeds then are 0.75 and 0.5 m/s. During 2 s coasting they gain (0.75+0.5)×2=2.5 m more. Total separation=2.8125 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    },
+    {
+      "className": "11",
+      "subject": "physics",
+      "chapter": 4,
+      "id": "GNO-PHY11-C04-H-030",
+      "topic": "Friction changes direction after a stop",
+      "type": "single",
+      "difficulty": "hard",
+      "prompt": "A 2 kg block initially slides LEFT at 10 m/s on a level rough surface while a constant horizontal 5 N force acts RIGHT. The coefficients are μ_k=0.25 and μ_s=0.4; take g=10 m/s². What total distance does the block travel during the next 5 s?",
+      "options": ["20 m", "15 m", "25 m", "10 m"],
+      "correct": 3,
+      "explanation": "While it slides left, kinetic friction acts right with magnitude μ_k mg=0.25×2×10=5 N. Along with the applied 5 N right, net right force=10 N, so deceleration of leftward motion is 5 m/s². The block stops after 10/5=2 s, travelling 10²/(2×5)=10 m left. Once stopped, maximum static friction=0.4×20=8 N can balance the 5 N right pull, so it remains at rest for the remaining 3 s. Total distance=10 m.",
+      "source": {
+        "kind": "original",
+        "label": "Owner-supplied original practice draft; not official PYQs; provenance pending review",
+        "reference": "gnosis_chapter4_newtons_laws_draft.zip"
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Schema adapted; academic approval pending. See docs/question-banks/11-physics-4-import-review.md for answer, free-body, difficulty and assumption findings."
+      }
+    }
+  ]
+}

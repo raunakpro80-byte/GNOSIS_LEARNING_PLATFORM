@@ -139,7 +139,7 @@ export default function PdfReader({
           <Plus size={15} />
         </button>
       </div>
-      {loading && <p role="status">Loading notes PDF…</p>}
+      {loading && <p role="status">Loading PDF…</p>}
       {error && (
         <div className="notice error">
           {error}
@@ -150,7 +150,7 @@ export default function PdfReader({
         <canvas
           ref={canvas}
           style={{ width: `${zoom * 100}%`, maxWidth: "none" }}
-          aria-label={`Notes PDF page ${page}`}
+          aria-label={`PDF page ${page}`}
         />
       </div>
       <a

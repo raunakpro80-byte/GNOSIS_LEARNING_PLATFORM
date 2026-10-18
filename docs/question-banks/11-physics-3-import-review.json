@@ -1,0 +1,1195 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-18",
+  "chapter": {
+    "className": "11",
+    "subject": "physics",
+    "chapter": 3,
+    "title": "Motion in a Plane"
+  },
+  "archiveSha256": "e8e2dd9febd8b5e2ce7a69c5c6bb3b198ba82c19ff39ee655c10a4e60c43d071",
+  "masterStructure": "questions object keyed by easy/medium/hard; flattened once",
+  "masterEqualsSplitAfterFlatten": true,
+  "importedFile": "content/mock-questions/11-physics-3-owner-draft.json",
+  "sourceFiles": [
+    {
+      "file": "manifest.json",
+      "sha256": "b43e4a8312a5f598e44826135d6bb5d3bad8c85e048eb4b56d970a5c7712643e"
+    },
+    {
+      "file": "motion_in_a_plane_easy.json",
+      "sha256": "98eb988abbaf324574a36f83c745b9ecc86dfd16d55d61fb453cb88e5da25e9f"
+    },
+    {
+      "file": "motion_in_a_plane_hard.json",
+      "sha256": "6457121dbd22b298fd059a725d6885cb2faa35b85417469951be1e02ff0c441d"
+    },
+    {
+      "file": "motion_in_a_plane_master_draft.json",
+      "sha256": "879ee5f0d62db70536cdb085f07c3aa3d3a0491e138ae20f07051d535bdfbc44"
+    },
+    {
+      "file": "motion_in_a_plane_medium.json",
+      "sha256": "82767246fd8b667930954bc4bde7fd4d04579908f2ad1e0b6fac46839be1959a"
+    }
+  ],
+  "preexistingFiles": [
+    {
+      "file": "content/mock-questions/11-physics-1-easy-batch-01.json",
+      "sha256": "79b57e328e3b4f596fdc371542074eafbc8ca05abc5f3c79cf64f56babbf0a48"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-plan60-easy-batch-01.json",
+      "sha256": "05d752ca52ebf9d666bb76c4c7854a2ee4baef3d28cf04ead384cc0b97cb927d"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-zip-easy.json",
+      "sha256": "5dc4b339a5d712a291cf441cae3dc3f49d1481e1820a94b2060d0145f8c6641c"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-zip-hard.json",
+      "sha256": "4da027490f17f7678d33c9817132f83efa4c30b1cdaefbe28b170357e74d9be5"
+    },
+    {
+      "file": "content/mock-questions/11-physics-1-zip-medium.json",
+      "sha256": "4ed85f71df8d25b957044bf2a77b66e406fa2621b0a6d273461c48320a65a40b"
+    },
+    {
+      "file": "content/mock-questions/11-physics-2-owner-draft.json",
+      "sha256": "fa50f7dc646d29d08ad7a786364d6467d5827caeb86ab02ab58c6a98383443de"
+    },
+    {
+      "file": "content/mock-questions/11-physics-2.json",
+      "sha256": "294a7d63731155d79c52860ba08114de9f582a1e61b249cd8c794fef203aed95"
+    }
+  ],
+  "counts": {
+    "easy": 10,
+    "medium": 20,
+    "hard": 30,
+    "all": 60,
+    "approved": 0
+  },
+  "flaggedCount": 45,
+  "difficultyConcerns": {
+    "mediumLikelyEasy": 13,
+    "hardRequiresRevisionOrJustification": 30
+  },
+  "answerKeyErrorsFound": 0,
+  "ambiguousDirectionRecords": ["GNO-PHY11-C03-H-012", "GNO-PHY11-C03-H-028"],
+  "semanticGroups": [
+    {
+      "id": "D01",
+      "questionIds": ["GNO-PHY11-C03-M-017", "GNO-PHY11-C03-M-018"],
+      "classification": "numeric-template near-duplicate",
+      "finding": "Both are direct ac=4pi²r f² substitutions; period versus frequency is reciprocal input, not a different reasoning structure."
+    },
+    {
+      "id": "D02",
+      "questionIds": ["GNO-PHY11-C03-M-010", "GNO-PHY11-C03-H-018"],
+      "classification": "reused scenario across difficulty",
+      "finding": "Identical u=30 m/s, theta=30°, g=10 scenario and height 10 m at t=2. H018 inverts the same quadratic and adds its other root. Not identical wording, but the same problem data/trajectory reappears."
+    }
+  ],
+  "lexicalCandidates": [
+    {
+      "a": "GNO-PHY11-C03-M-010",
+      "b": "GNO-PHY11-C03-M-007",
+      "score": 0.5,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C03-H-010",
+      "b": "GNO-PHY11-C03-M-008",
+      "score": 0.5714,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C03-H-011",
+      "b": "GNO-PHY11-C03-M-007",
+      "score": 0.5417,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C03-H-011",
+      "b": "GNO-PHY11-C03-M-008",
+      "score": 0.5909,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C03-H-018",
+      "b": "GNO-PHY11-C03-M-006",
+      "score": 0.5238,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C03-H-018",
+      "b": "GNO-PHY11-C03-M-007",
+      "score": 0.6,
+      "exact": false
+    },
+    {
+      "a": "GNO-PHY11-C03-H-018",
+      "b": "GNO-PHY11-C03-M-008",
+      "score": 0.5,
+      "exact": false
+    }
+  ],
+  "lexicalDisposition": "All seven >=0.50 lexical candidates concern common projectile wording; different observables/known inputs do not establish duplication. D02 is a manually detected reused data scenario. D01 is a manual numerical-template concern.",
+  "optionDistribution": {
+    "easy": {
+      "A": 3,
+      "B": 3,
+      "C": 2,
+      "D": 2
+    },
+    "medium": {
+      "A": 5,
+      "B": 5,
+      "C": 5,
+      "D": 5
+    },
+    "hard": {
+      "A": 7,
+      "B": 7,
+      "C": 8,
+      "D": 8
+    }
+  },
+  "topicFamilies": {
+    "vectorAlgebra": 19,
+    "projectileMotionIncludingRelativeProjectiles": 25,
+    "otherPlanarRelativeMotion": 3,
+    "circularMotion": 13
+  },
+  "questions": [
+    {
+      "id": "GNO-PHY11-C03-E-001",
+      "difficulty": "easy",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "Displacement",
+      "independentCheck": "Displacement is a vector; distance, mass and temperature are scalars.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-E-002",
+      "difficulty": "easy",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "1",
+      "independentCheck": "sqrt(0.6²+0.8²)=sqrt(1)=1; the vector is dimensionless and of unit magnitude.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-E-003",
+      "difficulty": "easy",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "+5 m",
+      "independentCheck": "The x coefficient of 5i-2j m is +5 m, not the magnitude or the y component.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-E-004",
+      "difficulty": "easy",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "11 N",
+      "independentCheck": "Collinear codirectional forces add: 4+7=11 N.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-E-005",
+      "difficulty": "easy",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "7ĵ m",
+      "independentCheck": "Final minus initial position gives (2-2,6-(-1))=(0,7) m.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-E-006",
+      "difficulty": "easy",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "Vertically downward",
+      "independentCheck": "Under gravity alone, a=(0,-g) in upward-positive axes; velocity direction generally changes.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-E-007",
+      "difficulty": "easy",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "Vertical component",
+      "independentCheck": "At a nonvertical projectile apex vy=0 while vx remains nonzero, under the ideal constant-gravity model.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-E-008",
+      "difficulty": "easy",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "9 m/s",
+      "independentCheck": "ax=0 implies vx(t)=vx(0)=9 m/s, while airborne.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-E-009",
+      "difficulty": "easy",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "v²/r",
+      "independentCheck": "Radial acceleration magnitude is v²/r with dimension (L²/T²)/L=L/T², directed inward.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-E-010",
+      "difficulty": "easy",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "4 rad/s",
+      "independentCheck": "Constant angular speed = 8 rad / 2 s = 4 rad/s.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-001",
+      "difficulty": "medium",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "(3î + 4ĵ)/5",
+      "independentCheck": "Force magnitude=sqrt(81+144)=15 N; normalize: (9/15,12/15)=(3/5,4/5). Alternative (4/5,3/5) has the wrong direction.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "For a required resultant direction and specified magnitude, solve for an unknown second vector, then normalize it; avoid only normalizing a supplied vector.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-002",
+      "difficulty": "medium",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "17 m",
+      "independentCheck": "Perpendicular displacement resultant=sqrt(8²+15²)=17 m; path length 23 m is different.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Use two measured successive displacements and a third constrained direction; infer the third magnitude needed to attain a specified resultant direction.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-003",
+      "difficulty": "medium",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "15",
+      "independentCheck": "C=A+B=(7,3); A dot C=3(7)-2(3)=15. Direct A dot B=2 is a distractor, not the asked quantity.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-004",
+      "difficulty": "medium",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "k = 4",
+      "independentCheck": "(k,2) dot (3,-6)=3k-12=0 gives k=4; both vectors are nonzero.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Constrain an unknown vector to be perpendicular to one supplied vector and have a specified projection on a second; solve both components and check its magnitude.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-005",
+      "difficulty": "medium",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "30",
+      "independentCheck": "Cross-product magnitude=6(10)sin30°=30; sin rather than cos is required.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Use the cross-product magnitude together with the dot product to infer the included angle and eliminate the obtuse/acute ambiguity.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-006",
+      "difficulty": "medium",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "2.5 s",
+      "independentCheck": "uy=25sin30°=12.5 m/s; nonzero same-height return time=2uy/g=2.5 s.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Infer launch components from a specified apex time and horizontal distance to the apex, then find the range.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-007",
+      "difficulty": "medium",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "5 m",
+      "independentCheck": "uy=20sin30°=10 m/s; maximum height=uy²/(2g)=5 m above launch.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Infer launch angle from measured range and maximum height, checking the permissible acute-angle domain.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-008",
+      "difficulty": "medium",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "40 m",
+      "independentCheck": "R=u²sin90°/g=400/10=40 m for same launch and landing height.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Give a launch from a raised platform with a specified impact height; solve fall time and horizontal range, rather than directly substituting the same-level formula.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-009",
+      "difficulty": "medium",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "30 m",
+      "independentCheck": "vx=20cos60°=10 m/s; x(3)=30 m, provided airborne for 3 s. With g=10 m/s² and same-level landing T=2sqrt(3)>3 s; the supplied statement does not fix g or a surface.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium.",
+        "Flight interval is not established: specify level launch/landing, g=10 m/s² and no obstruction, or state that the projectile remains airborne for 3 s."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": "Corrected stem: A projectile is launched from level ground at 20 m/s at 60° in vacuum with g=10 m/s² and no obstacles. Find its horizontal displacement at t=3 s. Answer remains 30 m; T=2sqrt(3)>3 s. Retain as Easy or replace for a Medium set.",
+      "replacementBrief": "Use the corrected airborne statement above but add a measured velocity direction at a second time; infer launch components and determine horizontal displacement.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-010",
+      "difficulty": "medium",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "10 m",
+      "independentCheck": "uy=30sin30°=15 m/s; y(2)=15(2)-5(4)=10 m. Same-level return time is 3 s, so t=2 is before return.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": ["Repetition concern: D02"],
+      "duplicateGroups": ["D02"],
+      "proposedCorrection": null,
+      "replacementBrief": "Replace this reused trajectory with an inverse two-component measurement: infer launch speed from known position at a specified time, and find its later apex height.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-011",
+      "difficulty": "medium",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "3 s",
+      "independentCheck": "45=gt²/2=5t² gives positive t=3 s; the negative mathematical root is unphysical.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Give horizontal range and horizontal launch speed to infer flight time and drop height, then calculate impact velocity direction.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-012",
+      "difficulty": "medium",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "24 m",
+      "independentCheck": "Fall time=sqrt(2(20)/10)=2 s; x=12(2)=24 m.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-013",
+      "difficulty": "medium",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "2sqrt(34) m/s",
+      "independentCheck": "vy²=2gh=100 m²/s²; impact speed=sqrt(6²+100)=sqrt(136)=2sqrt(34) m/s.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-014",
+      "difficulty": "medium",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "63/5",
+      "independentCheck": "A dot B=15+48=63; |B|=5; scalar projection=63/5. Its magnitude is <=|A|=13 as required.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-015",
+      "difficulty": "medium",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "sqrt(41) m",
+      "independentCheck": "Resultant components=(4-2+3,-3+7-8)=(5,-4) m; magnitude=sqrt(41) m.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-016",
+      "difficulty": "medium",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "10 N",
+      "independentCheck": "R²=10²+10²+2(10)(10)cos120°=100 N²; R=10 N.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Use two unknown force magnitudes with fixed ratio and measured resultant direction to infer both magnitudes and included-angle feasibility.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-017",
+      "difficulty": "medium",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "2π² m/s²",
+      "independentCheck": "omega=2pi/2=pi rad/s; ac=omega²r=2pi² m/s².",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium.",
+        "Repetition concern: D01"
+      ],
+      "duplicateGroups": ["D01"],
+      "proposedCorrection": null,
+      "replacementBrief": "Infer a circular orbit radius from measured speed and period, then compute radial acceleration; avoid another frequency-to-acceleration substitution.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-018",
+      "difficulty": "medium",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "18π² m/s²",
+      "independentCheck": "f=3 Hz, omega=6pi rad/s; ac=0.5(6pi)²=18pi² m/s². Same numerical structure as M017.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium.",
+        "Repetition concern: D01"
+      ],
+      "duplicateGroups": ["D01"],
+      "proposedCorrection": null,
+      "replacementBrief": "Use two points of a rigid rotating disc with known radius difference and measured speed difference to infer angular speed and the inner point's radial acceleration.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-019",
+      "difficulty": "medium",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "1.6π m/s",
+      "independentCheck": "f=10/5=2 Hz; v=2pi r f=1.6pi m/s.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: likely Easy direct formula/basic calculation rather than moderate Medium."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Specify a rim point's speed and radial acceleration, infer radius and period, and check the units of both recovered quantities.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-M-020",
+      "difficulty": "medium",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "π² N",
+      "independentCheck": "omega=pi rad/s, ac=2pi² m/s²; net radial force m ac=0.5(2pi²)=pi² N. Requires Newton's second law.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Centripetal force requires Newton's second law; confirm prerequisite placement. Same r=2 m,T=2 s scenario as M017, with mass added; do not count a new topic label as deep diversity."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": "Keep as a moderate application only if Newton's second law is a permitted prerequisite; otherwise replace with a kinematic question about the direction of radial acceleration at two specified positions, using a distinct scenario.",
+      "replacementBrief": null,
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-001",
+      "difficulty": "hard",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "120°",
+      "independentCheck": "R²=25+49+70cos(theta)=39 gives cos(theta)=-1/2 and principal included angle 120°.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Infer two unknown vector magnitudes and their included angle using independent resultant, difference and projection constraints; specify sign branches and check feasibility.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-002",
+      "difficulty": "hard",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "4 N along +x",
+      "independentCheck": "The two 6 N forces have cancelling y components and x sum -6 N. Resultant=(4,0) N, hence +x.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Determine an unknown force direction and magnitude required to keep the resultant on a prescribed ray while minimizing that magnitude; compare interior and boundary direction cases.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-003",
+      "difficulty": "hard",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "sqrt(24) − 4",
+      "independentCheck": "A+B=(4+k,1). Magnitude 5 means (4+k)²=24; k>-4 selects k=sqrt(24)-4. The other root violates the supplied constraint.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Give an unknown vector with a fixed norm and prescribed projections on two nonorthogonal directions; determine all feasible vectors and identify incompatible measurements.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-004",
+      "difficulty": "hard",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "12",
+      "independentCheck": "28=4²+6²-2(A dot B), so A dot B=(52-28)/2=12.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Use three pairwise vector-sum magnitudes to recover mutual dot products, then test whether the proposed planar geometry is realizable via the Gram determinant.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-005",
+      "difficulty": "hard",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "20",
+      "independentCheck": "|A|²|B|²=(A dot B)²+|A cross B|²=12²+16²=400; the nonnegative product is 20.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Combine a fixed vector product magnitude with a tunable component constraint; find the minimum possible resultant magnitude and prove that the bound is attained.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-006",
+      "difficulty": "hard",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "150 m",
+      "independentCheck": "Northward speed 8 m/s crosses 200 m in 25 s; eastward current then causes drift 6(25)=150 m, assuming constant current and a straight east-west bank pair.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Use a river current varying with distance from the bank and a fixed boat speed; compare least-time and zero-drift headings with a supplied current integral, including feasibility.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-007",
+      "difficulty": "hard",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "30 m/s",
+      "independentCheck": "Relative velocity=(30-6,10-(-8))=(24,18) m/s; magnitude=sqrt(576+324)=30 m/s.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Given a moving observer and two timed bearing constraints, infer another object's planar velocity and determine its earliest entry into a safety circle.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-008",
+      "difficulty": "hard",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "30 m/s",
+      "independentCheck": "Equal heights at t1,t2 imply uy=g(t1+t2)/2=10(6)/2=30 m/s. Height then equals 25 m above launch, consistent with nonzero height.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Measure two height crossings and the horizontal separation between them; infer both launch components and derive the range of obstacle heights that can be cleared.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-009",
+      "difficulty": "hard",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "20 m",
+      "independentCheck": "At apex horizontal speed=15 m/s. Initial uy²=25²-15²=400; max height=400/20=20 m.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Add a finite-height wall at a given distance and infer the range of possible launch angles consistent with an apex-speed measurement; distinguish tangent and two-angle cases.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-010",
+      "difficulty": "hard",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "30° and 60°",
+      "independentCheck": "R g/u²=(20sqrt(3))(10)/400=sqrt(3)/2=sin(2theta). With 0<theta<90°, roots are 30° and 60°. Both satisfy same-height range.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Ask for the minimum launch speed that clears two different-height obstacles at specified distances; compare which constraint is active and check the resulting trajectory.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-011",
+      "difficulty": "hard",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "10 m",
+      "independentCheck": "vx=20/sqrt(2); at x=20, t=sqrt(2) s. y=(20/sqrt(2))sqrt(2)-5(2)=10 m; t precedes same-level landing.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Infer unknown speed and angle from two nonzero measured trajectory points and determine whether a third obstacle is cleared with a stated margin.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-012",
+      "difficulty": "hard",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "60 m",
+      "independentCheck": "Fall time=sqrt(160/10)=4 s; projectile x=80 m, target x=20 m; absolute horizontal gap=60 m, projectile ahead. Direction of target travel needs explicit +x.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace.",
+        "Define target direction as +x (same horizontal direction as launch); away from the point below the tower could mean either horizontal direction. Opposite travel would give 100 m, also a listed option."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": "Corrected stem: Launch is along +x and the target moves at +5 m/s on the ground, starting at x=0. Ask for absolute horizontal separation at impact. Existing key 60 m remains correct. Difficulty is moderate, so a Hard replacement must add a nontrivial independent constraint.",
+      "replacementBrief": "Use a target with an initial horizontal offset and a delayed start; find all feasible launch angles at fixed speed that intercept it on the ground, checking physical flight times.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-013",
+      "difficulty": "hard",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "10sqrt(13) m",
+      "independentCheck": "Relative acceleration cancels; separation at 2 s is |(15,10)2|=sqrt(30²+20²)=10sqrt(13) m, provided both remain in free flight for the full interval. Common gravity alone does not specify impact boundaries.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace.",
+        "Explicitly state both projectiles remain airborne for at least 2 s, or give gravity and sufficient common launch height. Ignore collisions with surfaces throughout."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": "Corrected stem addition: Both are launched from the same point at height 100 m above flat ground; g=10 m/s² and no drag. Ask separation at t=2 s. Heights are then 120 m and 100 m, so both remain airborne; existing answer 10sqrt(13) m holds.",
+      "replacementBrief": "Launch two projectiles at different times from separated points; find the minimum separation while both are airborne and explicitly enforce their overlapping flight interval.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-014",
+      "difficulty": "hard",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "20 m/s",
+      "independentCheck": "From vx constant and vy²=uy²-2gh, total v²=u²-2gh=900-500=400, so v=20 m/s whenever that height is reached. Energy is an alternative, later-chapter derivation.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Combine a prescribed speed at one height with a required velocity direction at a different height; infer launch components, root branches and the accessible part of the trajectory.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-015",
+      "difficulty": "hard",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "2.5 s",
+      "independentCheck": "v0 dot v(t)=12²+16(16-10t)=400-160t; zero at 2.5 s. Height then 16(2.5)-5(2.5²)=8.75 m ABOVE launch; return time=3.2 s. The explanation's continuation caveat is unnecessary for these data.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace.",
+        "Remove distracting continuation-below-launch-level caveat: y(2.5)=8.75 m and the result is obtained before return to launch level."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": "Corrected explanation: 400-160t=0 gives t=2.5 s; since y=8.75 m>0, this occurs during flight above launch level. No kinematic-continuation exception is needed.",
+      "replacementBrief": "Find when velocity becomes perpendicular to the line of sight from a second elevated observer, with a finite ground boundary; solve and reject roots after impact.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-016",
+      "difficulty": "hard",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "20 m",
+      "independentCheck": "For u=10, projectile y=-x²/20. Plane through origin at -45° has y=-x. Intersection roots x=0 and x=20 m; exclude launch contact and take first subsequent impact x=20 m.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace.",
+        "Say launch is from the origin ON the plane y=-x and ask for first subsequent contact (t>0). The phrase above a plane does not define its offset by itself."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": "Corrected stem: From the origin on the infinite plane y=-x (metres), launch horizontally in +x at 10 m/s with g=10 m/s² downward. Find x at the first contact after launch, ignoring drag. Answer is 20 m at t=2 s.",
+      "replacementBrief": "For a fixed-speed projectile launched above an inclined plane, maximize the range measured along the plane over the feasible launch-angle interval and check the plane-contact root.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-017",
+      "difficulty": "hard",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "12(1+sqrt(10)) m",
+      "independentCheck": "Ground-contact equation 45+10t-5t²=0 gives t=1+sqrt(10) s, the other root negative. Range=12(1+sqrt(10)) m.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Infer tower height and launch components from impact position and impact-velocity direction plus a third timed observation; establish whether the data yield a unique physical launch.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-018",
+      "difficulty": "hard",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "1 s and 2 s",
+      "independentCheck": "y=15t-5t²=10 gives (t-1)(t-2)=0, hence 1 and 2 s. Same launch scenario as M010.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace.",
+        "Repetition concern: D02"
+      ],
+      "duplicateGroups": ["D02"],
+      "proposedCorrection": null,
+      "replacementBrief": "Use a moving horizontal observation level rather than reusing M010; infer launch components from two relative-height crossings and a measured horizontal separation.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-019",
+      "difficulty": "hard",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "50 m",
+      "independentCheck": "Same-height maximum range=u²/g=100 m; R(15°)=100sin30°=50 m.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Optimize launch angle for range on a sloping landing surface with a prescribed fixed speed; derive the angle and compare to the level-ground special case.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-020",
+      "difficulty": "hard",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "4sqrt(5) m",
+      "independentCheck": "B-A=(20-4t,-2t); squared separation=20(t-4)²+80. Since 4>=0, minimum is sqrt(80)=4sqrt(5) m at 4 s.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Use two particles with different constant accelerations and a restricted observation interval; find every stationary separation time, compare boundaries and reject nonphysical roots.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-021",
+      "difficulty": "hard",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "32 m/s²",
+      "independentCheck": "omega=alpha t=8 rad/s; ac=r omega²=0.5(64)=32 m/s². Tangential acceleration is also present but is NOT asked.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Use a specified nonconstant angular acceleration and a limit on total acceleration; determine the earliest limit crossing after integrating angular speed and combining radial and tangential components.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-022",
+      "difficulty": "hard",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "2sqrt(97) m/s²",
+      "independentCheck": "Radial acceleration=2(3²)=18 m/s² and tangential=2(4)=8 m/s²; orthogonal magnitude=sqrt(388)=2sqrt(97) m/s².",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Infer a time-dependent speed law from two total-acceleration observations on a known circle, then find the first time radial and tangential accelerations become equal.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-023",
+      "difficulty": "hard",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "4 s",
+      "independentCheck": "Opposite directions give relative angular speed pi/6+pi/3=pi/2 rad/s; first reunion after 2pi/(pi/2)=4 s.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Give one runner an angular acceleration and a delayed start; count all reunions within a finite time, treating angular displacement modulo 2pi and checking direction changes.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-024",
+      "difficulty": "hard",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "5sqrt(2) m/s²",
+      "independentCheck": "Quarter turn means velocity vectors differ by 90°; |delta v|=10sqrt(2) m/s. Elapsed time=8/4=2 s; average acceleration magnitude=5sqrt(2) m/s², distinct from instantaneous radial acceleration.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Find the angular interval that maximizes the magnitude of average acceleration for a specified observation duration when angular speed varies linearly; use vector endpoint velocities, not average speed.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-025",
+      "difficulty": "hard",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "1 : 1",
+      "independentCheck": "F1=m omega²r, F2=m(omega/2)²(4r)=m omega²r; ratio=1:1. Radius and angular speed changes cancel exactly.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Combine two radius-dependent speed laws and a prescribed total-acceleration ratio to infer unknown exponents, while distinguishing radial from tangential acceleration.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-026",
+      "difficulty": "hard",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "0.8 s",
+      "independentCheck": "T²=4pi²(0.8)/(5pi²)=0.64 s²; positive period T=0.8 s.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Infer radius and nonuniform angular-motion parameters from a measured radial acceleration and two timed angular displacements, checking all admissible parameter roots.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-027",
+      "difficulty": "hard",
+      "correctAnswerLetter": "A",
+      "correctAnswerIndex": 0,
+      "correctAnswer": "2sqrt(2)/(3π)",
+      "independentCheck": "Endpoint chord=2r sin(3pi/4)=r sqrt(2); arc=3pi r/2. Ratio of average-velocity magnitude to average speed is chord/arc=2sqrt(2)/(3pi). Radius and elapsed time cancel.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Compare the ratio of average-velocity magnitude to average speed over a variable-speed circular arc under a supplied speed-position law; derive the elapsed time and chord and enforce the accessible arc.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-028",
+      "difficulty": "hard",
+      "correctAnswerLetter": "B",
+      "correctAnswerIndex": 1,
+      "correctAnswer": "16 m/s",
+      "independentCheck": "uy=g t_apex=12 m/s; |ux|=sqrt(20²-12²)=16 m/s. Signed ux can be +16 OR -16 without a horizontal direction convention; ask for its magnitude.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace.",
+        "Ask for the magnitude of the horizontal component, or declare the positive launch direction. Speed and apex time alone determine |ux|, not its sign."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": "Corrected stem: ...what is the MAGNITUDE of the horizontal component of its initial velocity? Answer remains 16 m/s; no unjustified positive-axis inference is required.",
+      "replacementBrief": "Infer both initial velocity components from two measured velocity-direction angles at different times, then check whether a specified wall can be cleared before impact.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-029",
+      "difficulty": "hard",
+      "correctAnswerLetter": "C",
+      "correctAnswerIndex": 2,
+      "correctAnswer": "20 m",
+      "independentCheck": "Flight time 3 s implies uy=15 m/s; |ux|=sqrt(25²-15²)=20 m/s; distance in final 1 s is 20 m, independent of which final-second interval is chosen while airborne.",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Use a projectile returning to a moving platform of known speed with a vertical launch offset; infer components from total relative range and flight time, then test a second interception constraint.",
+      "academicApproval": "pending",
+      "status": "draft"
+    },
+    {
+      "id": "GNO-PHY11-C03-H-030",
+      "difficulty": "hard",
+      "correctAnswerLetter": "D",
+      "correctAnswerIndex": 3,
+      "correctAnswer": "sqrt(97)",
+      "independentCheck": "a+b=13 and a-b=5 give a=9,b=4 (or exchanged labels). Perpendicular resultant=sqrt(9²+4²)=sqrt(97).",
+      "calculationFinding": "Key and supplied arithmetic agree with independent recomputation under the stated or clarified ideal model; see wording flags before considering this an unambiguous MCQ.",
+      "flags": [
+        "Difficulty: routine or moderate application as written; not enough evidence of genuinely challenging Hard complexity. Qualified reviewer must justify retention or replace."
+      ],
+      "duplicateGroups": [],
+      "proposedCorrection": null,
+      "replacementBrief": "Recover two vector magnitudes from uncertain aligned/opposed resultant intervals, then derive tight bounds on a perpendicular resultant; prove simultaneous attainability of the bounds.",
+      "academicApproval": "pending",
+      "status": "draft"
+    }
+  ],
+  "limitations": [
+    "Assistant calculation/editorial review is not qualified academic approval.",
+    "Replacement briefs are proposals, not complete solved four-option replacements. They remain outside the importable bank.",
+    "No external plagiarism database/provenance verification or official examination difficulty benchmark was applied.",
+    "Plain Unicode and sqrt()/pi notation is supported as text; there is no LaTeX math renderer. No visual mobile/browser test of these new draft questions was performed."
+  ],
+  "technicalVerification": {
+    "unitAndRegression": {
+      "passed": 70,
+      "failed": 0,
+      "newChapter3Tests": 7
+    },
+    "apiIntegration": {
+      "passed": 2,
+      "failed": 0,
+      "scope": "Actual production preview; chapters1/2/3 disabled drafts, existing content/private APIs/quiz/PDF"
+    },
+    "chapter3LiveCatalog": "HTTP200: drafts60 (10/20/30), approved0, enabled sizes[]/[]/[]",
+    "chapter3SyntheticHttpMatrix": {
+      "passed": 10,
+      "failed": 0,
+      "scope": "Isolated private Chapter3 fixtures plus approved technical Chapter1 isolation controls; every saved question checked for exact chapter/subject/class/difficulty; no real approvals"
+    },
+    "typeScript": "passed tsc --noEmit --incremental false",
+    "productionBuild": "passed next build --webpack",
+    "importSchema": "dry run and write passed60 records; JSON/CSV round-trip and duplicate-ID replay rejection passed",
+    "exactDuplicateCheck": "No repeated normalized stems or IDs involving the new60 records across250 total records; two manual near-duplicate/reused-scenario groups retained as flagged drafts",
+    "preservation": "All7 prior bank SHA-256 hashes unchanged after all checks; no real attempt store used by preview/QA servers",
+    "lint": "No configured lint script; Prettier checked task files separately",
+    "pushDeployActivation": "None"
+  }
+}
