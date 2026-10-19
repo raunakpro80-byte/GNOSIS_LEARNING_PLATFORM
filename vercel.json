@@ -5,7 +5,7 @@
   "buildCommand": "npm run build",
   "git": {
     "deploymentEnabled": {
-      "codex/mock-owner-review-supabase": false
+      "owner-review-supabase": false
     }
   }
 }

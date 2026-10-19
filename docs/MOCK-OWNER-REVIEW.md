@@ -67,7 +67,7 @@ For a real staging database: apply the migration and settings, sign in as owner,
 
 Public routes remain `/mock-tests/class-11/physics` and `/mock-tests/class-11/physics/chapter-1` through `chapter-4`.
 
-The PR branch `codex/mock-owner-review-supabase` has automatic Vercel deployment disabled in `vercel.json`. This branch-specific guard preserves the existing main deployment behavior. No merge or deployment is authorized by this PR.
+The PR branch `owner-review-supabase` has automatic Vercel deployment disabled in `vercel.json`. This branch-specific guard preserves the existing main deployment behavior. No merge or deployment is authorized by this PR.
 
 ## Verification evidence (2026-10-18)
 
