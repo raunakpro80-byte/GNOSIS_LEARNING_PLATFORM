@@ -987,13 +987,15 @@ export default function ChapterMockTest({
                             : "Hard"}
                         {!(practicePreview && level === "easy") && (
                           <>
-                            {" "}(
+                            {" "}
+                            (
                             {practicePreview
                               ? catalog.counts[level]
                               : catalog.approvedCounts[level]}{" "}
                             {practicePreview ? "drafts" : "approved"}
                             {!practicePreview &&
-                            catalog.counts[level] > catalog.approvedCounts[level]
+                            catalog.counts[level] >
+                              catalog.approvedCounts[level]
                               ? ` + ${catalog.counts[level] - catalog.approvedCounts[level]} development samples`
                               : ""}
                             )
@@ -1097,7 +1099,7 @@ export default function ChapterMockTest({
     </section>
   );
 }
-function MockResults({
+export function MockResults({
   practicePreview = false,
   result,
   onRetry,
@@ -1132,13 +1134,11 @@ function MockResults({
           </h3>
           <p>
             {result.reason === "expired"
-              ? practicePreview
-                ? "Time expired. Browser-saved responses were submitted for grading."
-                : "Time expired. Last server-saved responses were submitted automatically."
-              : "Your test was submitted."}{" "}
+              ? "Time expired. Test submitted. "
+              : ""}
             {practicePreview
-              ? "Practice questions — academic review pending. Results are stored only in this browser; clearing browser data removes them."
-              : "Results are saved on this local practice server."}
+              ? "Results saved in this browser."
+              : "Results saved on this server."}
           </p>
         </div>
         <button className="subtle-button" onClick={onRetry}>
@@ -1147,11 +1147,6 @@ function MockResults({
         </button>
       </div>
       <div className="mock-next-step">
-        <p>
-          {nextDifficulty
-            ? "Continue at your own pace. Every difficulty remains open; availability depends on the question bank."
-            : "Revisit the solutions before starting another attempt."}
-        </p>
         {nextDifficulty ? (
           <button
             className="subtle-button"
@@ -1192,80 +1187,54 @@ function MockResults({
           </div>
         ))}
       </dl>
-      <p className="small muted">
-        Accuracy = correct ÷ attempted questions. Total marks:{" "}
-        {result.totalMarks}. Scores may be negative because of single-correct
-        penalties.
-      </p>
-      <section className="mock-topic-analysis">
-        <h3>Topics to revisit</h3>
-        <p>
-          Based only on this attempt. Unattempted topics are not labelled weak.
-        </p>
-        <div className="mock-topic-table">
-          {result.topics.map((topic) => (
-            <div key={topic.topic}>
-              <strong>{topic.topic}</strong>
-              <span>
-                {topic.correct}/{topic.total} correct · {topic.wrong} wrong ·{" "}
-                {topic.unattempted} unattempted
-              </span>
-              <span>
-                {topic.status === "revise"
-                  ? "Revise"
-                  : topic.status === "not-attempted"
-                    ? "Not attempted"
-                    : "Practised"}
-                {topic.accuracy === null
-                  ? ""
-                  : ` · ${topic.accuracy}% accuracy`}
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
       <section className="mock-review" ref={reviewRef}>
         <h3>Question review</h3>
-        {result.items.map((item, i) => (
-          <details
-            key={`${item.question.id}-${reviewMistakes}`}
-            className="mock-review-item"
-            open={reviewMistakes && item.outcome === "wrong" ? true : undefined}
-          >
-            <summary>
-              <span>
-                Question {i + 1} · {item.question.topic}
-              </span>
-              <span className={`mock-outcome ${item.outcome}`}>
-                {item.outcome} · {item.marks > 0 ? "+" : ""}
-                {item.marks} marks
-              </span>
-            </summary>
-            <h4>{item.question.prompt}</h4>
-            <p>
-              <strong>Your answer:</strong>{" "}
-              {displayAnswer(item.question, item.answer)}
-            </p>
-            <p>
-              <strong>Correct answer:</strong>{" "}
-              {displayAnswer(
-                item.question,
-                item.question.type === "numerical"
-                  ? String(item.correct)
-                  : item.correct,
-              )}
-              {item.tolerance === undefined
-                ? ""
-                : ` (tolerance ±${item.tolerance})`}
-            </p>
-            <p className="mock-explanation">{item.explanation}</p>
-            <p className="small muted">
-              Source: {item.source.label}
-              {item.source.reference ? ` · ${item.source.reference}` : ""}.
-              Verification: {item.verification.method}
-            </p>
-          </details>
-        ))}
+        {result.items.every((item) => item.outcome === "correct") && (
+          <p>All answers correct. Nothing to review.</p>
+        )}
+        {result.items.map((item, i) =>
+          item.outcome === "correct" ? null : (
+            <details
+              key={`${item.question.id}-${reviewMistakes}`}
+              className="mock-review-item"
+              open={reviewMistakes ? true : undefined}
+            >
+              <summary>
+                <span>
+                  Question {i + 1} · {item.question.topic}
+                </span>
+                <span className={`mock-outcome ${item.outcome}`}>
+                  {item.outcome === "wrong" ? "Incorrect" : "Unattempted"} ·{" "}
+                  {item.marks > 0 ? "+" : ""}
+                  {item.marks} marks
+                </span>
+              </summary>
+              <h4>{item.question.prompt}</h4>
+              <p>
+                <strong>Your answer:</strong>{" "}
+                {displayAnswer(item.question, item.answer)}
+              </p>
+              <p>
+                <strong>Correct answer:</strong>{" "}
+                {displayAnswer(
+                  item.question,
+                  item.question.type === "numerical"
+                    ? String(item.correct)
+                    : item.correct,
+                )}
+                {item.tolerance === undefined
+                  ? ""
+                  : ` (tolerance ±${item.tolerance})`}
+              </p>
+              <p className="mock-explanation">{item.explanation}</p>
+              <p className="small muted">
+                Source: {item.source.label}
+                {item.source.reference ? ` · ${item.source.reference}` : ""}.
+                Verification: {item.verification.method}
+              </p>
+            </details>
+          ),
+        )}
       </section>
     </div>
   );
