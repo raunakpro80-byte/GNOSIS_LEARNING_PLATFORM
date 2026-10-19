@@ -20,7 +20,7 @@ import {
 } from "@/lib/curriculum";
 import { resourcesFor, resourceLabel } from "@/lib/chapter-resources";
 import type { Profile } from "@/lib/types";
-import PdfReader from "./PdfReader";
+import ContinuousPdfReader from "./ContinuousPdfReader";
 import Video from "./Video";
 import ChapterMockTest from "./ChapterMockTest";
 import { usesGuestPhysicsPractice } from "@/lib/mock-policy";
@@ -429,7 +429,7 @@ export default function ResourceLibrary({
                   onTime={() => {}}
                 />
               ) : !isLecture && pdf ? (
-                <PdfReader key={pdf} url={pdf} />
+                <ContinuousPdfReader key={pdf} url={pdf} />
               ) : (
                 <div className="resource-placeholder">
                   {isLecture ? <VideoOff size={40} /> : <FileText size={40} />}

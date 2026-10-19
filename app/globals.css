@@ -1217,6 +1217,53 @@ footer > span:first-child {
 .pdf-reader {
   padding: 0 13px 15px;
 }
+.pdf-scroll-hint {
+  color: var(--muted);
+}
+.pdf-scroll-pages {
+  height: 70vh;
+  height: 70dvh;
+  min-height: 280px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  overflow-anchor: none;
+  position: relative;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg);
+}
+.pdf-scroll-pages:focus-visible {
+  outline: 2px solid var(--indigo);
+  outline-offset: 2px;
+}
+.pdf-scroll-page {
+  position: relative;
+  margin: 0 0 28px;
+  background: white;
+  color: #25283b;
+  box-shadow: 0 1px 4px #242a4010;
+}
+.pdf-scroll-page canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pdf-scroll-page figcaption {
+  position: absolute;
+  top: 100%;
+  padding: 4px 0;
+  font-size: 11px;
+  color: var(--muted);
+}
+.pdf-page-placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-size: 13px;
+}
 .pdf-tools {
   display: flex;
   align-items: center;
