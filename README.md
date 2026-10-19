@@ -16,7 +16,7 @@ Public demo deployed on Vercel. GitHub checks and the production HTTP integratio
 
 **Understand a little deeper.** A calm learning workspace for watching a lesson, asking contextual questions, reading notes, practicing, and resuming later.
 
-![GNOSIS learning workspace](docs/preview.png)
+![GNOSIS learning workspace in dark mode](docs/workspace-dark-preview.png)
 
 **Explore the code:** Read the [code explanation and folder guide](docs/CODE-EXPLAINED.md). To share the source and publish a live website, read the [GitHub and deployment guide](docs/DEPLOYMENT.md). The supported chapter is **Class 12 → Physics → Current Electricity → Ohm’s Law**.
 
