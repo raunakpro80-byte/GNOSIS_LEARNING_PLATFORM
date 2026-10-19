@@ -165,6 +165,7 @@ export default function ChapterMockTest({
     [remaining, setRemaining] = useState(0);
   const [difficulty, setDifficulty] = useState<Difficulty>("easy");
   const [count, setCount] = useState<MockQuestionCount>(10);
+  const [timerHidden, setTimerHidden] = useState(false);
   const duration = mockDuration(difficulty, count);
   const tokenRef = useRef(""),
     attemptRef = useRef<PublicMockAttempt | null>(null),
@@ -560,6 +561,7 @@ export default function ChapterMockTest({
     autoFired.current = false;
     conflictRef.current = false;
     setAttempt(null);
+    setTimerHidden(false);
     setAnswers({});
     setMarked([]);
     setIndex(0);
@@ -667,13 +669,25 @@ export default function ChapterMockTest({
                     {attempt.config.difficulty} · +4 correct
                   </span>
                 </div>
-                <div
-                  className={`mock-timer ${remaining <= 60 ? "is-urgent" : ""}`}
-                  role="timer"
-                  aria-label={`${remaining} seconds remaining`}
-                >
-                  <Clock size={16} />
-                  {clock(remaining)}
+                <div className="mock-timer-controls">
+                  {!timerHidden && (
+                    <div
+                      className={`mock-timer ${remaining <= 60 ? "is-urgent" : ""}`}
+                      role="timer"
+                      aria-label={`${remaining} seconds remaining`}
+                    >
+                      <Clock size={16} />
+                      {clock(remaining)}
+                    </div>
+                  )}
+                  <button
+                    type="button"
+                    className="text-button"
+                    aria-pressed={timerHidden}
+                    onClick={() => setTimerHidden((hidden) => !hidden)}
+                  >
+                    {timerHidden ? "Show timer" : "Hide timer"}
+                  </button>
                 </div>
                 <button
                   ref={submitRef}
@@ -970,17 +984,21 @@ export default function ChapterMockTest({
                           ? "Easy"
                           : level === "medium"
                             ? "Medium"
-                            : "Hard"}{" "}
-                        (
-                        {practicePreview
-                          ? catalog.counts[level]
-                          : catalog.approvedCounts[level]}{" "}
-                        {practicePreview ? "drafts" : "approved"}
-                        {!practicePreview &&
-                        catalog.counts[level] > catalog.approvedCounts[level]
-                          ? ` + ${catalog.counts[level] - catalog.approvedCounts[level]} development samples`
-                          : ""}
-                        )
+                            : "Hard"}
+                        {!(practicePreview && level === "easy") && (
+                          <>
+                            {" "}(
+                            {practicePreview
+                              ? catalog.counts[level]
+                              : catalog.approvedCounts[level]}{" "}
+                            {practicePreview ? "drafts" : "approved"}
+                            {!practicePreview &&
+                            catalog.counts[level] > catalog.approvedCounts[level]
+                              ? ` + ${catalog.counts[level] - catalog.approvedCounts[level]} development samples`
+                              : ""}
+                            )
+                          </>
+                        )}
                       </option>
                     ))}
                   </select>
@@ -1003,7 +1021,6 @@ export default function ChapterMockTest({
                 <label>
                   Test duration
                   <input readOnly value={duration + " minutes"} />
-                  {practicePreview && <small>Maximum marks: {count * 4}</small>}
                 </label>
                 <button
                   className="primary"
@@ -1017,6 +1034,11 @@ export default function ChapterMockTest({
                       : "Start test"}
                   <ArrowRight size={16} />
                 </button>
+                {practicePreview && (
+                  <small className="mock-maximum-marks">
+                    Maximum marks: {count * 4}
+                  </small>
+                )}
               </div>
               <p className="mock-difficulty-description">
                 {difficultyDescriptions[difficulty]}

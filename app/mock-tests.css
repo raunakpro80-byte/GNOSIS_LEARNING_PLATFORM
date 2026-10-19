@@ -35,6 +35,10 @@
 .mock-setup label {
   font-size: 12px;
 }
+.mock-maximum-marks {
+  grid-column: 3;
+  grid-row: 2;
+}
 .mock-instructions-title {
   font-size: 17px;
   margin: 24px 0 12px;
@@ -107,6 +111,12 @@
   font-size: 11px;
   color: var(--muted);
   text-transform: capitalize;
+}
+.mock-timer-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 .mock-timer {
   display: flex;
@@ -455,6 +465,10 @@ html[data-theme="dark"] .mock-outcome.wrong {
   .mock-setup {
     grid-template-columns: 1fr;
     gap: 18px;
+  }
+  .mock-maximum-marks {
+    grid-column: 1;
+    grid-row: 4;
   }
   .mock-running-bar {
     top: 60px;
