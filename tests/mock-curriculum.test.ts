@@ -1,4 +1,7 @@
-import { mockCountsByDifficulty } from "../lib/mock-policy";
+import {
+  mockCountsByDifficulty,
+  usesGuestPhysicsPractice,
+} from "../lib/mock-policy";
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { createElement } from "react";
@@ -48,7 +51,23 @@ test("all 106 curriculum chapters render exactly one shared mock section after e
             1,
             `${className}/${subject.id}/${chapter.number}/${format}`,
           );
-          assert.match(html, /Chapter mock test/);
+          assert.match(html, /Chapter mock test/i);
+          const guest = usesGuestPhysicsPractice({
+            className,
+            subject: subject.id,
+            chapter: chapter.number,
+          });
+          assert.ok(
+            html.includes(
+              `data-mock-mode="${guest ? "guest-practice" : "approved"}"`,
+            ),
+            "Only Class 11 Physics 1–4 use the inline guest engine",
+          );
+          assert.equal(
+            html.includes("Practice questions — academic review pending."),
+            guest,
+          );
+          assert.ok(!html.includes('aria-label="Practice mode"'));
           const resource = format
             ? html.indexOf('class="panel chapter-resource"')
             : html.indexOf('class="lecture-format-grid"');

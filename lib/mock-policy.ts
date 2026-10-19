@@ -1,4 +1,13 @@
-import type { Difficulty } from "./mock-types";
+import type { Difficulty, MockChapter } from "./mock-types";
+
+export function usesGuestPhysicsPractice(chapter: MockChapter) {
+  return (
+    chapter.className === "11" &&
+    chapter.subject === "physics" &&
+    chapter.chapter >= 1 &&
+    chapter.chapter <= 4
+  );
+}
 
 export const mockQuestionCounts = [10, 20, 30] as const;
 export type MockQuestionCount = (typeof mockQuestionCounts)[number];

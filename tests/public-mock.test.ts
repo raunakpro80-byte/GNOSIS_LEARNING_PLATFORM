@@ -75,7 +75,12 @@ test("public pages render safe availability and shared engine without requiring 
     );
     assert.ok(page.includes("Share Test"));
     assert.ok(page.includes('id="chapter-mock-test"'));
-    assert.ok(page.includes("Questions awaiting academic approval"));
+    assert.ok(page.includes("Practice questions — academic review pending."));
+    assert.ok(page.includes("Chapter Mock Test"));
+    assert.ok(page.includes('data-mock-mode="guest-practice"'));
+    assert.ok(!page.includes('aria-label="Practice mode"'));
+    assert.ok(!page.includes("Practice Preview"));
+    assert.ok(!page.includes("Approved mock tests"));
     assert.equal(c.approvedCounts.all, 0);
     assert.deepEqual(c.sizes, { easy: [], medium: [], hard: [] });
     assert.ok(!page.includes('"correct"'));

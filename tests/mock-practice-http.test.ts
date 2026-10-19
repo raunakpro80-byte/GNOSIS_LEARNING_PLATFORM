@@ -94,8 +94,11 @@ test("production HTTP: preview is playable for every chapter/configuration witho
     );
     assert.equal(page.status, 200);
     const html = await page.text();
-    assert.ok(html.includes("Practice Preview"));
-    assert.ok(html.includes("Questions Pending Academic Review"));
+    assert.ok(html.includes("Chapter Mock Test"));
+    assert.ok(html.includes("Practice questions — academic review pending."));
+    assert.ok(!html.includes("Practice Preview"));
+    assert.ok(!html.includes("Approved mock tests"));
+    assert.ok(html.includes('data-mock-mode="guest-practice"'));
     assert.ok(!html.includes('"correct"'));
   }
   const invalid = await fetch(base + "/api/mock-practice", {

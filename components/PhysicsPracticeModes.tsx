@@ -1,36 +1,17 @@
 "use client";
-import { useState } from "react";
 import ChapterMockTest from "./ChapterMockTest";
 import type { MockChapter } from "@/lib/mock-types";
+import { usesGuestPhysicsPractice } from "@/lib/mock-policy";
 export default function PhysicsPracticeModes({
   chapter,
 }: {
   chapter: MockChapter;
 }) {
-  const [preview, setPreview] = useState(true);
+  // Keep the existing entry point, but render one inline test with no mode tabs.
   return (
-    <>
-      <div className="row" role="group" aria-label="Practice mode">
-        <button
-          className={preview ? "primary" : "subtle-button"}
-          aria-pressed={preview}
-          onClick={() => setPreview(true)}
-        >
-          Practice Preview
-        </button>
-        <button
-          className={!preview ? "primary" : "subtle-button"}
-          aria-pressed={!preview}
-          onClick={() => setPreview(false)}
-        >
-          Approved mock tests
-        </button>
-      </div>
-      <ChapterMockTest
-        key={String(preview)}
-        chapter={chapter}
-        practicePreview={preview}
-      />
-    </>
+    <ChapterMockTest
+      chapter={chapter}
+      practicePreview={usesGuestPhysicsPractice(chapter)}
+    />
   );
 }

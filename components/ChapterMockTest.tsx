@@ -576,20 +576,21 @@ export default function ChapterMockTest({
     <section
       className="mock-section"
       id="chapter-mock-test"
+      data-mock-mode={practicePreview ? "guest-practice" : "approved"}
       aria-labelledby="mock-heading"
     >
       <div className="section-heading">
         <div>
           <div className="eyebrow">Chapter practice</div>
           <h2 id="mock-heading">
-            {practicePreview ? "Practice Preview" : "Chapter mock test"}
+            {practicePreview ? "Chapter Mock Test" : "Chapter mock test"}
           </h2>
         </div>
         <span className="small muted">Guest practice · No sign-in</span>
       </div>
       <p className="mock-storage-note">
         {practicePreview
-          ? "Practice Preview — Questions Pending Academic Review. Attempts are stored only in this browser. Clearing browser data removes attempts. Server-side grading is used, but this temporary preview is not cheating-resistant or exam-grade storage."
+          ? "Practice questions — academic review pending. Saved in this browser; clearing browser data may remove attempts. Server grading is used, but this is not a cheating-resistant examination."
           : "Browser recovery + local practice server. No cloud account storage. Keep your browser data to resume this attempt."}
       </p>
       {attempt?.developmentSample && (
@@ -1002,6 +1003,7 @@ export default function ChapterMockTest({
                 <label>
                   Test duration
                   <input readOnly value={duration + " minutes"} />
+                  {practicePreview && <small>Maximum marks: {count * 4}</small>}
                 </label>
                 <button
                   className="primary"
@@ -1011,7 +1013,7 @@ export default function ChapterMockTest({
                   {busy
                     ? "Starting…"
                     : practicePreview
-                      ? "Start Practice Preview"
+                      ? "Start Mock Test"
                       : "Start test"}
                   <ArrowRight size={16} />
                 </button>
@@ -1049,7 +1051,7 @@ export default function ChapterMockTest({
                 </li>
                 <li>
                   The timer starts when you press{" "}
-                  {practicePreview ? "Start Practice Preview" : "Start test"}.
+                  {practicePreview ? "Start Mock Test" : "Start test"}.
                   Refreshing does not pause or reset it.
                 </li>
                 <li>
@@ -1113,7 +1115,7 @@ function MockResults({
                 : "Time expired. Last server-saved responses were submitted automatically."
               : "Your test was submitted."}{" "}
             {practicePreview
-              ? "Practice Preview — Questions Pending Academic Review. Results are stored only in this browser; clearing browser data removes them."
+              ? "Practice questions — academic review pending. Results are stored only in this browser; clearing browser data removes them."
               : "Results are saved on this local practice server."}
           </p>
         </div>

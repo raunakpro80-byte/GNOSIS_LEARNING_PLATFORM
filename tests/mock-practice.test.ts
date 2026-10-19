@@ -56,6 +56,9 @@ test("all four chapters and 24 preview configurations isolate drafts, hide keys 
             !q.developmentSample,
         ),
       );
+      assert.ok(
+        selected.every((q) => q.type === "single" && q.options?.length === 4),
+      );
       const answers = Object.fromEntries(
         selected
           .slice(0, -1)
@@ -72,6 +75,15 @@ test("all four chapters and 24 preview configurations isolate drafts, hide keys 
       assert.equal(result.wrong, 1);
       assert.equal(result.unattempted, 1);
       assert.ok(result.items.every((q) => q.explanation.length > 0));
+      const expired = (
+        await submitPractice(
+          { manifest: started.manifest, answers },
+          a.expiresAt + 1,
+        )
+      ).result!;
+      assert.equal(expired.reason, "expired");
+      assert.equal(expired.marksObtained, result.marksObtained);
+      assert.equal(expired.timeTakenSeconds, minutes * 60);
     }
     const approved = await mockCatalog(identity);
     assert.equal(approved.approvedCounts.all, 0);
@@ -240,6 +252,52 @@ test("browser transport saves, clears, refreshes, retries failed grading and res
     );
     assert.equal(expired.result.reason, "expired");
     Date.now = originalNow;
+    const bank = await readMockBank();
+    for (const chapter of [1, 2, 3, 4])
+      for (const [difficulty, count, minutes] of configs) {
+        const initial = await client.requestPracticePreview(
+          "/api/mock-tests",
+          undefined,
+          "POST",
+          { className: "11", subject: "physics", chapter, difficulty, count },
+        );
+        const address = `/api/mock-tests/${initial.attempt.id}`;
+        const first = initial.attempt.questions[0];
+        const correct = bank.find((q) => q.id === first.id)!.correct;
+        const response = { [first.id]: correct };
+        await client.requestPracticePreview(address, initial.token, "PATCH", {
+          revision: 0,
+          answers: response,
+        });
+        client = await fresh();
+        const recovered = await client.requestPracticePreview(
+          address,
+          initial.token,
+        );
+        assert.equal(recovered.expiresAt, initial.attempt.expiresAt);
+        assert.equal(
+          recovered.expiresAt - recovered.startedAt,
+          minutes * 60000,
+        );
+        assert.deepEqual(recovered.answers, response);
+        assert.equal(recovered.config.chapter, chapter);
+        assert.equal(recovered.config.difficulty, difficulty);
+        Date.now = () => recovered.expiresAt + 1;
+        const finished = await client.requestPracticePreview(
+          address,
+          initial.token,
+        );
+        assert.equal(finished.result.reason, "expired");
+        assert.equal(finished.result.marksObtained, 4);
+        assert.equal(finished.result.unattempted, count - 1);
+        assert.equal(finished.result.timeTakenSeconds, minutes * 60);
+        client = await fresh();
+        assert.deepEqual(
+          (await client.requestPracticePreview(address, initial.token)).result,
+          finished.result,
+        );
+        Date.now = originalNow;
+      }
     storage.clear();
     client = await fresh();
     await assert.rejects(

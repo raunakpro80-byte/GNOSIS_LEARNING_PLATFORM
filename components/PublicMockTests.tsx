@@ -31,8 +31,8 @@ export function PublicMockIndex({ catalogs }: { catalogs: MockCatalog[] }) {
         </div>
       </div>
       <p className="mock-intro">
-        Approved mock tests: Questions awaiting academic approval. Drafts are
-        available only in Practice Preview.
+        Practice questions — academic review pending. Choose a chapter to start
+        its mock test without signing in.
       </p>
       <div className="chapter-list">
         {catalogs.map((catalog) => (
@@ -49,13 +49,12 @@ export function PublicMockIndex({ catalogs }: { catalogs: MockCatalog[] }) {
               </Link>
               <p>
                 {catalog.draftCounts.all > 0
-                  ? "Practice Preview available · Questions Pending Academic Review"
+                  ? "Chapter Mock Test available · Academic review pending"
                   : availability(catalog)}
               </p>
               <span className="resource-pending">
-                Approved questions: Easy {catalog.approvedCounts.easy} · Medium{" "}
-                {catalog.approvedCounts.medium} · Hard{" "}
-                {catalog.approvedCounts.hard}
+                Practice questions: Easy {catalog.draftCounts.easy} · Medium{" "}
+                {catalog.draftCounts.medium} · Hard {catalog.draftCounts.hard}
               </span>
             </div>
             <Link
@@ -82,15 +81,13 @@ export function PublicMockChapter({ catalog }: { catalog: MockCatalog }) {
             Class 11 · Physics · Chapter {catalog.chapter.chapter}
           </div>
           <h1>{catalog.title}</h1>
-          <p>Practice Preview — Questions Pending Academic Review</p>
+          <p>Choose your difficulty and question count, then start below.</p>
         </div>
         <ShareMockTest chapter={catalog.chapter.chapter} />
       </div>
       <p className="mock-intro">
-        Approved mock tests: Questions awaiting academic approval. Anyone with
-        this link can open the chapter. Each student starts a separate guest
-        practice preview using unreviewed drafts. Approved tests remain
-        separate. A shared link does not transfer answers or results.
+        Anyone with this link can start a guest mock test here. A shared link
+        does not transfer answers or results.
       </p>
       <PhysicsPracticeModes
         key={catalog.chapter.chapter}

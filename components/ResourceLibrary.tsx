@@ -23,6 +23,7 @@ import type { Profile } from "@/lib/types";
 import PdfReader from "./PdfReader";
 import Video from "./Video";
 import ChapterMockTest from "./ChapterMockTest";
+import { usesGuestPhysicsPractice } from "@/lib/mock-policy";
 
 const sectionNames = {
   books: "NCERT Books",
@@ -455,6 +456,11 @@ export default function ResourceLibrary({
           {subject && chapter && isLecture && (
             <ChapterMockTest
               key={`${profile.className}/${subject.id}/${chapter.number}`}
+              practicePreview={usesGuestPhysicsPractice({
+                className: profile.className as "11" | "12",
+                subject: subject.id,
+                chapter: chapter.number,
+              })}
               chapter={{
                 className: profile.className as "11" | "12",
                 subject: subject.id,

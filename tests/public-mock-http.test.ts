@@ -23,12 +23,15 @@ test("public mock index and chapters resolve directly for a fresh guest and refr
       assert.equal(response.headers.get("location"), null);
       const html = await response.text();
       assert.ok(html.includes("Class 11"));
-      assert.ok(html.includes("Questions awaiting academic approval"));
+      assert.ok(html.includes("Practice questions — academic review pending."));
+      assert.ok(!html.includes("Practice Preview"));
+      assert.ok(!html.includes("Approved mock tests"));
       assert.ok(!html.includes("GNO-PHY11-"));
       assert.ok(!html.includes("phy11-units-dimensions-"));
       if (route !== publicPhysicsMockPath) {
         assert.ok(html.includes("Share Test"));
         assert.ok(html.includes("chapter-mock-test"));
+        assert.ok(html.includes('data-mock-mode="guest-practice"'));
       }
     }
   }
