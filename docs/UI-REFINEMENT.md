@@ -6,7 +6,7 @@ This refinement is local. It has not been pushed to GitHub or deployed.
 
 Before application edits, the root project was saved in commit `d4c1cee6e4f860d2523193e24448c54584a9f72d`, with message `Backup: GNOSIS stable version before UI/UX refinement`.
 
-Both `refs/heads/backup-before-ui-refinement` and `refs/tags/backup-before-ui-refinement` point to that commit. The work is on `codex/ui-refinement`. The root repository previously had no commits or remote. The separate `github-verification` checkout has older history and an unresolved Git lock; it was not repaired or used for UI changes. No remote backup is claimed.
+Both `refs/heads/backup-before-ui-refinement` and `refs/tags/backup-before-ui-refinement` point to that commit. The root repository previously had no commits or remote. The separate `github-verification` checkout has older history and an unresolved Git lock; it was not repaired or used for UI changes. No remote backup is claimed.
 
 The 115-file checkpoint excludes dependencies, build output, temporary files, nested repositories, and local service configuration. `.env.example` contains placeholders only. Common credential patterns were checked, and all backed-up PDFs/images were compared with the source bytes before committing.
 
